@@ -52,7 +52,7 @@ L’exemple ci-dessus est constitué d’une balise d’ouverture ```<h1>``` et 
 
 Le rôle principal des navigateurs web tels que Google Chrome, Mozilla Firefox, Opera, Safari, etc. est d’interpréter le code HTML dans le document et d’afficher la page web en tenant compte des balises. 
 
-__Remarque__ : Les balises HTML ne sont pas affichées sur la page web, mais permettent d’indiquer au navigateur comment afficher tel ou tel élément. Par exemple, les titres <h1> sont affichés en gros.
+__Remarque__ : Les balises HTML ne sont pas affichées sur la page web, mais permettent d’indiquer au navigateur comment afficher tel ou tel élément. Par exemple, les titres ```<h1>``` sont affichés en gros.
 
 En reprenant l’exemple de la structure de base d’un document HTML, donné dans le point “qu’est-ce que le HTML” : 
 
