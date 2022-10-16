@@ -15,7 +15,7 @@ Ce cours se base sur les dernières versions stables de ce langage, à savoir HT
 
 L’exemple ci-dessous présente la structure de base d’une page HTML, avec un titre :
 
-```html
+``` html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
