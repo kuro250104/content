@@ -15,18 +15,18 @@ Ce cours se base sur les dernières versions stables de ce langage, à savoir HT
 
 L’exemple ci-dessous présente la structure de base d’une page HTML, avec un titre :
 
-```html
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <title>Cours HTML</title>
-</head>
-<body>
-    <h1>Titre du document</h1>
-</body>
-</html>
-```
+<code>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cours HTML</title>
+    </head>
+    <body>
+        <h1>Titre du document</h1>
+    </body>
+    </html>
+</code>
 
 Dans l’exemple ci-dessus, la déclaration ```<!DOCTYPE html>``` indique au navigateur que le document contient du HTML ainsi que la version du langage utilisée pour la construction du site web.
 
