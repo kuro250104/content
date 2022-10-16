@@ -70,7 +70,7 @@ En reprenant l’exemple de la structure de base d’un document HTML, donné da
 ```
 
 Voici ce que donne le code HTML de cet exemple :
-![Rendu du code ci-dessus](images/image1.png)
+![Rendu du code ci-dessus](images/image2.png)
 
 Comme indiqué, les balises HTML ne sont pas affichées mais ont permis au navigateur d’afficher “Titre du document” en gros.
 
@@ -78,4 +78,4 @@ Comme indiqué, les balises HTML ne sont pas affichées mais ont permis au navig
 
 Afin de mieux visualiser comment est structurée une page web grâce au HTML, voici un schéma qui reprend le code de l’exemple du point précédent :
 
-![Rendu du code ci-dessus](images/image2.png)
+![Rendu du code ci-dessus](images/image1.png)
