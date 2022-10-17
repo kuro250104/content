@@ -109,4 +109,4 @@ Dans l’exemple ci-dessous, la page HTML chargée sans que **meta viewport** so
 
 En revanche, dans l’image de droite, la balise **meta viewport** est renseignée, permettant au navigateur d’adapter l’affichage du contenu afin que celui-ci ne déborde pas de la fenêtre d’affichage. Cela permet également à l’utilisateur de zoomer à sa convenance afin de pouvoir lire le texte.
 
-![Illustration ci-dessus](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0010%20-%20Introduction/images/image1.png)
+![Illustration ci-dessus](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0210%20-%20Head/images/image1.jpg)
