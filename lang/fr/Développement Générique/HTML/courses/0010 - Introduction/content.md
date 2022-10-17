@@ -78,4 +78,4 @@ Comme indiqué, les balises HTML ne sont pas affichées mais ont permis au navig
 
 Afin de mieux visualiser comment est structurée une page web grâce au HTML, voici un schéma qui reprend le code de l’exemple du point précédent :
 
-![Rendu du code ci-dessus](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/10%20-%20Introduction/images/image1.png)
+![Schématisation du code précédent](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/10%20-%20Introduction/images/image1.png)
