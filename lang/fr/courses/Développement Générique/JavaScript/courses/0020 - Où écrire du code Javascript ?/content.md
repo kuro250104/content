@@ -63,7 +63,7 @@ Nous obtenons donc le code suivant :
 
 Il ne reste plus qu’à ouvrir le fichier HTML dans votre navigateur et vous devriez voir la boîte de dialogue apparaître comme dans l’exemple qui suit :
 
-![txt](images/image1.png)
+![Représentation de l'apparition de la boite de dialogue en JavaScript](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/JavaScript/courses/0020%20-%20O%C3%B9%20%C3%A9crire%20du%20code%20Javascript%20%3F/images/image1.png)
 
 ## Dans la balise <body> d’une page HTML
 
@@ -151,7 +151,7 @@ alert('Je suis lié au fichier HTML !');
 
 À noter que dans un fichier JavaScript - possédant l’extension “.js” - vous n’avez plus besoin de renseigner les balises ```<script>```. Le résultat sera donc le même qu’auparavant :
 
-![txt](images/image2.png)
+![Le résultat est similaire à l'exemple précédent !](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/JavaScript/courses/0020%20-%20O%C3%B9%20%C3%A9crire%20du%20code%20Javascript%20%3F/images/image2.png)
 
 Il est tout de même important de bien comprendre une chose : le fait d’exporter votre code JavaScript dans un fichier externe au HTML ne changera pas fondamentalement l’exécution dudit code. En effet, lorsque vous renseignez la balise ```<script>``` et notamment la source du fichier externe à inclure grâce à l’attribut “src”, votre navigateur va en réalité inclure l’ensemble du code disponible dans le fichier JavaScript au sein de votre HTML. Il va en quelque sorte “inclure” le contenu JavaScript entre les balises ```<script>```. C’est donc pour cela que vous obtiendrez le même résultat lorsque vous intégrerez le JS directement dans le HTML ou bien dans un fichier dédié.
 
