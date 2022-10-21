@@ -34,7 +34,7 @@ Prenons un exemple à partir d’un code HTML simple :
 
 Lorsque l’on charge ce code via le navigateur, celui-ci génère un DOM qui ressemble à ceci :
 
-![Résultat du DOM généré par le navigateur](images/image.1.png)
+![Résultat du DOM généré par le navigateur](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/JavaScript/courses/0620%20-%20DOM%20-%20Introduction/images/image1.png)
 *source de l’image : wikipédia*
 
 ## Les interfaces
