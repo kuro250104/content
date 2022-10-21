@@ -12,7 +12,7 @@ En d’autres termes, AJAX permet de mettre à jour des pages web de manière as
 
 ## Comment fonctionne l’AJAX
 
-![Drag Racing](Dragster.jpg)
+![Schématisation du fonctionnement de l'AJAX](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/JavaScript/courses/0790%20-%20Ajax%20Intro/images/image1.jpg)
 
 ## Navigateurs internet modernes
 
