@@ -9,7 +9,7 @@ Selon le standard W3C HTML DOM, tout, absolument tout, au sein d’un document H
 - Les textes à l’intérieur de chaque élément HTML sont des nœuds **texte**
 - Tous les commentaires sont des nœuds **commentaires**
 
-![Représentation des noeud du DOM](images/image2.png)
+![Représentation des noeud du DOM](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/JavaScript/courses/0710%20-%20%20DOM%20Navigation/images/image2.png)
 
 Avec le DOM HTML, tous les nœuds dans l’arbre de nœud sont accessibles en Javascript, et de nouveaux nœuds peuvent être créés. Tous les nœuds peuvent être modifiés ou effacés.
 
@@ -19,7 +19,7 @@ Dans l’arbre des nœuds, chacun à une relation hiérarchique avec les autres.
 
 Dans l’arbre, le nœud tout en haut est appelé **racine** (*root*, en anglais) ou nœud racine (*root node*). Chaque nœud a forcément un parent, excepté la racine qui, lui, n’en a pas ; un nœud a également un certain nombre d’enfants. Les nœuds frères et sœurs ont forcément le même nœud parent.
 
-![Représentation des noeud du DOM](images/image1.png)
+![Représentation des noeud du DOM](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/JavaScript/courses/0710%20-%20%20DOM%20Navigation/images/image1.png)
 
 Exemple :
 
