@@ -81,7 +81,7 @@ Sur Google Chrome, voici à quoi ressemble l’inspecteur d’éléments :
 
 L'inspecteur donne des informations détaillées sur l'élément actuellement sélectionné. Le bouton “Sélectionner un élément” permet de sélectionner un élément à inspecter :
 
-![Inspecteur d'éléments](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image3.png)
+![Inspecteur d'éléments](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image3.png)
 
 Le volet style permet de consulter le code CSS appliqué à un élément. Le CSS est le langage permettant d’appliquer du style à une page web. Ce langage est abordé dans un autre cours. 
 
