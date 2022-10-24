@@ -15,8 +15,8 @@ Les titres, en HTML, sont structurés avec des balises ```<hn>```, “n” repr�
 Exemple :
 
 ``` html
-  <h1>Titre de niveau 1 (important)</h1>
-  <h6> Titre de niveau 6 (beaucoup, beaucoup moins important)</h6>
+<h1>Titre de niveau 1 (important)</h1>
+<h6> Titre de niveau 6 (beaucoup, beaucoup moins important)</h6>
 ```
 
 ## Les paragraphes
@@ -77,7 +77,7 @@ Pour accéder à l’inspecteur d’élément, il suffit de faire un clic droit 
 
 Sur Google Chrome, voici à quoi ressemble l’inspecteur d’éléments :
 
-![Inspecteur d'éléments](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image2.png)
+![Inspecteur d'éléments](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image2.png)
 
 L'inspecteur donne des informations détaillées sur l'élément actuellement sélectionné. Le bouton “Sélectionner un élément” permet de sélectionner un élément à inspecter :
 
