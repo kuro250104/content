@@ -13,8 +13,6 @@ __Remarque__ : Chaque méthode commence avec une **esperluette** (**&**) et fini
 ## Les symboles mathématiques en HTML
 
 Ci-dessous un tableau dressant une liste non-exhaustive des symboles disponibles en HTML :
-
-<div style="overflow-x: scroll">
   
 | **Caractère** | **Nombre** | **Entité** | **Description** |
 | --- | --- | --- | --- |
@@ -29,8 +27,6 @@ Ci-dessous un tableau dressant une liste non-exhaustive des symboles disponibles
 | ```∏``` | ```&#8719;``` | ```&prod;``` | Produit n-ary |
 | ```∑``` | ```&#8721;``` | ```&sum;``` | Résumé n-ary |
   
-</div>
-
 ## Les lettres grecques en HTML
 
 Le langage HTML met également à disposition des entités pour les lettres grecques, dont voici une liste non-exhaustive :
