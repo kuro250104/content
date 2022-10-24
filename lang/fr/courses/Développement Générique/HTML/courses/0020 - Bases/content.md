@@ -15,8 +15,8 @@ Les titres, en HTML, sont structurés avec des balises ```<hn>```, “n” repr�
 Exemple :
 
 ``` html
-<h1>Titre de niveau 1 (important)</h1>
-<h6> Titre de niveau 6 (beaucoup, beaucoup moins important)</h6>
+  <h1>Titre de niveau 1 (important)</h1>
+  <h6> Titre de niveau 6 (beaucoup, beaucoup moins important)</h6>
 ```
 
 ## Les paragraphes
