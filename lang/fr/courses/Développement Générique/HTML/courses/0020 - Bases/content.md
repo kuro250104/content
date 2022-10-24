@@ -84,4 +84,4 @@ L'inspecteur donne des informations détaillées sur l'élément actuellement s�
 
 Le volet style permet de consulter le code CSS appliqué à un élément. Le CSS est le langage permettant d’appliquer du style à une page web. Ce langage est abordé dans un autre cours. 
 
-![Onglet Style](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image1.png)
+![Onglet Style](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image1.png)
