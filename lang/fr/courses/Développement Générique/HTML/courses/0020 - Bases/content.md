@@ -13,6 +13,7 @@ Le langage HTML permet également de créer des liens hypertextes, des images, d
 Les titres, en HTML, sont structurés avec des balises ```<hn>```, “n” représentant un chiffre de 1 à 6. Ceci pour la simple raison que les titres respectent une hiérarchie, ```<h1>``` représentant un titre principal ou important, et ```<h6>```, en étant le plus bas niveau de titre dans la hiérarchie, représente un titre beaucoup, beaucoup moins important.
 
 Exemple :
+
 ``` html
 <h1>Titre de niveau 1 (important)</h1>
 <h6> Titre de niveau 6 (beaucoup, beaucoup moins important)</h6>
