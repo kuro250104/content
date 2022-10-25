@@ -13,6 +13,7 @@ Le langage HTML permet également de créer des liens hypertextes, des images, d
 Les titres, en HTML, sont structurés avec des balises ```<hn>```, “n” représentant un chiffre de 1 à 6. Ceci pour la simple raison que les titres respectent une hiérarchie, ```<h1>``` représentant un titre principal ou important, et ```<h6>```, en étant le plus bas niveau de titre dans la hiérarchie, représente un titre beaucoup, beaucoup moins important.
 
 Exemple :
+
 ``` html
 <h1>Titre de niveau 1 (important)</h1>
 <h6> Titre de niveau 6 (beaucoup, beaucoup moins important)</h6>
@@ -76,12 +77,12 @@ Pour accéder à l’inspecteur d’élément, il suffit de faire un clic droit 
 
 Sur Google Chrome, voici à quoi ressemble l’inspecteur d’éléments :
 
-![Inspecteur d'éléments](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image2.png)
+![Inspecteur d'éléments](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image2.png)
 
 L'inspecteur donne des informations détaillées sur l'élément actuellement sélectionné. Le bouton “Sélectionner un élément” permet de sélectionner un élément à inspecter :
 
-![Inspecteur d'éléments](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image3.png)
+![Inspecteur d'éléments](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image3.png)
 
 Le volet style permet de consulter le code CSS appliqué à un élément. Le CSS est le langage permettant d’appliquer du style à une page web. Ce langage est abordé dans un autre cours. 
 
-![Onglet Style](https://github.com/Microleadoff/content/blob/master/lang/fr/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image1.png)
+![Onglet Style](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/HTML/courses/0020%20-%20Bases/images/image1.png)

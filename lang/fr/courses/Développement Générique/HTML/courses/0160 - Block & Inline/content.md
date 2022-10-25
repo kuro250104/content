@@ -41,7 +41,7 @@ Exemple :
 </body>
 ```
 
-## L'élément <div>
+## L'élément ```<div>```
 
 ```<div></div>``` est utilisé comme conteneur pour d'autres éléments HTML. Cela signifie que ces balises entourent d’autres éléments HTML. Ainsi, toute la ```<div>``` sera affichée en **bloc**. 
 
@@ -59,7 +59,7 @@ Exemple :
 </div>
 ```
 
-## L'élément <span>
+## L'élément ```<span>```
 
 L'élément ```<span></span>``` est un élément utilisé, en général, pour marquer un mot ou un bout de phrase au milieu d’un paragraphe. C’est un élément de type **inline**, permettant donc de faire continuer la partie marquée sur la ligne en cours. 
 
