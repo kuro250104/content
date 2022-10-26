@@ -15,7 +15,7 @@ Voici la définition de chacune des “boîtes” :
 
 Ainsi qu’une image permettant de comprendre visuellement ce concept :
 
-![Représentation du modèle de boite en CSS](images/image1.jpg)
+![Représentation du modèle de boite en CSS](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/CSS/courses/0100%20-%20Mod%C3%A8le%20de%20boite/images/image1.jpg)
 
 Le modèle de boîte permet d’ajouter une bordure autour d’un ou plusieurs éléments HTML, et d’espacer ces éléments entre eux.
 
