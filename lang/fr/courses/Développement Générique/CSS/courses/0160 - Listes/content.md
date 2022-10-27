@@ -38,3 +38,57 @@ ul.a {
 
 ## Utiliser une image comme type de puce
 
+Afin de correspondre au design d’un site, le CSS permet également de faire précéder les items d’une liste d’une image. Pour cela, il faut utiliser la propriété ```list-style-image```. 
+
+Cette propriété reçoit en valeur l’URL de l’image à utiliser. 
+
+Exemple :
+
+```css
+ul {
+	list-style-image : url('marker.gif'); /* Les items de la liste non-ordonnée sont précédés d'une image */
+}
+```
+
+## Positionner la puce 
+
+Le CSS permet de positionner le texte en fonction de la puce. Pour cela, le CSS met à disposition la propriété ```list-style-position```.
+
+Cette propriété reçoit une des deux valeurs suivantes :
+
+- ```outside``` : la puce sera positionnée à l’extérieur (*outside*, en anglais) de la liste. Avec cette valeur, le texte sera aligné verticalement.
+- ```inside``` : la puce sera positionnée à l’intérieur (*inside*, en anglais) de la liste. Si la propriété reçoit cette valeur, le texte ne sera pas aligné verticalement. Il y aura un effet de décalage (la puce sera décalée vers la droite et le texte, lorsqu’il est multiligne, est aligné à gauche. Cela a un effet “tabulation”.)
+
+Exemple :
+
+```css
+ul {
+	list-style-type: circle; 
+	list-style-position: outside;
+}
+
+ol {
+	list-style-type : upper-roman;
+	list-style-position: inside;
+}
+```
+
+## Propriété raccourcie
+
+Afin de rendre le code plus lisible et de gagner du temps, le langage CSS propose une propriété raccourcie, permettant de styliser les puces en une seule ligne. Cette propriété raccourcie est ```list-style```.
+
+Cette propriété reçoit les différentes propriétés évoquées dans les points précédents, dans l’ordre suivant :
+
+- ```list-style-type```
+- ```list-style-position```
+- ```list-style-image```
+
+Si l’une des propriétés ci-dessus n’est pas passée en valeur, le navigateur y ajoutera la valeur par défaut. 
+
+Exemple :
+
+```css
+ul {
+	list-style: disc, inside; /* Ici, la valeur de list-style-image n'est pas spécifiée */
+}
+```
