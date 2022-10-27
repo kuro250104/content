@@ -8,7 +8,7 @@ Afin de remédier à ce problème, le langage CSS permet de spécifier une large
 
 __Remarque__ : La valeur ```auto``` est importante pour les marges extérieures gauches et droites, mais pas pour celles supérieures et inférieures.
 
-![Représentation du centrage d'un élément HTML grâce à l'utilisation de max-width et margin: auto](images/image1.jpg)
+![Représentation du centrage d'un élément HTML grâce à l'utilisation de max-width et margin: auto](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/CSS/courses/0190%20-%20Largeur%20maximale/images/image1.jpg)
 
 Exemple :
 
