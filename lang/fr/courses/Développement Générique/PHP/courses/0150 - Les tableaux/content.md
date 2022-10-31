@@ -13,7 +13,9 @@ Un tableau est un élément qui est contenu dans une variable. Pour le déclarer
 ``` php
 # méthode 1
 $tableau : array();
+```
 
+``` php
 # méthode 2
 $tableau = [ ];
 ```
