@@ -1,6 +1,6 @@
 Une majorité d'Internet utilise une suite de protocoles appelée la suite de protocoles Internet, également connue sous le nom de suite de protocoles **TCP/IP**. Cette suite est une combinaison de protocoles qui englobe un certain nombre de protocoles différents pour des objectifs et des besoins différents. Comme les deux principaux protocoles de cette suite sont **TCP** (*Transmission Control Protocol*) et **IP** (*Internet Protocol*), elle est communément appelée suite de protocoles **TCP/IP**. Cette suite de protocoles possède son propre modèle de référence qu'elle suit sur Internet. Contrairement au modèle OSI, ce modèle de protocoles contient moins de couches.
 
-![xx](images/image1.png)
+![Comparaison entre le modèle OSI et le modèle TCP/IP](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/R%C3%A9seaux/Protocoles%20r%C3%A9seaux/IPV4/courses/0030%20-%20Mod%C3%A8le%20TCP%20IP/images/image1.png)
 
 Ce modèle est indifférent à l'implémentation matérielle réelle, c'est-à-dire à la couche physique du modèle OSI. C'est pourquoi ce modèle peut être mis en œuvre sur presque toutes les technologies sous-jacentes. Les couches Transport et Internet correspondent aux mêmes couches homologues. Les trois couches supérieures du modèle OSI sont comprimées ensemble dans la seule couche Application du modèle TCP/IP.
 
