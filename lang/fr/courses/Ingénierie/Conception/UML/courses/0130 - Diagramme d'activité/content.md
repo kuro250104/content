@@ -189,4 +189,4 @@ Ayant opté pour l’utilisation d’acteurs au sein de notre diagramme d’acti
 
 #### Réalisation du diagramme d’activités
 
-![Diagramme d'activité représentant le déroulé présenté précédemment](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Conception/UML/courses/0130%20-%20Diagramme%20d'activit%C3%A9/images/image10.png)
+![Diagramme d'activité représentant le déroulé présenté précédemment](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Conception/UML/courses/0130%20-%20Diagramme%20d'activit%C3%A9/images/image10.jpg)
