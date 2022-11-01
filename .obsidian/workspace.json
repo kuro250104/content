@@ -1,0 +1,138 @@
+{
+  "main": {
+    "id": "3a08cb54c7265d6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8691b72c620f4afe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "418192b7000fcd16",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "aa5198e74dca6d80",
+    "type": "split",
+    "children": [
+      {
+        "id": "691d31f5271b3c1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "147c441efe17a695",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "21ec228b0927fad0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d0b2c1342cba3ce6",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 433.5
+  },
+  "right": {
+    "id": "56eeaca05d455783",
+    "type": "split",
+    "children": [
+      {
+        "id": "88ace10501854ef9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c654201e4ccf64d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1293138ecfc66a92",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "649ae8eef2592de3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fa8db6f1e0196631",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "418192b7000fcd16",
+  "lastOpenFiles": [
+    "lang/fr/courses/Réseaux/Protocoles réseaux/IPV4/courses/0070 - Sous-réseaux/content.md",
+    "2022-11-01.md",
+    "lang/fr/courses/Réseaux/Protocoles réseaux/IPV4/courses/0050 - Adressage/content.md",
+    "lang/fr/courses/Réseaux/Protocoles réseaux/IPV4/courses/0050 - Adressage/images/image1.png"
+  ]
+}
