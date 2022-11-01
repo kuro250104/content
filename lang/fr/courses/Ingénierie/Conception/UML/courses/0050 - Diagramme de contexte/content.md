@@ -18,6 +18,7 @@ Afin de relier un acteur à la “boîte noire”, il suffit de le lier à cette
 
 ## Formes et symboles
 
+| --- | --- |
 | ![représentation d'un acteur](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Conception/UML/courses/0050%20-%20Diagramme%20de%20contexte/images/image6.png) | Acteur |
 | ![représentation du système dans sa globalité](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Conception/UML/courses/0050%20-%20Diagramme%20de%20contexte/images/image2.png) | “boîte noire” représentant le système dans sa globalité |
 | ![lien d'interaction](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Conception/UML/courses/0050%20-%20Diagramme%20de%20contexte/images/image7.png) | lien symbolisant une interaction entre un acteur et la boite noire |
