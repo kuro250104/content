@@ -16,7 +16,7 @@ __Remarque__ : HTTP/1.0 utilise une nouvelle connexion pour chaque échange de d
 
 Le diagramme suivant montre l'architecture de base d'une application Web et indique où se situe le protocole HTTP :
 
-![architecture de base d'une application Web](images/image1.jpg)
+![architecture de base d'une application Web](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/R%C3%A9seaux/Protocoles%20r%C3%A9seaux/HTTP/courses/0010%20-%20Introduction/images/image1.jpg)
 
 Le protocole HTTP est un protocole de demande/réponse basé sur l'architecture client/serveur où les navigateurs web, les robots et les moteurs de recherche, etc. agissent comme des clients HTTP, et le serveur web comme un serveur.
 

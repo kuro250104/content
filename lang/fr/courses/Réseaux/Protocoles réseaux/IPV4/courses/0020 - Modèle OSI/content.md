@@ -1,0 +1,17 @@
+L'International Standard Organization dispose d'un modèle bien défini pour les systèmes de communication, connu sous le nom d'Open System Interconnection, ou modèle OSI. Ce modèle en couches est une vue conceptualisée de la manière dont un système doit communiquer avec un autre, en utilisant divers protocoles définis dans chaque couche. En outre, chaque couche correspond à une partie bien définie du système de communication. Par exemple, la couche physique définit tous les composants de nature physique, c'est-à-dire les fils, les fréquences, les codes d'impulsion, la transmission de tension, etc. d'un système de communication.
+
+Le modèle OSI comporte les sept couches suivantes :
+
+- **Couche d'application (couche 7)** - C'est là que se trouve l'application de l'utilisateur qui doit transférer des données entre ou parmi les hôtes. Par exemple : HTTP, application de transfert de fichiers (FTP) et courrier électronique, etc.
+- **Couche de présentation (couche 6)** - Cette couche permet de comprendre la représentation des données sous une forme sur un hôte vers d'autres hôtes dans leur représentation native. Les données de l'expéditeur sont converties en données sur le fil (format standard général) et, du côté du récepteur, elles sont converties en représentation native du récepteur.
+- **Couche session (couche 5)** - Cette couche fournit des capacités de gestion de session entre les hôtes. Par exemple, si un hôte a besoin d'une vérification de mot de passe pour accéder et si les informations d'identification sont fournies, la vérification du mot de passe ne se reproduira pas pour cette session. Cette couche peut aider à la synchronisation, au contrôle du dialogue et à la gestion des opérations critiques (par exemple, une transaction bancaire en ligne).
+- **Couche de transport (couche 4)** - Cette couche assure la transmission des données de bout en bout entre les hôtes. Cette couche prend les données de la couche précédente et les décompose en unités plus petites appelées segments, puis les transmet à la couche réseau pour la transmission.
+- **Couche réseau (couche 3)** - Cette couche permet d'identifier de manière unique les hôtes au-delà des sous-réseaux et définit le chemin que les paquets suivront ou seront acheminés pour atteindre leur destination.
+- **Couche liaison de données (couche 2)** - Cette couche prend les données de transmission brutes (signaux, impulsions, etc.) de la couche physique et crée des trames de données, qu'elle envoie à la couche supérieure et vice versa. Cette couche vérifie également toute erreur de transmission et la trie en conséquence.
+- **Couche physique (couche 1)** - Cette couche traite de la technologie matérielle et du mécanisme de communication proprement dit, comme la signalisation, la tension, le type et la longueur du câble, etc.
+
+## Couche réseau
+
+La couche réseau est responsable du transport des données d'un hôte à un autre. Elle fournit les moyens d'attribuer des adresses logiques aux hôtes et de les identifier de manière unique à l'aide de ces adresses. La couche réseau prend les unités de données de la couche transport et les découpe en unités plus petites appelées paquets de données.
+
+La couche réseau définit le chemin de données que les paquets doivent suivre pour atteindre leur destination. Les routeurs travaillent sur cette couche et fournissent un mécanisme pour acheminer les données vers leur destination.
