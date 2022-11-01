@@ -1,11 +1,12 @@
 ## Durée approximative
 
-2 jours
+5 jours
 
 ## Prérequis
 
 - PHP : niveau 7
 - HTML : niveau 8
+- MySQL : niveau 6
 
 ## Énoncé
 

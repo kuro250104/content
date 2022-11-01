@@ -1,6 +1,6 @@
 Dans le cours concernant les bases de la création d’un formulaire, l’élément input a été évoqué en détail. Cependant, il existe bien d’autres éléments pouvant composer un formulaire.
 
-## L'élément <select>
+## L'élément select
 
 L’élément ```<select></select>``` permet de créer une liste déroulante. En général, cet élément est utilisé lorsqu’un grand choix d’options est possible. 
 
