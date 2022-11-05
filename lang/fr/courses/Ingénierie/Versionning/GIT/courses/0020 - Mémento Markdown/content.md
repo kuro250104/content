@@ -1,5 +1,6 @@
 ## Titres
 
+| **Markdown** | **Description** |
 | --- | --- |
 | ```# titre 1``` | Titre de niveau 1 |
 | ```## titre 2``` | Titre de niveau 2 |
@@ -7,7 +8,6 @@
 | ```#### titre 4``` | Titre de niveau 4 |
 | ```##### titre 5``` | Titre de niveau 5 |
 | ```###### titre 6``` | Titre de niveau 6 |
-| --- | --- |
 
 ## Citations
 
