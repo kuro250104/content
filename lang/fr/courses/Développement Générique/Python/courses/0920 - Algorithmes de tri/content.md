@@ -15,17 +15,17 @@ Il s'agit d'un algorithme basé sur la comparaison dans lequel chaque paire d'é
 ### Exemple
 
 ```python
-def bubblesort(list):
+def bubblesort(custom_list):
     # Swap the elements to arrange in order
-    for iter_num in range(len(list)-1,0,-1):
+    for iter_num in range(len(custom_list)-1,0,-1):
         for idx in range(iter_num):
-            if list[idx]>list[idx+1]:
-                temp = list[idx]
-                list[idx] = list[idx+1]
-                list[idx+1] = temp
-list = [19,2,31,45,6,11,121,27]
-bubblesort(list)
-print(list)
+            if custom_list[idx]>custom_list[idx+1]:
+                temp = custom_list[idx]
+                custom_list[idx] = custom_list[idx+1]
+                custom_list[idx+1] = temp
+custom_list = [19,2,31,45,6,11,121,27]
+bubblesort(custom_list)
+print(custom_list)
 ```
 
 ### Réponse
