@@ -1,6 +1,6 @@
 Les formulaires sont devenus omniprésents sur les sites web, que ce soit pour l’inscription à une newsletter, un formulaire de contact, un formulaire d’inscription, un livre d’or, etc. Ils permettent de renforcer les interactions avec les utilisateurs. 
 
-## L'élément <form>
+## L'élément form
 
 L’élément ```<form></form>``` est utilisé pour indiquer au navigateur que tout ce qui se trouve entre ces balises est en rapport avec le formulaire. La balise ouvrante délimite donc le début d’un formulaire, et l’ensemble du contenu jusqu’à la balise fermante sera réputé concerner le formulaire.
 
@@ -14,7 +14,7 @@ Exemple :
 </form>
 ```
 
-## L'élément <input>
+## L'élément input
 
 L’élément ```<input></input>``` (littéralement *saisie*, en anglais), est utilisé afin de permettre à l’utilisateur de saisir des données. Cet élément est obligatoirement accompagné de l’attribut type. En fonction de la valeur passée à celui-ci, l’élément ```<input>``` s’affichera de plusieurs manières différentes. 
 
@@ -42,7 +42,7 @@ Exemple :
 
 L’exemple ci-dessus affiche un champ de texte portant le nom “métier”.
 
-## L'élément <label>
+## L'élément label
 
 ```<label></label>``` (*étiquette*, en anglais), permet de définir une “légende” pour chaque élément d’un formulaire. 
 
