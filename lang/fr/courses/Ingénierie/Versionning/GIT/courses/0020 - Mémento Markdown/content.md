@@ -52,6 +52,7 @@
 ## Divers
 
 | **Markdown** | **Description** |
+| --- | --- |
 | ```<http://www.example.fr>``` | Transforme automatiquement le texte entre chevrons en lien |
 | ```<adresse.mail@gmail.com>``` | Transforme automatiquement le texte en lien vers une adresse mail, en l’encodant. |
 | ``` \ ``` | Le backslash permet d’échapper des caractères spéciaux, parmi : ``` \ ` * _ {} [] () # + - . !``` |
