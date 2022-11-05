@@ -16,6 +16,11 @@
 | ```> ceci est une citation``` | Citation sur une seule ligne |
 | ```> ceci est une citation```<br>```> sur plusieurs lignes``` | Citation sur plusieurs lignes |
 
+## Listes
 
-
+| **Markdown** | **Description** |
+| --- | --- |
+| ```* item 1```<br>```* item 2``` | Liste à puce |
+| --- | --- |
+| --- | --- |
 | --- | --- |
