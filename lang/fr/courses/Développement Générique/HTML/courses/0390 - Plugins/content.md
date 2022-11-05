@@ -8,7 +8,7 @@ Avec le langage HTML, les plugins ont été créés afin de résoudre plusieurs 
 - Rechercher des virus
 - Vérifier un identifiant bancaire
 
-## L'élément <object>
+## L'élément object
 
 L'élément ```<object></object>``` est pris en charge par tous les navigateurs. Il représente une source externe. Cette source externe peut être interprétée comme une image ou une ressource à traiter comme un plugin.
 
@@ -22,7 +22,7 @@ Exemple :
 <object type="application/pdf" data="fichier/lecteur.pdf"></object>
 ```
 
-## L'élément <embed>
+## L'élément embed
 
 Cet élément a exactement la même fonction et la même utilité que l’élément précédent : inclure un objet ou un plugin. 
 
