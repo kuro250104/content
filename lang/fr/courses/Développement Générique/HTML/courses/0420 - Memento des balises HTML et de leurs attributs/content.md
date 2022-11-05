@@ -1,5 +1,8 @@
 ## Les balises de premier niveau
 
+
+| **Balise** | **Description** |
+| --- | --- |
 | ```<!DOCTYPE>``` | Balise de déclaration du type du document permettant au navigateur d’interpréter correctement la version déclarée |
 | ```<html></html>``` | Balise de définition d’un document HTML |
 | ```<head></head>``` | Balise de définition du bloc d’en-tête de la page |
@@ -7,6 +10,8 @@
 
 ## Les balises d’en-tête
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```<link />``` | Balise de liaison d’une ressource externe au document HTML |
 | ```<meta />``` | Balise de métadonnées |
 | ```<script></script>``` | Balise d’inclusion de script |
@@ -16,6 +21,8 @@
 
 ## Les balises structurelles de texte
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```<abbr></abbr>``` | Abréviation |
 | ```<blockquote></blockquote>``` | Citation longue |
 | ```<cite></cite>``` | Citation d’un titre d’oeuvre ou d’évènement |
@@ -53,6 +60,8 @@
 
 ## Les balises de liste
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```<ul></ul>``` | Balise de liste à puces |
 | ```<ol></ol>``` | Balise de liste numérotée |
 | ```<li></li>``` | Élément d’une liste ```<ul>``` ou ```<ol>``` |
@@ -62,6 +71,8 @@
 
 ## Les balises de tableau
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```<table></table>``` | Balise de déclaration d’un tableau |
 | ```<thead></thead>``` | Balise de déclaration de l’en-tête d’un tableau |
 | ```<tbody></tbody>``` | Balise de déclaration du corps d’un tableau |
@@ -73,6 +84,8 @@
 
 ## Les balises de formulaire
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```<form></form>``` | Balise de formulaire |
 | ```<fieldset></fieldset>``` | Balise de regroupement de champs |
 | ```<legend></legend>``` | Balise de titre d’un groupe de champs |
@@ -85,6 +98,8 @@
 
 ## Les balises de section
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```<header></header>``` | Balise d’en-tête du document ou d’une partie du document |
 | ```<nav></nav>``` | Balise contenant les principaux liens représentant le menu de navigation |
 | ```<footer></footer>``` | Balise de pied de page du document ou d’une partie du document |
@@ -94,11 +109,15 @@
 
 ## Les balises génériques
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```<span></span>``` | Balise de type inline |
 | ```<div></div>``` | Balise de type block |
 
 ## Les attributs génériques
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```accesskey``` | Attribut permettant de définir un raccourci clavier pour activer ou donner le focus à un élément |
 | ```class``` | Attribut permettant d’attacher une ou plusieurs classes à l’élément HTML |
 | ```contenteditable``` | Attribut permettant d’indiquer si le contenu est éditable |
@@ -113,6 +132,8 @@
 
 ## Les attributs pour tableaux
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```border``` | Définit l’épaisseur de la bordure du tableau |
 | ```cellspacing``` | Définit l’espace entre les cellules du tableau |
 | ```cellpadding``` | Définit les marges intérieures des cellules d’un tableau |
@@ -127,6 +148,8 @@
 
 ## Les attributs des balises d’image
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```src``` | Définit le chemin vers le fichier de l’image |
 | ```width``` | Définit la largeur de l’image |
 | ```height``` | Définit la hauteur de l’image |
@@ -136,6 +159,8 @@
 
 ## Les attributs des balises de lien
 
+| **Balise** | **Description** |
+| --- | --- |
 | ```alt``` | Définit un contenu alternatif à afficher lorsque le lien ne peut pas être affiché |
 | ```href``` | Définit l’URL du lien |
 | ```target=”_blank”``` | Force le navigateur à ouvrir le lien dans un nouvel onglet ou bien une nouvelle fenêtre |
