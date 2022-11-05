@@ -11,6 +11,8 @@
 
 ## Citations
 
+| **Markdown** | **Description** |
+| --- | --- |
 | ```> ceci est une citation``` | Citation sur une seule ligne |
 | ```> ceci est une citation```<br>```> sur plusieurs lignes``` | Citation sur plusieurs lignes |
 
