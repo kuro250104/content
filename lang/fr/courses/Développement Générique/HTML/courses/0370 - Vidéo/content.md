@@ -2,7 +2,7 @@ S’il est un format d’élément multimédia devenu très populaire ces 10 der
 
 Le langage HTML permet donc aux développeurs web d’ajouter des vidéos sur les pages web.
 
-## L'élément <video>
+## L'élément video
 
 Pour insérer une vidéo dans une page web - si cette vidéo ne provient pas directement d’une source externe telle que YouTube -, l’élément ```<video></video>``` doit être utilisé.
 

@@ -43,7 +43,7 @@ Exemple :
 </select>
 ```
 
-## L'élément <textarea>
+## L'élément textarea
 
 L’élément ```<textarea></textarea>``` défini une zone de texte multilignes. Cet élément est généralement utilisé afin que l’utilisateur puisse laisser un message ou un commentaire sous un article, par exemple.
 
@@ -58,7 +58,7 @@ Exemple :
 </textarea>
 ```
 
-## L'élément <button>
+## L'élément button
 
 L'élément ```<button></button>``` définit un bouton cliquable :
 
@@ -69,7 +69,7 @@ Exemple :
 <button type="button">Cliquer !</button>
 ```
 
-## Les éléments <fieldset> et <legend>
+## Les éléments fieldset et legend
 
 L’élément ```<fieldset></fieldset>``` permet d’organiser un formulaire en regroupant ensemble les champs qui ont un rapport entre eux. Par exemple, les champs concernant l’identité de l’utilisateur (nom, prénom, date de naissance, etc…), les champs concernant son adresse postale (rue, numéro, code postale, ville, pays, etc…) ou encore ses informations de contact (adresse mail, téléphone, etc...).
 
@@ -92,7 +92,7 @@ De manière générale, les navigateurs entourent les ```<fieldset>``` d’une b
 </form>
 ```
 
-## L'élément <datalist>
+## L'élément datalist
 
 L’élément ```<datalist></datalist>``` est particulier en ceci qu’il représente à la fois un champ de texte et un liste déroulante. Cependant, le principe est simple. Lorsque l’utilisateur va placer le curseur dans le champ texte (créé par ```<datalist>```), une liste d’options prédéfinies va s’afficher juste en dessous. 
 

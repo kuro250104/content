@@ -1,6 +1,6 @@
 SVG signifie en anglais *Scalable Vector Graphics* (graphiques vectoriels évolutifs). Cet élément est généralement utilisé en combinaison avec le langage CSS afin de créer des animations sur des images.
 
-## L'élément HTML <svg>
+## L'élément HTML svg
 
 Cet élément est utilisé en tant que conteneur pour les images SVG.
 
