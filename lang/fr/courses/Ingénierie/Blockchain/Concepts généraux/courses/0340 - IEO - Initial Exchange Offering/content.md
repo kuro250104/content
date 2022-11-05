@@ -1,0 +1,9 @@
+Un Initial Exchange Offering, communément appelé IEO, est un événement de collecte de fonds qui est administré par une bourse. Contrairement à une Initial Coin Offering (ICO) où l'équipe du projet effectue elle-même la collecte de fonds, une Initial Exchange Offering signifie que la collecte de fonds sera effectuée sur la plateforme de collecte de fonds d'une bourse bien connue, telle que Binance Launchpad, où les utilisateurs peuvent acheter des jetons avec des fonds provenant directement de leur propre portefeuille de bourse. 
+
+La fièvre des ICO en 2017 s'est avérée être un environnement à très haut risque pour les personnes souhaitant participer à la libération de jetons de nouveaux projets blockchain, qu'il s'agisse d'envoyer accidentellement des fonds au mauvais portefeuille ou que certaines équipes de projet prennent la fuite avec des fonds.
+
+## Quels sont les avantages d'un IEO ?
+
+Pour un utilisateur, il est facile de participer à une IEO car il n'a pas besoin de gérer des transactions sur la chaîne avec différents portefeuilles sur différentes blockchains. Au lieu de cela, l'utilisateur n'a besoin que d'un compte sur la bourse et de quelques fonds sur son compte et il peut participer entièrement par l'intermédiaire de l'interface du site Web de confiance. De plus, la bourse met sa réputation au service des projets sur sa plateforme, offrant ainsi un degré de confiance plus élevé derrière le projet.
+
+Pour un projet qui cherche à lever des fonds, un IEO offre la promesse d'une base d'utilisateurs immédiate qui peut voir son produit, et selon la taille de l'audience de l'échange, cela pourrait signifier que le projet peut réduire ses entonnoirs de marketing externes pour la collecte de fonds, ce qui lui permet de se concentrer uniquement sur le développement de son produit.

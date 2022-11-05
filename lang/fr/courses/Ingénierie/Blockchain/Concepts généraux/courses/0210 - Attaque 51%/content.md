@@ -1,0 +1,35 @@
+Avant de se plonger dans l'attaque des 51 %, il est crucial de bien comprendre le minage et les systèmes basés sur la blockchain.
+
+L'un des principaux atouts du bitcoin et de sa technologie blockchain sous-jacente est la nature distribuée de la construction et de la vérification des données. Le travail décentralisé des nœuds garantit que les règles du protocole sont respectées et que tous les participants au réseau sont d'accord sur l'état actuel de la blockchain. Cela signifie que la majorité des nœuds doivent régulièrement parvenir à un consensus en ce qui concerne le processus de minage, la version du logiciel utilisée, la validité des transactions, etc.
+
+L'algorithme de consensus Bitcoin (preuve de travail) garantit que les mineurs ne peuvent valider un nouveau bloc de transactions que si les nœuds du réseau conviennent collectivement que le hachage du bloc fourni par le mineur est exact (c'est-à-dire que le hachage du bloc prouve que le mineur a fait suffisamment de travail et a trouvé une solution valide pour le problème de ce bloc). 
+
+L'infrastructure blockchain - en tant que grand livre décentralisé et système distribué - empêche toute entité centralisée d'utiliser le réseau à ses propres fins, ce qui explique l'absence d'autorité unique sur le réseau Bitcoin.
+
+Étant donné que le processus de minage (dans les systèmes basés sur le PoW) implique l'investissement d'énormes quantités d'électricité et de ressources informatiques, la performance d'un mineur est basée sur la quantité de puissance de calcul dont il dispose, ce qui est généralement appelé puissance de hachage ou taux de hachage. Il existe de nombreux nœuds de minage à différents endroits et ils sont en concurrence pour être le prochain à trouver un bloc de hachage valide et être récompensé par des bitcoins nouvellement générés.
+
+Dans un tel contexte, la puissance minière est répartie sur différents nœuds à travers le monde, ce qui signifie que le taux de hachage n'est pas entre les mains d'une seule entité. Du moins, il n'est pas censé l'être.
+
+Mais que se passe-t-il lorsque le taux de hachage n'est plus suffisamment bien réparti ? Que se passe-t-il si, par exemple, une seule entité ou organisation est capable d'obtenir plus de 50 % de la puissance de hachage ? L'une des conséquences possibles de cette situation est ce que nous appelons une attaque à 51 %, également connue sous le nom d'attaque majoritaire.
+
+## Qu'est-ce qu'une attaque à 51% ?
+
+Une attaque à 51 % est une attaque potentielle sur un réseau de blockchain, où une seule entité ou organisation est en mesure de contrôler la majorité du taux de hachage, ce qui peut provoquer une perturbation du réseau. Dans un tel scénario, l'attaquant disposerait d'une puissance d'extraction suffisante pour exclure ou modifier intentionnellement l'ordre des transactions. Il pourrait également annuler les transactions qu'il a effectuées pendant qu'il contrôlait le réseau, ce qui entraînerait un problème de double dépense.
+
+Une attaque majoritaire réussie permettrait également à l'attaquant d'empêcher la confirmation de certaines ou de toutes les transactions (déni de service de transaction) ou d'empêcher certains ou tous les autres mineurs de miner, ce qui entraînerait ce que l'on appelle un monopole minier.
+
+En revanche, une attaque majoritaire ne permettrait pas à l'attaquant d'annuler les transactions des autres utilisateurs ni d'empêcher la création de transactions et leur diffusion sur le réseau. Modifier la récompense du bloc, créer des pièces à partir de rien ou voler des pièces qui n'ont jamais appartenu à l'attaquant sont également considérés comme des événements impossibles.
+
+## Quelle est la probabilité d'une attaque à 51% ? 
+
+Comme une blockchain est maintenue par un réseau distribué de nœuds, tous les participants coopèrent pour parvenir à un consensus. C'est l'une des raisons pour lesquelles elles ont tendance à être hautement sécurisées. Plus le réseau est grand, plus la protection contre les attaques et la corruption des données est forte.
+
+En ce qui concerne les blockchains Proof of Work, plus le taux de hachage d'un mineur est élevé, plus les chances de trouver une solution valable pour le prochain bloc sont grandes. Cela est vrai car le minage implique une myriade de tentatives de hachage et plus de puissance de calcul signifie plus d'essais par seconde. Plusieurs mineurs de la première heure ont rejoint le réseau Bitcoin pour contribuer à sa croissance et à sa sécurité. Avec l'augmentation du prix du bitcoin en tant que monnaie, de nombreux nouveaux mineurs sont entrés dans le système afin de se disputer les récompenses des blocs (actuellement fixées à 12,5 BTC par bloc). Ce scénario concurrentiel est l'une des raisons pour lesquelles le bitcoin est sûr. Les mineurs ne sont pas incités à investir de grandes quantités de ressources si ce n'est pour agir honnêtement et s'efforcer de recevoir la récompense du bloc.
+
+Par conséquent, une attaque de 51 % sur le bitcoin est plutôt improbable en raison de l'ampleur du réseau. Une fois qu'une blockchain est suffisamment grande, la probabilité qu'une seule personne ou un seul groupe obtienne suffisamment de puissance de calcul pour écraser tous les autres participants tombe rapidement à des niveaux très bas.
+
+En outre, il est de plus en plus difficile de modifier les blocs précédemment confirmés à mesure que la chaîne grandit, car les blocs sont tous liés par des preuves cryptographiques. Pour la même raison, plus un bloc a de confirmations, plus les coûts de modification ou d'annulation des transactions qu'il contient sont élevés. Ainsi, une attaque réussie ne pourrait probablement modifier que les transactions de quelques blocs récents, pendant une courte période de temps.
+
+Pour aller plus loin, imaginons un scénario dans lequel une entité malveillante n'est pas motivée par le profit et décide d'attaquer le réseau Bitcoin uniquement pour le détruire, quel qu'en soit le coût. Même si l'attaquant parvient à perturber le réseau, le logiciel et le protocole Bitcoin seraient rapidement modifiés et adaptés en réponse à cette attaque. Il faudrait pour cela que les autres nœuds du réseau parviennent à un consensus et acceptent ces modifications, mais cela se produirait probablement très rapidement dans une situation d'urgence. Le bitcoin est très résistant aux attaques et est considéré comme la crypto-monnaie la plus sûre et la plus fiable qui existe. 
+
+Bien qu'il soit assez difficile pour un attaquant d'obtenir plus de puissance de calcul que le reste du réseau Bitcoin, cela n'est pas si difficile à réaliser pour les crypto-monnaies plus petites. Par rapport au bitcoin, les altcoins ont une puissance de hachage relativement faible pour sécuriser leur blockchain. Suffisamment faible pour que des attaques à 51 % puissent réellement se produire. Parmi les exemples notables de crypto-monnaies qui ont été victimes d'attaques majoritaires, citons le Monacoin, le Bitcoin Gold et le ZenCash.
