@@ -20,7 +20,7 @@ Au clic sur l’une des 9 cases de la grille, l’application doit afficher la m
 
 Code de la page HTML :
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
 <head>
