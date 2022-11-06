@@ -4,9 +4,9 @@
 
 ## Prérequis
 
-- HTML niveau 8
-- CSS niveau 10
-- JS niveau 8
+- <a href="https://microlead.fr/echelles/html" title="Prérequis en HTML" target="_blank">HTML niveau 8</a>
+- <a href="https://microlead.fr/echelles/css" title="Prérequis en CSS" target="_blank">CSS niveau 10</a>
+- <a href="https://microlead.fr/echelles/javascript" title="Prérequis en JavaScript" target="_blank">JavaScript niveau 8</a>
 
 ## Énoncé
 
@@ -21,7 +21,7 @@ Ajouter un système de validation pour chaque champ du formulaire d’inscriptio
 
 ### Éléments donnés
 
-lien vers le dépôt : https://github.com/Microleadoff/Validation-de-formulaire-Javascript
+lien vers le dépôt : <a href="https://github.com/Microleadoff/Validation-de-formulaire-Javascript" title="lien vers le dépôt" target="_blank">https://github.com/Microleadoff/Validation-de-formulaire-Javascript</a>
 
 ### Contraintes
 

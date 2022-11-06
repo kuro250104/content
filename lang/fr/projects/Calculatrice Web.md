@@ -4,7 +4,7 @@
 
 ## Prérequis
 
-- JavaScript : niveau 4
+- <a href="https://microlead.fr/echelles/javascript" title="Prérequis en JavaScript" target="_blank">JavaScript niveau 4</a>
 
 ## Énoncé
 
@@ -52,7 +52,6 @@ Code de la page HTML :
     </section>
 </body>
 </html>
-
 ```
 
 ### Contraintes

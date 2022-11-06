@@ -4,9 +4,9 @@
 
 ## Prérequis
 
-- HTML niveau 8
-- CSS niveau 10
-- JS niveau 8
+- <a href="https://microlead.fr/echelles/html" title="Prérequis en HTML" target="_blank">HTML niveau 8</a>
+- <a href="https://microlead.fr/echelles/css" title="Prérequis en CSS" target="_blank">CSS niveau 10</a>
+- <a href="https://microlead.fr/echelles/javascript" title="Prérequis en JavaScript" target="_blank">JavaScript niveau 8</a>
 
 ## Énoncé
 
@@ -21,7 +21,7 @@ Réaliser une snackbar, lorsqu’un utilisateur clique sur le bouton, un message
 
 ### Éléments donnés
 
-lien vers le dépôt : https://github.com/Microleadoff/Snackbar-Javascript
+lien vers le dépôt : <a href="https://github.com/Microleadoff/Snackbar-Javascript" title="lien vers le dépôt" target="_blank">https://github.com/Microleadoff/Snackbar-Javascript</a>
 
 ### Contraintes
 

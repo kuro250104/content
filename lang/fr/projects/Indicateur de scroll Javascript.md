@@ -4,9 +4,9 @@
 
 ## Prérequis
 
-- HTML niveau 2
-- CSS niveau 10
-- JS niveau 6
+- <a href="https://microlead.fr/echelles/html" title="Prérequis en HTML" target="_blank">HTML niveau 2</a>
+- <a href="https://microlead.fr/echelles/css" title="Prérequis en CSS" target="_blank">CSS niveau 10</a>
+- <a href="https://microlead.fr/echelles/javascript" title="Prérequis en JavaScript" target="_blank">JavaScript niveau 6</a>
 
 ## Énoncé
 
@@ -20,7 +20,7 @@ Un indicateur de scroll est présent et fonctionnel
 
 ### Éléments donnés
 
-lien vers le dépôt : https://github.com/Microleadoff/Indicateur-de-scroll-Javascript
+lien vers le dépôt : <a href="https://github.com/Microleadoff/Indicateur-de-scroll-Javascript" title="lien vers le dépôt" target="_blank">https://github.com/Microleadoff/Indicateur-de-scroll-Javascript</a>
 
 ### Contraintes
 

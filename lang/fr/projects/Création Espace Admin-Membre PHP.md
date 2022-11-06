@@ -4,10 +4,10 @@
 
 ## Prérequis
 
-- HTML niveau 9
-- CSS niveau 9
-- PHP niveau 6
-- Mysql niveau 10
+- <a href="https://microlead.fr/echelles/html" title="Prérequis en HTML" target="_blank">HTML niveau 9</a>
+- <a href="https://microlead.fr/echelles/css" title="Prérequis en CSS" target="_blank">CSS niveau 9</a>
+- <a href="https://microlead.fr/echelles/php" title="Prérequis en PHP" target="_blank">PHP niveau 6</a>
+- <a href="https://microlead.fr/echelles/mysql" title="Prérequis en MySQL" target="_blank">MySQL niveau 10</a>
 
 ## Énoncé
 
@@ -26,7 +26,7 @@ Réaliser une page de login et d’administration qui permettra de gérer de mul
 
 ### Éléments donnés
 
-Espace admin est composé de 9 fichiers: 
+L'espace admin est composé de 9 fichiers :
 
 - Index.php
 - Connexion.php

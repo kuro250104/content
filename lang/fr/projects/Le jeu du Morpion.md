@@ -4,7 +4,7 @@
 
 ## Prérequis
 
-- JavaScript : niveau 5
+- <a href="https://microlead.fr/echelles/javascript" title="Prérequis en JavaScript" target="_blank">JavaScript niveau 5</a>
 
 ## Énoncé
 

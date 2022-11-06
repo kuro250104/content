@@ -4,8 +4,8 @@
 
 ## Prérequis
 
-- HTML niveau 9
-- CSS niveau 9
+- <a href="https://microlead.fr/echelles/html" title="Prérequis en HTML" target="_blank">HTML niveau 9</a>
+- <a href="https://microlead.fr/echelles/css" title="Prérequis en CSS" target="_blank">CSS niveau 9</a>
 
 ## Énoncé
 
@@ -15,7 +15,7 @@ Réalisez plusieurs intégrations statiques de style NFT.
 
 ### Éléments donnés
 
-L’ensemble des éléments dont vous avez besoin pour la réalisation de l’intégration sont disponible sur le repository GIT suivant : https://github.com/Microleadoff/Integration_statique-NFT
+L’ensemble des éléments dont vous avez besoin pour la réalisation de l’intégration sont disponible sur le repository GIT suivant : <a href="https://github.com/Microleadoff/Integration_statique-NFT" title="lien vers le dépôt" target="_blank">https://github.com/Microleadoff/Integration_statique-NFT</a>
 
 ### Contraintes
 
