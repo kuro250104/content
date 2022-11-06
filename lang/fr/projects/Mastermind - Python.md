@@ -40,7 +40,7 @@ Pour comparer chaque chiffre, il sera utile de transformer la chaîne fournie pa
 
 #### Astuce 2
 
-Pour générer un tableau à partir de la chaîne transmise par l’utilisateur, vous pouvez utiliser la commande « tableau = [int(x) for x in str(chaîneDeChiffres)] »
+Pour générer un tableau à partir de la chaîne transmise par l’utilisateur, vous pouvez utiliser la commande « tableau = [int(x) for x in str(chaineDeChiffres)] »
 
 #### Astuce 3
 
