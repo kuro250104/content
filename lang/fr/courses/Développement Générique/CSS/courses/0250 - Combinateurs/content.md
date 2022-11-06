@@ -65,4 +65,4 @@ div ~p h1 { /* Tous les paragraphes frères de la div */
 }
 ```
 
-Dans l’exemple ci-dessus, tous les paragraphes contenus dans la ```div``` (qui est l’élément parent) sont concernés. En effet, ils ont tous le même élément parent - l’élément ```<div>``` .
+Dans l’exemple ci-dessus, tous les paragraphes contenus dans la ```div``` (qui est l’élément parent) sont concernés. En effet, ils ont tous le même élément parent : l'élément ```<div>```.
