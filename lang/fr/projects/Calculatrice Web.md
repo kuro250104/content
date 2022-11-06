@@ -22,7 +22,7 @@ Le calcul doit s’opérer au clic d’un bouton et le résultat doit s’affich
 
 Code de la page HTML :
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,7 +47,7 @@ Code de la page HTML :
     <section>
         <h2>Résultat</h2>
         <div id="resultat">
-                        
+
         </div>
     </section>
 </body>
