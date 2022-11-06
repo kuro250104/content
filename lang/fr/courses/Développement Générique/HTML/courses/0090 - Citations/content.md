@@ -6,7 +6,7 @@ L’élément ```<blockquote></blockquote>``` indique le texte est une citation 
 
 Le HTML permet également d’utiliser l’attribut cite avec cette balise, afin d’indiquer la source de la citation. Par exemple :
 
-``` html
+```html
 <body>
     <!-- Bloc de citation sans l'attribut cite -->
     <blockquote>
@@ -20,7 +20,7 @@ Le HTML permet également d’utiliser l’attribut cite avec cette balise, afin
 </body>
 ```
 
-## L’élément <q>
+## L’élément q
 
 L’élément ```<q></q>``` (raccourci de *quote*, “citation” en anglais) indique le texte est une citation. Cet élément est utilisé pour les citations courtes, qui ne nécessitent pas de respecter les retours à la ligne. 
 
@@ -30,7 +30,7 @@ Avec cet élément aussi, l’attribut ```cite``` est utilisable afin de fournir
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Faire une citation en incise dans le paragraphe -->
     <p>Chaque fois que Kenny est tué, Stan dira
@@ -47,7 +47,7 @@ Exemple :
 
 Exemple :
 
-``` html
+```html
 <body>
     <p>Plus d'informations sont disponibles dans <cite>[ISO-0000].</cite></p>
 </body>
@@ -59,7 +59,7 @@ L’élément ```<abbr></abbr>``` est utile afin d’indiquer que le texte plac�
 
 Exemple :
 
-``` html
+```html
 <p>La ville de <abbr title="Toulouse">TLS</abbr> est belle.</p>
 ```
 
@@ -71,7 +71,7 @@ Le texte placé entre ```<address>``` et ```</address>``` est généralement aff
 
 Exemple :
 
-``` html
+```html
 <address>
 Écrit par John Doe.<br>
 Venez sur:<br>
@@ -91,6 +91,6 @@ La direction du texte est définie avec l’attribut dir, qui peut recevoir une 
 
 Exemple avec un texte allant de la droite vers la gauche :
 
-``` html
+```html
 <bdo dir="rtl">Le texte est écrit de droite vers la gauche</bdo>
 ```

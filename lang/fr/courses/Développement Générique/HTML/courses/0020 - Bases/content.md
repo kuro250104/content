@@ -14,7 +14,7 @@ Les titres, en HTML, sont structurés avec des balises ```<hn>```, “n” repr�
 
 Exemple :
 
-``` html
+```html
 <h1>Titre de niveau 1 (important)</h1>
 <h6> Titre de niveau 6 (beaucoup, beaucoup moins important)</h6>
 ```
@@ -24,7 +24,8 @@ Exemple :
 En HTML, les paragraphes sont définis avec la balise ```<p>```. Lorsque cette balise est fermée avec ```</p>```, un saut de ligne est automatiquement ajouté entre le paragraphe actuel et celui en dessous.
 
 Exemple :
-``` html
+
+```html
 <p>Ceci est un paragraphe</p>
 ```
 
@@ -39,12 +40,13 @@ Pour définir un lien en langage HTML, il faut utiliser la balise ```<a></a>```.
 
 Exemple avec un lien menant vers un autre site web :
 
-``` html
+```html
 <a href="www.google.com">Google</a>
 ```
 
 Exemple avec lien menant vers une autre page du site :
-``` html
+
+```html
 <a href="index.html">Accueil</a>
 ```
 
@@ -55,7 +57,8 @@ En HTML, les images sont définies avec la balise ```<img>```. Le chemin d’acc
 __Remarque__ : La balise ```<img>``` fait partie des exceptions, car elle **n’a pas de balise fermante**. Ainsi n’est-il pas possible d’écrire ```<img></img>```. De manière générale, un slash est ajouté à la fin de la balise.
 
 Exemple :
-``` html
+
+```html
 <img src="dossier/image.jpg" />
 ```
 
@@ -63,7 +66,7 @@ Par soucis d’accessibilité pour les personnes non-voyantes et pour les cas o�
 
 Exemple :
 
-``` html
+```html
 <img src="image.jpg" alt="logo" />
 ```
 

@@ -11,13 +11,13 @@ Un attribut ne contient qu’une seule valeur. Un mot, en général. Si plusieur
 
 La syntaxe d’un attribut est simple :
 
-``` html
+```html
 <element attribut="valeur-de-l-attribut">Contenu</element>
 ```
 
 Dans le cours précédent, des attributs ont déjà été utilisés avec des balises. Par exemple, pour ajouter une image au sein d’une page web, il faut utiliser le code HTML suivant :
 
-``` html
+```html
 <img src="logo.png" alt="logo" />
 ```
 
@@ -27,7 +27,7 @@ Dans cette balise, l’élément ```<img />``` est d’abord complété par l’
 
 Exemple :
 
-``` html
+```html
 <p style='color:blue'>Je suis un paragraphe</p>
 ```
 
@@ -37,7 +37,7 @@ Les attributs de largeur et de hauteur, *width* et *height* en anglais, permette
 
 Exemple :
 
-``` html
+```html
 <img src="logo.jpg" alt="logo" width="300px" height="200px">
 ```
 
@@ -49,7 +49,7 @@ Pour changer la couleur de la police d’écriture, par exemple, ou encore pour 
 
 Exemple : 
 
-``` html
+```html
 <p style="color:blue">Je suis un paragraphe</p>
 ```
 
@@ -63,7 +63,7 @@ Pour une page HTML en français, l’attribut ```lang``` reçoit la valeur ```fr
 
 Exemple :
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="fr">
 ...
@@ -72,7 +72,7 @@ Exemple :
 
 Afin d’encore plus améliorer le référencement d’un site web, il est également possible d’ajouter un “code pays” comme valeur à l’attribut lang. Ainsi, pour un site internet créé en france, l’attribut lang ressemble à ceci :
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="fr-FR">
 ...
@@ -87,7 +87,7 @@ Le langage HTML permet d’ajouter une info-bulle à afficher lorsque la souris 
 
 Exemple :
 
-``` html
+```html
 <a href="index.html" title="Revenir à la page d'accueil">Accueil</a>
 ```
 

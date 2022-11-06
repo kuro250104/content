@@ -23,12 +23,13 @@ Pour les balises orphelines, qui n’ont pas de balises fermantes, il est d’us
 
 Exemple d’une balise double :
 
-``` html
+```html
 <p>Je suis un paragraphe</p>
 ```
 
 Exemple d’une balise orpheline : 
-``` html
+
+```html
 <img src="photo.jpg" alt="logo" />
 ```
 
@@ -36,7 +37,7 @@ Ainsi, en ce qui concerne les balises standard (ou non orpheline), ne faut-il ja
 
 Voici un exemple complet :
 
-``` html
+```html
 <body>
 	<h1>Titre principal</h1>
 	<p>Je suis un paragraphe</p>

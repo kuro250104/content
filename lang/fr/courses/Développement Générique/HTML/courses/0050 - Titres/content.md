@@ -4,7 +4,7 @@ Les titres, en HTML, sont définis sur 6 niveaux. Cette notion est abordée dans
 
 Les titres (*headings*, en anglais), sont définis avec la double balise ```<hn></hn>```. Il existe 6 niveaux de titres, en HTML - le niveau 1 étant le plus important et le niveau 6 le moins important - et ces niveaux permettent d’organiser et de hiérarchiser les contenus.
 
-``` html
+```html
 <body>
     <!--Un titre très important-->
     <h1>Titre principal</h1>

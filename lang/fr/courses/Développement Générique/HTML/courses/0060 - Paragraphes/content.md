@@ -6,7 +6,7 @@ En HTML, un paragraphe est délimité par les balises ```<p></p>```. À chaque f
 
 Exemple :
 
-``` html
+```html
 <body>
 	<p>Ceci est un paragraphe</p>
 	<p>Ceci est un autre paragraphe</p>
@@ -21,7 +21,7 @@ Néanmoins, il est important de noter qu’un paragraphe écrit sur plusieurs li
 
 Pour faire des retours à la ligne au sein d’un paragraphe, le langage HTML met à disposition la balise ```<br />```.
 
-``` html
+```html
 <p>
 Un paragraphe
 Qui contient plusieurs lignes
@@ -60,7 +60,7 @@ Le langage HTML règle ce problème grâce aux balises ```<pre></pre>```. Grâce
 
 Exemple :
 
-``` html
+```html
 <pre>
 Un paragraphe
 
