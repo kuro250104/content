@@ -37,6 +37,8 @@ Exemple ne respectant pas la convention concernant les éléments et attributs:
 </BODY>
 ```
 
+__Remarque__ : Il est également formellement déconseillé d'utiliser des accents ou des caractères spéciaux à l'exception du tiret ```-``` et de l'underscore ```_```.
+
 ## Fermer tous les éléments HTML
 
 HTML permet de ne pas fermer les éléments présents dans le code. Cependant, pour éviter la confusion et rendre le code plus clair, la convention veut qu’il faille fermer tous les éléments. Aussi il est largement recommandé pour toutes les balises non “auto fermantes” de bien spécifier les balises fermantes systématiquement.
