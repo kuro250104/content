@@ -51,9 +51,8 @@ p {
 
 Dans cet exemple, la **largeur du contenu du paragraphe** est de 800 pixels. Cependant, la **largeur totale** de l’élément paragraphe est de 930 pixels. Voici le détail du calcul :
 
-**Largeur totale = largeur du contenu + marge intérieure droite + marge intérieure gauche + marge extérieure gauche + marge extérieure droite + bordure gauche + bordure droite
-**
+**Largeur totale = largeur du contenu + marge intérieure droite + marge intérieure gauche + marge extérieure gauche + marge extérieure droite + bordure gauche + bordure droite**
+
 Ainsi, pour calculer la hauteur totale d’un élément HTML, il suffirait également d’appliquer la formule suivante :
 
-**hauteur totale = hauteur du contenu + marge intérieure supérieure + marge intérieure inférieure + marge extérieure supérieure + marge extérieure inférieure + bordure supérieure + bordure inférieure
-**
+**hauteur totale = hauteur du contenu + marge intérieure supérieure + marge intérieure inférieure + marge extérieure supérieure + marge extérieure inférieure + bordure supérieure + bordure inférieure**

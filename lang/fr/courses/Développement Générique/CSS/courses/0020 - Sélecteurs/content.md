@@ -107,7 +107,7 @@ div + p {
 }
 ```
 
-Dans l’exemple ci-dessus, c’est le paragraphe qui suit directement l’élément <div> qui est centré.
+Dans l’exemple ci-dessus, c’est le paragraphe qui suit directement l’élément ```<div>``` qui est centré.
 
 ### Les sélecteurs de voisins
 
@@ -135,7 +135,7 @@ div > h3 {
 }
 ```
 
-Ici, tous les titres de niveau trois descendant directement d’une <div> sont sélectionnés et leur taille est défini à 10 pixels. 
+Ici, tous les titres de niveau trois descendant directement d’une ```<div>``` sont sélectionnés et leur taille est défini à 10 pixels. 
 
 ### Les sélecteurs d’éléments descendants
 

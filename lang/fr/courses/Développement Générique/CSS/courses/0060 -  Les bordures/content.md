@@ -50,7 +50,7 @@ En plus des valeurs prédéfinies évoquées au point précédent, le CSS permet
 Cette propriété peut donc recevoir entre 1 (toutes les bordures auront la même épaisseur) et 4 (chaque bordure aura l’épaisseur qui lui sera assignée) valeurs de tailles pour la bordure. Les tailles sont définies dans cet ordre : 
 
 - Bordure **supérieure**
-- Bordure de **droite **
+- Bordure de **droite**
 - Bordure **inférieure**
 - Bordure de **gauche**
 
