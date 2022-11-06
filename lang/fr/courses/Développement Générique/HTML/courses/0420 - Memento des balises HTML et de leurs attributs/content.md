@@ -41,7 +41,7 @@
 | ```<h6></h6>``` | Titre de niveau 6 |
 | ```<img />``` | Balise d’insertion d’image |
 | ```<figure></figure>``` | Balise de regroupement d’un ou plusieurs médias |
-| ```<figcaption><figcaption/>``` | Description ou légende d’un élément <figure> |
+| ```<figcaption><figcaption/>``` | Description ou légende d’un élément ```<figure>``` |
 | ```<audio></audio>``` | Balise d’intégration de son |
 | ```<video></video>``` | Balise d’intégration de vidéo |
 | ```<source>``` | Balise de source de l’audio ou de la vidéo d’une balise correspondante |
