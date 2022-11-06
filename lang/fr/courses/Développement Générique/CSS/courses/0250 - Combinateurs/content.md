@@ -62,7 +62,7 @@ Dans l’exemple ci-dessous, tous les paragraphes contenus dans la ```<div>``` (
 ```css
 /* Tous les paragraphes frères de la div */
 div ~p h1 {
-	text-align: center;
+text-align: center;
 }
 ```
 
