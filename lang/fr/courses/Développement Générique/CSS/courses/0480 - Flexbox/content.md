@@ -1,5 +1,3 @@
-Flexbox => Flexible Box
-2017
 Le module Flexbox Layout (boîte flexible) (une recommandation candidate du W3C en octobre 2017) vise à fournir un moyen plus efficace de disposer, d'aligner et de répartir l'espace entre les éléments d'un conteneur, même lorsque leur taille est inconnue et/ou dynamique (d'où le mot "flex").
 
 L'idée principale de la mise en page flexible est de donner au conteneur la possibilité de modifier la largeur/hauteur (et l'ordre) de ses éléments pour remplir au mieux l'espace disponible (principalement pour s'adapter à tous les types de dispositifs d'affichage et de tailles d'écran). Un conteneur flexible étend les éléments pour remplir l'espace libre disponible ou les rétrécit pour éviter tout débordement.
