@@ -149,7 +149,8 @@ ul li {
 }
 
 ul a {
-	display: block; /* Disposer les liens en block permet de définir les marges, etc. */
+	/* Disposer les liens en block permet de définir les marges, etc. */
+	display: block;
 	padding: 8px;
 	color: grey;
 }
