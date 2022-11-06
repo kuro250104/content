@@ -125,7 +125,7 @@ Dans cet exemple, tous les éléments ```<span>``` qui suivent un ```<p>``` et q
 
 ### Les sélecteurs d’éléments enfants
 
-Les sélecteurs d’éléments enfants (```>```<) permettent de sélectionner des éléments qui sont les enfants directs d’un élément donné. 
+Les sélecteurs d’éléments enfants (```><```) permettent de sélectionner des éléments qui sont les enfants directs d’un élément donné. 
 
 Exemple :
 
