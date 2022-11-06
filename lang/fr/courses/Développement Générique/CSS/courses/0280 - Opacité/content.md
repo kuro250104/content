@@ -1,14 +1,14 @@
-La propriété CSS ```opacity``` définit la transparence (appelée aussi opacité) d’un élément. Sa valeur varie entre **0.0** et **1.0**. Plus la valeur est faible, plus l’élément est opaque.
+La propriété CSS ```opacity``` définit la transparence (appelée aussi opacité) d’un élément. Sa valeur varie entre **0.0** et **1.0**. Plus la valeur est faible, plus l’élément est trasnparent.
 
 ## Opacité au survol de la souris
 
-```opacity``` est fréquemment utilisée avec la pseudo-classe ```:hover``` afin de rendre un élément plus opaque au passage de la souris. 
+```opacity``` est fréquemment utilisée avec la pseudo-classe ```:hover``` afin de rendre un élément moins opaque au passage de la souris. 
 
 Exemple :
 
 ```css
 img:hover {
-    opacity: 0.5; /* Lorsque la souris survole l'image, cette dernière est rendu plus opaque */
+    opacity: 0.5; /* Lorsque la souris survole l'image, cette dernière est rendu moins opaque */
 }
 ```
 
