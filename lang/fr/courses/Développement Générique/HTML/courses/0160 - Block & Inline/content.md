@@ -63,9 +63,7 @@ Exemple :
 
 L'élément ```<span></span>``` est un élément utilisé, en général, pour marquer un mot ou un bout de phrase au milieu d’un paragraphe. C’est un élément de type **inline**, permettant donc de faire continuer la partie marquée sur la ligne en cours. 
 
-Cet élément est principalement utilisé pour pouvoir, plus tard, styliser une partie d’un texte à mettre en valeur, par exemple, sans que cette partie ne soit affichée comme un élément de type **block**. 
-
-```<span>``` n’a pas d’attribut obligatoire, il est néanmoins commun d’utiliser l’attribut ```class``` avec cet élément.
+Cet élément est principalement utilisé pour pouvoir, plus tard, styliser une partie d’un texte à mettre en valeur, par exemple, sans que cette partie ne soit affichée comme un élément de type **block**.
 
 Exemple :
 
