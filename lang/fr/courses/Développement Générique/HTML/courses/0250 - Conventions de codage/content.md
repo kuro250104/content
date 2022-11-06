@@ -165,7 +165,7 @@ Exemple ne respectant pas la convention :
 </table>
 ```
 
-## Ne jamais sauter l'élément <title>
+## Ne jamais sauter l'élément ```<title>```
 
 Dans le document HTML, l’élément ```<title></title>``` doit toujours être renseigné. En effet, en plus de définir un titre dans l’onglet ou la fenêtre du navigateur, en plus de fournir un titre à la page lorsqu’elle est ajoutée en favoris, cela permet aussi un meilleur référencement par les moteurs de recherche.
 
