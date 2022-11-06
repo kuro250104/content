@@ -12,7 +12,8 @@ Pour ce faire, le langage CSS met à disposition 5 propriétés :
 
 Voici le tableau résumant la compatibilité des propriétés de transition, en fonction du navigateur internet :
 
-| **Propriété** | Chrome | Edge | Firefox | Safari | Opéra |
+| **Propriété** | **Chrome** | **Edge** | **Firefox** | **Safari** | **Opéra** |
+| --- | --- | --- | --- | --- | --- |
 | **transition** | 26.0 | 10.0 | 16.0 | 6.1 | 12.1 |
 | **transition-delay** | 26.0 | 10.0 | 16.0 | 6.1 | 12.1 |
 | **transition-duration** | 26.0 | 10.0 | 16.0 | 6.1 | 12.1 |
@@ -43,7 +44,7 @@ div:hover {
 }
 ```
 
-__Remarque__ : Dans l’exemple ci-dessus, lorsque la souris ne survole plus la <div>, celle-ci reprend progressivement sa taille originelle. 
+__Remarque__ : Dans l’exemple ci-dessus, lorsque la souris ne survole plus la ```<div>```, celle-ci reprend progressivement sa taille originelle. 
 
 ## Ajouter une transition sur plusieurs propriétés
 
