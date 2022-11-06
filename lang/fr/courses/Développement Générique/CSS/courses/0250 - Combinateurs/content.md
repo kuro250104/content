@@ -57,6 +57,8 @@ Dans cet exemple, seul le premier titre de la div est concerné. En effet, il es
 
 Ce sélecteur désigne tous les sélecteurs qui sont frères d’un élément spécifique. Pour ce faire, il faut utiliser le signe ```~```.
 
+Phrase test pour résolution bug ```<p>``` encore un test
+
 Exemple :
 
 ```css
