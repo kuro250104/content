@@ -65,3 +65,5 @@ div ~p h1 {
 	text-align: center;
 }
 ```
+
+Dans l’exemple ci-dessus, tous les paragraphes contenus dans la ```<div>``` (qui est l’élément parent) sont concernés. En effet, ils ont tous le même élément parent : l'élément ```<div>```.
