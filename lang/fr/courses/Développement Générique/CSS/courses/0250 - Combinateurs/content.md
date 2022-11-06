@@ -57,7 +57,7 @@ Dans cet exemple, seul le premier titre de la div est concerné. En effet, il es
 
 Ce sélecteur désigne tous les sélecteurs qui sont frères d’un élément spécifique. Pour ce faire, il faut utiliser le signe ```~```.
 
-Exemple :
+Dans l’exemple ci-dessous, tous les paragraphes contenus dans la ```<div>``` (qui est l’élément parent) sont concernés. En effet, ils ont tous le même élément parent : l'élément ```<div>```.
 
 ```css
 /* Tous les paragraphes frères de la div */
@@ -65,5 +65,3 @@ div ~p h1 {
 	text-align: center;
 }
 ```
-
-Dans l’exemple ci-dessus, tous les paragraphes contenus dans la ```<div>``` (qui est l’élément parent) sont concernés. En effet, ils ont tous le même élément parent : l'élément ```<div>```.
