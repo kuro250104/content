@@ -37,6 +37,7 @@ Exemple d’une structure HTML reprenant les éléments ci-dessus :
                 <li><a href="#">Lien 1</a></li>
                 <li><a href="#">Lien 2</a></li>
                 <li><a href="#">Lien 3</a></li>
+            </ul>
         </nav>
 
         <section>
@@ -57,7 +58,7 @@ Exemple d’une structure HTML reprenant les éléments ci-dessus :
 
 ## Éléments de mise en page
 
-### Element section
+### Element ```<section>```
 
 L’élément ```<section></section>``` permet de regrouper des contenus ayant le même thème. Une section commence généralement avec un titre. 
 
@@ -79,7 +80,7 @@ Exemple :
 </section>
 ```
 
-### Élement article
+### Élement ```<article>```
 
 L’élément ```<article></article>``` entoure le contenu d’une page web ; cependant, le contenu d’un ```<article>``` doit être autonome et indépendant. En d’autre termes, il ne doit être raccroché à aucune autre thématique sur la page. 
 
@@ -97,7 +98,7 @@ Exemple :
 </article>
 ```
 
-### Élément header
+### Élément ```<header>```
 
 Dans sa fonction première, l’élément ```<header></header>``` est utilisé pour définir un en-tête. Généralement il est utilisé pour définir l’en-tête d’une page web, mais rien n’interdit de l’utiliser également pour définir l’en-tête d’une section ou d’un article.
 
@@ -116,7 +117,7 @@ Exemple :
 </article>
 ```
 
-### Element footer
+### Element ```<footer>```
 
 L’élément ```<footer></footer>``` définit un “pied” (une fin) pour une section ou une page HTML. Cet élément contient généralement des informations sur l’auteur, sur les droits d’auteur, un lien menant vers un formulaire de contact, etc.
 
@@ -131,7 +132,7 @@ Exemple :
 </footer>
 ```
 
-### Élément nav
+### Élément ```<nav>```
 
 L'élément ```<nav></nav>``` définit un ensemble de liens de navigation. De manière générale, cet élément est utilisé lors de la création d’un menu de navigation pour un site web. C’est d’ailleurs son rôle. En effet, ```<nav>``` n’est utilisé que pour les “blocs” de liens.
 
@@ -150,7 +151,7 @@ Exemple :
 </nav>
 ```
 
-### Element aside
+### Element ```<aside>```
 
 L’élément ```<aside></aside>``` définit un contenu indirectement lié au contenu actuel. C’est généralement un élément qui sera placé sur le côté lors de la phase de design. Cet élément peut, par exemple, contenir des informations supplémentaires sur le contenu, une liste de liens menant à des ressources externes, etc.
 
