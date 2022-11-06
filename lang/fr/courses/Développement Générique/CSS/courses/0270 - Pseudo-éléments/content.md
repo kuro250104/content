@@ -7,7 +7,7 @@ Par exemple, les pseudo-éléments sont utilisés pour styliser la première let
 Voici la syntaxe d’un pseudo-élément :
 
 ```css
-selecteur::pseudo-élément {
+selecteur::pseudo-element {
     propriété: valeur;
 }
 ```
