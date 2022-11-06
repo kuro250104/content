@@ -16,7 +16,7 @@ Les commentaires, en HTML comme dans de nombreux autres langages, peuvent être 
 
 En HTML, la syntaxe des commentaires est la suivante :
 
-``` html
+```html
 <!-- Ceci est un commentaire en HTML --> 
 ```
 
@@ -24,7 +24,7 @@ __Remarque__ : Il est important que la balise fermante du commentaire ne prenne 
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Deux titres -->
     <h1>Titre principal</h1>

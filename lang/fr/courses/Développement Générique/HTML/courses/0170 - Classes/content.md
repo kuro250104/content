@@ -8,7 +8,7 @@ __Remarque__ : L’attribut ```class``` peut être utilisé avec n’importe que
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Applique la classe background sur la div -->
     <div class="background">
@@ -28,7 +28,7 @@ Dans cet exemple, les deux ```<div>``` se sont vues attribuer la même classe, *
 
 Le langage HTML permet de donner plusieurs noms de classe à un même élément. Pour ce faire, il suffit simplement de mettre un espace entre les deux noms, dans l’attribut ```class``` :
 
-``` html
+```html
 <body>
     <!-- La div ci-dessous appartient à la fois à la classe background et à la class main -->
     <div class="background main">

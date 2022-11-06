@@ -18,7 +18,7 @@ Néanmoins, par convention, les éléments et attributs sont écrits en minuscul
 
 Exemple respectant la convention concernant les éléments et attributs :
 
-``` html
+```html
 <body>
     <h1>Cours HTML</h1>
     <p>Voici un cours sur le HTML</p>
@@ -29,7 +29,7 @@ Exemple respectant la convention concernant les éléments et attributs :
 
 Exemple ne respectant pas la convention concernant les éléments et attributs:
 
-``` html
+```html
 <BODY>
     <H1>Cours HTML</H1>
     <P>Voici un cours sur le HTML</P>
@@ -43,7 +43,7 @@ HTML permet de ne pas fermer les éléments présents dans le code. Cependant, p
 
 Exemple respectant la convention : 
 
-``` html
+```html
 <body>
     <h1>Cours HTML</h1>
     <p>Voici un cours sur le HTML</p>
@@ -52,7 +52,7 @@ Exemple respectant la convention :
 
 Exemple ne respectant pas cette convention :
 
-``` html
+```html
 <body>
     <h1>Cours HTML
     <p>Voici un cours sur le HTML
@@ -70,13 +70,13 @@ Cependant, pour les raisons citées ci-dessous, il est recommandé de mettre des
 
 Exemple respectant la convention :
 
-``` html
+```html
 <p class="container red">Voici un cours sur le HTML</p>
 ```
 
 Exemple ne respectant pas la convention :
 
-``` html
+```html
 <p class=container red>Voici un cours sur le HTML</p>
 ```
 
@@ -88,13 +88,13 @@ De plus, la convention exige de spécifier la hauteur et la largeur des images a
 
 Exemple respectant la convention :
 
-``` html
+```html
 <img src="chat.png" alt="chat" style="width:500px; height:500px" />
 ```
 
 Exemple ne respectant pas la convention :
 
-``` html
+```html
 <img src="chat.png" />
 ```
 
@@ -106,13 +106,13 @@ Cependant, pour des raison de lisibilité du code, la convention veut que le dé
 
 Exemple sans espace :
 
-``` html
+```html
 <p class="container">Voici un cours sur le HTML</p>
 ```
 
 Exemple avec espaces :
 
-``` html
+```html
 <p class     =     "container">Voici un cours sur le HTML</p>
 ```
 
@@ -132,7 +132,7 @@ Il est de coutume d’ajouter un niveau d’indentation en fonction de l’imbri
 
 Exemple respectant la convention :
 
-``` html
+```html
 <table>
     <tr>
         <td>Nom</td>
@@ -147,7 +147,7 @@ Exemple respectant la convention :
 
 Exemple ne respectant pas la convention :
 
-``` html
+```html
 <table>
     <tr>
 
@@ -171,17 +171,17 @@ Il est donc recommandé d’écrire un titre qui soit le plus précis possible -
 
 Exemple :
 
-``` html
+```html
 <title>Guide de style HTML et conventions de codage</title>
 ```
 
-## Omettre les éléments <html> et <body>
+## Omettre les éléments ```<html>``` et ```<body>```
 
 Un document HTML est valide, même sans les éléments ```<html></html>``` et ```<body></body>```. Cependant, par soucis de compatibilité du site web avec les anciens navigateurs, il est tout de même recommandé de mettre ces balises. En effet, l’omission de ces balises peut créer des bugs sur les anciens navigateurs.
 
 Exemple respectant cette convention :
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -197,7 +197,7 @@ Exemple respectant cette convention :
 
 Exemple ne respectant pas cette convention :
 
-``` html
+```html
 <!DOCTYPE html>
 <head>
     <title>Conventions de codage</title>
@@ -207,7 +207,7 @@ Exemple ne respectant pas cette convention :
 <p>Voici un cours sur le HTML</p>
 ```
 
-## Omettre l’élément <head>
+## Omettre l’élément ```<head>```
 
 Un fichier HTML est également viable sans les balises ```<head></head>```. Si tel est le cas, les navigateurs ajouteront des éléments par défaut contenus dans le ```<head>```.
 
@@ -215,7 +215,7 @@ Malgré tout, il est recommandé d’ajouter l’élément ```<head>```. Cela pe
 
 Exemple avec le ```<head>``` :
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -231,7 +231,7 @@ Exemple avec le ```<head>``` :
 
 Exemple sans le ```<head>``` :
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
 <title>Conventions de codage</title>
@@ -249,13 +249,13 @@ Le langage HTML permet au développeur de ne pas ajouter un slash (/) à la fin 
 
 Ainsi, l’exemple ci-dessous est-il accepté :
 
-``` html
+```html
 <meta charset="utf-8">
 ```
 
 Et cet exemple est aussi accepté :
 
-``` html
+```html
 <meta charset="utf-8" />
 ```
 
@@ -265,7 +265,7 @@ En HTML, la convention exige de toujours ajouter et renseigner l’attribut ```l
 
 Exemple :
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>

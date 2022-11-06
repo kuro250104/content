@@ -40,7 +40,7 @@ L’élément ```<figcaption>```, quant à lui, définit une légende pour le co
 
 Exemple :
 
-``` html
+```html
 <figure>
     <img src="chat.jpg" alt="chat">
     <!-- Définit une légende -->

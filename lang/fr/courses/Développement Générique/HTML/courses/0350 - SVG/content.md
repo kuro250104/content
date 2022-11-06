@@ -1,6 +1,6 @@
 SVG signifie en anglais *Scalable Vector Graphics* (graphiques vectoriels évolutifs). Cet élément est généralement utilisé en combinaison avec le langage CSS afin de créer des animations sur des images.
 
-## L'élément HTML svg
+## L'élément HTML ```<svg>```
 
 Cet élément est utilisé en tant que conteneur pour les images SVG.
 
@@ -34,7 +34,7 @@ Enfin, s’il est renseigné, l’attribut ```fill``` permet de définir une cou
 
 Exemple :
 
-``` html
+```xml
 <svg width="100" height="100">
     <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="blue" />
 </svg>
@@ -46,7 +46,7 @@ Pour dessiner un rectangle en SVG, il faut utiliser l’élément ```<rect>```. 
 
 Exemple :
 
-``` html
+```xml
 <svg width="400" height="100">
     <rect width="400" height="100" style="fill:rgb(126, 126, 187);stroke-width:10;stroke:rgb(211, 15, 15)" />
 </svg>

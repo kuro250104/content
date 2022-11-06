@@ -1,6 +1,6 @@
 Le langage HTML permet à un développeur d’incorporer du contenu provenant d’un autre site web sur son propre site web. C’est par exemple le cas avec les vidéos YouTube.
 
-## L’élément iframe et ses attributs
+## L’élément ```<iframe>``` et ses attributs
 
 L'élément ```<iframe></iframe>``` permet d'incorporer un contenu provenant d’autre site web externe dans le site web actuel. Cet élément est principalement utilisé pour intégrer des vidéos YouTube ou des cartes Google Maps dans un site web.
 
@@ -17,7 +17,7 @@ L’intégration de vidéos Youtube au sein d’un site internet est relativemen
 
 Pour intégrer une vidéo sur un site internet grâce aux iframes, il faut se rendre sur une vidéo YouTube, cliquer sur le bouton “Partager”, puis sur “intégrer”. Youtube génère alors un code HTML comprenant une balise “iframe” qu’il suffit de copier-coller pour l’intégrer dans une page.
 
-``` html
+```html
 <body>
     <!-- Vidéo youtube intégrée avec un iframe -->
     <iframe width="560" 
@@ -35,14 +35,14 @@ Pour définir la largeur et la hauteur d’un iframe, les attributs ```width``` 
 
 Exemple avec ```width``` et ```height``` :
 
-``` html
+```html
 <!-- Iframe avec une hauteur et largeur de 500px -->
 <iframe src="#" height="500" width="500" title="Intégrer un iframe"></iframe>
 ```
 
 Exemple avec l’attribut ```style``` :
 
-``` html
+```html
 <!-- Iframe avec une hauteur et largeur de 500px -->
 <iframe src="#" style="width: 500px; height: 500px;" title="Intégrer un iframe"></iframe>
 ```
@@ -53,7 +53,7 @@ Par défaut, une iframe est affichée avec une bordure. Pour supprimer cette bor
 
 Exemple :
 
-``` html
+```html
 <!-- Supprime la bordure autour de l'iframe -->
 <iframe src="#" style="border: none" title="Intégrer un iframe"></iframe>
 ```

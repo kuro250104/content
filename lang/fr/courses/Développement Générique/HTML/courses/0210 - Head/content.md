@@ -1,10 +1,10 @@
 L’élément ```<head></head>```, bien qu’il ne soit pas interprété ni affiché par le navigateur, contient des informations importantes pour que le navigateur puisse, par exemple, savoir quel encodage utiliser afin de pouvoir afficher correctement les accents.
 
-## Element <head>
+## Element ```<head>```
 
 Les éléments contenus dans le ```<head>``` (*en-tête*, en anglais), ne sont pas affichés par le navigateur. Ils permettent par exemple d’afficher le texte et les accents correctement, de lier le fichier contenant le design du site web, ou encore de donner un titre à la page web.
 
-## Element <title>
+## Element ```<title>```
 
 Cet élément permet de définir un titre pour la page en cours. Il est affiché dans la fenêtre ou dans l’onglet du navigateur - c’est d’ailleurs le seul élément contenu dans le ```<head></head>``` qui est affiché par le navigateur. 
 
@@ -16,7 +16,7 @@ L’élément ```<title></title>``` est nécessaire dans un document HTML, car c
 
 Exemple :
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -29,13 +29,13 @@ Exemple :
 </html>
 ```
 
-## Element <style>
+## Element ```<style>```
 
 Cet élément est utilisé pour écrire du code CSS (permettant de créer le design du site) directement au sein du document HTML.
 
 Exemple :
 
-``` html
+```html
 <style>
     /* Les paragraphes seront écrits en rouge et le texte sera centré */
     p {
@@ -45,7 +45,7 @@ Exemple :
 </style>
 ```
 
-## Element <link>
+## Element ```<link>```
 
 Cet élément est utilisé pour lier une ressource externe au document actuel. De nos jours, il est généralement utilisé pour lier une feuille de style contenant le design, au document HTML actuel.
 
@@ -58,12 +58,12 @@ Cet élément est **toujours** accompagné des deux attributs suivants :
 
 Exemple :
 
-``` html
+```html
 <!-- Lie un fichier css interne au document -->
 <link rel="stylesheet" href="style.css" />
 ```
 
-## Element <meta>
+## Element ```<meta>```
 
 Meta, par son étymologie, signifie “après” ou “au-delà de”. Cet élément HTML permet donc d’apporter aux navigateurs et aux moteurs de recherches des informations sur le document HTML et sur le site. Ces données ne sont pas affichées par le navigateur.
 
@@ -71,7 +71,7 @@ Meta, par son étymologie, signifie “après” ou “au-delà de”. Cet élé
 
 Exemples d’utilisations de ```<meta>``` :
 
-``` html
+```html
 <!-- Définir l’encodage utilisé afin que les navigateurs affichent correctement les accents -->
 <meta charset="UTF-8">
 <!-- Définir des mots-clés pour les moteurs de recherche -->
@@ -95,7 +95,7 @@ Pour palier à ce problème, le langage HTML met à disposition 2 attributs util
 
 Exemple d’utilisation de meta pour les fenêtres d’affichage :
 
-``` html
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 

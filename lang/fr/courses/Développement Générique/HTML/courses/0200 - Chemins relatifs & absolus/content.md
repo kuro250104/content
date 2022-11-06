@@ -8,7 +8,7 @@ Un chemin d’accès à un fichier est dit **absolu** lorsqu’on utilise l’**
 
 Exemple:
 
-``` html
+```html
 <body>
     <!-- L'URL de l'image indiquée dans l'attribut src est absolue -->
     <img src="https://cdn.pixabay.com/photo/2020/11/22/17/28/cat-5767334_960_720.jpg" alt="Un chat">
@@ -23,18 +23,18 @@ Un **chemin relatif** est un chemin dont l’adresse **n’est pas précise**. I
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Image avec chemin relatif -->
     <img src="images/picture.jpg" alt="Un chat">
 </body>
 ```
 
-Dans le cas où le fichier actuellement utilisé est situé dans un sous-dossier et que le fichier à inclure se trouve un dossier au-dessus, il suffit de rajouter ../ avant le nom du dossier et le nom du fichier.
+Dans le cas où le fichier actuellement utilisé est situé dans un sous-dossier et que le fichier à inclure se trouve un dossier au-dessus, il suffit de rajouter ```../``` avant le nom du dossier et le nom du fichier.
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Image depuis un dossier au-dessus du dossier courant -->
     <img src="../images/picture.jpg" alt="Un chat">

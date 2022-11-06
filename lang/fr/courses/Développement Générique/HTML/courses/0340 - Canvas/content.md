@@ -14,7 +14,7 @@ Voici la liste des versions de navigateurs prenant en charge l’élément ```<c
 | **Safari** | 3.1 |
 | **Opera** | 9.0 |
 
-## Utilisation de l’élément <canvas>
+## Utilisation de l’élément ```<canvas>```
 
 En réalité, cet élément permet simplement de définir un zone rectangulaire sur une page web, permettant, lorsqu’il sera créé, d’afficher le graphique.
 
@@ -22,6 +22,6 @@ __Remarque__ : Cet élément est toujours accompagné des attributs ```id```, ``
 
 Exemple :
 
-``` html
+```html
 <canvas id="monCanevas" width="200" height="100"></canvas>
 ```

@@ -8,7 +8,7 @@ Une liste non ordonnée est définie grâce aux balises ```<ul></ul>``` (pour *u
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Liste non ordonnée -->
     <ul>
@@ -30,7 +30,7 @@ Une liste ordonnée est entourée des éléments ```<ol></ol>``` (pour *ordered 
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Liste ordonnée -->
     <ol>
@@ -54,7 +54,7 @@ Une liste de descriptions est entourée des balises ```<dl></dl>```. Ensuite, ch
 
 Exemple :
 
-``` html
+```html
 <!-- Liste de description -->
 <dl>
     <!-- Premier terme -->

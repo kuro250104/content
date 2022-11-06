@@ -10,7 +10,7 @@ En fonction du navigateur utilisé et de la version de celui-ci, un sélecteur d
 
 Exemple :
 
-``` html
+```html
 <input type="color" id="color" name="color">
 ```
 
@@ -22,7 +22,7 @@ Depuis le HTML5, il est possible de créer un champ de type date. Ce champ perme
 
 Exemple :
 
-``` html
+```html
 <input type="date" id="naissance" name="naissance">
 ```
 
@@ -34,7 +34,7 @@ Remarque : Dans les attributs ```min``` et ```max```, les formats de dates sont 
 
 Exemple :
 
-``` html
+```html
 <!-- Date minimum possible le 01/01/1980 et maximum le 01/01/2020 -->
 <input type="date" id="naissance" name="naissance" min="1980-01-01" max="2020-01-01">
 ```
@@ -47,7 +47,7 @@ En fonction du type de navigateur utilisé, un sélecteur de date et heure peut 
 
 Exemple :
 
-``` html
+```html
 <input type="datetime-local" id="flight" name="flight" title="Date et heure de votre vol" />
 ```
 
@@ -59,7 +59,7 @@ Selon le navigateur utilisé et sa version, un sélecteur peut apparaître dans 
 
 Exemple :
 
-``` html
+```html
 <input type="week" id="semaine" name="semaine">
 ```
 
@@ -71,7 +71,7 @@ En fonction du navigateur utilisé, un sélecteur de mois et d’année peut-êt
 
 Exemple :
 
-``` html
+```html
 <input type="month" id="naissanceMois" name="naissanceMois">
 ```
 
@@ -83,7 +83,7 @@ En fonction du type de navigateur utilisé et de sa version, un sélecteur d’h
 
 Exemple :
 
-``` html
+```html
 <input type="time" id="heure" name="heure">
 ```
 
@@ -93,7 +93,7 @@ Un champ de type email n’aura pas d’affichage particulier. Il apparaît comm
 
 Exemple :
 
-``` html
+```html
 <input type="email" id="email" name="email" />
 ```
 
@@ -105,7 +105,7 @@ C’est ce type d’input qui est utilisé lorsque l’utilisateur doit sélecti
 
 Exemple :
 
-``` html
+```html
 <input type="file" id="monfichier" name="monfichier">
 ```
 
@@ -118,7 +118,7 @@ De plus, il est possible de définir un nombre minimum et un nombre maximum en u
 
 L'exemple suivant affiche un champ de saisie numérique, dans lequel l’utilisateur ne peut saisir qu’un nombre en 1 et 50 :
 
-``` html
+```html
 <input type="number" id="age" name="age" min="1" max="50" />
 ```
 
@@ -130,7 +130,7 @@ L'intervalle de sélection est définie en utilisant les attributs **min** et **
 
 Exemple :
 
-``` html
+```html
 <input type="range" id="age" name="age" min="1" max="50">
 ```
 
@@ -140,7 +140,7 @@ Ce type d’input est utilisé pour les barres de recherche. Il s’affiche comm
 
 Exemple :
 
-``` html
+```html
 <input type="search" id="recherche" name="recherche">
 ```
 
@@ -152,7 +152,7 @@ Ce type d’input doit être complété avec l’attribut ```pattern```, défini
 
 Exemple :
 
-``` html
+```html
 <input type="tel" id="telephone" name="telephone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
 ```
 
@@ -164,6 +164,6 @@ Cet input permet à l’utilisateur de saisir une URL (un lien vers son profil F
 
 Exemple :
 
-``` html
+```html
 <input type="url" id="lien" name="lien">
 ```

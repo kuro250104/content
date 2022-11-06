@@ -4,7 +4,7 @@ Le langage HTML permet donc aux développeurs web d’ajouter des vidéos sur le
 
 ## L'élément video
 
-Pour insérer une vidéo dans une page web - si cette vidéo ne provient pas directement d’une source externe telle que YouTube -, l’élément ```<video></video>``` doit être utilisé.
+Pour insérer une vidéo dans une page web - si cette vidéo ne provient pas directement d’une source externe telle que YouTube - l’élément ```<video></video>``` doit être utilisé.
 
 Cet élément est accompagné de l’attribut ```controls```, qui ne reçoit aucune valeur, mais qui permet d’ajouter des contrôles de vidéo, tels que lecture, pause et la gestion du volume.
 
@@ -16,7 +16,7 @@ __Remarque__ : Il est recommandé d’inclure plusieurs formats pour une même v
 
 Exemple :
 
-``` html
+```html
 <video width="320" height="240" controls>
     <source src="moto.mp4" type="video/mp4">
     <source src="moto.ogg" type="video/ogg">
@@ -32,7 +32,7 @@ __Remarque__ : La lecture automatique de vidéo ne fonctionne pas sur les appare
 
 Exemple :
 
-``` html
+```html
 <video width="320" height="240" controls>
     <source src="moto.mp4" type="video/mp4">
     <source src="moto.ogg" type="video/ogg">

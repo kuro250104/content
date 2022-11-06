@@ -17,7 +17,7 @@ Voici la liste des balises de pré-formatages, mises à disposition par le HTML 
 - ```<sub></sub>``` Définit un indice mathématique. L’indice est placé légèrement sous l’élément qui le précède et dans une police plus petite.
 - ```<sup></sup>``` Définit un exposant, comme en mathématiques. Un exposant, par exemple, est le “me” de “Mme” qui est généralement placé un peu au-dessus du “M”, dans une taille de police plus petite.
 
-## Éléments i et em
+## Éléments ```<i>``` et ```<em>```
 
 L’élément ```<i></i>``` permet de mettre un texte en italique, tandis que ```<em></em>``` permet d’insister sur un mot. Ce mot est généralement affiché en italique, pour montrer que l’auteur du texte insiste particulièrement sur ce mot.
 
@@ -33,7 +33,7 @@ Exemple avec ```<em></em>``` :
 <em>Insistance</em>
 ```
 
-## Élément small
+## Élément ```<small>```
 
 L'élément HTML ```<small></small>``` définit un texte plus petit :
 
@@ -43,7 +43,7 @@ Exemple :
 <small>Texte plus petit</small>
 ```
 
-## Élément mark
+## Élément ```<mark>```
 
 L'élément HTML ```<mark></mark>``` définit le texte qui, pour une raison particulière, doit être marqué ou mis en valeur :
 
@@ -53,7 +53,7 @@ Exemple :
 <p>Il ne faut pas oublier les <mark>skis</mark></p>
 ```
 
-## Élément del
+## Élément ```<del>```
 
 L'élément HTML ```<del></del>``` définit un texte comme étant “supprimé”. Cet élément est généralement utilisé pour montrer quelque chose d’incorrect, car les navigateurs affichent le texte en le barrant. 
 
@@ -63,7 +63,7 @@ Exemple :
 <p>Il ne faut pas oublier les <del>skis</del> snowboards</p>
 ```
 
-## Élément ins
+## Élément ```<ins>```
 
 L'élément HTML ```<ins></ins>``` définit un texte qui a été inséré dans un document. Bien qu’il n’y ait pas de règles d’affichage clairement définies pour les éléments insérés, les navigateurs soulignent généralement les textes insérés. 
 
@@ -73,7 +73,7 @@ Exemple :
 <p>Il ne faut pas oublier les <ins>skis</ins></p>
 ```
 
-## Élément sub
+## Élément ```<sub>```
 
 L'élément HTML ```<sub></sub>``` définit un indice mathématiques. L’indice est généralement placé plus bas que l’élément et dans une taille de police inférieure.
 
@@ -83,7 +83,7 @@ Exemple :
 <p>Il faut pas oublier les <sub>skis</sub></p>
 ```
 
-## Élément sup
+## Élément ```<sup>```
 
 L'élément HTML ```<sup></sup>``` définit un exposant mathématiques. Un exposant est généralement placé légèrement au-dessus de l’élément, dans une police plus petite. 
 

@@ -1,6 +1,6 @@
 Dans le cours concernant les bases de la création d’un formulaire, l’élément input a été évoqué en détail. Cependant, il existe bien d’autres éléments pouvant composer un formulaire.
 
-## L'élément select
+## L'élément ```<select>```
 
 L’élément ```<select></select>``` permet de créer une liste déroulante. En général, cet élément est utilisé lorsqu’un grand choix d’options est possible. 
 
@@ -10,7 +10,7 @@ __Remarque__ : Par défaut, c’est toujours le premier item qui est pré-sélec
 
 Exemple :
 
-``` html
+```html
 <form>
     <label for="metier">Métier :</label>
     <!-- Liste déroulante -->
@@ -26,7 +26,7 @@ Pour changer l’item présélectionné, il est possible d’utiliser l’attrib
 
 Exemple :
 
-``` html
+```html
 <option value="dev" selected>Développeur</option>
 ```
 
@@ -34,7 +34,7 @@ Lorsque l’attribut ```multiple``` est ajouté à la fin de l’élément ```<s
 
 Exemple :
 
-``` html
+```html
 <label for="metier">Métier :</label>
 <!-- Liste déroulante avec la possibilité de choisir plusieurs options -->
 <select id="metier" name="metier"  multiple>
@@ -43,7 +43,7 @@ Exemple :
 </select>
 ```
 
-## L'élément textarea
+## L'élément ```<textarea>```
 
 L’élément ```<textarea></textarea>``` défini une zone de texte multilignes. Cet élément est généralement utilisé afin que l’utilisateur puisse laisser un message ou un commentaire sous un article, par exemple.
 
@@ -51,25 +51,25 @@ Cet élément est généralement accompagné de l’attribut ```rows```, qui dé
 
 Exemple :
 
-``` html
+```html
 <!-- Zone de texte -->
 <textarea name="message" rows="10" cols="30">
     Zone de texte
 </textarea>
 ```
 
-## L'élément button
+## L'élément ```<button>```
 
 L'élément ```<button></button>``` définit un bouton cliquable :
 
 Exemple :
 
-``` html
+```html
 <!-- bouton affichant “Cliquer !” -->
 <button type="button">Cliquer !</button>
 ```
 
-## Les éléments fieldset et legend
+## Les éléments ```<fieldset>``` et ```<legend>```
 
 L’élément ```<fieldset></fieldset>``` permet d’organiser un formulaire en regroupant ensemble les champs qui ont un rapport entre eux. Par exemple, les champs concernant l’identité de l’utilisateur (nom, prénom, date de naissance, etc…), les champs concernant son adresse postale (rue, numéro, code postale, ville, pays, etc…) ou encore ses informations de contact (adresse mail, téléphone, etc...).
 
@@ -77,7 +77,7 @@ L’élément ```<legend></legend>```, quant à lui, permet de définir un nom p
 
 De manière générale, les navigateurs entourent les ```<fieldset>``` d’une bordure, et placent la ```<legend>``` en haut du cadre. 
 
-``` html
+```html
 <form>
     <!-- Regroupe les champs ayant un rapport entre eux -->
     <fieldset>
@@ -85,14 +85,14 @@ De manière générale, les navigateurs entourent les ```<fieldset>``` d’une b
         <legend>Identité</legend>
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" />
-	   <label for="nom">Prénom :</label>
+	    <label for="nom">Prénom :</label>
         <input type="text" id="prenom" name="prenom" />
         <input type="submit" value="Envoyer">
     </fieldset>
 </form>
 ```
 
-## L'élément datalist
+## L'élément ```<datalist>```
 
 L’élément ```<datalist></datalist>``` est particulier en ceci qu’il représente à la fois un champ de texte et un liste déroulante. Cependant, le principe est simple. Lorsque l’utilisateur va placer le curseur dans le champ texte (créé par ```<datalist>```), une liste d’options prédéfinies va s’afficher juste en dessous. 
 
@@ -104,7 +104,7 @@ Enfin, il faut créer l’élément ```<option>```, accompagné de l’attribut 
 
 Exemple :
 
-``` html
+```html
 <form>
     <!-- Permet de faire une liste déroulante avec une liste prédéfinie d'options -->
     <input list="metier">

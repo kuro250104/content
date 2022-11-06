@@ -15,7 +15,7 @@ Voici une liste non exhaustive des éléments nativement traités comme des **bl
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Definit un block -->
     <div>Hello World</div>
@@ -34,7 +34,7 @@ Ci-dessous, une liste non exhaustive des éléments **inline** en HTML :
 
 Exemple :
 
-``` html
+```html
 <body>
  <!-- Hello World ne commence pas sur une nouvelle ligne, car <span> étant un élément inline, il continue sur la ligne en cours -->
     <p>Je suis un paragraphe alors je vous dis <span> Hello World</span></p>
@@ -49,7 +49,7 @@ L’élément ```<div>``` n’a pas d’attribut particulier. Néanmoins, il est
 
 Exemple :
 
-``` html
+```html
 <!-- Div de fond noir et texte en blanc -->
 <div id="contenant">
     <!-- Titre de niveau 2 -->
@@ -69,6 +69,6 @@ Cet élément est principalement utilisé pour pouvoir, plus tard, styliser une 
 
 Exemple :
 
-``` html
+```html
 <p>J'ai des skis <span class="couleur">jaune</span></p>
 ```

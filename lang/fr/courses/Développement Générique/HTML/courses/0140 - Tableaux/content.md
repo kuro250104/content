@@ -12,7 +12,7 @@ Enfin, les colonnes sont créées avec les balises ```<td></td>```, entourant le
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Tableau -->
     <table>
@@ -59,7 +59,7 @@ Pour fusionner ensemble plusieurs cellules sur plusieurs colonnes, l’attribut 
 
 Exemple :
 
-``` html
+```html
 <table>
     <tr>
         <th>Nom</th>
@@ -80,7 +80,7 @@ Pour fusionner des cellules sur plusieurs lignes, l’attribut ```rowspan``` est
 
 Exemple :
 
-``` html
+```html
 <table>
     <tr>
         <th>Nom:</th>
@@ -103,7 +103,7 @@ Le langage HTML permet d’ajouter une légende à un tableau grâce à l’él�
 
 Exemple :
 
-``` html
+```html
 <table>
     <!-- Rajoute une légende -->
     <caption>Utilisateur</caption>

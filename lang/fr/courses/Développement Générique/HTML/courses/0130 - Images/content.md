@@ -14,7 +14,7 @@ Dans le second cas, l’attribut ```src``` reçoit d’abord le nom du dossier c
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Affiche de l'image fond.png -->
     <img src="fond.png" alt="L'image est un fond">
@@ -29,7 +29,7 @@ Pour ce faire, l’attribut ```src``` reçoit en valeur **l’URL complète** de
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Affiche une image externe à l'aide d'une url -->
     <img src="https://cdn.pixabay.com/photo/2020/11/22/17/28/cat-5767334_960_720.jpg" alt="Un chat">
@@ -47,14 +47,14 @@ Il existe deux moyens de définir la taille d’une image en HTML. La première 
 
 Exemple avec l’attribut ```style``` :
 
-``` html
+```html
 <!-- Affiche l'image moto.png et spécifiant la hauteur et la largeur -->
 <img src="moto.png" alt="Il s'agit d'une photo de moto"  style="width: 500px; height: 600px;">
 ```
 
 Exemple avec les attributs ```width``` et ```height``` :
 
-``` html
+```html
 <!-- Affiche l'image moto.png et spécifiant la hauteur et la largeur -->
 <img src="moto.png" alt="Il s'agit d'une photo de moto"  width="500" height="600">
 ```

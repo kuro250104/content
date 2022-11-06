@@ -10,7 +10,7 @@ Il existe différents types de liens :
 
 Peu importe le type de lien que le développeur souhaite utiliser pour le site qu’il est en train de construire, un lien en HTML se construit de la manière suivante :
 
-``` html
+```html
 <a href="URL">Texte du lien</a>
 ```
 
@@ -24,10 +24,10 @@ En HTML, pour créer un lien externe, il faut passer à l’attribut ```href``` 
 
 Exemple :
 
-``` html
+```html
 <body>
     <p>Lien externe</p>
- 
+
     <!-- Redirige vers Google -->
     <a href="https://www.google.fr/">Lien externe vers Google</a>
 </body>
@@ -41,22 +41,22 @@ Pour ce faire, l’attribut ```href``` reçoit en valeur le chemin d’accès qu
 
 Si le fichier HTML vers lequel l’utilisateur doit être redirigé se trouve dans le même dossier que le fichier actuel, la valeur passée à href ressemble à ceci :
 
-``` html
+```html
 <a href="nom_du_fichier.html">
 ```
 
 Cependant, pour des raisons d’organisation, il est possible que le fichier HTML vers lequel l’utilisateur doit être redirigé se trouve dans un autre dossier. Dans un tel cas, la valeur passée à href ressemble à ceci :
 
-``` html
+```html
 <a href="dossier/nom_du_fichier.html">
 ```
 
 Exemple avec un fichier HTML se trouvant dans le même dossier que le fichier actuel :
 
-``` html
+```html
 <body>
     <p>Lien interne</p>
- 
+
     <!-- Redirige vers le fichier contact.html -->
     <a href="contact.html">Lien interne vers la page contact</a>
 </body>
@@ -64,10 +64,10 @@ Exemple avec un fichier HTML se trouvant dans le même dossier que le fichier ac
 
 Exemple avec un fichier HTML se trouvant dans un autre dossier :
 
-``` html
+```html
 <body>
     <p>Lien interne</p>
- 
+
     <!-- Redirige vers le fichier contact.html dans le répertoire dossier -->
     <a href="dossier/contact.html">Lien interne vers la page contact</a>
 </body>
@@ -86,10 +86,10 @@ Pour ce faire, l’attribut ```target``` est utilisé, et reçoit une des valeur
 
 Exemple :
 
-``` html
+```html
 <body>
     <p>Lien externe dans un nouvel onglet</p>
- 
+
     <!-- Redirigé vers Google dans un nouvel onglet -->
     <a href="https://www.google.fr/" target="_blank">Lien externe vers Google</a>
 </body>
@@ -105,7 +105,7 @@ Dans un premier temps, il faut donner une valeur à l’attribut ```id``` pour c
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Créer un lien vers #p1 -->
     <a href="#p1">Vers paragraphe 1</a>
@@ -113,7 +113,7 @@ Exemple :
     <a href="#p2">Vers paragraphe 2</a>
     <!-- Créer un lien vers #p3 -->
     <a href="#p3">Vers paragraphe 3</a>
- 
+
     <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan arcu nisi, quis efficitur diam
         congue vel. Aliquam erat volutpat. Quisque sodales posuere dolor vitae tempus. Curabitur ligula sapien,
         consectetur non tincidunt et, sodales id dolor. Etiam in bibendum velit. Sed tristique bibendum eleifend. Etiam
@@ -138,7 +138,7 @@ Le langage HTML donne également la possibilité à l’utilisateur de pouvoir e
 
 Exemple :
 
-``` html
+```html
 <!-- Ouvre le logiciel de messagerie pour envoyer un mail directement à l'adresse mail john@doe.com -->
 <a href="mailto:john@doe.com">Envoyer un mail</a>
 ```
@@ -153,7 +153,7 @@ Cet attribut est, bien que non obligatoire, très utile à différentes fins : i
 
 Exemple :
 
-``` html
+```html
 <!-- Redirigé vers Google et affiche "Go to google" au survol de la souris -->
 <a href="https://www.google.com/" title="Go to Google">Faire une recherche</a>
 ```

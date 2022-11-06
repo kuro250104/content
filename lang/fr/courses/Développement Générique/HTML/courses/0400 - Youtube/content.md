@@ -8,7 +8,7 @@ Pour intégrer une vidéo sur un site web directement depuis YouTube, il suffit 
 
 Exemple :
 
-``` html
+```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tbg4EmIJ5pM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
@@ -20,7 +20,7 @@ Pour désactiver cette option, il suffit d’effacer la valeur **autoplay** dans
 
 Exemple :
 
-``` html
+```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tbg4EmIJ5pM" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
@@ -28,6 +28,6 @@ Exemple :
 
 Par défaut, dans le code fourni par YouTube, les contrôles sont activés. Pour les désactiver, il suffit de rajouter ```?controls=0```, à la fin de l’adresse définie dans l’attribut ```src```.
 
-``` html
+```html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tbg4EmIJ5pM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```

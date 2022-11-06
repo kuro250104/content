@@ -20,39 +20,38 @@ Ci-dessous, la liste des éléments sémantiques mis à disposition pour l’am�
 
 Exemple d’une structure HTML reprenant les éléments ci-dessus :
 
-``` html
+```html
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="utf-8" />
-	<title>Titre de la page web</title>
-</head>
-<body>
-	 <header>
-	 	Logo
-	 </header>
+    <head>
+        <meta charset="utf-8" />
+        <title>Titre de la page web</title>
+    </head>
+    <body>
+        <header>
+            Logo
+        </header>
 
-	 <nav>
-	 	<ul>
-	 		<li><a href="#">Lien 1</a></li>
-	 		<li><a href="#">Lien 2</a></li>
-	 		<li><a href="#">Lien 3</a></li>
-	 </nav>
+        <nav>
+            <ul>
+                <li><a href="#">Lien 1</a></li>
+                <li><a href="#">Lien 2</a></li>
+                <li><a href="#">Lien 3</a></li>
+        </nav>
 
-	 <section>
-	 	<article>
-	 		<p>Je suis un paragraphe contenu dans la balise article</p>
-	 	</article>
-	 	<aside>
-	 		<p>Je contiens des informations supplémentaires</p>
-	 	</aside>
-	 </section>
+        <section>
+            <article>
+                <p>Je suis un paragraphe contenu dans la balise article</p>
+            </article>
+            <aside>
+                <p>Je contiens des informations supplémentaires</p>
+            </aside>
+        </section>
 
-	 <footer>
-	 	Ici se trouvent généralement un lien pour contacter le propriétaire du site et les droits d'auteur
-	 </footer>
-
-</body>
+        <footer>
+            Ici se trouvent généralement un lien pour contacter le propriétaire du site et les droits d'auteur
+        </footer>
+    </body>
 </html>
 ```
 
@@ -66,21 +65,17 @@ En fonction du type de site développé, il est courant qu’une page web soit d
 
 Exemple :
 
-``` html
+```html
 <!-- Définit une section -->
 <section>
-      <h1>Première section</h1>
-    	<p>Pellentesque feugiat, mauris nec ornare commodo, nisi leo pellentesque neque, et mollis dui ante mattis felis.
-        Nullam quis lacinia libero, non malesuada tellus. Integer nec augue finibus, tempus magna eget, placerat leo.
-        Nulla hendrerit arcu ipsum, ac pharetra massa sodales id.</p>
+    <h1>Première section</h1>
+    <p>Pellentesque feugiat, mauris nec ornare commodo, nisi leo pellentesque neque, et mollis dui ante mattis felis. Nullam quis lacinia libero, non malesuada tellus. Integer nec augue finibus, tempus magna eget, placerat leo. Nulla hendrerit arcu ipsum, ac pharetra massa sodales id.</p>
 </section>
 
 <!-- Définit une autre section -->
 <section>
     <h1>Deuxième section</h1>
-    <p>Pellentesque feugiat, mauris nec ornare commodo, nisi leo pellentesque neque, et mollis dui ante mattis felis.
-        Nullam quis lacinia libero, non malesuada tellus. Integer nec augue finibus, tempus magna eget, placerat leo.
-        Nulla hendrerit arcu ipsum, ac pharetra massa sodales id.</p>
+    <p>Pellentesque feugiat, mauris nec ornare commodo, nisi leo pellentesque neque, et mollis dui ante mattis felis. Nullam quis lacinia libero, non malesuada tellus. Integer nec augue finibus, tempus magna eget, placerat leo. Nulla hendrerit arcu ipsum, ac pharetra massa sodales id.</p>
 </section>
 ```
 
@@ -94,7 +89,7 @@ Cependant, bien que par définition un article doit représenter un contenu auto
 
 Exemple :
 
-``` html
+```html
 <!-- Définit un article -->
 <article>
     <h2>Microlead</h2>
@@ -108,14 +103,14 @@ Dans sa fonction première, l’élément ```<header></header>``` est utilisé p
 
 Exemple :
 
-``` html
+```html
 <!-- Définit un article -->
 <article>
     <!-- Définit l'en-tête de l'article -->
     <header>
         <h1>Microlead</h1>
         <p>Notre mission :</p>
-      </header>
+    </header>
     <!-- Paragraphe -->
     <p>Microlead vous accompagne dans l’apprentissage du développement et dans l’amélioration permanente de vos compétences.</p>
 </article>
@@ -127,7 +122,7 @@ L’élément ```<footer></footer>``` définit un “pied” (une fin) pour une 
 
 Exemple :
 
-``` html
+```html
 <!-- Définit un pied de page -->
 <footer class="sub-footer">
     <div class="footer-content">
@@ -142,7 +137,7 @@ L'élément ```<nav></nav>``` définit un ensemble de liens de navigation. De ma
 
 Exemple :
 
-``` html
+```html
 <!-- Dans cet exemple, <nav> entoure le menu de navigation -->
 <nav class="main-nav">
     <a title="Accueil" class="link" href="#">Accueil</a>
@@ -161,7 +156,7 @@ L’élément ```<aside></aside>``` définit un contenu indirectement lié au co
 
 Exemple :
 
-``` html
+```html
 <aside>
     <h1>Microlead</h1>
     <p>Microlead vous accompagne dans l’apprentissage du développement et dans l’amélioration permanente de vos compétences.</p>

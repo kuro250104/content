@@ -6,7 +6,7 @@ Cet attribut permet d’ajouter une valeur par défaut dans un champ de texte.
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="metier" name="metier" value="Développeur">
 ```
 
@@ -18,7 +18,7 @@ Ce type d’attribut est généralement utilisé pour les Conditions Générales
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="metier" name="metier" value="Développeur" readonly>
 ```
 
@@ -30,7 +30,7 @@ Bien entendu, la valeur d’un champ désactivé n’est pas envoyée lors de la
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="metier" name="metier" value="Développeur" disabled>
 ```
 
@@ -42,7 +42,7 @@ Exemple :
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="pin" name="pin" size="4">
 ```
 
@@ -54,7 +54,7 @@ Cependant, il n’y a aucune action de la part du navigateur pour avertir que l�
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="pin" name="pin" size="4" maxlength="4">
 ```
 
@@ -66,7 +66,7 @@ __Remarque__ : Les attributs ```min``` et ```max``` fonctionnent avec les types 
 
 Exemple :
 
-``` html
+```html
 <label for="age">Age (entre 1 et 50):</label>
 <input type="number" id="age" name="age" min="1" max="50">
 ```
@@ -79,7 +79,7 @@ Multiple permet à l’utilisateur de saisir plusieurs entrées dans l’input.
 
 Exemple :
 
-``` html
+```html
 <input type="file" id="fichiers" name="fichiers" multiple>
 ```
 
@@ -93,7 +93,7 @@ L’attribut ```pattern``` est assez particulier. En effet, il reçoit en valeur
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="codePays" name="codePays" pattern="[A-Za-z]{2}" title="Deux lettres pour le code pays, exemple FR">
 ```
 
@@ -105,7 +105,7 @@ __Remarque__ : L'attribut ```placeholder``` fonctionne avec les input de type te
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="codePays" name="codePays" pattern="[A-Za-z]{2}" title="Deux lettres pour le code pays, exemple FR" placeholder="FR">
 ```
 
@@ -117,7 +117,7 @@ __Remarque__ : ```Required``` fonctionne avec les types d'entrées suivants: tex
 
 Exemple :
 
-``` html
+```html
 <input type="text" id="metier" name="metier" required>
 ```
 
@@ -131,7 +131,7 @@ __Remarque__ : L'attribut ```step``` fonctionne avec les types d'entrées suivan
 
 Exemple :
 
-``` html
+```html
 <input type="number" id="multiplede2" name="multiplede2" step="2">
 ```
 
@@ -143,7 +143,7 @@ Cet attribut ne reçoit aucune valeur et est généralement placé avant le chev
 
 Exemple:
 
-``` html
+```html
 <input type="text" id="metier" name="metier" autofocus>
 ```
 
@@ -159,7 +159,7 @@ __Remarque__ : L'attribut de saisie semi-automatique fonctionne avec ```<form>``
 
 Exemple :
 
-``` html
+```html
 <form action="envoyer.php" autocomplete="on">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" autocomplete="off">

@@ -1,6 +1,6 @@
 Afin que les développeurs puissent respecter les standards et droits d’auteurs concernant une œuvre, ainsi que le droit à la courte citation, le langage HTML met à disposition plusieurs balises. Il est ainsi possible de citer les sources, le nom de l’auteur, le titre d’une œuvre, etc.
 
-## Blockquote
+## L'élément ```<blockquote>```
 
 L’élément ```<blockquote></blockquote>``` indique le texte est une citation longue. Dans un ```<blockquote>```, les retours à la ligne sont respectés par le navigateur. 
 
@@ -20,7 +20,7 @@ Le HTML permet également d’utiliser l’attribut cite avec cette balise, afin
 </body>
 ```
 
-## L’élément q
+## L’élément ```<q>```
 
 L’élément ```<q></q>``` (raccourci de *quote*, “citation” en anglais) indique le texte est une citation. Cet élément est utilisé pour les citations courtes, qui ne nécessitent pas de respecter les retours à la ligne. 
 
@@ -41,7 +41,7 @@ Exemple :
 </body>
 ```
 
-## L’attribut cite
+## L’élément ```<cite>```
 
 ```<cite></cite>``` permet d’indiquer le titre d’une œuvre (livre, chanson, sculpture, peinture, etc.) La référence peut être abrégée selon la convention d'utilisation utilisée pour ajouter des métadonnées de référence. Par exemple, pour Arthur Rimbaud, les métadonnées de référence permettent d’écrire A. Rimbaud.
 
@@ -53,7 +53,7 @@ Exemple :
 </body>
 ```
 
-## L’élément abbr
+## L’élément ```<abbr>```
 
 L’élément ```<abbr></abbr>``` est utile afin d’indiquer que le texte placé entre les balise est un acronyme ou une abréviation. Cela permet de fournir des informations utiles aux navigateurs, aux systèmes de traduction et aux moteurs de recherche.
 
@@ -63,7 +63,7 @@ Exemple :
 <p>La ville de <abbr title="Toulouse">TLS</abbr> est belle.</p>
 ```
 
-## L’élément address
+## L’élément ```<address>```
 
 Cet élément est utilisé afin d’indiquer les informations de contact d’un auteur et/ou propriétaire d’un document ou d’un article. Ces informations sont, de manière générale, une adresse email, une adresse URL, une adresse de domicile, un numéro de téléphone, un profil sur les réseaux sociaux, etc. 
 
@@ -79,7 +79,7 @@ google.com<br>
 </address>
 ```
 
-## L’élément bdo
+## L’élément ```<bdo>```
 
 BDO signifie Bi-Directional Override ou l'élément de surcharge bidirectionnelle en français. La balise HTML ```<bdo>``` est utilisée pour remplacer la direction actuelle du texte. Ainsi, la direction d’un texte peut être changée pour aller de la droite vers la gauche, par exemple.
 

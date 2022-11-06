@@ -33,7 +33,7 @@ Exemple avec les noms de couleurs en anglais :
 
 Exemple avec l’hexadécimale, le RGB et le RGBA :
 
-``` html
+```html
 <body>
     <p>D'autres valeurs pour la couleur Tomato :</p>
  
@@ -52,7 +52,7 @@ Pour définir la couleur du texte, il suffit passer la propriété color à l’
 
 Exemple :
 
-``` html
+```html
 <!-- Texte de couleur Tomato -->
 <p style="color:Tomato;">Tomato</p>
 <!-- Texte de couleur DodgerBlue -->
@@ -67,7 +67,7 @@ L’attribut style permet également d’ajouter une bordure autour d’un élé
 
 Exemple :
 
-``` html
+```html
 <!-- Bordure de couleur Tomato large de 2px et de type solid -->
 <p style="border:2px solid Tomato;">Tomato</p>
 <!-- Bordure de couleur DodgerBlue large de 2px -->

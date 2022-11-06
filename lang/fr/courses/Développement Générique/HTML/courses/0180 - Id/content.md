@@ -10,7 +10,7 @@ __Remarque__ : Contrairement à ```class```, un élément HTML ne peut pas porte
 
 Exemple :
 
-``` html
+```html
 <body>
     <!-- Le paragraphe ci-dessous sera le seul à avoir l'identifiant "important"  -->
     <p id="important">Je suis un paragraphe avec un l'id important</p>

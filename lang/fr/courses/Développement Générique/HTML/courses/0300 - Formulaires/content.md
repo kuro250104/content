@@ -8,13 +8,13 @@ L'élément ```<form>``` est un conteneur pour différents types d'éléments, t
 
 Exemple :
 
-``` html
+```html
 <form>
     Éléments du formulaire
 </form>
 ```
 
-## L'élément input
+## L'élément ```<input>```
 
 L’élément ```<input></input>``` (littéralement *saisie*, en anglais), est utilisé afin de permettre à l’utilisateur de saisir des données. Cet élément est obligatoirement accompagné de l’attribut type. En fonction de la valeur passée à celui-ci, l’élément ```<input>``` s’affichera de plusieurs manières différentes. 
 
@@ -34,7 +34,7 @@ L’élément ```<input type="text">``` affiche un champ de texte monoligne, per
 
 Exemple :
 
-``` html
+```html
 <form>
     <input type="text" id="metier" name="metier">
 </form>
@@ -42,7 +42,7 @@ Exemple :
 
 L’exemple ci-dessus affiche un champ de texte portant le nom “métier”.
 
-## L'élément label
+## L'élément ```<label>```
 
 ```<label></label>``` (*étiquette*, en anglais), permet de définir une “légende” pour chaque élément d’un formulaire. 
 
@@ -52,7 +52,7 @@ Cet élément est particulièrement utile lorsqu’un formulaire contient de cas
 
 Exemple :
 
-``` html
+```html
 <form>
     <label for=nom>Nom :</label><br />
     <input type="text" name="nom" id="nom" />
@@ -67,7 +67,7 @@ Pour créer un bouton radio, il suffit de passer la valeur **radio** à l’attr
 
 Exemple :
 
-``` html
+```html
 <form>
     <input type="radio" id="dev" name="metier" value="dev">
     <label for="male">Développeur</label><br>
@@ -84,7 +84,7 @@ Pour créer une case à cocher, l’attribut ```type``` doit recevoir la valeur 
 
 Exemple :
 
-``` html
+```html
 <form>
     <input type="checkbox" id="dev" name="metier" value="dev">
     <label for="male">Développeur</label><br>
@@ -101,7 +101,7 @@ Pour créer un bouton “envoyer”, il doit disposer d’un attribut ```type```
 
 Exemple :
 
-``` html
+```html
 <form>
     <input type="checkbox" id="dev" name="metier" value="dev">
     <label for="male">Développeur</label><br>
@@ -117,10 +117,9 @@ Pour que la donnée saisie dans un champ du formulaire puisse être traitée lor
 
 Lors du traitement du formulaire, chaque valeur saisie sera identifiée et récupérable grâce à cet attribut. Il est donc primordial de le définir pour chaque champ. Attention à ne pas définir plusieurs fois la même valeur (sauf pour les choix multiples), sans quoi c’est la dernière valeur qui sera transmise, et les autres ne seront pas récupérables.
 
-
 Exemple :
 
-``` html
+```html
 <form>
     <input type="checkbox" id="dev" name="metier" value="dev">
     <label for="male">Développeur</label><br>
