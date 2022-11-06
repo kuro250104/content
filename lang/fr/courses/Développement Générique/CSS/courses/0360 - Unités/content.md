@@ -45,5 +45,3 @@ Ci-dessous, la liste des unités de longueur relatives en CSS :
 - **vmin** : la relation est la suivante : 1% de la plus petite dimension de l’appareil utilisé pour visionner le site web
 - **vmax** : la relation est la suivante : 1% de la plus grande dimension de l’appareil utilisé pour visionner le site web
 - **%** : en relation avec l’élément parent
-
-## Calculer la spécificité
