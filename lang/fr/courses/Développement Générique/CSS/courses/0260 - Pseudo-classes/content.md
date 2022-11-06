@@ -26,7 +26,7 @@ div.xy:hover {
 }
 ```
 
-## Survol d’une <div>
+## Survol d’une ```<div>```
 
 Les pseudo-classes permettent également de styliser une ```<div>``` au survol de la souris. Pour ce faire, il faut utiliser la pseudo-classe ```:hover```.
 
@@ -90,4 +90,3 @@ Exemple :
 </body>
 </html>
 ```
-
