@@ -61,7 +61,7 @@ Capital of United States is not present
 
 ## Fonction delete()
 
-La fonction delete() est utilisée pour supprimer une entrée d'une carte. Elle nécessite la carte et la clé correspondante qui doit être supprimée. Par exemple :
+La fonction ```delete()``` est utilisée pour supprimer une entrée d'une carte. Elle nécessite la carte et la clé correspondante qui doit être supprimée. Par exemple :
 
 ```go
 package main
