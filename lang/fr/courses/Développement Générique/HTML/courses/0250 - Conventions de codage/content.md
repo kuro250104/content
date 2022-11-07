@@ -24,7 +24,7 @@ Exemple respectant la convention concernant les éléments et attributs :
     <p>Voici un cours sur le HTML</p>
 </body>
 
-<a href="www.google.com">Google</a>
+<a href="https://www.google.com/">Google</a>
 ```
 
 Exemple ne respectant pas la convention concernant les éléments et attributs:
@@ -33,7 +33,7 @@ Exemple ne respectant pas la convention concernant les éléments et attributs:
 <BODY>
     <H1>Cours HTML</H1>
     <P>Voici un cours sur le HTML</P>
-    <A href="www.google.com">Google</A>
+    <A href="https://www.google.com/">Google</A>
 </BODY>
 ```
 
@@ -185,7 +185,7 @@ Exemple respectant cette convention :
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="fr-FR">
 <head>
     <title>Conventions de codage</title>
 </head> 
@@ -219,7 +219,7 @@ Exemple avec le ```<head>``` :
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="fr-FR">
 <head>
     <title>Conventions de codage</title>
 </head> 
@@ -235,7 +235,7 @@ Exemple sans le ```<head>``` :
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="fr-FR">
 <title>Conventions de codage</title>
 
 <body>
