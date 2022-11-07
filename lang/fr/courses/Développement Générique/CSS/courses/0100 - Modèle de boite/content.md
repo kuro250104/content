@@ -36,7 +36,7 @@ Dans cet exemple, chaque paragraphe (qui est un **contenu**) de la page est **en
 
 Afin de pouvoir définir la largeur et la hauteur correcte d’un élément, dans tous les navigateurs, il est important de comprendre comment fonctionne le modèle de boîte. 
 
-__Remarque__ : Il est important de comprendre que lorsque la hauteur et la largeur d’un élément est définie, il s'agit simplement de la hauteur et de la largeur de la zone de contenu. Pour calculer la **taille totale** d’un élément, il faut **ajouter les marges extérieures et les marges intérieures ainsi que l’épaisseur des bordures gauche et droite**. 
+__Remarque__ : Il est important de comprendre que lorsque la hauteur et la largeur d’un élément est définie, il s'agit simplement de la hauteur et de la largeur de la zone de contenu. Pour calculer la **taille totale** d’un élément, il faut ajouter les marges extérieures et les marges intérieures ainsi que l’épaisseur des bordures gauche et droite. 
 
 Exemple :
 
@@ -51,8 +51,8 @@ p {
 
 Dans cet exemple, la **largeur du contenu du paragraphe** est de 800 pixels. Cependant, la **largeur totale** de l’élément paragraphe est de 930 pixels. Voici le détail du calcul :
 
-**Largeur totale = largeur du contenu + marge intérieure droite + marge intérieure gauche + marge extérieure gauche + marge extérieure droite + bordure gauche + bordure droite**
+**Largeur totale** = largeur du contenu + marge intérieure droite + marge intérieure gauche + marge extérieure gauche + marge extérieure droite + bordure gauche + bordure droite
 
 Ainsi, pour calculer la hauteur totale d’un élément HTML, il suffirait également d’appliquer la formule suivante :
 
-**hauteur totale = hauteur du contenu + marge intérieure supérieure + marge intérieure inférieure + marge extérieure supérieure + marge extérieure inférieure + bordure supérieure + bordure inférieure**
+**hauteur totale** = hauteur du contenu + marge intérieure supérieure + marge intérieure inférieure + marge extérieure supérieure + marge extérieure inférieure + bordure supérieure + bordure inférieure

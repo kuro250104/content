@@ -8,7 +8,7 @@ Voici la syntaxe d’un pseudo-élément :
 
 ```css
 selecteur::pseudo-element {
-    propriété: valeur;
+    propriete: valeur;
 }
 ```
 
