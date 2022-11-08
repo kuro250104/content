@@ -23,7 +23,7 @@
 
 | **Balise**         | **Description**                                                        |
 |--------------------|------------------------------------------------------------------------|
-| ```<abbr>```       | Abréviation                                                            |
+| ```<abbrx>```      | Abréviation                                                            |
 | ```<blockquote>``` | Citation longue                                                        |
 | ```<cite>```       | Citation d’un titre d’oeuvre ou d’évènement                            |
 | ```<q>```          | Citation courte                                                        |
