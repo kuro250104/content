@@ -31,20 +31,20 @@ C’est l’une des entités les plus utilisées en HTML. Le code pour insérer 
 
 Ci-dessous, un tableau listant les entités les plus utiles et les plus utilisées en HTML :
 
-| **Résultat** | **Description** | **Numéro entité** | **Nom entité** |
-| --- | --- | --- | --- |
-| ``` ``` | non-breaking space | ```&nbsp;``` | ```&#160;``` |
-| ```<``` | plus petit que | ```&lt;``` | ```&#60;``` |
-| ```>``` | plus grand que | ```&gt;``` | ```&#62;``` |
-| ```&``` | esperluette | ```&amp;``` | ```&#38;``` |
-| ```"``` | guillemet double | ```&quot;``` | ```&#34;``` |
-| ```'``` | guillemet | ```&apos;``` | ```&#39;``` |
-| ```¢``` | cent | ```&cent;``` | ```&#162;``` |
-| ```£``` | livres | ```&pound;``` | ```&#163;``` |
-| ```¥``` | yen | ```&yen;``` | ```&#165;``` |
-| ```€``` | euro | ```&euro;``` | ```&#8364;``` |
-| ```©``` | copyright | ```&copy;``` | ```&#169;``` |
-| ```®``` | registered trademark | ```&reg;``` | ```&#174;``` |
+| **Résultat**   | **Description** | **Numéro entité** | **Nom entité** |
+|----------------| --- | --- | --- |
+| ``` &nbsp; ``` | non-breaking space | ```&nbsp;``` | ```&#160;``` |
+| ```<```        | plus petit que | ```&lt;``` | ```&#60;``` |
+| ```>```        | plus grand que | ```&gt;``` | ```&#62;``` |
+| ```&```        | esperluette | ```&amp;``` | ```&#38;``` |
+| ```"```        | guillemet double | ```&quot;``` | ```&#34;``` |
+| ```'```        | guillemet | ```&apos;``` | ```&#39;``` |
+| ```¢```        | cent | ```&cent;``` | ```&#162;``` |
+| ```£```        | livres | ```&pound;``` | ```&#163;``` |
+| ```¥```        | yen | ```&yen;``` | ```&#165;``` |
+| ```€```        | euro | ```&euro;``` | ```&#8364;``` |
+| ```©```        | copyright | ```&copy;``` | ```&#169;``` |
+| ```®```        | registered trademark | ```&reg;``` | ```&#174;``` |
 
 ## Combinaison de marques diacritiques
 
@@ -55,12 +55,12 @@ Lorsque l’encodage ne comprend pas d’accent et que le développeur doit pour
 Ci dessous, un tableau listant les principaux accents utilisés :
 
 | **Accent** | **Caractère** | **Construction** | **Résultat** |
-| --- | --- | --- | --- |
-| ```  ̀ ``` | a | ```a&#768;``` | ```à``` |
-| ```  ́ ``` | a | ```a&#769;``` | ```á``` |
+|----------| --- | --- | --- |
+| ```  ̀&nbsp;  ``` | a | ```a&#768;``` | ```à``` |
+| ```  ́&nbsp;  ``` | a | ```a&#769;``` | ```á``` |
 | ``` ^ ``` | a | ```a&#770;``` | ```â``` |
-| ```  ̃ ``` | a | ```a&#771;``` | ```ã``` |
-| ```  ̀ ``` | O | ```O&#768;``` | ```Ò``` |
-| ```  ́ ``` | O | ```O&#769;``` | ```Ó``` |
-| ``` ^ ``` | O | ```O&#770;``` | ```Ô``` |
-| ```  ̃ ``` | O | ```O&#771;``` | ```Õ``` |
+| ```  ̃&nbsp; ``` | a | ```a&#771;``` | ```ã``` |
+| ```  ̀&nbsp; ``` | O | ```O&#768;``` | ```Ò``` |
+| ```  ́&nbsp; ``` | O | ```O&#769;``` | ```Ó``` |
+| ``` ^``` | O | ```O&#770;``` | ```Ô``` |
+| ```  ̃&nbsp; ``` | O | ```O&#771;``` | ```Õ``` |
