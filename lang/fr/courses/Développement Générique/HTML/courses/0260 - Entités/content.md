@@ -56,7 +56,7 @@ Ci dessous, un tableau listant les principaux accents utilisés :
 
 | **Accent**                 | **Caractère** | **Construction** | **Résultat** |
 |----------------------------|---------------|------------------|--------------|
-| <pre><code> ̀</pre></code> | a             | ```a&#768;```    | ```à```      |
+| <pre><code> ̀</code></pre> | a             | ```a&#768;```    | ```à```      |
 | ```  ́ ```                 | a             | ```a&#769;```    | ```á```      |
 | ``` ^ ```                  | a             | ```a&#770;```    | ```â```      |
 | ```  ̃  ```                | a             | ```a&#771;```    | ```ã```      |
