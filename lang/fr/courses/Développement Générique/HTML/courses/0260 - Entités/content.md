@@ -33,7 +33,7 @@ Ci-dessous, un tableau listant les entités les plus utiles et les plus utilisé
 
 | **Résultat** | **Description**      | **Numéro entité** | **Nom entité** |
 |----------|----------------------|-------------------|----------------|
-| ```  ``` | non-breaking space   | ``` ```           | ```&#160;```   |
+| ```  ``` | non-breaking space   | ```  ```          | ```&#160;```   |
 | ```<```  | plus petit que       | ```&lt;```        | ```&#60;```    |
 | ```>```  | plus grand que       | ```&gt;```        | ```&#62;```    |
 | ```&```  | esperluette          | ```&amp;```       | ```&#38;```    |
