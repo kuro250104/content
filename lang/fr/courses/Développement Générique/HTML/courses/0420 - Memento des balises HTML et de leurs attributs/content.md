@@ -1,118 +1,118 @@
 ## Les balises de premier niveau
 
 
-| **Balise**       | **Description**                                                                                                   |
-|------------------|-------------------------------------------------------------------------------------------------------------------|
-| ```<!DOCTYPE>``` | Balise de déclaration du type du document permettant au navigateur d’interpréter correctement la version déclarée |
-| ```<html>```     | Balise de definition d’un document HTML                                                                           |
-| ```<head>```     | Balise de définition du bloc d’en-tête de la page                                                                 |
-| ```<body>```     | Balise de définition du bloc du corps de la page                                                                  |
+| **Balise**     | **Description**                                                                                                   |
+|----------------|-------------------------------------------------------------------------------------------------------------------|
+| ```!DOCTYPE``` | Balise de déclaration du type du document permettant au navigateur d’interpréter correctement la version déclarée |
+| ```html```     | Balise de definition d’un document HTML                                                                           |
+| ```head```     | Balise de définition du bloc d’en-tête de la page                                                                 |
+| ```body```     | Balise de définition du bloc du corps de la page                                                                  |
 
 ## Les balises d’en-tête
 
-| **Balise**       | **Description**                                               |
-|------------------|---------------------------------------------------------------|
-| ```<link />```   | Balise de liaison d’une ressource externe au document HTML    |
-| ```<meta />```   | Balise de métadonnées                                         |
-| ```<script>```   | Balise d’inclusion de script                                  |
-| ```<noscript>``` | Balise ne s’affichant que lorsque les scripts sont désactivés |
-| ```<style>```    | Balise d’insertion de style au sein du document HTML          |
-| ```<title>```    | Balise contenant le titre du document HTML                    |
+| **Balise**     | **Description**                                               |
+|----------------|---------------------------------------------------------------|
+| ```link```     | Balise de liaison d’une ressource externe au document HTML    |
+| ```meta```     | Balise de métadonnées                                         |
+| ```script```   | Balise d’inclusion de script                                  |
+| ```noscript``` | Balise ne s’affichant que lorsque les scripts sont désactivés |
+| ```style```    | Balise d’insertion de style au sein du document HTML          |
+| ```title```    | Balise contenant le titre du document HTML                    |
 
 ## Les balises structurelles de texte
 
-| **Balise**         | **Description**                                                        |
-|--------------------|------------------------------------------------------------------------|
-| ```<abbrx>```      | Abréviation                                                            |
-| ```<blockquote>``` | Citation longue                                                        |
-| ```<cite>```       | Citation d’un titre d’oeuvre ou d’évènement                            |
-| ```<q>```          | Citation courte                                                        |
-| ```<sup>```        | Exposant                                                               |
-| ```<sub>```        | Indice                                                                 |
-| ```<strong>```     | Mise en valeur forte                                                   |
-| ```<em>```         | Mise en valeur normale                                                 |
-| ```<b>```          | Mise en valeur graphique (gras)                                        |
-| ```<i>```          | Mise en valeur graphique (italique)                                    |
-| ```<h1>```         | Titre de niveau 1                                                      |
-| ```<h2>```         | Titre de niveau 2                                                      |
-| ```<h3>```         | Titre de niveau 3                                                      |
-| ```<h4>```         | Titre de niveau 4                                                      |
-| ```<h5>```         | Titre de niveau 5                                                      |
-| ```<h6>```         | Titre de niveau 6                                                      |
-| ```<img />```      | Balise d’insertion d’image                                             |
-| ```<figure>```     | Balise de regroupement d’un ou plusieurs médias                        |
-| ```<figcaption>``` | Description ou légende d’un élément **figure**                         |
-| ```<audio>```      | Balise d’intégration de son                                            |
-| ```<video>```      | Balise d’intégration de vidéo                                          |
-| ```<source>```     | Balise de source de l’audio ou de la vidéo d’une balise correspondante |
-| ```<a>```          | Balise de lien                                                         |
-| ```<br>```         | Balise de retour à la ligne                                            |
-| ```<p>```          | Balise de paragraphe                                                   |
-| ```<hr>```         | Ligne de séparation horizontale                                        |
-| ```<address>```    | Balise d’informations à propos de l’auteur de l’article ou du document |
-| ```<del>```        | Balise encadrant un texte qui a été supprimé d’un document             |
-| ```<ins>```        | Balise encadrant un texte qui a été ajouté dans un document            |
-| ```<dfn>```        | Balise encadrant le sujet de la définition d’un terme                  |
-| ```<kbd>```        | Balise représentant une saisie clavier                                 |
-| ```<pre>```        | Balise d’affichage d’un texte préformaté                               |
-| ```<progress>```   | Balise représentant l’état d’avancement d’une tâche                    |
-| ```<time>```       | Balise représentant une date et / ou une heure                         |
+| **Balise**       | **Description**                                                        |
+|------------------|------------------------------------------------------------------------|
+| ```abbr```       | Abréviation                                                            |
+| ```blockquote``` | Citation longue                                                        |
+| ```cite```       | Citation d’un titre d’oeuvre ou d’évènement                            |
+| ```q```          | Citation courte                                                        |
+| ```sup```        | Exposant                                                               |
+| ```sub```        | Indice                                                                 |
+| ```strong```     | Mise en valeur forte                                                   |
+| ```em```         | Mise en valeur normale                                                 |
+| ```b```          | Mise en valeur graphique (gras)                                        |
+| ```i```          | Mise en valeur graphique (italique)                                    |
+| ```h1```         | Titre de niveau 1                                                      |
+| ```h2```         | Titre de niveau 2                                                      |
+| ```h3```         | Titre de niveau 3                                                      |
+| ```h4```         | Titre de niveau 4                                                      |
+| ```h5```         | Titre de niveau 5                                                      |
+| ```h6>```        | Titre de niveau 6                                                      |
+| ```img```        | Balise d’insertion d’image                                             |
+| ```figure```     | Balise de regroupement d’un ou plusieurs médias                        |
+| ```figcaption``` | Description ou légende d’un élément **figure**                         |
+| ```audio```      | Balise d’intégration de son                                            |
+| ```video```      | Balise d’intégration de vidéo                                          |
+| ```source```     | Balise de source de l’audio ou de la vidéo d’une balise correspondante |
+| ```a```          | Balise de lien                                                         |
+| ```br```         | Balise de retour à la ligne                                            |
+| ```p```          | Balise de paragraphe                                                   |
+| ```hr```         | Ligne de séparation horizontale                                        |
+| ```address```    | Balise d’informations à propos de l’auteur de l’article ou du document |
+| ```del```        | Balise encadrant un texte qui a été supprimé d’un document             |
+| ```ins```        | Balise encadrant un texte qui a été ajouté dans un document            |
+| ```dfn```        | Balise encadrant le sujet de la définition d’un terme                  |
+| ```kbd```        | Balise représentant une saisie clavier                                 |
+| ```pre```        | Balise d’affichage d’un texte préformaté                               |
+| ```progress```   | Balise représentant l’état d’avancement d’une tâche                    |
+| ```time```       | Balise représentant une date et / ou une heure                         |
 
 ## Les balises de liste
 
 | **Balise** | **Description**                      |
-|------------|--------------------------------------|
-| ```<ul>``` | Balise de liste à puces              |
-| ```<ol>``` | Balise de liste numérotée            |
-| ```<li>``` | Élément d’une liste **ul** ou **ol** |
-| ```<dl>``` | Balise de liste de définitions       |
-| ```<dt>``` | Balise encadrant le terme à définir  |
-| ```<dd>``` | Balise de définition du terme        |
+|----------|--------------------------------------|
+| ```ul``` | Balise de liste à puces              |
+| ```ol``` | Balise de liste numérotée            |
+| ```li``` | Élément d’une liste **ul** ou **ol** |
+| ```dl``` | Balise de liste de définitions       |
+| ```dt``` | Balise encadrant le terme à définir  |
+| ```dd``` | Balise de définition du terme        |
 
 ## Les balises de tableau
 
-| **Balise**      | **Description**                                                 |
-|-----------------|-----------------------------------------------------------------|
-| ```<table>```   | Balise de déclaration d’un tableau                              |
-| ```<thead>```   | Balise de déclaration de l’en-tête d’un tableau                 |
-| ```<tbody>```   | Balise de déclaration du corps d’un tableau                     |
-| ```<tfoot>```   | Balise de déclaration du pied d’un tableau                      |
-| ```<tr>```      | Balise de déclaration d’une ligne dans un tableau               |
-| ```<td>```      | Balise de déclaration d’une cellule dans un tableau             |
-| ```<th>```      | Balise de déclaration d’une cellule dans l’en-tête d’un tableau |
-| ```<caption>``` | Titre d’un tableau                                              |
+| **Balise**    | **Description**                                                 |
+|---------------|-----------------------------------------------------------------|
+| ```table```   | Balise de déclaration d’un tableau                              |
+| ```thead```   | Balise de déclaration de l’en-tête d’un tableau                 |
+| ```tbody```   | Balise de déclaration du corps d’un tableau                     |
+| ```tfoot```   | Balise de déclaration du pied d’un tableau                      |
+| ```tr```      | Balise de déclaration d’une ligne dans un tableau               |
+| ```td```      | Balise de déclaration d’une cellule dans un tableau             |
+| ```th```      | Balise de déclaration d’une cellule dans l’en-tête d’un tableau |
+| ```caption``` | Titre d’un tableau                                              |
 
 ## Les balises de formulaire
 
-| **Balise**       | **Description**                                           |
-|------------------|-----------------------------------------------------------|
-| ```<form>```     | Balise de formulaire                                      |
-| ```<fieldset>``` | Balise de regroupement de champs                          |
-| ```<legend>```   | Balise de titre d’un groupe de champs                     |
-| ```<label>```    | Balise de libellé d’un champ                              |
-| ```<input />```  | Balise de champ                                           |
-| ```<textarea>``` | Balise de zone de saisie à plusieurs lignes               |
-| ```<select>```   | Balise de liste déroulante                                |
-| ```<option>```   | Balise d’élément d’une liste déroulante                   |
-| ```<optgroup>``` | Balise de groupement d’éléments dans une liste déroulante |
+| **Balise**     | **Description**                                           |
+|----------------|-----------------------------------------------------------|
+| ```form```     | Balise de formulaire                                      |
+| ```fieldset``` | Balise de regroupement de champs                          |
+| ```legend```   | Balise de titre d’un groupe de champs                     |
+| ```label```    | Balise de libellé d’un champ                              |
+| ```input```    | Balise de champ                                           |
+| ```textarea``` | Balise de zone de saisie à plusieurs lignes               |
+| ```select```   | Balise de liste déroulante                                |
+| ```option```   | Balise d’élément d’une liste déroulante                   |
+| ```optgroup``` | Balise de groupement d’éléments dans une liste déroulante |
 
 ## Les balises de section
 
-| **Balise**      | **Description**                                                          |
-|-----------------|--------------------------------------------------------------------------|
-| ```<header>```  | Balise d’en-tête du document ou d’une partie du document                 |
-| ```<nav>```     | Balise contenant les principaux liens représentant le menu de navigation |
-| ```<footer>```  | Balise de pied de page du document ou d’une partie du document           |
-| ```<section>``` | Balise de section du document                                            |
-| ```<article>``` | Balise de définition d’un article                                        |
-| ```<aside>```   | Balise de groupement d’informations complémentaires                      |
+| **Balise**    | **Description**                                                          |
+|---------------|--------------------------------------------------------------------------|
+| ```header```  | Balise d’en-tête du document ou d’une partie du document                 |
+| ```nav```     | Balise contenant les principaux liens représentant le menu de navigation |
+| ```footer```  | Balise de pied de page du document ou d’une partie du document           |
+| ```section``` | Balise de section du document                                            |
+| ```article``` | Balise de définition d’un article                                        |
+| ```aside```   | Balise de groupement d’informations complémentaires                      |
 
 ## Les balises génériques
 
-| **Balise**   | **Description**       |
-|--------------|-----------------------|
-| ```<span>``` | Balise de type inline |
-| ```<div>```  | Balise de type block  |
+| **Balise** | **Description**       |
+|------------|-----------------------|
+| ```span``` | Balise de type inline |
+| ```div```  | Balise de type block  |
 
 ## Les attributs génériques
 
