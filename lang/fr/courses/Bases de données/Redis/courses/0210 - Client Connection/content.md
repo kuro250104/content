@@ -4,7 +4,7 @@ Redis accepte les connexions des clients sur le port TCP d'écoute configuré et
 - L'option TCP_NODELAY est définie afin de s'assurer que nous n'avons pas de retard dans notre connexion.
 - Un événement de fichier lisible est créé afin que Redis soit capable de collecter les requêtes du client dès que de nouvelles données sont disponibles pour être lues sur le socket.
 
-## Maximum Number of Clients
+## Nombre maximum de clients
 
 Dans la configuration de Redis (redis.conf), il y a une propriété appelée maxclients, qui décrit le nombre maximum de clients qui peuvent se connecter à Redis.
 
@@ -27,7 +27,7 @@ Dans l'exemple suivant, nous avons fixé le nombre maximum de clients à 100000,
 redis-server --maxclients 100000 
 ```
 
-## Commandes Client
+## Commandes de Redis Client
 
 **Command et Description**
 

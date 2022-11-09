@@ -21,7 +21,7 @@ key2 first second
 4) "second"
 ```
 
-## Redis Scripting Commands
+## Commandes de Redis Scripting
 
 Le tableau suivant énumère quelques commandes de base liées à Redis Scripting.
 

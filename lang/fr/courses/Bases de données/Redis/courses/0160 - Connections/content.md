@@ -11,7 +11,7 @@ redis 127.0.0.1:6379> PING
 PONG 
 ```
 
-## Commandes de connexion Redis
+## Commandes de Redis Connections
 
 Le tableau suivant énumère quelques commandes de base liées aux connexions Redis.
 

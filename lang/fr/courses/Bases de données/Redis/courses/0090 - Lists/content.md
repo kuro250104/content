@@ -19,7 +19,7 @@ redis 127.0.0.1:6379> LRANGE tutorials 0 10
 
 Dans l'exemple ci-dessus, trois valeurs sont insérées dans la liste Redis nommée 'tutoriels' par la commande **LPUSH**.
 
-## Redis Lists Commands
+## Commandes de Redis Lists
 
 Le tableau suivant présente quelques commandes de base liées aux listes.
 

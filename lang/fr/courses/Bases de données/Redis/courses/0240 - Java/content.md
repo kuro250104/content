@@ -32,7 +32,7 @@ Connection to server sucessfully
 Server is running: PONG
 ```
 
-## Exemple de chaîne Redis Java
+## Exemple d'utilisation de Redis String en Java
 
 ```java
 import redis.clients.jedis.Jedis; 
@@ -59,7 +59,7 @@ Connection to server sucessfully
 Stored string in redis:: Redis tutorial 
 ```
 
-## Exemple de liste Redis Java
+## Exemple d'utilisation de Redis Lists en Java
 
 ```java
 import redis.clients.jedis.Jedis; 
@@ -96,7 +96,7 @@ Stored string in redis:: Mongodb
 Stored string in redis:: Mysql
 ```
 
-## Exemple de clés Java Redis
+## Exemple d'utilisation de Redis Keys en Java
 
 ```java
 import redis.clients.jedis.Jedis; 

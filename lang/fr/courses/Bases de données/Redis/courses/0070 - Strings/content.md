@@ -17,7 +17,7 @@ redis 127.0.0.1:6379> GET microlead
 
 Dans l'exemple ci-dessus, **SET** et **GET** sont les commandes, tandis que **microlead** est la clé.
 
-## Redis Strings Commands
+## Commandes de Redis Strings
 
 Le tableau suivant liste quelques commandes de base pour gérer les chaînes de caractères dans Redis.
 

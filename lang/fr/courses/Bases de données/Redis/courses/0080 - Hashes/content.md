@@ -21,7 +21,7 @@ redis 127.0.0.1:6379> HGETALL tutorialspoint
 
 Dans l'exemple ci-dessus, nous avons défini les détails des tutoriels Redis (nom, description, goûts, visiteurs) dans un hash nommé 'tutorialspoint'.
 
-## Redis Hash Commands
+## Commandes de Redis Hash
 
 Le tableau suivant liste quelques commandes de base liées au hachage.
 

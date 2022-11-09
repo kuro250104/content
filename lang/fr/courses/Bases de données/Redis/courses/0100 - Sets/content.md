@@ -21,7 +21,7 @@ redis 127.0.0.1:6379> SMEMBERS tutorials
 
 Dans l'exemple ci-dessus, trois valeurs sont insérées dans l'ensemble Redis nommé 'tutoriel' par la commande **SADD**.
 
-## Redis Sets Commands
+## Commandes de Redis Sets
 
 Le tableau suivant liste quelques commandes de base liées aux ensembles.
 

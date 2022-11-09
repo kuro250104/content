@@ -3,7 +3,7 @@ Redis est un serveur TCP et supporte le protocole demande/réponse. Dans Redis, 
 - Le client envoie une requête au serveur, et lit dans le socket, généralement de manière bloquante, la réponse du serveur.
 - Le serveur traite la commande et renvoie la réponse au client.
 
-## Meaning of Pipelining
+## Signification du Pipelining
 
 La signification de base du pipelining est que le client peut envoyer plusieurs requêtes au serveur sans attendre les réponses, et lire les réponses en une seule étape.
 

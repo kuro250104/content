@@ -42,7 +42,7 @@ Connection to server sucessfully
 Server is running: PONG 
 ```
 
-## Exemple de chaîne PHP Redis
+## Exemple d'utilisation de Redis String en PHP
 
 ```php
 <?php 
@@ -64,7 +64,7 @@ Connection to server sucessfully
 Stored string in redis:: Redis tutorial 
 ```
 
-## Exemple de liste php Redis
+## Exemple d'utilisation de Redis Lists en PHP
 
 ```php
 <?php 
@@ -94,7 +94,7 @@ Mongodb
 Mysql 
 ```
 
-## Exemple de clés PHP Redis
+## Exemple d'utilisation de Redis Keys en PHP
 
 ```php
 <?php 

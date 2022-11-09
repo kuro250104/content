@@ -29,7 +29,7 @@ redis 127.0.0.1:6379> PUBLISH redisChat "Learn redis by tutorials point"
 3) "Learn redis by tutorials point"
 ```
 
-## Redis PubSub Commands
+## Commandes de Redis PubSub
 
 Le tableau suivant liste quelques commandes de base liées à Redis Pub/Sub.
 

@@ -90,7 +90,7 @@ Le nombre maximal de membres dans un ensemble est de 232 - 1 (4294967295, soit p
 
 ## Sorted Sets
 
-Les Redis Sorted Sets sont similaires aux Redis Sets, des collections non répétitives de chaînes de caractères. La différence est que chaque membre d'un **Sorted Set** est associé à un score, qui est utilisé afin de prendre l'ensemble trié dans l'ordre, du plus petit au plus grand score. Bien que les membres soient uniques, les scores peuvent être répétés.
+Les Redis **Sorted Sets** sont similaires aux Redis Sets, des collections non répétitives de chaînes de caractères. La différence est que chaque membre d'un **Sorted Set** est associé à un score, qui est utilisé afin de prendre l'ensemble trié dans l'ordre, du plus petit au plus grand score. Bien que les membres soient uniques, les scores peuvent être répétés.
 
 ### Exemple
 

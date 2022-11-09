@@ -33,7 +33,7 @@ redis 127.0.0.1:6379> EXEC
 3) (integer) 1
 ```
 
-## Commandes de transaction Redis
+## Commandes de Redis Transactions
 
 Le tableau suivant montre quelques commandes de base liées aux transactions Redis.
 

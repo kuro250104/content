@@ -18,7 +18,7 @@ redis 127.0.0.1:6379> DEL microlead
 
 Dans l'exemple ci-dessus, **DEL** est la commande, tandis que **microlead** est la clé. Si la clé est supprimée, alors la sortie de la commande sera (entier) 1, sinon elle sera (entier) 0.
 
-## Redis Keys Commands
+## Commandes de Redis Keys
 
 Le tableau suivant énumère quelques commandes de base liées aux touches.
 
