@@ -50,7 +50,25 @@ import seaborn as sns
 iris = sns.load_dataset('iris')
 %matplotlib inline
 import seaborn as sns; sns.set()
-sns.pairplot(iris, hue='species', height=3);
+sns.pairplot(iris, hue='species', height=3)
 ```
 
 ### Rendu
+
+![Rendu des schémas générés par l'exemple 1](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Framework%20%26%20Librairies/Scikit%20Learn/0030%20-%20Repr%C3%A9sentation%20des%20donn%C3%A9es/images/image1.png)
+
+### Exemple 2
+
+```python
+X_iris = iris.drop('species', axis=1)
+X_iris.shape
+y_iris = iris['species']
+y_iris.shape
+```
+
+### Rendu
+
+```bash
+(150,4)
+(150,)
+```
