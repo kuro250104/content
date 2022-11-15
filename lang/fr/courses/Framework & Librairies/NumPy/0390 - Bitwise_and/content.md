@@ -25,7 +25,7 @@ Bitwise AND of 13 and 17:
 1
 ```
 
-Vous pouvez vérifier la sortie comme suit. Considérons la table de vérité AND par bit suivante.
+Vous pouvez vérifier la sortie comme suit. Considérons la table de vérité bitwise_and suivante.
 
 | **A** | **B** | **AND** |
 | --- | --- | --- |
