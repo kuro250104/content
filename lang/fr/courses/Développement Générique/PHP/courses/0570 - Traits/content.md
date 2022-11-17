@@ -5,18 +5,18 @@ Un trait est semblable à une classe, mais il ne sert qu'à grouper des fonction
 
 exemple : 
 
-``` php
+```php
 <?php
 trait ezcReflectionReturnInfo {
 	function getReturnType() { /*1*/ }
 	function getReturnDescription() { /*2*/ }
 }
- 
+
 class ezcReflectionMethod extends ReflectionMethod {
 	use ezcReflectionReturnInfo;
 	/* ... */
 }
- 
+
 class ezcReflectionFunction extends ReflectionFunction {
 	use ezcReflectionReturnInfo;
 	/* ... */
@@ -30,73 +30,73 @@ Une méthode héritée depuis une classe mère est écrasée par une méthode is
 
 Exemple :
 
-``` php
+```php
 <?php
 class Base {
 	public function sayHello() {
-		echo 'Hello ';
+		echo('Hello ');
 	}
 }
- 
+
 trait SayWorld {
 	public function sayHello() {
 		parent::sayHello();
-		echo 'World!';
+		echo('World!');
 	}
 }
- 
+
 class MyHelloWorld extends Base {
 	use SayWorld;
 }
- 
+
 $o = new MyHelloWorld();
 $o->sayHello();
 ?>
 ```
 
-``` php
+```php
 <?php
 trait HelloWorld {
 	public function sayHello() {
-		echo 'Hello World!';
+		echo('Hello World!');
 	}
 }
- 
+
 class TheWorldIsNotEnough {
 	use HelloWorld;
 	public function sayHello() {
-		echo 'Hello Universe!';
+		echo('Hello Universe!');
 	}
 }
- 
+
 $o = new TheWorldIsNotEnough();
 $o->sayHello();
 ?>
 ```
 
-``` php
+```php
 <?php
 trait Hello {
 	public function sayHello() {
-		echo 'Hello ';
+		echo('Hello ');
 	}
 }
 ```
 
-``` php
+```php
 trait World {
 	public function sayWorld() {
-		echo 'World';
+		echo('World');
 	}
 }
- 
+
 class MyHelloWorld {
 	use Hello, World;
 	public function sayExclamationMark() {
-		echo '!';
+		echo('!');
 	}
 }
- 
+
 $o = new MyHelloWorld();
 $o->sayHello();
 $o->sayWorld();
@@ -104,33 +104,33 @@ $o->sayExclamationMark();
 ?>
 ```
 
-``` php
+```php
 <?php
 trait A {
 	public function smallTalk() {
-		echo 'a';
+		echo('a');
 	}
 	public function bigTalk() {
-		echo 'A';
+		echo('A');
 	}
 }
- 
+
 trait B {
 	public function smallTalk() {
-		echo 'b';
+		echo('b');
 	}
 	public function bigTalk() {
-		echo 'B';
+		echo('B');
 	}
 }
- 
+
 class Talker {
 	use A, B {
 		B::smallTalk insteadof A;
 		A::bigTalk insteadof B;
 	}
 }
- 
+
 class Aliased_Talker {
 	use A, B {
 		B::smallTalk insteadof A;
@@ -147,19 +147,19 @@ En utilisant la syntaxe “as”, vous pouvez aussi ajuster la visibilité de la
 
 Exemple :
 
-``` php
+```php
 <?php
 trait HelloWorld {
 	public function sayHello() {
-		echo 'Hello World!';
+		echo('Hello World!');
 	}
 }
- 
+
 // Modification de la visibilité de la méthode sayHello
 class MyClass1 {
 	use HelloWorld { sayHello as protected; }
 }
- 
+
 // Utilisation d'un alias lors de la modification de la visibilité
 // La visibilité de la méthode sayHello n'est pas modifiée
 class MyClass2 {
@@ -174,43 +174,43 @@ Tout comme les classes peuvent utiliser des traits, d'autres traits le peuvent a
 
 Exemple :
 
-``` php
+```php
 <?php
 trait Hello {
 	public function sayHello() {
-		echo 'Hello ';
+		echo('Hello ');
 	}
 }
- 
+
 trait World {
 	public function sayWorld() {
-		echo 'World!';
+		echo('World!');
 	}
 }
- 
+
 trait HelloWorld {
 	use Hello, World;
 }
- 
+
 class MyHelloWorld {
 	use HelloWorld;
 }
- 
+
 $o = new MyHelloWorld();
 $o->sayHello();
 $o->sayWorld();
 ?>
 ```
 
-``` php
+```php
 <?php
 trait Hello {
 	public function sayHelloWorld() {
-		echo 'Hello'.$this->getWorld();
+		echo('Hello'.$this->getWorld());
 	}
 	abstract public function getWorld();
 }
- 
+
 class MyHelloWorld {
 	private $world;
 	use Hello;
@@ -230,24 +230,24 @@ Des variables statiques peuvent être utilisées dans les méthodes d'un trait, 
 
 Exemple 1 :
 
-``` php
+```php
 <?php
 trait Counter {
 	public function inc() {
 		static $c = 0;
 		$c = $c + 1;
-		echo "$c\n";
+		echo("$c\n");
 	}
 }
- 
+
 class C1 {
 	use Counter;
 }
- 
+
 class C2 {
 	use Counter;
 }
- 
+
 $o = new C1(); $o->inc(); // echo 1
 $p = new C2(); $p->inc(); // echo 1
 ?>
@@ -255,18 +255,18 @@ $p = new C2(); $p->inc(); // echo 1
 
 Exemple 2 :
 
-``` php
+```php
 <?php
 trait StaticExample {
 	public static function doSomething() {
 		return 'Doing something';
 	}
 }
- 
+
 class Example {
 	use StaticExample;
 }
- 
+
 Example::doSomething();
 ?>
 ```
@@ -277,16 +277,16 @@ Les traits peuvent aussi définir des propriétés.
 
 Exemple 1 :
 
-``` php
+```php
 <?php
 trait PropertiesTrait {
 	public $x = 1;
 }
- 
+
 class PropertiesExample {
 	use PropertiesTrait;
 }
- 
+
 $example = new PropertiesExample;
 $example->x;
 ?>
@@ -296,13 +296,13 @@ Si un trait définit une propriété, alors la classe ne peut pas définir une p
 
 Exemple 2 :
 
-``` php
+```php
 <?php
 trait PropertiesTrait {
 	public $same = true;
 	public $different = false;
 }
- 
+
 class PropertiesExample {
 	use PropertiesTrait;
 	public $same = true; // Strict Standards

@@ -12,7 +12,7 @@ Le “si” est la base immuable de toute condition. Elle se représente en PHP 
 
 Prenons deux exemples afin de mieux comprendre la logique :
 
-``` php
+```php
 # Déclaration d'une variable "$a", et attribution de la valeur "0"
 $a = 0;
 
@@ -20,13 +20,13 @@ $a = 0;
 # strictement égale à "0".
 if ($a == 0) {
 	# Début du bloc à exécuter si la condition est vraie.
-	echo ("vrai");
+	echo("vrai");
 }
 ```
 
 Dans l’exemple ci-dessus, la condition vérifiée est vraie. Ainsi les instructions présentent dans le bloc qui suit, entre accolades, sera exécuté. De la sorte, PHP affichera “**vrai**”.
 
-``` php
+```php
 # Déclaration d'une variable "$a", et attribution de la valeur "0"
 $a = 0;
 
@@ -34,7 +34,7 @@ $a = 0;
 # strictement égale à "1".
 if ($a == 1) {
 	# Début du bloc à exécuter si la condition est vraie.
-	echo ("vrai");
+	echo("vrai");
 }
 ```
 
@@ -46,7 +46,7 @@ Les conditions “si” peuvent également comporter une partie “sinon”. Cel
 
 Contrairement au “if”, il n’y a pas de condition à passer dans le “else” entre parenthèses, cependant il faut tout de même spécifier des accolades tout de suite après le mot clé afin d’y spécifier le code à exécuter si la condition initiale n’est pas remplie. Le “else” est optionnel, et il n’est nullement obligatoire de s’en servir.
 
-``` php
+```php
 # Déclaration d'une variable "$a", et attribution de la valeur "0"
 $a = 0;
 
@@ -54,10 +54,10 @@ $a = 0;
 # strictement égale à "1".
 if ($a == 1) {
 	# Début du bloc à exécuter si la condition est vraie.
-	echo ("vrai");
+	echo("vrai");
 } else {
-      # Bloc à exécuter si la condition n'est pas vraie.
-      echo ("false");
+    # Bloc à exécuter si la condition n'est pas vraie.
+    echo("false");
 }
 ```
 
@@ -65,7 +65,7 @@ Dans l’exemple ci-dessus, nous déclarons une variable ```$a``` qui prend pour
 
 Prenons un deuxième exemple : 
 
-``` php
+```php
 # Déclaration d'une variable "$a", et attribution de la valeur "0"
 $a = 1;
 
@@ -73,10 +73,10 @@ $a = 1;
 # strictement égale à "1".
 if ($a == 1) {
 	# Début du bloc à exécuter si la condition est vraie.
-	echo ("vrai");
+	echo("vrai");
 } else {
     # Bloc à exécuter si la condition n'est pas vraie.
-    echo ("false");
+    echo("false");
 }
 ```
 
@@ -90,7 +90,7 @@ Il existe une alternative au “si” et au “sinon” : le “sinon si”. Cel
 
 Le “sinon si” se traduit littéralement en anglais par “else if”. Aussi ce sont les deux mot-clés qu’il faut employer si l’on souhaite s’en servir. Tout comme pour le “if”, il conviendra ici de passer une condition à tester entre parenthèses. Tout comme pour le “else”, le “else if” n’est pas obligatoire.
 
-``` php
+```php
 # Déclaration d'une variable "$a", et attribution de la valeur "0"
 $a = 0;
 
@@ -98,13 +98,13 @@ $a = 0;
 # strictement égale à "1".
 if ($a == 1) {
 	# Début du bloc à exécuter si la condition est vraie.
-	echo ("a vaut 1");
+	echo("a vaut 1");
 } else if ($a == 0) {
     # Bloc à exécuter si $a vaut zéro.
-    echo ("a vaut zéro");
+    echo("a vaut zéro");
 } else {
     # Bloc à exécuter si la condition n'est pas vraie.
-    echo ("a ne vaut ni un, ni zéro");
+    echo("a ne vaut ni un, ni zéro");
 }
 ```
 
@@ -123,7 +123,7 @@ Il faut ici bien retenir deux points :
 
 Par ailleurs, il est important de noter que dans une condition “if-else” (sans “else if”), il est souvent possible de ne pas utiliser le “else”. Voici un exemple :
 
-``` php
+```php
 $a = 0;
 $b = 0;
 if ( $a == 0 ) {
@@ -141,7 +141,7 @@ L’exemple ci-dessus montre un algorithme simple :
 
 Il est possible d’écrire cette même condition sans le “else”, juste en changeant d’approche :
 
-``` php
+```php
 $a = 0;
 $b = 3;
 if ( $a == 0 ) {

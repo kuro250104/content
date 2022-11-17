@@ -2,7 +2,7 @@ La superglobale ```$_REQUEST``` est une variable qui est utilisée pour récupé
 
 Exemple :
 
-``` php
+```php
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
   Prenom: <input type="text" name="name">
   <input type="submit">
@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // récupérer les données fournis par le formulaire
   $prenom = $_REQUEST['name'];
   if (empty($name)) {
-    echo "Le champ prénom est vide";
+    echo("Le champ prénom est vide");
   } else {
-    echo $prenom;
+    echo($prenom);
   }
 }
 ?>

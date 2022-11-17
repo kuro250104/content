@@ -8,6 +8,6 @@ Ainsi, en PHP, **NULL** est passé en valeur à une variable lors de sa déclara
 
 Exemple :
 
-``` php
+```php
 $variable = NULL;
 ```

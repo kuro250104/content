@@ -6,7 +6,7 @@ PHP a plus de 1000 fonctions intégrées qui peuvent être appelées directement
 
 Veuillez consulter notre référence PHP pour un aperçu complet des fonctions intégrées de PHP.
 
-Lien : https://www.php.net/manual/fr/indexes.functions.php
+Lien : <a href="https://www.php.net/manual/fr/indexes.functions.php" title="référenciel complet des fonctions en PHP" target="_blank">https://www.php.net/manual/fr/indexes.functions.php</a>
 
 ## Fonctions définies par l’utilisateur
 
@@ -22,7 +22,7 @@ Une déclaration de fonction définie par l'utilisateur commence par le mot ```f
 
 syntaxe :
 
-``` php
+```php
 function functionName() {
   // code
 }
@@ -30,10 +30,10 @@ function functionName() {
 
 exemple :
 
-``` php
+```php
 <?php
 function writeMsg() {
-  echo "Hello world!";
+  echo("Hello world!");
 }
 
 writeMsg(); // appel de la fonction
@@ -48,10 +48,10 @@ Les arguments sont spécifiés après le nom de la fonction, à l'intérieur des
 
 L'exemple suivant a une fonction avec un argument (```$fname```). Lorsque la fonction ```familyName()``` est appelée, nous passons également un nom (par exemple Marie), et le nom est utilisé à l'intérieur de la fonction, qui génère plusieurs prénoms différents, mais un nom de famille égal :
 
-``` php
+```php
 <?php
 function familyName($fname) {
-    echo "$fname Dupont.<br>";
+    echo("$fname Dupont.<br>");
 }
 
 familyName("Marie");
@@ -64,10 +64,10 @@ familyName("Emma");
 
 L'exemple suivant a une fonction avec deux arguments ($fname et $year) :
 
-``` php
+```php
 <?php
 function familyName($fname, $year) {
-    echo "$fname Dupont. Né en $year <br>";
+    echo("$fname Dupont. Né en $year <br>");
 }
 
 familyName("Marie", "1975");
@@ -82,15 +82,15 @@ En PHP, les arguments sont généralement transmis par valeur, ce qui signifie q
 
 Lorsqu'un argument de fonction est passé par référence, les modifications apportées à l'argument modifient également la variable qui a été transmise. Pour transformer un argument de fonction en référence, l'opérateur & est utilisé :
 
-``` php
+```php
 <?php
 function add_five(&$value) {
-    $value += 5;
+  $value += 5;
 }
 
 $num = 2;
 add_five($num);
-echo $num;
+echo($num);
 ?>
 ```
 
@@ -98,11 +98,11 @@ echo $num;
 
 L'exemple suivant montre comment utiliser un paramètre par défaut. Si nous appelons la fonction ```setHeight()``` sans arguments, elle prend la valeur par défaut comme argument :
 
-``` php
+```php
 <?php 
 declare(strict_types=1);
 function setHeight(int $minheight = 50) {
-    echo "The height is : $minheight <br>";
+  echo("The height is : $minheight <br>");
 }
 
 setHeight(350);
@@ -124,12 +124,12 @@ Dans l'exemple suivant, nous essayons d'envoyer à la fois un nombre et une cha�
 
 exemple :
 
-``` php
+```php
 <?php
 function addNumbers(int $a, int $b) {
-    return $a + $b;
+  return $a + $b;
 }
-echo addNumbers(5, "5 days");
+echo(addNumbers(5, "5 days"));
 ?>
 ```
 
@@ -137,13 +137,13 @@ Pour spécifier, ```strict``` nous devons définir ```declare(strict_types=1)```
 
 Dans l'exemple suivant, nous essayons d'envoyer à la fois un nombre et une chaîne à la fonction, mais ici nous avons ajouté la ```strict``` déclaration strict :
 
-``` php
+```php
 <?php declare(strict_types=1);
 
 function addNumbers(int $a, int $b) {
-    return $a + $b;
+  return $a + $b;
 }
-echo addNumbers(5, "5 days");
+echo(addNumbers(5, "5 days"));
 ?>
 ```
 
@@ -155,11 +155,11 @@ Pour déclarer un type pour le retour de la fonction, ajoutez deux points (:) et
 
 Dans l'exemple suivant, nous spécifions le type de retour ```float``` pour la fonction :
 
-``` php
+```php
 <?php declare(strict_types=1); 
 function addNumbers(float $a, float $b) : float {
   return $a + $b;
 }
-echo addNumbers(1.2, 5.2);
+echo(addNumbers(1.2, 5.2));
 ?>
 ```

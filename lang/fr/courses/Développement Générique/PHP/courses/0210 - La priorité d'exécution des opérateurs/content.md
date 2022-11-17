@@ -6,14 +6,17 @@ L’utilisation des parenthèses dans une expression même si elles ne sont pas 
 
 Exemple 1. Associativité :
 
-``` php
+```php
 <?php
-$a = 3 * 3 % 5; // (3 * 3) % 5 = 4
-$a = true ? 0 : true ? 1 : 2; // (true ? 0 : true) ? 1 : 2 = 2
+// (3 * 3) % 5 = 4
+$a = 3 * 3 % 5;
+// (true ? 0 : true) ? 1 : 2 = 2
+$a = true ? 0 : true ? 1 : 2;
 
 $a = 1;
 $b = 2;
-$a = $b += 3; // $a = ($b += 3) -> $a = 5, $b = 5
+// $a = ($b += 3) -> $a = 5, $b = 5
+$a = $b += 3;
 ?>
 ```
 
@@ -21,9 +24,10 @@ La priorité et l’association de l’opérateur ne déterminent que la façon 
 
 Exemple 2. Ordre non défini
 
-``` php
+```php
 <?php
 $a = 5;
-echo $a + $a++; // renvoie 6 ou 7
+// affiche 6 ou 7
+echo($a + $a++);
 ?>
 ```

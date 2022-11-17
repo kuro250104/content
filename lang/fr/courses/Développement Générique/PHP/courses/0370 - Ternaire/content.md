@@ -8,7 +8,7 @@ L’utilité principale d’une condition ternaire est d’économiser des ligne
 
 Voici comment s’écrit une condition ```if``` traditionnelle :
 
-``` php
+```php
 if({IF}) {
     $var = {IF};
 } else {
@@ -20,13 +20,13 @@ Cette condition if est parfaitement lisible, mais un peu longue à écrire pour 
 
 Ainsi est-il possible de raccourcir cette condition en utilisant l’écriture ternaire, dont voici la syntaxe :
 
-``` php
+```php
 $var = {IF} ? {THEN} : {ELSE};
 ```
 
 Depuis la version 5.3 de PHP, il est possible de raccourcir davantage cette écriture :
 
-``` php
+```php
 $var = {IF} ?: {ELSE};
 ```
 
@@ -36,7 +36,7 @@ Ci-dessous, un exemple utilisant d’abord une condition ```if```, puis l’écr
 
 ### En utilisant l’instruction IF
 
-``` php
+```php
 $variable = "Camion";
 if($variable == "Voiture") {
     $seconde_variable = $variable;
@@ -48,7 +48,7 @@ if($variable == "Voiture") {
 
 ### Écriture ternaire
 
-``` php
+```php
 $variable = "Camion";
 $seconde_variable = $variable == "Voiture" ? $variable : "Avion";
 // Retourne Avion
@@ -56,7 +56,7 @@ $seconde_variable = $variable == "Voiture" ? $variable : "Avion";
 
 ### Écriture ternaire avec la version 5.3 de PHP
 
-``` php
+```php
 $variable = "Camion";
 $seconde_variable = $variable == "Voiture" ?: "Avion";
 // Retourne Avion

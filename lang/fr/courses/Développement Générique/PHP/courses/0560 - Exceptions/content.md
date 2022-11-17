@@ -30,7 +30,7 @@ Si une exception est autorisée à remonter jusqu'à la portée globale, elle pe
 
 Exemple 1 : Lancer une exception 
 
-``` php
+```php
 <?php
 function inverse($x) {
     if (!$x) {
@@ -40,20 +40,20 @@ function inverse($x) {
 }
 
 try {
-    echo inverse(5) . "\n";
-    echo inverse(0) . "\n";
+    echo(inverse(5) . "\n");
+    echo(inverse(0) . "\n");
 } catch (Exception $e) {
-    echo 'Exception reçue : ',  $e->getMessage(), "\n";
+    echo('Exception reçue : ',  $e->getMessage(), "\n");
 }
 
 // Continue execution
-echo "Bonjour tout le monde !\n";
+echo("Bonjour tout le monde !\n");
 ?>
 ```
 
 L'exemple ci-dessus va afficher :
 
-``` php
+```php
 0.2
 Exception reçue : Division par zéro.
 Bonjour tout le monde !
@@ -61,7 +61,7 @@ Bonjour tout le monde !
 
 Exemple 2 : Gestion de l'exception avec un bloc finally
 
-``` php
+```php
 <?php
 function inverse($x) {
     if (!$x) {
@@ -71,29 +71,29 @@ function inverse($x) {
 }
 
 try {
-    echo inverse(5) . "\n";
+    echo(inverse(5) . "\n");
 } catch (Exception $e) {
-    echo 'Exception reçue : ',  $e->getMessage(), "\n";
+    echo('Exception reçue : ',  $e->getMessage(), "\n");
 } finally {
-    echo "Première fin.\n";
+    echo("Première fin.\n");
 }
 
 try {
-    echo inverse(0) . "\n";
+    echo(inverse(0) . "\n");
 } catch (Exception $e) {
-    echo 'Exception reçue : ',  $e->getMessage(), "\n";
+    echo('Exception reçue : ',  $e->getMessage(), "\n");
 } finally {
-    echo "Seconde fin.\n";
+    echo("Seconde fin.\n");
 }
 
 // On continue l'exécution
-echo "Bonjour tout le monde !\n";
+echo("Bonjour tout le monde !\n");
 ?>
 ```
 
 L'exemple ci-dessus va afficher :
 
-``` php
+```php
 0.2
 Première fin.
 Exception reçue : Division par zéro.
@@ -103,7 +103,7 @@ Bonjour tout le monde !
 
 Exemple 3 : Interaction entre le bloc finally et return
 
-``` php
+```php
 <?php
 
 function test() {
@@ -116,19 +116,19 @@ function test() {
     }
 }
 
-echo test();
+echo(test());
 ?>
 ```
 
 L'exemple ci-dessus va afficher :
 
-``` php
+```php
 finally
 ```
 
 Exemple 4 : Héritage d’une exception
 
-``` php
+```php
 <?php
 
 class MyException extends Exception { }
@@ -156,13 +156,13 @@ $foo->testing();
 
 L'exemple ci-dessus va afficher :
 
-``` php
+```php
 string(4) "foo!"
 ```
 
 Exemple 5 : Gestions des exceptions de capture multiple
 
-``` php
+```php
 <?php
 
 class MyException extends Exception { }
@@ -187,13 +187,13 @@ $foo->testing();
 
 L'exemple ci-dessus va afficher :
 
-``` php
+```php
 string(11) "MyException"
 ```
 
 Exemple 6 : Omettre la variable attrapée (PHP 8.0.0 ou supérieur)
 
-``` php
+```php
 <?php
 
 class SpecificException extends Exception {}
@@ -212,7 +212,7 @@ try {
 
 Exemple 7 : Throw en tant qu’expression (PHP 8.0.0 ou supérieur)
 
-``` php
+```php
 <?php
 
 class SpecificException extends Exception {}

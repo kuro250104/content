@@ -4,7 +4,7 @@ Dans le développement de logiciels, le terme "réflexion" signifie qu'un progra
 
 Préparons une classe d'exemple simple :
 
-``` php
+```php
 class Example {
 
 	private $attribute1;
@@ -43,11 +43,11 @@ Comme on peut le voir, cette classe d'exemple fournit quelques méthodes et attr
 
 Grâce à l'API Reflection, il est possible d'analyser les méthodes d’un objet depuis l'extérieur. Pour obtenir une liste complète des méthodes, ```Reflection()``` met à disposition la méthode statique ```getMethods()```.
 
-``` php
+```php
 $reflection_class = new ReflectionClass("Example");
 
 foreach ($reflection_class->getMethods() as $method) {
-	echo $method->getName() . "\n";
+	echo($method->getName() . "\n"));
 }
 ```
 
@@ -60,20 +60,20 @@ Le résultat est le suivant :
 
 La fonction ```ReflectionClass()``` n'attend comme paramètre que le nom complet de la classe à analyser (y compris le namespace, s'il existe). Pour rendre l'initialisation un peu plus agréable, on peut aussi utiliser directement la résolution du nom de classe de PHP :
 
-``` php
+```php
 $reflection_class = new ReflectionClass( Example::class );
 ```
 
 Outre les noms des méthodes, d'autres informations peuvent être lues :
 
-``` php
+```php
 $reflection_class = new ReflectionClass( Example::class );
 
 foreach ($reflection_class->getMethods() as $method) {
-	echo $method->getName() . "\n";
-	
-	echo "Nombre de paramètres : " . $method->getNumberOfParameters() . "\n";
-	echo "Est privé : " . ($method->isPrivate() ? 'Oui' : 'Non') . "\n\n";
+	echo($method->getName() . "\n");
+
+	echo("Nombre de paramètres : " . $method->getNumberOfParameters() . "\n");
+	echo("Est privé : " . ($method->isPrivate() ? 'Oui' : 'Non') . "\n\n");
 }
 ```
 
@@ -96,13 +96,13 @@ Le résultat est le suivant :
 
 Le même comportement peut d'ailleurs être appliqué aux attributs. Au lieu de ```getMethods()```, on utilise simplement ```getProperties()```.
 
-``` php
+```php
 $reflection_class = new ReflectionClass(Example::class);
 
 foreach ($reflection_class->getProperties() as $property) {
-    echo $property->getName() . "\n";
-    
-    echo "Est privé: " . ($property->isPrivate() ? 'Oui' : 'Non') . "\n\n";
+    echo($property->getName() . "\n");
+
+    echo("Est privé: " . ($property->isPrivate() ? 'Oui' : 'Non') . "\n\n");
 }
 ```
 
@@ -119,17 +119,17 @@ Le résultat est ici comparable à celui des méthodes précédentes :
 
 L'API de Reflection a d'ailleurs une particularité. Elle permet d'exécuter directement des méthodes privées, ce qui ne serait pas possible dans un contexte de programme normal.
 
-``` php
+```php
 $object = new Example();
 
 $reflection_object = new ReflectionObject($object);
 $method = $reflection_object->getMethod("getAttribute1");
 
 try {
-	echo $method->invoke($object);
+	echo($method->invoke($object));
 	
 } catch (ReflectionException $e) {
-	echo "Erreur !";
+	echo("Erreur !");
 }
 ```
 
@@ -139,17 +139,17 @@ Comme on peut le voir, l'appel de cette méthode a fonctionné à merveille.
 
 Essayons maintenant, dans l'étape suivante, d'appeler notre méthode privée ```getAttribute2()``` en indiquant dans ```getMethod()``` le nom de la méthode souhaitée :
 
-``` php
+```php
 $object = new Example();
 
 $reflection_object = new ReflectionObject($object);
 $method = $reflection_object->getMethod("getAttribute2");
 
 try {
-	echo $method->invoke($object);
+	echo($method->invoke($object));
 	
 } catch (ReflectionException $e) {
-	echo "Erreur !";
+	echo("Erreur !");
 }
 ```
 
@@ -157,7 +157,7 @@ Le résultat est "Erreur !", comme défini dans notre gestion des exceptions. Co
 
 La méthode ```setAccessible()``` de l'API de Reflection est très utile dans ce cas.
 
-``` php
+```php
 $object = new Example();
 
 $reflection_object = new ReflectionObject($object);
@@ -165,10 +165,10 @@ $method = $reflection_object->getMethod("getAttribute2");
 
 try {
 	$method->setAccessible(true);
-	echo $method->invoke($object);
+	echo($method->invoke($object));
 	
 } catch (ReflectionException $e) {
-	echo "Erreur !";
+	echo("Erreur !");
 }
 ```
 
@@ -189,7 +189,7 @@ Pour cela, nous construisons d'abord un élément de base à partir duquel nous 
 - updatedAt
 - deletedAt
 
-``` php
+```php
 /**
  * Class BaseElement
  */
@@ -321,7 +321,7 @@ Nous avons maintenant une classe de base qui possède quatre attributs, avec les
 
 Pour ce faire, nous écrivons deux classes Helper : l'une pour les opérations de chaînes de caractères concernant la conversion de et vers Camel-Case, et l'autre pour le Type-Casting :
 
-``` php
+```php
 class StringHelper {
 
 	/**
@@ -360,7 +360,7 @@ class StringHelper {
 }
 ```
 
-``` php
+```php
 class IoHelper {
 
 	/**
@@ -403,7 +403,7 @@ class IoHelper {
 
 Revenons maintenant à notre classe de base. Pour cela, nous étendons le constructeur comme suit :
 
-``` php
+```php
 /**
  * BaseElement constructor.
  *
@@ -463,7 +463,7 @@ Dans la dernière étape, nous appelons la méthode Setter par un accès réguli
 
 Pour accéder à l'intérieur de notre classe de base en utilisant la méthode getter correspondante, nous écrivons une petite méthode auxiliaire privée :
 
-``` php
+```php
 /**
  * Tries to find an adequate Getter-function for the specified attribute key, and returns its value.
  *
@@ -495,7 +495,7 @@ Si la méthode existe dans le contexte de l'objet actuel, elle est exécutée à
 
 Afin de permettre une sortie dynamique de tous les attributs, nous devons savoir quels attributs sont généralement disponibles dans la classe appelée, ainsi que dans la classe de base (en tant que classe parente). Pour cela, nous définissons une méthode appelée ```getDocument()```, qui fait exactement cela :
 
-``` php
+```php
 /**
  * Build up the public exposed data array.
  *
@@ -553,7 +553,7 @@ Pour dériver nos propres classes d'entités à l'aide de la classe de base, il 
 
 Dans celle-ci, on peut définir des attributs individuels selon le même principe - c'est tout ce qui est nécessaire ici.
 
-``` php
+```php
 /**
  * Class Dummy
  */
@@ -592,7 +592,7 @@ class Dummy extends BaseElement {
 
 Pour tester notre classe d'entités, nous définissons un petit tableau de données, avec quelques valeurs de test. Dans notre cas, ce tableau doit simuler une source de données externe.
 
-``` php
+```php
 $data = [
 	"id"	=> 14,
 	"title"	=> "Lorem ipsum",
@@ -601,7 +601,7 @@ $data = [
 
 Dans l'étape suivante, nous initialisons notre classe d'entités nouvellement créée avec ce tableau de données et pouvons ensuite exporter le résultat complet à l'aide de getDocument() :
 
-``` php
+```php
 $entity = new Dummy( $data );
 print_r( $entity->getDocument() );
 ```

@@ -6,7 +6,7 @@ Les opérateurs de comparaisons sont, comme leurs noms l'indiquent, des moyens d
 
 Cet opérateur de comparaison permet d’établir un lien d’égalité entre deux valeurs. Ainsi si la première valeur est égale à la deuxième, alors l’opérateur retourne “vrai”. Dans le cas contraire, il renvoie “faux”. Cet opérateur ne compare QUE les valeurs, et pas les types, de telle sorte que le nombre “1” et le caractère “1” (donc en tant que texte) sont considérés égaux. Par exemple :
 
-``` php
+```php
 echo( 1 == 2 );
 # renvoie Faux, car les valeurs ne sont pas identiques
 
@@ -22,7 +22,7 @@ echo( 2 == "2" );
 
 Cet opérateur permet comme le précédent d'établir un lien d'égalité entre deux valeurs. Cependant, celui-ci compare non seulement les deux valeurs, mais également leurs types. De la sorte, le nombre “1” et le caractère “1” ne seront pas considérés comme égaux, puisque l’un est un nombre, tandis que l’autre est un caractère.
 
-``` php
+```php
 echo( 1 === 2 );
 # renvoie Faux, car les valeurs ne sont pas identiques
 
@@ -38,7 +38,7 @@ echo( 2 === "2" );
 
 Cet opérateur de comparaison vérifie que les valeurs testées soient bien différentes. Ici, seules les valeurs sont prises en compte, et non leur type.
 
-``` php
+```php
 echo( 1 != 2 );
 # renvoie Vrai, car les valeurs ne sont pas identiques
 
@@ -54,7 +54,7 @@ echo( 2 != "2" );
 
 Cet opérateur de comparaison est similaire au précédent, à ceci près qu’il teste les valeurs ainsi que les types, sur le même schéma que l’opérateur “ === ”.
 
-``` php
+```php
 echo( 1 !== 2 );
 # renvoie Vrai, car les valeurs ne sont pas identiques
 
@@ -71,7 +71,7 @@ C’est l’opérateur traditionnellement appelé “strictement inférieur à�
 
 De même, pour comparer si une valeur est strictement inférieure à une autre, il faut que les deux valeurs soient du même type, ou bien au moins que PHP soit à même de comparer les deux valeurs. De la sorte, si un nombre est comparé  à un caractère, une erreur est retournée. Par contre, si un nombre entier est comparé à un nombre à virgule, alors la comparaison pourra bien s’effectuer puisque les deux valeurs testées sont bien des nombres.
 
-``` php
+```php
 echo( 1 < 2 );
 # renvoie Vrai, car 1 est bien strictement inférieur à 2
 
@@ -91,7 +91,7 @@ echo( 1,1 < 5 );
 
 Cet opérateur est le même que le précédent, à ceci près qu’il va prendre en compte l’égalité entre les deux valeurs. Ainsi si les deux valeurs sont égales, alors “vrai” sera retourné.
 
-``` php
+```php
 echo( 1 <= 2 );
 # renvoie Vrai, car 1 est bien inférieur ou égal à 2
 
@@ -111,7 +111,7 @@ echo( 1,1 <= 5 );
 
 Il est l’exact opposé de l’opérateur “strictement inférieur” (<). Ainsi il renvoie vrai si la première valeur (à gauche du symbole) est strictement supérieure à la seconde (à droite du symbole). Les mêmes restrictions s’appliquent quant aux valeurs égales (qui renvoient donc faux), et à la comparaison d’un nombre et d’un caractère (qui renvoie une erreur).
 
-``` php
+```php
 echo( 2 > 1 );
 # renvoie Vrai, car 1 est bien strictement supérieur à 2
 
@@ -131,7 +131,7 @@ echo( 5 > 1,1 );
 
 Cet opérateur est le même que le précédent, à ceci près qu’il prend en compte l’égalité entre les deux valeurs. Ainsi, si les deux valeurs sont égales, alors il renvoie “vrai”.
 
-``` php
+```php
 echo( 2 >= 1 );
 # renvoie Vrai, car 1 est bien strictement supérieur à 2
 

@@ -20,7 +20,7 @@ Il existe quelques règles de nommage de vos constantes. Elles sont simples :
 
 Il existe différentes façons de déclarer des constantes. La première méthode est d’utiliser “define” : 
 
-``` php
+```php
 # déclaration d'une constante nommée "NOM", en lui affectant la valeur 
 # "Microlead" :
 define("NOM", "Microlead");
@@ -28,7 +28,7 @@ define("NOM", "Microlead");
 
 Une deuxième méthode est d’utiliser le mot-clé “const” juste avant de définir le nom de la constante. L’affectation de la valeur se fait alors de la même manière qu’une variable : 
 
-``` php
+```php
 # déclaration d'une constante nommée "NOM", en lui affectant la valeur 
 # "Microlead" :
 const NOM = "Microlead";
@@ -38,7 +38,7 @@ const NOM = "Microlead";
 
 Tout comme pour la déclaration, il existe différentes manières d’utiliser ou d’afficher la valeur d’une constante. La première est tout simplement d’utiliser le ```echo```, comme pour les variables, la deuxième est d’utiliser la fonction ```constant()``` : 
 
-``` php
+```php
 # déclaration d'une constante nommée "NOM", en lui affectant la valeur 
 # "Microlead" :
 const NOM = "Microlead";
@@ -56,7 +56,7 @@ constant("NOM");
 
 La fonction ```defined()``` de PHP permet de vérifier l’existence d’une constante par rapport à son nom. Voici un exemple :
 
-``` php
+```php
 # déclaration d'une constante nommée "NOM", en lui affectant la valeur 
 # "Microlead" :
 const NOM = "Microlead";

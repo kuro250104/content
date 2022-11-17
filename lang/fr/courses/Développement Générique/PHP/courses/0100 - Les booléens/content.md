@@ -24,9 +24,9 @@ Exemple :
 ``` php
 $var1 = true;
 if($var1 == true){
-    echo "Oui";
+    echo("Oui");
 }else{
-    echo "Non";
+    echo("Non");
 }
 ```
 

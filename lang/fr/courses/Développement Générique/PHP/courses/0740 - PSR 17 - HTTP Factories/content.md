@@ -6,7 +6,7 @@ Les interfaces suivantes peuvent être mises en œuvre ensemble au sein d'une m�
 
 “RequestFactoryInterface” :
 
-``` php
+```php
 namespace Psr\Http\Message;
 
 use Psr\Http\Message\RequestInterface;
@@ -26,7 +26,7 @@ interface RequestFactoryInterface
 
 “ResponseFactoryInterface” :
 
-``` php
+```php
 namespace Psr\Http\Message;
 
 use Psr\Http\Message\ResponseInterface;
@@ -45,7 +45,7 @@ interface ResponseFactoryInterface
 
 “ServerRequestFactoryInterface” :
 
-``` php
+```php
 namespace Psr\Http\Message;
 
 use Psr\Http\Message\ServerRequestInterface;
@@ -64,7 +64,7 @@ interface ServerRequestFactoryInterface
 
 “StreamFactoryInterface” :
 
-``` php
+```php
 namespace Psr\Http\Message;
 
 use Psr\Http\Message\StreamInterface;
@@ -93,7 +93,7 @@ interface StreamFactoryInterface
 
 “UploadedFileFactoryInterface” :
 
-``` php
+```php
 namespace Psr\Http\Message;
 
 use Psr\Http\Message\StreamInterface;
@@ -121,7 +121,7 @@ interface UploadedFileFactoryInterface
 
 “UriFactoryInterface” :
 
-``` php
+```php
 namespace Psr\Http\Message;
 
 use Psr\Http\Message\UriInterface;

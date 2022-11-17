@@ -42,7 +42,7 @@ S'il n'est pas possible de retourner la valeur sauvegardée exacte pour quelque 
 
 L'interface de cache définit les opérations les plus élémentaires sur une collection d'entrées de cache, ce qui implique la lecture, l'écriture et la suppression d'éléments de cache individuels. De plus, il dispose de méthodes pour traiter plusieurs ensembles d'entrées de cache telles que l'écriture, la lecture ou la suppression de plusieurs entrées de cache à la fois. Ceci est utile lorsque vous avez beaucoup de lectures/écritures de cache à effectuer et vous permet d'effectuer vos opérations en un seul appel au serveur de cache en réduisant considérablement les temps de latence. Une instance de “CacheInterface” correspond à une seule collection d'éléments de cache avec un seul espace de nom de clé et équivaut à un "Pool" dans PSR-6. Différentes instances de “CacheInterface” peuvent être soutenues par le même magasin de données, mais doivent être logiquement indépendantes.
 
-``` php
+```php
 <?php
 
 namespace Psr\SimpleCache;
@@ -112,7 +112,7 @@ interface CacheInterface
 
 ## CacheException
 
-``` php
+```php
 <?php
 
 namespace Psr\SimpleCache;
@@ -124,7 +124,7 @@ interface CacheException
 
 ## InvalidArgumentException
 
-``` php
+```php
 <?php
 
 namespace Psr\SimpleCache;

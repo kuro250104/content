@@ -6,7 +6,7 @@ De plus, cet opérateur peut être utilisé plusieurs fois de suite.
 
 Les différents exemples ci-dessous permettent d’illustrer l’utilisateur de cet opérateur :
 
-``` php
+```php
 $variable = NULL;
 $seconde_variable = $variable ?? "Hello"; // Retourne Hello
 

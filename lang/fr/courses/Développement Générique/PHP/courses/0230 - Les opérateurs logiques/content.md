@@ -12,7 +12,7 @@ Il peut être symbolisé de deux façons différentes en PHP : soit par le symbo
 
 Par ailleurs, l’utilisation de cet opérateur logique n'entraîne pas obligatoirement la vérification de toutes les comparaisons effectuées. En effet, si l’une d’entre elles est fausse, alors le retour sera obligatoirement faux. Ceci évitant à PHP d’opérer des comparaisons, et donc des calculs, pour rien.
 
-``` php
+```php
 # Déclaration de deux variables afin de tester nos opérateurs logiques
 $a = 0;
 $b = 1;
@@ -65,7 +65,7 @@ Cet opérateur renvoie ainsi “vrai” tant que l’un des éléments comparés
 
 A contrario de l’opérateur “et”, l’opérateur “ou” renverra vrai, même si une seule des conditions comparées est vraie. Ainsi PHP testera chacune des comparaisons à tour de rôle jusqu’à obtenir un résultat de comparaison “vrai”, ou bien renverra “faux” si aucune n’est trouvée.
 
-``` php
+```php
 # Déclaration de deux variables afin de tester nos opérateurs logiques
 $a = 0;
 $b = 1;
@@ -106,7 +106,7 @@ L’opérateur “ou exclusif” permet de tester si une des comparaisons effect
 
 Le principe d’utilisation de cet opérateur logique est donc de déterminer si deux comparaisons ont des résultats semblables ou non.
 
-``` php
+```php
 # Déclaration de deux variables afin de tester nos opérateurs logiques
 $a = 0;
 $b = 1;
@@ -131,7 +131,7 @@ L’opérateur “NON” est un opérateur de négation. Il s’exprime avec un 
 - **NON** “vrai” renverra “faux”
 - **NON** “faux” renverra “vrai”
 
-``` php
+```php
 # Déclaration d'une variable "$a" ayant pour valeur "0"
 $a = 0;
 $b = 1;

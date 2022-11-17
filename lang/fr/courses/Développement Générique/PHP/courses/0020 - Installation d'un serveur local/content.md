@@ -2,7 +2,7 @@ Lors du développement d'un site Web, le concepteur doit être en mesure de voir
 
 ## Installation sous Windows
 
-Téléchargez la version Windows de XAMPP sur le site officiel https://www.apachefriends.org/index.html et commencez l'installation. Suivez les instructions de l'installateur.
+Téléchargez la version Windows de XAMPP sur le site officiel <a href="https://www.apachefriends.org/index.html" title="téléchargement d'apache" target="_blank">https://www.apachefriends.org/index.html</a> et commencez l'installation. Suivez les instructions de l'installateur.
 
 ## Installation sous Linux
 
@@ -23,7 +23,7 @@ sudo dnf install httpd
 ```
 
 "127.0.0.1" ou "localhost" dans votre navigateur web permet de voir la page par défaut de Apache.
-Les fichiers sont à mettre dans ce dossier “cd /var/www/html”.
+Les fichiers sont à mettre dans ce dossier ```cd /var/www/html```.
 
 ## Installation sous macOS
 
@@ -37,4 +37,4 @@ sudo apachectl start
 
 "127.0.0.1" ou "localhost" dans votre navigateur web permet de voir la page par défaut de Apache.
 
-Les fichiers sont à mettre dans ce dossier “cd /Library/WebServer/Documents/”.
+Les fichiers sont à mettre dans ce dossier ```cd /Library/WebServer/Documents/```.

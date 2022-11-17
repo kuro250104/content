@@ -30,7 +30,7 @@ Il est recommandé que toute application utilisant un middleware inclut un compo
 
 “RequestHandlerInterface” :
 
-``` php
+```php
 namespace Psr\Http\Server;
 
 use Psr\Http\Message\ResponseInterface;
@@ -44,7 +44,7 @@ interface RequestHandlerInterface
 
 “MiddlewareInterface” :
 
-``` php
+```php
 namespace Psr\Http\Server;
 
 use Psr\Http\Message\ResponseInterface;

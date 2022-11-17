@@ -4,7 +4,7 @@ Les messages HTTP sont généralement extraits du consommateur final, mais en ta
 
 Chaque message de requête HTTP a une forme spécifique :
 
-``` http
+```http
 POST /path HTTP/1.1
 Host: example.com
 
@@ -15,7 +15,7 @@ La première ligne d'une requête est la « ligne de requête » et contient, da
 
 Les messages de réponse HTTP ont une structure similaire :
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: text/plain
 ```
@@ -38,15 +38,15 @@ Les messages HTTP incluent des noms de champs d'en-tête insensibles à la casse
 
 exemple :
 
-``` php
+```php
 $message = $message->withHeader('foo', 'bar');
 
-echo $message->getHeaderLine('foo');
+echo($message->getHeaderLine('foo'));
 
-echo $message->getHeaderLine('FOO');
+echo($message->getHeaderLine('FOO'));
 
 $message = $message->withHeader('fOO', 'baz');
-echo $message->getHeaderLine('foo');
+echo($message->getHeaderLine('foo'));
 ```
 
 Bien que les en-têtes puissent être récupérés sans tenir compte de la casse, la casse d'origine doit être préservée par la mise en œuvre, en particulier lorsqu'elle est récupérée avec ```getHeaders()```.
@@ -57,7 +57,7 @@ Afin de prendre en charge les en-têtes avec plusieurs valeurs tout en offrant l
 
 exemple :
 
-``` php
+```php
 $message = $message
     ->withHeader('foo', 'bar')
     ->withAddedHeader('foo', 'baz');
@@ -110,7 +110,7 @@ L'appel de cette méthode n'affecte pas l'URI, car il est renvoyé par ```getUri
 
 Par exemple, un utilisateur peut souhaiter envoyer une requête sous forme d'astérisque à un serveur :
 
-``` php
+```php
 $request = $request
     ->withMethod('OPTIONS')
     ->withRequestTarget('*')
@@ -119,7 +119,7 @@ $request = $request
 
 Cet exemple peut finalement aboutir à une requête HTTP qui ressemble à ceci :
 
-``` http
+```http
 OPTIONS * HTTP/1.1
 ```
 
@@ -151,7 +151,7 @@ La demande du serveur fournit une propriété supplémentaire, "attributs", pour
 
 Le ```$_FILES``` superglobal a des problèmes bien connus lorsqu'il traite des tableaux d'entrées de fichiers. Par exemple, si vous avez un formulaire qui soumet un tableau de fichiers - par exemple, le nom d'entrée "files", soumettre ```files[0]``` et ```files[1]``` - PHP le représentera comme :
 
-``` php
+```php
 array(
     'files' => array(
         'name' => array(
@@ -168,7 +168,7 @@ array(
 
 Au lieu de l’attendu :
 
-``` php
+```php
 array(
     'files' => array(
         0 => array(
@@ -211,7 +211,7 @@ Dans l'exemple le plus simple, il peut s'agir d'un seul élément de formulaire 
 
 Dans ce cas, la structure dans ```$_FILES``` ressemblerait à :
 
-``` php
+```php
 array(
     'avatar' => array(
         'tmp_name' => 'phpUxcOty',
@@ -225,7 +225,7 @@ array(
 
 La forme normalisée renvoyée par ```getUploadedFiles()``` serait :
 
-``` php
+```php
 array(
     'avatar' => /* UploadedFileInterface instance */
 )
@@ -239,7 +239,7 @@ Dans le cas d'une entrée utilisant la notation matricielle pour le nom :
 
 ```$_FILES``` finit par ressembler à ça :
 
-``` php
+```php
 array (
     'my-form' => array (
         'name' => array (
@@ -273,7 +273,7 @@ array (
 
 Et l'arbre correspondant renvoyé par ```getUploadedFiles()``` devrait être :
 
-``` php
+```php
 array(
     'my-form' => array(
         'details' => array(
@@ -294,7 +294,7 @@ Dans certains cas, vous pouvez spécifier un tableau de fichiers :
 
 Dans un tel cas, l'implémentation de la spécification doit agréger toutes les informations relatives au fichier à l'index donné. La raison en est que ```$_FILES``` s'écarte de sa structure normale dans de tels cas :
 
-``` php
+```php
 array (
     'my-form' => array (
         'name' => array (
@@ -348,7 +348,7 @@ array (
 
 Le ```$_FILES``` tableau ci-dessus correspond à la structure suivante telle que renvoyée par ```getUploadedFiles()``` :
 
-``` php
+```php
 array(
     'my-form' => array(
         'details' => array(
@@ -364,7 +364,7 @@ array(
 
 Les consommateurs accéderont à l'index 1 du tableau imbriqué en utilisant :
 
-``` php
+```php
 $request->getUploadedFiles()['my-form']['details']['avatars'][1];
 ```
 
@@ -372,7 +372,7 @@ $request->getUploadedFiles()['my-form']['details']['avatars'][1];
 
 Dans le cas des exemples originaux, la consommation ressemble à ce qui suit :
 
-``` php
+```php
 $file0 = $request->getUploadedFiles()['files'][0];
 $file1 = $request->getUploadedFiles()['files'][1];
 
@@ -389,7 +389,7 @@ Cette proposition reconnaît également que les mises en œuvre peuvent fonction
 
 A titre d'exemple :
 
-``` php
+```php
 $filename = sprintf(
     '%s.%s',
     create_uuid(),
@@ -405,7 +405,7 @@ stream_copy_to_stream($stream, $s3wrapper);
 
 “MessageInterface” :
 
-``` php
+```php
 <?php
 namespace Psr\Http\Message;
 
@@ -484,7 +484,7 @@ interface MessageInterface
 
 “RequestInterface” :
 
-``` php
+```php
 <?php
 namespace Psr\Http\Message;
 
@@ -529,7 +529,7 @@ interface RequestInterface extends MessageInterface
 
 “ServerRequestInterface” :
 
-``` php
+```php
 <?php
 namespace Psr\Http\Message;
 
@@ -615,7 +615,7 @@ interface ServerRequestInterface extends RequestInterface
 
 “ResponseInterface” :
 
-``` php
+```php
 <?php
 namespace Psr\Http\Message;
 
@@ -643,7 +643,7 @@ interface ResponseInterface extends MessageInterface
 
 “StreamInterface” :
 
-``` php
+```php
 <?php
 namespace Psr\Http\Message;
 
@@ -738,7 +738,7 @@ interface StreamInterface
 
 “UriInterface” :
 
-``` php
+```php
 <?php
 namespace Psr\Http\Message;
 
@@ -842,7 +842,7 @@ interface UriInterface
 
 “UploadedFileInterface” :
 
-``` php
+```php
 <?php
 namespace Psr\Http\Message;
 

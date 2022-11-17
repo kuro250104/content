@@ -22,7 +22,7 @@ Les méthodes suivantes sont considérées magiques :
 
 ## Exemple __construct()
 
-``` php
+```php
 __construct(mixed ...$values = ""): void
 ```
 
@@ -30,18 +30,18 @@ PHP permet aux développeurs de déclarer des constructeurs pour les classes. Le
 
 Exemple :
 
-``` php
+```php
 <?php
 class BaseClass {
     function __construct() {
-        print "Dans le constructeur de BaseClass\n";
+        print("Dans le constructeur de BaseClass\n");
     }
 }
 
 class SubClass extends BaseClass {
     function __construct() {
         parent::__construct();
-        print "Dans le constructeur de SubClass\n";
+        print("Dans le constructeur de SubClass\n");
     }
 }
 
@@ -63,7 +63,7 @@ $obj = new OtherSubClass();
 
 Exemple : arguments dans le constructeur
 
-``` php
+```php
 <?php
 class Point {
     protected int $x;
@@ -83,7 +83,7 @@ $p3 = new Point(y: 5, x: 4);
 
 ## Exemple __destruct()
 
-``` php
+```php
 __destruct(): void
 ```
 
@@ -91,17 +91,17 @@ PHP possède un concept de destructeur similaire à celui d'autres langages orie
 
 Exemple :
 
-``` php
+```php
 <?php
 
 class MyDestructableClass 
 {
     function __construct() {
-        print "In constructor\n";
+        print("In constructor\n");
     }
 
     function __destruct() {
-        print "Destroying " . __CLASS__ . "\n";
+        print("Destroying " . __CLASS__ . "\n");
     }
 }
 
@@ -114,7 +114,7 @@ Le destructeur sera appelé même si l'exécution du script est stoppée en util
 
 ## Exemple __sleep() et __wakeup()
 
-``` php
+```php
 public __sleep(): array
 public __wakeup(): void
 ```
@@ -129,13 +129,13 @@ Le but avoué de ```__wakeup()``` est de rétablir toute connexion de base de do
 
 Exemple :
 
-``` php
+```php
 <?php
 class Connection
 {
     protected $link;
     private $dsn, $username, $password;
-    
+
     public function __construct($dsn, $username, $password)
     {
         $this->dsn = $dsn;
@@ -164,7 +164,7 @@ class Connection
 
 ## Exemple __serialize() et __unserialize()
 
-``` php
+```php
 public __serialize(): array
 public __unserialize(array $data): void
 ```
@@ -177,7 +177,7 @@ Inversement, ```unserialize()``` vérifie la présence d'une fonction avec le no
 
 Exemple :
 
-``` php
+```php
 <?php
 class Connection
 {
@@ -200,9 +200,9 @@ class Connection
     public function __serialize(): array
     {
         return [
-          'dsn' => $this->dsn,
-          'user' => $this->username,
-          'pass' => $this->password,
+            'dsn' => $this->dsn,
+            'user' => $this->username,
+            'pass' => $this->password,
         ];
     }
 
@@ -220,7 +220,7 @@ class Connection
 
 ## Exemple __toString()
 
-``` php
+```php
 public __toString(): string
 ```
 
@@ -228,7 +228,7 @@ La méthode ```__toString()``` détermine comment l'objet doit réagir lorsqu'il
 
 Exemple :
 
-``` php
+```php
 <?php
 class ClasseTest
 {
@@ -254,7 +254,7 @@ L'exemple ci-dessus va afficher : Bonjour
 
 ## Exemple __invoke()
 
-``` php
+```php
 __invoke( ...$values): mixed
 ```
 
@@ -262,7 +262,7 @@ La méthode ```__invoke()``` est appelée lorsqu'un script tente d'appeler un ob
 
 Exemple :
 
-``` php
+```php
 <?php
 class CallableClass
 {
@@ -271,7 +271,7 @@ class CallableClass
         var_dump($x);
     }
 }
-$obj = new CallableClass;
+$obj = new CallableClass();
 $obj(5);
 var_dump(is_callable($obj));
 ?>
@@ -281,7 +281,7 @@ L'exemple ci-dessus va afficher : ```int(5) bool(true)```
 
 ## Exemple __set_state()
 
-``` php
+```php
 static __set_state(array $properties): object
 ```
 
@@ -291,7 +291,7 @@ Le seul paramètre de cette méthode est un tableau contenant les propriétés e
 
 Exemple :
 
-``` php
+```php
 class A
 {
     public $var1;
@@ -299,14 +299,14 @@ class A
 
     public static function __set_state($an_array)
     {
-        $obj = new A;
+        $obj = new A();
         $obj->var1 = $an_array['var1'];
         $obj->var2 = $an_array['var2'];
         return $obj;
     }
 }
 
-$a = new A;
+$a = new A();
 $a->var1 = 5;
 $a->var2 = 'foo';
 
@@ -319,22 +319,22 @@ var_dump($c);
 
 L’exemple ci-dessus va afficher :
 
-``` php
+```php
 string(60) "A::__set_state(array(
-   'var1' => 5,
-   'var2' => 'foo',
+    'var1' => 5,
+    'var2' => 'foo',
 ))"
 object(A)#2 (2) {
-  ["var1"]=>
-  int(5)
-  ["var2"]=>
-  string(3) "foo"
+    ["var1"]=>
+    int(5)
+    ["var2"]=>
+    string(3) "foo"
 }
 ```
 
 ## Exemple __debugInfo()
 
-``` php
+```php
 __debugInfo(): array
 ```
 
@@ -342,7 +342,7 @@ Cette méthode est appelée par ```var_dump()``` lors du traitement d'un objet p
 
 exemple :
 
-``` php
+```php
 <?php
 class C {
     private $prop;
@@ -364,16 +364,16 @@ var_dump(new C(42));
 
 L’exemple ci-dessus va afficher :
 
-``` php
+```php
 object(C)#1 (1) {
-  ["propSquared"]=>
-  int(1764)
+    ["propSquared"]=>
+    int(1764)
 }
 ```
 
 ## Exemple __call() et __callStatic()
 
-``` php
+```php
 public __call(string $name, array $arguments): mixed
 public static __callStatic(string $name, array $arguments): mixed
 ```
@@ -385,22 +385,22 @@ L'argument ```$name``` est le nom de la méthode appelée. L'argument ```$argume
 
 Exemple :
 
-``` php
+```php
 <?php
 class MethodTest
 {
     public function __call($name, $arguments)
     {
         // Note : la valeur de $name est sensible à la casse.
-        echo "Appel de la méthode '$name' "
-             . implode(', ', $arguments). "\n";
+        echo("Appel de la méthode '$name' "
+             . implode(', ', $arguments). "\n");
     }
 
     public static function __callStatic($name, $arguments)
     {
         // Note : la valeur de $name est sensible à la casse.
-        echo "Appel de la méthode statique '$name' "
-             . implode(', ', $arguments). "\n";
+        echo("Appel de la méthode statique '$name' "
+             . implode(', ', $arguments). "\n");
     }
 }
 
@@ -413,14 +413,14 @@ MethodTest::runTest('dans un contexte static');
 
 L’exemple ci-dessus va afficher :
 
-``` php
+```php
 Appel de la méthode 'runTest' dans un contexte objet
 Appel de la méthode statique 'runTest' dans un contexte static
 ```
 
 ## Exemple __get(), __set(), __iseet() et __unset()
 
-``` php
+```php
 public __set(string $name, mixed $value): void
 public __get(string $name): mixed
 public __isset(string $name): bool
@@ -438,7 +438,7 @@ La surcharge de propriétés ne fonctionne que dans les contextes objets. Ces m�
 
 Exemple :
 
-``` php
+```php
 <?php
 class PropertyTest
 {
@@ -453,13 +453,13 @@ class PropertyTest
 
     public function __set($name, $value)
     {
-        echo "Définition de '$name' à la valeur '$value'\n";
+        echo("Définition de '$name' à la valeur '$value'\n");
         $this->data[$name] = $value;
     }
 
     public function __get($name)
     {
-        echo "Récupération de '$name'\n";
+        echo("Récupération de '$name'\n");
         if (array_key_exists($name, $this->data)) {
             return $this->data[$name];
         }
@@ -475,13 +475,13 @@ class PropertyTest
 
     public function __isset($name)
     {
-        echo "Est-ce que '$name' est défini ?\n";
+        echo("Est-ce que '$name' est défini ?\n");
         return isset($this->data[$name]);
     }
 
     public function __unset($name)
     {
-        echo "Effacement de '$name'\n";
+        echo("Effacement de '$name'\n");
         unset($this->data[$name]);
     }
 
@@ -493,31 +493,31 @@ class PropertyTest
 }
 
 
-echo "<pre>\n";
+echo("<pre>\n");
 
 $obj = new PropertyTest;
 
 $obj->a = 1;
-echo $obj->a . "\n\n";
+echo($obj->a . "\n\n");
 
 var_dump(isset($obj->a));
 unset($obj->a);
 var_dump(isset($obj->a));
-echo "\n";
+echo("\n");
 
-echo $obj->declared . "\n\n";
+echo($obj->declared . "\n\n");
 
-echo "Manipulons maintenant la propriété privée nommée 'hidden' :\n";
-echo "'hidden' est visible depuis la classe, donc __get() n'est pas utilisée...\n";
-echo $obj->getHidden() . "\n";
-echo "'hidden' n'est pas visible en dehors de la classe, donc __get() est utilisée...\n";
-echo $obj->hidden . "\n";
+echo("Manipulons maintenant la propriété privée nommée 'hidden' :\n");
+echo("'hidden' est visible depuis la classe, donc __get() n'est pas utilisée...\n");
+echo($obj->getHidden() . "\n");
+echo("'hidden' n'est pas visible en dehors de la classe, donc __get() est utilisée...\n");
+echo($obj->hidden . "\n");
 ?>
 ```
 
 L’exemple ci-dessus va afficher :
 
-``` php
+```php
 Définition de 'a' à '1'
 Récupération de 'a'
 1
@@ -548,17 +548,17 @@ Une copie d'objet est créée en utilisant le mot-clé ```clone``` (qui fait app
 
 exemple :
 
-``` php
+```php
 <?php
 
-$copie_d_objet = clone $objet;
+$copie_d_objet = clone($objet);
 
 ?>
 ```
 
 Lorsqu'un objet est cloné, PHP effectue une copie superficielle de toutes les propriétés de l'objet. Toutes les propriétés qui sont des références à d'autres variables demeureront des références.
 
-``` php
+```php
 __clone(): void
 ```
 
@@ -566,33 +566,33 @@ Une fois le clonage effectué, si une méthode ```__clone()``` est définie, la 
 
 exemple :
 
-``` php
+```php
 <?php
 class SubObject 
 {
-  static $instances = 0;
-  public $instance;
+    static $instances = 0;
+    public $instance;
 
-  public function __construct() {
-    $this->instance = ++self::$instances;
-  }
+    public function __construct() {
+        $this->instance = ++self::$instances;
+    }
 
-  public function __clone() {
-    $this->instance = ++self::$instances;
-  }
+    public function __clone() {
+        $this->instance = ++self::$instances;
+    }
 }
 
 class MyCloneable 
 {
-  public $objet1;
-  public $objet2;
+    public $objet1;
+    public $objet2;
 
-  function __clone() 
-  {    
-    // Force la copie de this->object, sinon
-    // il pointera vers le même objet.
-    $this->object1 = clone $this->object1;
-  }
+    function __clone() 
+    {    
+        // Force la copie de this->object, sinon
+        // il pointera vers le même objet.
+        $this->object1 = clone $this->object1;
+    }
 }
 
 $obj = new MyCloneable();
@@ -614,7 +614,7 @@ print_r($obj2);
 
 L’exemple ci dessus va afficher :
 
-``` php
+```php
 Object original :
 MyCloneable Object
 (
@@ -641,6 +641,5 @@ MyCloneable Object
         (
             [instance] => 2
         )
-
 )
 ```

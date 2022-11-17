@@ -28,7 +28,7 @@ Les interfaces et les classes ainsi que les exceptions sont fournies dans le cad
 
 Le ```Psr\Container\ContainerInterface``` :
 
-``` php
+```php
 <?php
 namespace Psr\Container;
 
@@ -67,7 +67,7 @@ interface ContainerInterfaces
 
 Le ```Psr\Container\ContainerExceptionInterface``` :
 
-``` php
+```php
 <?php
 namespace Psr\Container;
 
@@ -81,7 +81,7 @@ interface ContainerExceptionInterface
 
 Le ```Psr\Container\NotFoundExceptionInterface``` :
 
-``` php
+```php
 <?php
 namespace Psr\Container;
 

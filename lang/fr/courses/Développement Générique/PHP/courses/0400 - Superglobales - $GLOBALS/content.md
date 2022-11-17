@@ -6,13 +6,13 @@ Exemple :
 <?php
 $a = 75;
 $b = 25;
- 
+
 function somme() {
   $GLOBALS['c'] = $GLOBALS['a'] + $GLOBALS['b'];
 }
- 
+
 somme();
-echo $c;
+echo($c);
 ?>
 ```
 

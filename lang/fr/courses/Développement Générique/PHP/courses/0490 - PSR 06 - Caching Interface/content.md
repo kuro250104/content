@@ -61,7 +61,7 @@ L'objet ```Cache\CacheItemInterface``` encapsule le stockage et la récupératio
 
 Les bibliothèques appelantes ne doivent pas instancier les objets Item eux-mêmes. Ils ne peuvent être demandés à un objet Pool que par la méthode ```getItem()```. Les bibliothèques appelantes ne doivent pas supposer qu'un élément créé par une bibliothèque d'implémentation est compatible avec un groupe d'une autre bibliothèque d'implémentation.
 
-``` php
+```php
 <?php
 
 namespace Psr\Cache;
@@ -145,7 +145,7 @@ interface CacheItemInterface
 
 L'objectif principal de ```Cache\CacheItemPoolInterface``` est d'accepter une clé de la bibliothèque appelante et de renvoyer l'objet ```Cache\CacheItemInterface``` associé. C'est également le principal point d'interaction avec l'ensemble de la collection de caches. Toute la configuration et l'initialisation du groupe est laissée à une bibliothèque d'implémentation.
 
-``` php
+```php
 <?php
 
 namespace Psr\Cache;
@@ -276,7 +276,7 @@ Cette interface d'exception est destinée à être utilisée lorsque des erreurs
 
 Toute exception lancée par une bibliothèque d'implémentation doit implémenter cette interface.
 
-``` php
+```php
 <?php
 
 namespace Psr\Cache;
@@ -291,7 +291,7 @@ interface CacheException
 
 ### InvalidArgumentException
 
-``` php
+```php
 <?php
 
 namespace Psr\Cache;

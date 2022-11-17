@@ -55,7 +55,7 @@ $message = "Utilisateur {username} créé";
 $context = array('username' => 'bolivar');
 
 // écrit "Utilisateur bolivar créé"
-echo interpolate($message, $context);
+echo(interpolate($message, $context));
 ```
 
 ### Contexte

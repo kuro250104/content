@@ -12,7 +12,7 @@ PHP contient la fonction ```setcookie``` pour créer un objet cookie qui sera en
 
 ### Syntaxe
 
-``` php
+```php
 setcookie(nom, valeur, expiration, chemin, domaine, sécurité);
 ```
 
@@ -27,7 +27,7 @@ setcookie(nom, valeur, expiration, chemin, domaine, sécurité);
 
 ### Exemple
 
-``` php
+```php
 <?php        
 
 //on définit un nouveau cookie prenom
@@ -42,7 +42,7 @@ echo $_COOKIE['prenom'];
 
 Le navigateur affichera le résultat suivant :
 
-``` php
+```php
 lucie
 ```
 

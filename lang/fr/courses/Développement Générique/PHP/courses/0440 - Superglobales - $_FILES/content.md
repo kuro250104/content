@@ -2,7 +2,7 @@ La superglobale ```$_FILES``` est une variable qui est utilisée pour le téléc
 
 Exemple :
 
-``` php
+```php
 <?php
 if(isset($_FILES['image']))
 { 
@@ -12,12 +12,12 @@ if(isset($_FILES['image']))
      if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier))
 	 //Si la fonction renvoie TRUE
      {
-          echo 'Upload effectué avec succès !';
+          echo('Upload effectué avec succès !');
      }
      else 
 	 //Sinon, la fonction renvoie FALSE
      {
-          echo 'Echec de l\'upload !';
+          echo('Echec de l\'upload !');
      }
 }
 ?>

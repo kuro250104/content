@@ -4,7 +4,7 @@ Elle est utilisée si le nombre d’itérations n’est pas connu.
 
 syntaxe :
 
-``` php
+```php
 while(condition){ 
     //code à exécuter 
 }
@@ -12,7 +12,7 @@ while(condition){
 
 autre syntaxe :
 
-``` php
+```php
 while(condition): 
     //code à exécuter 
 endwhile;
@@ -20,17 +20,17 @@ endwhile;
 
 exemple :
 
-``` php
+```php
 $n=1; 
 while($n<=10){ 
-    echo "$n<br/>"; 
+    echo("$n<br/>");
     $n++; 
 }
 ```
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 1
 2
 3
@@ -45,17 +45,17 @@ Dans cet exemple, le résultat renvoyé est :
 
 autre exemple :
 
-``` php
+```php
 $n=1; 
 while($n<=10): 
-    echo "$n<br/>"; 
+    echo("$n<br/>");
     $n++; 
 endwhile;
 ```
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 1
 2
 3
@@ -76,21 +76,21 @@ En cas de boucle While interne ou imbriquée, la boucle While imbriquée est ex�
 
 exemple :
 
-``` php
+```php
 $i=1; 
 while($i<=3){ 
     $j=1; 
     while($j<=3){ 
-        echo "$i   $j<br/>"; 
+        echo("$i   $j<br/>");
         $j++; 
     } 
-    $i++; 
+    $i++;
 }
 ```
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 1 1
 1 2
 1 3

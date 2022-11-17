@@ -71,7 +71,7 @@ Un listener provider est un objet de service chargé de déterminer quels écout
 
 Toute combinaison de ce qui précède, ou d'autres mécanismes, peut être utilisée comme vous le souhaitez. Les listener provider devraient utiliser le nom de classe d'un événement pour différencier un événement d'un autre. Ils peuvent également considérer toute autre information sur l'événement, le cas échéant. Les listener provider doivent traiter les types parents de la même manière que le propre type de l'événement lorsqu'ils déterminent l'applicabilité de l'écouteur. Dans le cas suivant :
 
-``` php
+```php
 class A {}
 
 class B extends A {}

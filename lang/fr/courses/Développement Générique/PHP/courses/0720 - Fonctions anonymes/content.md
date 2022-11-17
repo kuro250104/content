@@ -2,7 +2,7 @@ Une fonction anonyme est une fonction sans nom défini par l'utilisateur. Une te
 
 ## Syntaxe
 
-``` php
+```php
 $var=function ($arg1, $arg2) { return $val; }
 ```
 
@@ -16,16 +16,16 @@ $var=function ($arg1, $arg2) { return $val; }
 
 ### Exemple
 
-``` php
+```php
 <?php
 $var = function ($x) {return pow($x,3);};
-echo "cube of 3 = " . $var(3);
+echo("cube of 3 = " . $var(3));
 ?>
 ```
 
 ### Réponse
 
-``` php
+```php
 cube of 3 = 27
 ```
 
@@ -35,21 +35,21 @@ Dans l'exemple suivant, une fonction anonyme est utilisée comme argument pour u
 
 ### Exemple
 
-``` php
+```php
 <?php
 $arr = [10,3,70,21,54];
 usort ($arr, function ($x , $y) {
     return $x > $y;
 });
 foreach ($arr as $x){
-    echo $x . "\n";
+    echo($x . "\n");
 }
 ?>
 ```
 
 ### Réponse
 
-``` php
+```php
 3
 10
 21
@@ -63,16 +63,16 @@ Closure est également une fonction anonyme qui peut accéder à des variables e
 
 ### Exemple
 
-``` php
+```php
 <?php
 $maxmarks=300;
 $percent=function ($marks) use ($maxmarks) {return $marks*100/$maxmarks;};
-echo "marks=285 percentage=". $percent(285);
+echo("marks=285 percentage=". $percent(285));
 ?>
 ```
 
 ### Réponse
 
-``` php
+```php
 marks=285 percentage=95
 ```

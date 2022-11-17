@@ -6,7 +6,7 @@ Les interfaces sont déclarées avec le mot-clé ```interface``` :
 
 syntaxe :
 
-``` php
+```php
 <?php
 interface InterfaceName {
   public function someMethod1();
@@ -32,7 +32,7 @@ Une classe qui implémente une interface doit implémenter toutes les méthodes 
 
 Exemple :
 
-``` php
+```php
 <?php
 interface Animal {
   public function makeSound();
@@ -40,7 +40,7 @@ interface Animal {
 
 class Cat implements Animal {
   public function makeSound() {
-    echo "Meow";
+    echo("Meow");
   }
 }
 
@@ -51,7 +51,7 @@ $animal->makeSound();
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 Meow
 ```
 
@@ -59,7 +59,7 @@ A partir de l'exemple ci-dessus, disons que nous aimerions écrire un logiciel q
 
 En utilisant des interfaces, nous pouvons écrire du code qui peut fonctionner pour tous les animaux même si chaque animal se comporte différemment :
 
-``` php
+```php
 <?php
 interface Animal {
   public function makeSound();
@@ -67,19 +67,19 @@ interface Animal {
 
 class Cat implements Animal {
   public function makeSound() {
-    echo " Meow ";
+    echo(" Meow ");
   }
 }
 
 class Dog implements Animal {
   public function makeSound() {
-    echo " Bark ";
+    echo(" Bark ");
   }
 }
 
 class Mouse implements Animal {
   public function makeSound() {
-    echo " Squeak ";
+    echo(" Squeak ");
   }
 }
 
@@ -96,7 +96,7 @@ foreach($animals as $animal) {
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 Meow Bark Squeak
 ```
 

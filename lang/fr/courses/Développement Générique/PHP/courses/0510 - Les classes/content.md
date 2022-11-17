@@ -12,7 +12,7 @@ Une classe est définie en utilisant le mot-clé ```class```, suivi du nom de la
 
 syntaxe :
 
-``` php
+```php
 <?php
 class Fruit {
   // code 
@@ -22,7 +22,7 @@ class Fruit {
 
 Ci-dessous, nous déclarons une classe nommée "Fruit" composée de deux propriétés (```$name``` et ```$color```) et de deux méthodes ```set_name()``` et ```get_name()``` pour définir et obtenir la propriété ```$name``` :
 
-``` php
+```php
 <?php
 class Fruit {
   // Propriétés
@@ -48,7 +48,7 @@ Les objets d'une classe sont créés à l'aide du mot-clé ```new```.
 
 Dans l'exemple ci-dessous, ```$apple``` et ```$banana``` sont des instances de la classe ```Fruit``` :
 
-``` php
+```php
 <?php
 class Fruit {
   // Properties
@@ -69,15 +69,15 @@ $banana = new Fruit();
 $apple->set_name('Apple');
 $banana->set_name('Banana');
 
-echo $apple->get_name();
-echo "<br>";
-echo $banana->get_name();
+echo($apple->get_name());
+echo("<br>");
+echo($banana->get_name());
 ?>
 ```
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 Apple
 Banana
 ```
@@ -88,7 +88,7 @@ Le mot-clé ```$this``` fait référence à l'objet courant et n'est disponible 
 
 exemple :
 
-``` php
+```php
 <?php
 class Fruit {
   public $name;
@@ -101,7 +101,7 @@ Alors, où pouvons-nous changer la valeur de la propriété” $name” ? Il y a
 
 1 - Dans la classe (en ajoutant une méthode ```set_name()``` et en utilisant ```$this```) :
 
-``` php
+```php
 <?php
 class Fruit {
   public $name;
@@ -112,19 +112,19 @@ class Fruit {
 $apple = new Fruit();
 $apple->set_name("Apple");
 
-echo $apple->name;
+echo($apple->name);
 ?>
 ```
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 Apple
 ```
 
 2 - En dehors de la classe (en modifiant directement la valeur de la propriété) :
 
-``` php
+```php
 <?php
 class Fruit {
   public $name;
@@ -132,7 +132,7 @@ class Fruit {
 $apple = new Fruit();
 $apple->name = "Apple";
 
-echo $apple->name;
+echo($apple->name);
 ?>
 ```
 
@@ -146,7 +146,7 @@ Apple
 
 Vous pouvez utiliser le mot-clé ```instanceof``` pour vérifier si un objet appartient à une classe spécifique :
 
-``` php
+```php
 <?php
 $apple = new Fruit();
 var_dump($apple instanceof Fruit);
@@ -155,6 +155,6 @@ var_dump($apple instanceof Fruit);
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
-bool(true)
+```php
+bool(true);
 ```

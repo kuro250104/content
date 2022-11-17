@@ -6,7 +6,7 @@ En PHP, il est possible d’additionner des valeurs entre elles. Pour cela, il s
 
 Exemple : 
 
-``` php
+```php
 <?php
 #Création des variables
 $a = 3;
@@ -15,7 +15,7 @@ $b = 3;
 $resultat = $a + $b;
 
 # Ici, echo affiche “6”
-echo $resultat;
+echo($resultat);
 ?>
 ```
 
@@ -27,7 +27,7 @@ De même qu’il est possible d’additionner deux valeurs entre elles, en PHP, 
 
 Exemple :
 
-``` php
+```php
 <?php
 #Création des deux variables
 $a = 3;
@@ -37,7 +37,7 @@ $b = 2;
 $resultat = $a - $b;
 
 # Ici, $resultat contient le résultat de $a-$b, donc 1
-echo $resultat;
+echo($resultat);
 ?>
 ```
 
@@ -53,14 +53,14 @@ Avec le langage PHP, il est également possible d’obtenir un produit. Pour ré
 
 Exemple :
 
-``` php
+```php
 <?php
 $a = 5;
 $b = 2;
 
 $resultat = $a * $b;
 
-echo $resultat;
+echo($resultat);
 ?>
 ```
 
@@ -74,14 +74,14 @@ Dans ```$resultat```, les deux variables sont multipliées l’une avec l’autr
 
 L’opérateur suivant permet d’obtenir le **quotient** de deux valeurs. Pour faire une division, en PHP, il faut utiliser le signe ```/``` (slash).
 
-``` php
+```php
 <?php
 $a = 6;
 $b = 3;
 
 $resultat = $a / $b;
 
-echo $resultat;
+echo($resultat);
 ?>
 ```
 
@@ -99,7 +99,7 @@ Afin de faire une opération modulo, il suffit d’utiliser le signe ```%```.
 
 Exemple :
 
-``` php
+```php
 <?php
 $a = 8;
 $b = 5;
@@ -108,7 +108,7 @@ $b = 5;
 $resultat = $a % $b;
 
 /* Ici echo affichera 3, car $resultat contient le RESTE et non le quotient de la division */
-echo $resultat;
+echo($resultat);
 ?>
 ```
 
@@ -126,7 +126,7 @@ Pour effectuer une opération de puissance en PHP, il faut utiliser le signe sui
 
 Exemple : 
 
-``` php
+```php
 <?php
 $a = 2;
 $b = 10;
@@ -135,7 +135,7 @@ $b = 10;
 $resultat = $a ** $b;
 
 # Affiche "1024"
-echo $resultat;
+echo($resultat);
 ?>
 ```
 
@@ -151,7 +151,7 @@ Pour calculer l’opposé d’un nombre en PHP, il faut utiliser l’opérateur 
 
 Exemple :
 
-``` php
+```php
 <?php
 $a = 2;
 
@@ -159,7 +159,7 @@ $a = 2;
 $resultat = +$a;
 
 # Affiche -2, car 2-2 = 0;
-echo $resultat;
+echo($resultat);
 ?>
 ```
 

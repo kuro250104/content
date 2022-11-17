@@ -6,23 +6,23 @@ Une classe héritée est définie à l'aide du mot-clé ```extends```.
 
 exemple :
 
-``` php
+```php
 <?php
 class Fruit {
   public $name;
   public $color;
   public function __construct($name, $color) {
-	$this->name = $name;
-	$this->color = $color;
+    $this->name = $name;
+    $this->color = $color;
   }
   public function intro() {
-    echo "The fruit is {$this->name} and the color is {$this->color}.";
+    echo("The fruit is {$this->name} and the color is {$this->color}.");
   }
 }
 
 class Strawberry extends Fruit {
   public function message() {
-    echo "Am I a fruit or a berry? ";
+    echo("Am I a fruit or a berry? ");
   }
 }
 $strawberry = new Strawberry("Strawberry", "red");
@@ -33,7 +33,7 @@ $strawberry->intro();
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 Am I a fruit or a berry? The fruit is Strawberry and the color is red.
 ```
 
@@ -49,26 +49,25 @@ Les propriétés ```protected``` ou les méthodes sont accessibles au sein de la
 
 exemple :
 
-``` php
+```php
 <?php
 class Fruit {
   public $name;
   public $color;
   public function __construct($name, $color) {
-	$this->name = $name;
-	$this->color = $color;
+    $this->name = $name;
+    $this->color = $color;
   }
   protected function intro() {
-    echo "The fruit is {$this->name} and the color is {$this->color}.";
+    echo("The fruit is {$this->name} and the color is {$this->color}.");
   }
 }
 
 class Strawberry extends Fruit {
   public function message() {
-    echo "Am I a fruit or a berry? ";
+    echo("Am I a fruit or a berry? ");
   }
 }
-
 
 $strawberry = new Strawberry("Strawberry", "red"); 
 $strawberry->message();
@@ -78,7 +77,7 @@ $strawberry->intro();
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 Am I a fruit or a berry?
 ```
 
@@ -90,29 +89,29 @@ Les méthodes héritées peuvent être remplacées en définissant les méthodes
 
 L'exemple ci-dessous. Les méthodes ```__construct()``` et ```intro()``` de la classe enfant (Strawberry) remplaceront les méthodes ```__construct()``` et ```intro()``` de la classe parent (Fruit) :
 
-``` php
+```php
 <?php
 class Fruit {
   public $name;
   public $color;
   public function __construct($name, $color) {
-	$this->name = $name;
-	$this->color = $color;
+    $this->name = $name;
+    $this->color = $color;
   }
   public function intro() {
-    echo "The fruit is {$this->name} and the color is {$this->color}.";
+    echo("The fruit is {$this->name} and the color is {$this->color}.");
   }
 }
 
 class Strawberry extends Fruit {
   public $weight;
   public function __construct($name, $color, $weight) {
-	$this->name = $name;
-	$this->color = $color;
-	$this->weight = $weight;
+    $this->name = $name;
+    $this->color = $color;
+    $this->weight = $weight;
   }
   public function intro() {
-    echo "The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.";
+    echo("The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.");
   }
 }
 
@@ -123,7 +122,7 @@ $strawberry->intro();
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 The fruit is Strawberry, the color is red, and the weight is 50 gram.
 ```
 
@@ -133,7 +132,7 @@ Le mot-clé ```final``` peut être utilisé pour empêcher l'héritage de classe
 
 L'exemple suivant montre comment empêcher l'héritage de classe :
 
-``` php
+```php
 <?php
 final class Fruit {
   // code
@@ -147,7 +146,7 @@ class Strawberry extends Fruit {
 
 L'exemple suivant montre comment empêcher le remplacement de méthode :
 
-``` php
+```php
 <?php
 class Fruit {
   final public function intro() {

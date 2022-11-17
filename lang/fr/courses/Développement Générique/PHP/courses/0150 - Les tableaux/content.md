@@ -10,12 +10,12 @@ La compréhension d’un tableau en PHP s'apparente à la compréhension d’un 
 
 Un tableau est un élément qui est contenu dans une variable. Pour le déclarer, il faut ainsi  commencer par définir une variable, puis lui affecter la valeur d’un tableau vide. Il existe 2 manières différentes de déclarer un tableau vide : 
 
-``` php
+```php
 # méthode 1
 $tableau : array();
 ```
 
-``` php
+```php
 # méthode 2
 $tableau = [ ];
 ```
@@ -34,7 +34,7 @@ Attention, la première case d’un tableau porte l’index “0”, et non “1
 
 Pour déclarer un tableau à index numérique en insérant des valeurs lors de sa création, il faut procéder comme expliqué ci-dessus, en ajoutant l’ensemble de vos valeurs entre les parenthèses qui suivent “*array*”, en les séparant par des virgules. Voici un exemple :
 
-``` php
+```php
 # $tableau représente le nom de la variable qui contient le tableau.
 
 # array() permet de définir un tableau
@@ -46,7 +46,7 @@ $tableau = array('val1', 'val2', 'val3');
 
 Il est également possible d’utiliser la deuxième méthode de déclaration d’un tableau : 
 
-``` php
+```php
 # $tableau représente le nom de la variable qui contient le tableau.
 
 # les crochets permettent de définir un tableau
@@ -60,7 +60,7 @@ $tableau = ['val1', 'val2', 'val3'];
 
 Il n’existe ici encore pas qu’une seule manière d’ajouter une valeur à un tableau à index numérique. Il est possible de procéder comme suit : 
 
-``` php
+```php
 # déclaration d'un tableau initial
 $tableau = array('val1', 'val2', 'val3');
 
@@ -70,7 +70,7 @@ $tableau[] = 'val4';
 
 Une autre solution peut être d’utiliser une fonction fournie par PHP pour les tableaux : “**append()**” :
 
-``` php
+```php
 # déclaration d'un tableau initial
 $tableau = array('val1', 'val2', 'val3');
 
@@ -82,7 +82,7 @@ $tableau.append('val4');
 
 Dans le cadre de l’utilisation de tableaux en PHP, il est courant de devoir modifier des valeurs à des index précis du tableau. En reprenant l’exemple du tableau ci-dessus : ```$tableau = array('val1', 'val2', 'val3');``` et pour modifier la valeur de la deuxième case, alors il faut modifier l’index “1” comme suit : 
 
-``` php
+```php
 # création du tableau initial
 $tableau = array('val1', 'val2', 'val3');
 
@@ -104,7 +104,7 @@ Attention, si jamais l’index choisi n’existe pas, alors il sera créé et la
 
 Afin de pouvoir exploiter l’ensemble des informations stockées dans un tableau, il faut pouvoir accéder à chacune de ses cases. Tout comme pour la modification d’une case, il est nécessaire de se servir de l’index de la case. Par exemple, pour afficher la dernière case du tableau suivant : 
 
-``` php
+```php
 # création du tableau initial
 $tableau = array('val1', 'val2', 'val3');
 
@@ -119,7 +119,7 @@ echo($tableau[2]);
 
 Pour supprimer un élément, il existe la fonction PHP “**unset()**”. Pour l’utiliser, il faut lui stipuler l’élément du tableau à supprimer en utilisant ici encore son indice. Par exemple, pour supprimer la première case d’un tableau :
 
-``` php
+```php
 # création du tableau initial
 $tableau = array('val1', 'val2', 'val3');
 
@@ -138,7 +138,7 @@ En y réfléchissant davantage, il s’avère qu’un tableau à index numériqu
 
 La déclaration est assez similaire à un tableau à index numérique. Il faut créer une variable de la même manière, utiliser la méthode “**array()**” et séparer les “cases” par des virgules. La différence ici va se situer sur ce qu’il faut spécifier entre les parenthèses de “**array()**”. Pour symboliser un système de “clé - valeur”, il faut utiliser le symbole de la double flèche “**=>**”. À gauche de celle-ci est placée la clé, tandis que la valeur est disposée à sa droite. Voici un exemple de déclaration de tableau associatif :
 
-``` php
+```php
 # Création d'un tableau associatif
 $tableau = array(
     1 => "Hello World",
@@ -158,7 +158,7 @@ Prenons le temps d’expliquer chacune des lignes :
 
 A noter qu’il est également possible d’utiliser la notation avec crochets pour créer le même tableau que présenté ci-dessus : 
 
-``` php
+```php
 # Création d'un tableau associatif
 $tableau = [
     1 => "Hello World",
@@ -171,7 +171,7 @@ $tableau = [
 
 Le principe est le même que pour les tableaux à index numérique. Pour ajouter ou modifier une valeur dans un tableau associatif, il faut spécifier l’index souhaité, puis lui affecter la valeur désirée. Par exemple : 
 
-``` php
+```php
 # Ajout / modification d'une valeur dans un tableau associatif
 $tableau["nouvelle_cle"] = "nouvelle valeur"
 ```
@@ -186,7 +186,7 @@ Le principe de récupération d’un élément du tableau est ici aussi basé su
 
 Si le tableau dispose d’une paire de “*clé-valeur*” spécifique, dont il faut afficher la “*valeur*”, il sera nécessaire d’appeler le tableau en passant entre crochets la “*clé*” associée. Par exemple : 
 
-``` php
+```php
 # Création d'un tableau associatif
 $tableau = array(
     1 => "Hello World",
@@ -195,20 +195,20 @@ $tableau = array(
 );
 
 # Récupération de la valeur "Hello World" :
-$tableau[1]
+$tableau[1];
 
 # Récupération de la valeur "microlead" :
-$tableau["name"]
+$tableau["name"];
 
 # Récupération de la valeur "True" :
-$tableau["useful"]
+$tableau["useful"];
 ```
 
 #### Suppression d’un élément
 
 La suppression d’un élément s’effectue ici encore de la même manière que pour les tableaux à index numérique à ceci près que l’index correspond à la “clé” pour chaque paire de “clé-valeur”. L’utilisation de la fonction ```unset()``` est donc toujours préconisée, en lui passant entre les parenthèses le tableau et en lui spécifiant la clé souhaitée : 
 
-``` php
+```php
 # Création d'un tableau associatif
 $tableau = array(
     1 => "Hello World",

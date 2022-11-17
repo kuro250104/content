@@ -6,7 +6,7 @@ D'un autre côté, lors de l'utilisation de l'opérateur d'identité (===), les 
 
 Exemple :
 
-``` php
+```php
 <?php
 function bool2str($bool)
 {
@@ -16,52 +16,52 @@ function bool2str($bool)
 		return 'TRUE';
 	}
 }
- 
+
 function compareObjects(&$o1, &$o2)
 {
-	echo 'o1 == o2 : '.bool2str($o1 == $o2)."\n";
-	echo 'o1 != o2 : '.bool2str($o1 != $o2)."\n";
-	echo 'o1 === o2 : '.bool2str($o1 === $o2)."\n";
-	echo 'o1 !== o2 : '.bool2str($o1 !== $o2)."\n";
+	echo('o1 == o2 : '.bool2str($o1 == $o2)."\n");
+	echo('o1 != o2 : '.bool2str($o1 != $o2)."\n");
+	echo('o1 === o2 : '.bool2str($o1 === $o2)."\n");
+	echo('o1 !== o2 : '.bool2str($o1 !== $o2)."\n");
 }
- 
+
 class Flag
 {
 	public $flag;
- 
+
 	function Flag($flag = true) {
-			$this->flag = $flag;
+		$this->flag = $flag;
 	}
 }
- 
+
 class OtherFlag
 {
 	public $flag;
- 
+
 	function OtherFlag($flag = true) {
-			$this->flag = $flag;
+		$this->flag = $flag;
 	}
 }
- 
+
 $o = new Flag();
 $p = new Flag();
 $q = $o;
 $r = new OtherFlag();
- 
-echo "Deux instances de la même classe\n";
+
+echo("Deux instances de la même classe\n");
 compareObjects($o, $p);
- 
-echo "\nDeux références sur le même objet\n";
+
+echo("\nDeux références sur le même objet\n");
 compareObjects($o, $q);
- 
-echo "\nInstances de classes différentes\n";
+
+echo("\nInstances de classes différentes\n");
 compareObjects($o, $r);
 ?>
 ```
 
 L'exemple ci-dessus va afficher :
 
-``` php
+```php
 Deux instances de la même classe
 o1 == o2 : TRUE
 o1 != o2 : FALSE

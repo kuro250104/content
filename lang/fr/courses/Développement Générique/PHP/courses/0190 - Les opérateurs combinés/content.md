@@ -11,7 +11,7 @@ Liste des opérateurs combinés et de leurs équivalents :
 
 Exemple :
 
-``` php
+```php
 <?php
 $a = 2;
 $a += 10; 

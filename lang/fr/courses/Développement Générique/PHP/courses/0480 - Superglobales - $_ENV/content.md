@@ -13,9 +13,9 @@ Le script suivant affiche les valeurs de toutes les variables d'environnement di
 ``` php
 <?php
 $arr=getenv();
-foreach ($arr as $key=>$val)
-echo "$key=>$val
-";
+foreach ($arr as $key=>$val) {
+    echo("$key=>$val");
+}
 ?>
 ```
 
@@ -25,7 +25,7 @@ Pour obtenir la valeur d'une variable spécifique, utilisez son nom comme argume
 
 ``` php
 <?php
-echo "Chemin : " . getenv("PATH");
+echo("Chemin : " . getenv("PATH"));
 ?>
 ```
 
@@ -48,7 +48,7 @@ La directive ```safe_mode_protected_env_vars``` du php.ini contient une liste de
 ``` php
 <?php
 putenv("PHP_TEMPUSER=INVITE");
-echo "Utilisateur temporaire : " . getenv("PHP_TEMPUSER");
+echo("Utilisateur temporaire : " . getenv("PHP_TEMPUSER"));
 ?>
 ```
 

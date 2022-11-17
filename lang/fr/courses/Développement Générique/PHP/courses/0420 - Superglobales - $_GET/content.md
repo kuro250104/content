@@ -10,7 +10,7 @@ Si l’utilisateur clique sur le lien, les paramètres ```theme``` et ```route``
 
 ``` php
 <?php
-echo "theme " . $_GET['theme'] . "+" . $_GET['route'];
+echo("theme " . $_GET['theme'] . "+" . $_GET['route']);
 ?>
 ```
 

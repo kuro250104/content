@@ -49,13 +49,13 @@ Tout comme chaque langage de programmation, il existe de nombreuses normes, règ
 
 Comme vu précédemment, pour déclarer une variable, il faut commencer par le symbole ```$```, puis y accoler le nom souhaité. De la sorte, si l’on souhaite créer une variable qui s’appelle “variable”, et qui contient le mot “Bonjour”, alors il faudra faire de la sorte : 
 
-``` php
+```php
 $variable = "Bonjour";
 ```
 
 Si on souhaite créer une variable “nombre”, et lui affecter la valeur “0” (zéro), alors il faudra faire : 
 
-``` php
+```php
 $nombre = 0;
 ```
 
@@ -65,11 +65,10 @@ Il existe deux différentes méthodes afin d’afficher une variable en PHP. En 
 
 Reprenons les mêmes exemples qu’au-dessus, si l’on souhaite créer une variable qui s’appelle “variable”, et qui contient le mot “Bonjour”, et ensuite afficher le contenu de cette variable, il sera possible de faire : 
 
-``` php
+```php
 # déclaration de la variable et affectation de la
 # valeur "Bonjour"
 $variable = "Bonjour"
-
 
 # méthode 1
 print($variable)

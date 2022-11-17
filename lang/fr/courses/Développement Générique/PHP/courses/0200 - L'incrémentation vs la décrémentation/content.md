@@ -14,10 +14,12 @@ Incrémenter un nombre en utilisant l’écriture ```++$a``` ajoute 1 au nombre 
 
 Exemple :
 
-``` php
+```php
 $a = 0;
-echo ++$a; # retourne 1
-echo $a; # retourne 1
+# retourne 1
+echo(++$a;)
+# retourne 1
+echo($a);
 ```
 
 ### $a++
@@ -26,10 +28,12 @@ Cette manière d’incrémenter un nombre fait l’exact contraire de la manièr
 
 Exemple :
 
-``` php
+```php
 $a = 0;
-echo $a++; # retourne 0
-echo $a; # retourne 1
+# retourne 0
+echo($a++);
+# retourne 1
+echo($a);
 ```
 
 ## Décrémentation
@@ -42,10 +46,12 @@ Cette manière de décrémenter enlève 1 au nombre puis le retourne.
 
 Exemple :
 
-``` php
+```php
 $a = 10;
-echo $a--; # retourne 9
-echo $a; # retourne 9
+# retourne 9
+echo($a--);
+# retourne 9
+echo($a);
 ```
 
 ### --$a
@@ -54,8 +60,10 @@ Cette manière de décrémenter retourne le nombre **puis** enlève 1.
 
 Exemple :
 
-``` php
+```php
 $a = 10;
-echo --$a; # retourne 10
-echo $a; # retourne 9
+# retourne 10
+echo(--$a);
+# retourne 9
+echo($a);
 ```

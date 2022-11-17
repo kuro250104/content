@@ -2,7 +2,7 @@ La boucle FOREACH de PHP est une fonction native qui boucle un morceau de code p
 
 Voici la syntaxe d'une boucle FOREACH :
 
-``` php
+```php
 foreach( $array as $var ){ 
     //code à exécuter
 }
@@ -14,7 +14,7 @@ Pour chaque boucle, la valeur de la clé actuelle du tableau est affectée à $v
 
 Voici un exemple simple qui illustre le fonctionnement de l'instruction FOREACH :
 
-``` php
+```php
 $season = array("été","printemps","hiver","automne"); 
 foreach( $season as $value ){ 
     echo("La saison est: $value<br />");
@@ -23,7 +23,7 @@ foreach( $season as $value ){
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 La saison est été
 La saison est printemps
 La saison est hiver

@@ -2,14 +2,13 @@ La superglobale ```$_SESSION``` est un tableau associatif qui contient toutes le
 
 Exemple :
 
-``` php
+```php
 <?php
 // On démarre la session AVANT d'écrire du code HTML
 session_start();
 
 // prenom est une variable de session dans $_SESSION
 $_SESSION['prenom'] = 'Marc';
-
 ?>
 
 <p>Hello <?php echo $_SESSION['prenom']; ?> !</p>

@@ -8,20 +8,20 @@ Avant de comprendre le concept d'**encapsulation**, il est important de comprend
 
 Dans l'exemple ci-dessous, une classe appelée *person* est créée et possède une propriété privée appelée name. Lorsqu'on accède à cette propriété dans le programme, une exception est levée car il s'agit d'une propriété privée à laquelle on ne peut accéder en dehors de la classe dans laquelle elle est définie.
 
-``` php
+```php
 <?php
 class person {
   private $name = "John";
 };
 
 $p1 = new person();
-echo $p1->name; 
+echo($p1->name);
 ?>
 ```
 
 La réponse du code ci-dessus sera :
 
-``` php
+```php
 PHP Fatal error:  Uncaught Error: Cannot access private property person::$name
 ```
 
@@ -37,7 +37,7 @@ L'**encapsulation** est un processus consistant à lier les propriétés et les 
 
 Dans l'exemple ci-dessous, des méthodes publiques set et get sont créées pour accéder aux propriétés privées nom et âge de la classe *person*.
 
-``` php
+```php
 <?php
 class person {
   private $Name;
@@ -66,12 +66,12 @@ $p1 = new person();
 $p1->setName("Patrick");
 $p1->setAge(64);
 // obtenir le nom et l'âge
-echo $p1->getName()." a ".$p1->getAge()." ans."; 
+echo($p1->getName()." a ".$p1->getAge()." ans.");
 ?>
 ```
 
 La réponse du code ci-dessus sera :
 
-``` php
+```php
 Patrick a 64 ans.
 ```

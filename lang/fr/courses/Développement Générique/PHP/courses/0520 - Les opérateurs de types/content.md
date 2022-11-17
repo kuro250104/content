@@ -2,7 +2,7 @@ Les opérateurs de types sont utilisés pour déterminer si une variable est un 
 
 Exemple 1. instanceof avec des classes :
 
-``` php
+```php
 <?php
 class MaClasse
 {
@@ -21,7 +21,7 @@ Dans cet exemple, le premier ```var_dump()``` renvoi vrai (true) alors que le se
 
 Exemple 2. instanceof avec des classes héritées :
 
-``` php
+```php
 <?php
 class ClassParent
 {
@@ -40,7 +40,7 @@ Dans cet exemple, le premier ```var_dump()``` renvoi vrai (true) et le second ``
 
 Exemple 3. instanceof pour vérifier que l’objet n’est pas une instance de la classe :
 
-``` php
+```php
 <?php
 class MaClass
 {
@@ -54,7 +54,7 @@ Dans cet exemple, le ```var_dump()``` renvoi vrai (true).
 
 Exemple 4. instanceof pour une interface :
 
-``` php
+```php
 <?php
 interface MonInterface
 {
@@ -73,7 +73,7 @@ Dans cet exemple, les deux ```var_dump()``` renvoient vrai (true).
 
 Exemple 5 : instanceof pour d’autres types :
 
-``` php
+```php
 <?php
 $a = 1;
 $b = NULL;
@@ -85,7 +85,7 @@ var_dump(FALSE instanceof stdClass);
 
 L’exemple du dessus donne le résultat suivant :
 
-``` php
+```php
 bool(false)
 bool(false)
 bool(false)

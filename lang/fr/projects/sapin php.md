@@ -31,5 +31,5 @@ Voici le schéma de base du sapin, incluant toutes les options :
 
 ### Contraintes
 
-- N'utilisez que du PHP
+- N'utilisez que du PHP à l'exception des balises html ```<pre></pre>``` que vous pouvez utiliser de telle sorte à ce que les caractères d'espace soivent de la même taille que les caractères d'étoile.
 - Ne dessinez rien directement dans votre code PHP : chaque ligne doit ENTIÈREMENT être générée algorithmiquement.

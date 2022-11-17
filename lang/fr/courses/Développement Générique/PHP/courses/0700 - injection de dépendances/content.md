@@ -2,7 +2,7 @@ Les objets dépendent souvent d'autres objets. Au lieu de créer la dépendance 
 
 Dans l'exemple suivant, Component dépend d'une instance de Logger, mais il n'en crée pas. Il exige qu'une instance soit passée comme argument au constructeur.
 
-``` php
+```php
 interface Logger {
     public function log(string $message);
 }
@@ -18,7 +18,7 @@ class Component {
 
 Sans injection de dépendances, le code ressemblerait probablement à ceci :
 
-``` php
+```php
 class Component {
     private $logger;
 
@@ -38,7 +38,7 @@ L'injection de dépendances (DI) dans le contexte de l'utilisation d'un conteneu
 
 L'implémentation exacte va bien au-delà de la portée de ce document, mais dans son essence même, un DIC repose sur l'utilisation de la signature d'une classe...
 
-``` php
+```php
 namespace Documentation;
 
 class Example
@@ -54,7 +54,7 @@ class Example
 
 ... pour l'instancier automatiquement, en s'appuyant la plupart du temps sur un système de chargement automatique.
 
-``` php
+```php
 // older PHP versions
 $container->make('Documentation\Example');
 
@@ -78,7 +78,7 @@ Si nous définissons des règles sur la façon dont un type spécifique doit êt
 
 Les dépendances peuvent également être injectées par des setters.
 
-``` php
+```php
 interface Logger {
     public function log($message);
 }
@@ -116,7 +116,7 @@ Notez que lorsque vous utilisez l'injection de setter, il est préférable d'ét
 
 Pour éviter cela, nous devons ajouter une dépendance avec injection de setter, comme suit :
 
-``` php
+```php
 interface Logger {
     public function log($message);
 }

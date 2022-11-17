@@ -8,7 +8,7 @@ Une boucle FOR qui donne chaque valeur de la variable de bouclage est utilisée 
 
 ### Exemple 1 
 
-``` php
+```php
 <?php
 function squaregenerator(){
    for ($i=1; $i<=5; $i++){
@@ -17,7 +17,7 @@ function squaregenerator(){
 }
 $gen=squaregenerator();
 foreach ($gen as $val){
-   echo $val . " ";
+   echo($val . " ");
 }
 ?>
 ```
@@ -26,7 +26,7 @@ La réponse est semblable à une boucle FOREACH normale.
 
 ### Réponse 1
 
-``` php
+```php
 1 4 9 16 25
 ```
 
@@ -34,7 +34,7 @@ La fonction ```range()``` de PHP retourne une liste d'entiers de début à fin a
 
 ### Example 2
 
-``` php
+```php
 <?php
 function rangegenerator($start, $stop, $step){
    for ($i=$start; $i<=$stop; $i+=$step){
@@ -42,7 +42,7 @@ function rangegenerator($start, $stop, $step){
    }
 }
 foreach (rangegenerator(2,10,2) as $val){
-   echo $val . " ";
+   echo($val . " ");
 }
 ?>
 ```
@@ -51,7 +51,7 @@ foreach (rangegenerator(2,10,2) as $val){
 
 La réponse est similaire à range(2,20,2).
 
-``` php
+```php
 2 4 6 8 10
 ```
 
@@ -59,7 +59,7 @@ Un tableau associatif peut aussi être implémenté comme générateur :
 
 ### Example 3
 
-``` php
+```php
 <?php
 function arrgenerator($arr){
    foreach ($arr as $key=>$val){
@@ -69,13 +69,13 @@ function arrgenerator($arr){
 $arr=array("one"=>1, "two"=>2, "three"=>3, "four"=>4);
 $gen=arrgenerator($arr);
 foreach ($gen as $key=>$val)
-echo $key . "=>" . $val . "\n";
+echo($key . "=>" . $val . "\n");
 ?>
 ```
 
 ### Réponse 3
 
-``` php
+```php
 one=>1
 two=>2
 three=>3

@@ -4,11 +4,12 @@ Si ```set_error_handler()``` est défini comme gestionnaire d’erreur personnal
 
 exemple :
 
-``` php
+```php
 <?php
 function my_error_handler($err_no, $err_msg, $filename, $linenum) {
     if (!(error_reporting() & $err_no)) {
-        return false; // Ignoré
+        // Ignoré
+        return false;
     }
 }
 ?>
@@ -18,12 +19,11 @@ Les messages d’erreurs générés par l’expression sont disponibles dans l�
 
 exemple :
 
-``` php
+```php
 <?php
 /* Erreur voulu (ce fichier n'existe pas): */
 $mon_fichier = @file ('non_persistent_file') or
     die ("Impossible d'ouvrir le fichier : L'erreur est : '" . error_get_last()['message'] . "'");
-
 ?>
 ```
 

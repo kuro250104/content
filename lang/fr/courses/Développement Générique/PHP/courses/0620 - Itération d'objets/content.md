@@ -4,7 +4,7 @@ Depuis PHP 5, il est possible d'itérer dans la liste de tous les éléments vis
 
 ### Exemple
 
-``` php
+```php
 <?php
 class myclass{
    private $var;
@@ -19,15 +19,15 @@ class myclass{
    }
    public function iterate(){
       foreach ($this as $key => $value) {
-         print "$key => $value\n";
+         print("$key => $value\n");
       }
    }
 }
 $obj = new myclass();
 foreach($obj as $key => $value) {
-   print "$key => $value\n";
+   print("$key => $value\n");
 }
-echo "\n";
+echo("\n");
 $obj->iterate();
 ?>
 ```
@@ -36,7 +36,7 @@ $obj->iterate();
 
 La réponse est la suivante :
 
-``` php
+```php
 x => 100
 y => 200
 z => 300
@@ -52,7 +52,7 @@ z => 300
 
 Cette interface définit les méthodes abstraites suivantes qui seront implémentées dans l'exemple suivant :
 
-``` php
+```php
 abstract public current ( void ) : mixed
 abstract public key ( void ) : scalar
 abstract public next ( void ) : void
@@ -70,39 +70,39 @@ L'exemple suivant démontre l'itération d'objets en implémentant l'interface I
 
 ### Exemple
 
-``` php
+```php
 <?php
 class myclass implements Iterator{
    private $arr = array('a','b','c');
    public function rewind(){
-      echo "rewinding\n";
+      echo("rewinding\n");
       reset($this->arr);
    }
    public function current(){
       $var = current($this->arr);
-      echo "current: $var\n";
+      echo("current: $var\n");
       return $var;
    }
    public function key() {
       $var = key($this->arr);
-      echo "key: $var\n";
+      echo("key: $var\n");
       return $var;
    }
    public function next() {
       $var = next($this->arr);
-      echo "next: $var\n";
+      echo("next: $var\n");
       return $var;
    }
    public function valid(){
       $key = key($this->arr);
       $var = ($key !== NULL && $key !== FALSE);
-      echo "valid: $var\n";
+      echo("valid: $var\n");
       return $var;
    }
 }
 $obj = new myclass();
 foreach ($obj as $k => $v) {
-   print "$k: $v\n";
+   print("$k: $v\n");
 }
 ?>
 ```
@@ -111,7 +111,7 @@ foreach ($obj as $k => $v) {
 
 Le code ci-dessus produit le résultat suivant :
 
-``` php
+```php
 rewinding
 valid: 1
 current: a

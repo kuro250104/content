@@ -11,9 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // récupérer les données fournies par le formulaire
   $prenom = $_POST['name'];
   if (empty($name)) {
-    echo "Le champ prénom est vide";
+    echo("Le champ prénom est vide");
   } else {
-    echo $prenom;
+    echo($prenom);
   }
 }
 ?>

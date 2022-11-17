@@ -11,14 +11,14 @@ Les différents opérateurs pour les tableaux sont :
 
 Exemple 1 :
 
-``` php
+```php
 <?php
 $a = array("a" => "abricot", "b" => "cerises");
 $b = array("a" =>"poire", "b" => "banane", "c" => "orange");
- 
+
 $c = $a + $b; // type “Union”
 var_dump($c);
- 
+
 $c = $b + $a; // type “Union”
 var_dump($c);
 ?>
@@ -26,7 +26,7 @@ var_dump($c);
 
 Dans cet exemple, le premier ```var_dump()``` renvoi :
 
-``` php
+```php
 array(3) {
     ["a"] => string(7) "abricot"
     ["b"] => string(7) "cerises"
@@ -36,7 +36,7 @@ array(3) {
 
 Le second ```var_dump()``` renvoi :
 
-``` php
+```php
 array(3) {
     ["a"] => string(5) "poire"
     ["b"] => string(6) "banane"
@@ -46,11 +46,11 @@ array(3) {
 
 Exemple 2 :
 
-``` php
+```php
 <?php
 $a = array("fraise", "ananas");
 $b = array(1 => "ananas", "0" => "fraise");
- 
+
 var_dump($a == $b);
 var_dump($a === $b); 
 ?>

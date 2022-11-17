@@ -31,16 +31,16 @@ Les “effets secondaires” peuvent par exemple être (liste non exhaustive) :
 
 Voici un exemple d’un fichier contenant des effets secondaires, ainsi qu’une déclaration :
 
-``` php
+```php
 <?php
 // modification d'un paramètre : effet secondaire
 ini_set('error_reporting', ALL);
 
 // inclusion d'un fichier : effet secondaire
-include "file.php";
+include("file.php");
 
 // génération d'un affichage : effet secondaire
-echo "<html>\n";
+echo("<html>\n");
 
 // déclaration
 function foo()
@@ -53,7 +53,7 @@ Dans l’exemple ci-dessus, la déclaration ne fait pas partie des “effets sec
 
 Voici à présent un exemple de code ne contenant que des déclarations, et donc sans effets secondaires : 
 
-``` php
+```php
 <?php
 
 // déclaration d'une fonction
@@ -83,7 +83,7 @@ Les namespaces et les classes doivent impérativement suivre la PSR 04 “autolo
 
 Attention, la déclaration des namespaces dépend de la version PHP utilisée. À partir de la version 5.3 (et suivantes), les namespaces doivent être déclarés de manière formelle : 
 
-``` php
+```php
 <?php
 
 
@@ -98,7 +98,7 @@ class Foo
 
 Concernant les versions antérieures à PHP 5.3 (à partir de la 5.2), les namespaces n’existants pas, il faut dans la mesure du possible nommer les classes en préfixant leur nom de leur chemin, en séparant chaque niveau par un “underscore” :
 
-``` php
+```php
 <?php
 
 // class name declaration PHP <= 5.2
@@ -114,7 +114,7 @@ class Vendor_Model_Foo
 
 Les constantes de classe doivent impérativement être déclarées entièrement en majuscule en séparant chaque mot par des underscores ( _ ).
 
-``` php
+```php
 <?php
 
 namespace Vendor\Model;
@@ -139,4 +139,3 @@ Si la majorité des développeurs s’accordent aujourd’hui pour favoriser le 
 ### Méthodes
 
 La PSR 01 se termine sur les méthodes, en spécifiant que leurs noms doivent impérativement être déclarés en **camelCase**.
-

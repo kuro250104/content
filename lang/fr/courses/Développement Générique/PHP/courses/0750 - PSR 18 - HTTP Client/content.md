@@ -28,7 +28,7 @@ Un client ne doit pas traiter une demande HTTP ou une réponse HTTP bien formée
 
 “ClientInterface” :
 
-``` php
+```php
 namespace Psr\Http\Client;
 
 use Psr\Http\Message\RequestInterface;
@@ -47,7 +47,7 @@ interface ClientInterface
 
 “ClientExceptionInterface” :
 
-``` php
+```php
 namespace Psr\Http\Client;
 
 interface ClientExceptionInterface extends \Throwable
@@ -57,7 +57,7 @@ interface ClientExceptionInterface extends \Throwable
 
 “RequestExceptionInterface” :
 
-``` php
+```php
 namespace Psr\Http\Client;
 
 use Psr\Http\Message\RequestInterface;
@@ -73,7 +73,7 @@ interface RequestExceptionInterface extends ClientExceptionInterface
 
 “NetworkExceptionInterface” :
 
-``` php
+```php
 namespace Psr\Http\Client;
 
 use Psr\Http\Message\RequestInterface;

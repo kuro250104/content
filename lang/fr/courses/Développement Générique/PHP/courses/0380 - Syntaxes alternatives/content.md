@@ -6,7 +6,6 @@ PHP propose une syntaxe alternative pour certaines de ses structures de contrôl
 
 ``` php
 <?php
-
 if ($condition):
     do_something();
 elseif ($another_condition):
@@ -14,7 +13,6 @@ elseif ($another_condition):
 else:
     do_something_different();
 endif;
-
 ?>
 
 <?php if ($condition): ?>
@@ -30,7 +28,6 @@ endif;
 
 ``` php
 <?php
-
 switch ($condition):
     case $value:
         do_something();
@@ -39,16 +36,15 @@ switch ($condition):
         do_something_else();
         break;
 endswitch;
-
 ?>
 
 <?php switch ($condition): ?>
-<?php case $value: ?>
-    <p>Do something in HTML</p>
-    <?php break; ?>
-<?php default: ?>
-    <p>Do something else in HTML</p>
-    <?php break; ?>
+    <?php case $value: ?>
+        <p>Do something in HTML</p>
+        <?php break; ?>
+    <?php default: ?>
+        <p>Do something else in HTML</p>
+        <?php break; ?>
 <?php endswitch; ?>
 ```
 
@@ -56,11 +52,9 @@ endswitch;
 
 ``` php
 <?php
-
 for ($i = 0; $i < 10; $i++):
     do_something($i);
 endfor;
-
 ?>
 
 <?php for ($i = 0; $i < 10; $i++): ?>
@@ -72,11 +66,9 @@ endfor;
 
 ``` php
 <?php
-
 while ($condition):
     do_something();
 endwhile;
-
 ?>
 
 <?php while ($condition): ?>
@@ -88,11 +80,9 @@ endwhile;
 
 ``` php
 <?php
-
 foreach ($collection as $item):
     do_something($item);
 endforeach;
-
 ?>
 
 <?php foreach ($collection as $item): ?>

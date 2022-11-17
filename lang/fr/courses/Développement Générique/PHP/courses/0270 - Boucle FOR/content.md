@@ -4,7 +4,7 @@ Elle doit être utilisée si le nombre d’itérations est connu, sinon utiliser
 
 ## Syntaxe
 
-``` php
+```php
 for(initialization; condition; increment/decrement){ 
     //code à exécuter 
 }
@@ -12,15 +12,15 @@ for(initialization; condition; increment/decrement){
 
 ## Exemple
 
-``` php
+```php
 for($n=1;$n<=10;$n++){ 
-    echo "$n<br/>"; 
+    echo("$n<br/>"); 
 }
 ```
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 1
 2
 3
@@ -39,17 +39,17 @@ On peut utiliser une boucle for à l’intérieur d’une autre en PHP, on l’a
 
 ### Exemple
 
-``` php
+```php
 for($i=1;$i<=3;$i++){ 
     for($j=1;$j<=3;$j++){ 
-        echo "$i   $j<br/>"; 
+        echo("$i   $j<br/>");
     } 
 }
 ```
 
 Dans cet exemple, le résultat renvoyé est :
 
-``` php
+```php
 1  1
 1  2
 1  3

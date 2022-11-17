@@ -8,7 +8,7 @@ Le PDO représente une connexion entre PHP et un serveur de base de données. La
 
 Dans ce cours, nous travaillons avec une base de données MySQL. Voici le code permettant de créer la table dont nous nous servirons pendant ce cours. Si vous ne savez pas comment l'exploiter, référez vous aux cours de MySQL.
 
-``` sql
+```sql
 DROP TABLE IF EXISTS countries;
 CREATE TABLE countries(id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	name VARCHAR(255), population INT);
@@ -30,7 +30,7 @@ INSERT INTO countries(name, population) VALUES('Japan', 126830000);
 
 La fonction PDO ```query()``` exécute une instruction SQL en un seul appel de fonction, et renvoie le jeu de résultats (s'il y en a) renvoyé par l'instruction.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -43,12 +43,12 @@ $stm = $pdo->query("SELECT VERSION()");
 
 $version = $stm->fetch();
 
-echo $version[0] . PHP_EOL;
+echo($version[0] . PHP_EOL);
 ```
 
 L'exemple renvoie la version de MySQL.
 
-``` php
+```php
 $dsn = "mysql:host=localhost;dbname=mydb";
 $user = "user12";
 $passwd = "12user";
@@ -56,26 +56,26 @@ $passwd = "12user";
 
 Ces variables sont utilisées pour créer une chaîne de connexion à la base de données. Le ```$dsn``` est le nom de la source de données, qui contient les informations nécessaires pour se connecter à la base de données.
 
-``` php
+```php
 $pdo = new PDO($dsn, $user, $passwd);
 ```
 
 Un nouvel objet PDO est créé. Il passe au constructeur le nom de la source de données ainsi que le nom d'utilisateur et le mot de passe. La classe PDO représente une connexion entre PHP et un serveur de base de données.
 
-``` php
+```php
 $stm = $pdo->query("SELECT VERSION()");
 ```
 
 La méthode ```query()``` exécute une instruction SQL en un seul appel de fonction. Elle renvoie le jeu de résultats.
 
-``` php
+```php
 $version = $stm->fetch();
 ```
 
 La méthode ```fetch()``` de l'instruction PDO permet d'extraire la ligne suivante d'un ensemble de résultats. Dans notre cas, il s'agit d'une version de MySQL.
 
-``` php
-echo $version[0] . PHP_EOL;
+```php
+echo($version[0] . PHP_EOL);
 ```
 
 La variable ```$version``` est un tableau, il affiche sa première valeur.
@@ -84,7 +84,7 @@ La variable ```$version``` est un tableau, il affiche sa première valeur.
 
 La fonction PDO ```exec()``` exécute une instruction SQL et renvoie le nombre de lignes concernées.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -94,19 +94,19 @@ $passwd = "12user";
 $pdo = new PDO($dsn, $user, $passwd);
 $id = 12;
 $nrows = $pdo->exec("DELETE FROM countries WHERE id IN (1, 2, 3)");
-echo "La déclaration a supprimé $nrows lignes\n";
+echo("La déclaration a supprimé $nrows lignes\n");
 ```
 
 L'exemple de code supprime trois lignes. Il affiche le nombre de lignes concernées.
 
-``` php
+```php
 $nrows = $pdo->exec("DELETE FROM countries WHERE id IN (1, 2, 3)");
 ```
 
 Dans cette instruction SQL, les lignes avec les identifiants 1, 2 et 3 sont supprimées. Le nombre de lignes supprimées est stocké dans la variable ```$nrows```.
 
-``` php
-echo "La déclaration a supprimé $nrows lignes\n";
+```php
+echo("La déclaration a supprimé $nrows lignes\n");
 ```
 
 Cela affiche le nombre de lignes supprimées.
@@ -115,7 +115,7 @@ Cela affiche le nombre de lignes supprimées.
 
 Le paramètre fetch contrôle la façon dont la ligne suivante sera retournée à l'appelant. Par exemple, ```PDO::FETCH_ASSOC``` renvoie un tableau indexé par le nom de la colonne, ```PDO::FETCH_NUM``` renvoie un tableau indexé par le numéro de la colonne, et ```PDO::FETCH_BOTH``` renvoie un tableau indexé à la fois par le nom et le numéro de la colonne indexée. Le style de récupération par défaut est ```PDO::FETCH_BOTH```.
 
-``` php
+```php
 <?php
 $dsn = "mysql:host=localhost;dbname=mydb";
 $user = "user12";
@@ -131,19 +131,19 @@ foreach($rows as $row) {
 
 Dans cet exemple, le code affichera les données dans un tableau indexé.
 
-``` php
+```php
 $stm = $pdo->query("SELECT * FROM countries");
 ```
 
 Il sélectionne toutes les données du tableau des pays.
 
-``` php
+```php
 $rows = $stm->fetchAll(PDO::FETCH_NUM);
 ```
 
 Il passe le style ```PDO:FETCH_NUM``` à la méthode ```fetchAll()```.
 
-``` php
+```php
 foreach($rows as $row) {
     printf("$row[0] $row[1] $row[2]\n");
 }
@@ -159,7 +159,7 @@ PDO contient les méthodes ```bindParam()``` et ```bindValue()``` pour créer de
 
 PDO permet de lier des données à des points d'interrogation ou à des espaces nommés.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -176,20 +176,20 @@ $stm->execute();
 
 $row = $stm->fetch(PDO::FETCH_ASSOC);
 
-echo "Id: " . $row['id'] . PHP_EOL;
-echo "Name: " . $row['name'] . PHP_EOL;
-echo "Population: " . $row['population'] . PHP_EOL;
+echo("Id: " . $row['id'] . PHP_EOL);
+echo("Name: " . $row['name'] . PHP_EOL);
+echo("Population: " . $row['population'] . PHP_EOL);
 ```
 
 Dans l'exemple, nous utilisons bindValue() pour créer une requête paramétrée. Nous utilisons le point d'interrogation comme placeholder.
 
-``` php
+```php
 $id = 12;
 ```
 
 Disons que cette entrée provient d'un utilisateur.
 
-``` php
+```php
 $stm = $pdo->prepare("SELECT * FROM countries WHERE id = ?");
 $stm->bindValue(1, $id);
 $stm->execute();
@@ -199,7 +199,7 @@ L'instruction select récupère une ligne spécifique du tableau. Nous lions la 
 
 Dans le second cas, nous utilisons ```bindParam()```.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -216,14 +216,14 @@ $stm->execute();
 
 $row = $stm->fetch(PDO::FETCH_ASSOC);
 
-echo "Id : " . $row['id'] . PHP_EOL;
-echo "Nom : " . $row['name'] . PHP_EOL;
-echo "Population : " . $row['population'] . PHP_EOL;
+echo("Id : " . $row['id'] . PHP_EOL);
+echo("Nom : " . $row['name'] . PHP_EOL);
+echo("Population : " . $row['population'] . PHP_EOL);
 ```
 
 L'exemple sélectionne et affiche une ligne spécifique.
 
-``` php
+```php
 $stm = $pdo->prepare("SELECT * FROM countries WHERE id = :id");
 $stm->bindParam(":id", $id, PDO::PARAM_INT);
 $stm->execute();
@@ -235,7 +235,7 @@ Cette fois-ci, nous utilisons un placeholder nommé (:id) et bindParam().
 
 La méthode PDO ```lastInsertId()``` renvoie l'identifiant de la dernière ligne insérée.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -255,7 +255,7 @@ $pdo->exec("INSERT INTO words(word) VALUES ('den')");
 
 $rowid = $pdo->lastInsertId();
 
-echo "L'ID de la dernière ligne insérée est : $rowid\n";
+echo("L'ID de la dernière ligne insérée est : $rowid\n");
 ```
 
 Dans l'exemple, nous créons une nouvelle table. Après la création de la table, nous trouvons le dernier Id inséré avec ```lastInsertId()```.
@@ -266,7 +266,7 @@ L'ID de la dernière ligne insérée est : 4
 
 Voici la réponse.
 
-``` sql
+```sql
 mysql> select * from words;
 +----+------+
 | id | word |
@@ -287,7 +287,7 @@ Une transaction est une unité atomique d'opérations de base de données sur le
 
 La fonction PDO ```beginTransaction()``` initie une nouvelle transaction. PDO ```commit()``` commet la transaction. Et PDO ```rollback()``` annule la transaction.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -301,7 +301,6 @@ try {
     $stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Iraq', 38274000)");
     $stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Uganda', 37673800)");
     $pdo->commit();
-
 } catch(Exception $e) {
     $pdo->rollback();
     throw $e;
@@ -310,7 +309,7 @@ try {
 
 Dans l'exemple, nous ajoutons deux nouveaux pays à la table de la base de données. Les instructions d'insertion sont placées dans une transaction : soit les deux insertions sont exécutées, soit aucune.
 
-``` php
+```php
 } catch(Exception $e) {
     $pdo->rollback();
     throw $e;
@@ -323,7 +322,7 @@ En cas d'exception, nous annulons la transaction : aucune donnée n'est écrite 
 
 Les métadonnées sont des informations sur les données d'une base de données. Les métadonnées contiennent des informations sur les tables et les colonnes dans lesquelles nous stockons les données. Le nombre de lignes qu'une instruction SQL affecte est une métadonnée. Le nombre de lignes et de colonnes renvoyées dans un jeu de résultats sont également des métadonnées.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -336,14 +335,14 @@ $stm = $pdo->query("SELECT name, population FROM countries WHERE id=1");
 
 $ncols = $stm->columnCount();
 
-echo "Le jeu de résultats contient $ncols colonnes\n";
+echo("Le jeu de résultats contient $ncols colonnes\n");
 ```
 
 Dans l'exemple, il affiche le nombre de colonnes dans le jeu de résultats avec la méthode ```columnCount()```.
 
 La méthode ```getAttribute()``` permet de récupérer un attribut de connexion à une base de données.
 
-``` php
+```php
 <?php
 
 $dsn = "mysql:host=localhost;dbname=mydb";
@@ -356,16 +355,16 @@ $driver = $pdo->getAttribute(PDO::ATTR_DRIVER_NAME);
 $server_version = $pdo->getAttribute(PDO::ATTR_SERVER_VERSION);
 $autocommit_mode = $pdo->getAttribute(PDO::ATTR_AUTOCOMMIT);
 
-echo "Driver: $driver\n";
-echo "Server version: $server_version\n";
-echo "Autocommit mode: $autocommit_mode\n";
+echo("Driver: $driver\n");
+echo("Server version: $server_version\n");
+echo("Autocommit mode: $autocommit_mode\n");
 ```
 
 Dans l'exemple, nous obtenons le nom du pilote, la version du serveur et le mode autocommit avec la méthode ```getAttribute()```.
 
 Voici un exemple de réponse :
 
-``` sql
+```sql
 Driver: mysql
 Server version: 5.7.22-0ubuntu0.16.04.1
 Autocommit mode: 1

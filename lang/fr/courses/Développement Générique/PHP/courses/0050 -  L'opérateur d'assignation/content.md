@@ -2,7 +2,7 @@ L’opération d’assignation est le signe ```=```. Contrairement à ce que l�
 
 Exemple :
 
-``` php
+```php
 <?php
 $a = ($b = 2) + 3;
 // $a est maintenant égal à 5, et $b vaut 2.
@@ -10,7 +10,7 @@ $a = ($b = 2) + 3;
 
 Il est également possible d’assigner simplement une valeur, afin de la réutiliser par la suite : 
 
-``` php
+```php
 <?php
 $maVariable = "Hello World !";
 // $maVariable peut être modifiée par la suite, ou bien utilisée simplement pour afficher son contenu.
@@ -18,7 +18,7 @@ $maVariable = "Hello World !";
 
 Chaque affectation de valeur remplacera la précédente, de telle sorte que : 
 
-``` php
+```php
 <?php
 $a = 3;
 // $a vaut 3

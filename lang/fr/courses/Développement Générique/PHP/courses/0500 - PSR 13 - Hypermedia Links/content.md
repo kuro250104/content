@@ -39,7 +39,7 @@ Cependant, il n'existe pas de méthode évolutive pour les valeurs modélisées,
 
 “LinkInterface” :
 
-``` php
+```php
 <?php
 
 namespace Psr\Link;
@@ -70,7 +70,7 @@ interface LinkInterface
 
 “EvolvableLinkInterface” :
 
-``` php
+```php
 <?php
 
 namespace Psr\Link;
@@ -112,7 +112,7 @@ interface EvolvableLinkInterface extends LinkInterface
 
 “LinkProviderInterface” :
 
-``` php
+```php
 <?php
 
 namespace Psr\Link;
@@ -133,7 +133,7 @@ interface LinkProviderInterface
 
 “EvolvableLinkProviderInterface” :
 
-``` php
+```php
 <?php
 
 namespace Psr\Link;

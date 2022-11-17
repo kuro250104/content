@@ -8,37 +8,39 @@ Paamayim Nekudotayim pourrait au premier abord sembler être un choix étrange p
 
 Exemple 1 : en dehors de la définition de la classe
 
-``` php
+```php
 <?php
 class MyClass {
 	const CONST_VALUE = 'Une valeur constante';
 }
- 
+
 $classname = 'MyClass';
-echo $classname::CONST_VALUE; // Depuis PHP 5.3.0
- 
-echo MyClass::CONST_VALUE;
+// Depuis PHP 5.3.0
+echo($classname::CONST_VALUE);
+
+echo(MyClass::CONST_VALUE);
 ```
 
 Trois mots-clés spéciaux, self, parent, et static sont utilisés pour accéder aux propriétés ou aux méthodes depuis la définition de la classe.
 
 Exemple 2 : depuis la définition de la classe
 
-``` php
+```php
 <?php
 class OtherClass extends MyClass
 {
 	public static $my_static = 'variable statique';
- 
+
 	public static function doubleColon() {
-		echo parent::CONST_VALUE . "\n";
-		echo self::$my_static . "\n";
+		echo(parent::CONST_VALUE . "\n");
+		echo(self::$my_static . "\n");
 	}
 }
- 
+
 $classname = 'OtherClass';
-echo $classname::doubleColon(); // Depuis PHP 5.3.0
- 
+// Depuis PHP 5.3.0
+echo($classname::doubleColon());
+
 OtherClass::doubleColon();
 ?>
 ```
@@ -47,26 +49,26 @@ Lorsqu'une classe héritant d'une autre redéfinit une méthode de sa classe par
 
 Exemple 3 : appel d’une méthode parent
 
-``` php
+```php
 <?php
 class MyClass
 {
 	protected function myFunc() {
- 		echo "MyClass::myFunc()\n";
-       }
+		echo("MyClass::myFunc()\n");
+	}
 }
- 
+
 class OtherClass extends MyClass
 {
 	// Surcharge de la définition parente
 	public function myFunc() {
- 
-	  // Mais appel de la méthode parente
-	  parent::myFunc();
-	  echo "OtherClass::myFunc()\n";
-       }
+
+		// Mais appel de la méthode parente
+		parent::myFunc();
+		echo("OtherClass::myFunc()\n");
+	}
 }
- 
+
 $class = new OtherClass();
 $class->myFunc();
 ?>

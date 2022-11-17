@@ -6,7 +6,7 @@ C'est un opérateur binaire, c'est-à-dire qu'il fonctionne sur deux opérandes.
 
 ### Syntaxe
 
-``` php
+```php
 $Premier & $Second
 ```
 
@@ -14,7 +14,7 @@ Cela retournera un autre nombre dont les bits sont activés si les bits du premi
 
 ### Exemple
 
-``` php
+```php
 Entrée : $Premier = 5,  $Second = 3
 Réponse : Le & binaire de ces deux valeurs sera 1.
 ```
@@ -27,7 +27,7 @@ Il s'agit également d'un opérateur binaire, c'est-à-dire qu'il fonctionne sur
 
 ### Syntaxe
 
-``` php
+```php
 $Premier | $Second
 ```
 
@@ -35,7 +35,7 @@ Cela retournera un autre nombre dont les bits sont activés si le bit du premier
 
 ### Exemple
 
-``` php
+```php
 Entrée : Premier = 5, Second = 3
 Réponse : Le OU binaire de ces deux valeurs sera 7.
 ```
@@ -48,7 +48,7 @@ Il s'agit également d'un opérateur binaire, c'est-à-dire qu'il fonctionne sur
 
 ### Syntaxe
 
-``` php
+```php
 $Premier ^ $Second
 ```
 
@@ -56,7 +56,7 @@ Cela renvoie un autre nombre dont les bits sont activés si l'un des bits du pre
 
 ### Exemple
 
-``` php
+```php
 Entrée : Premier = 5, Second = 3
 Réponse : La OU exclusif Binaire de ces deux valeurs sera 6.
 ```
@@ -69,7 +69,7 @@ Il s'agit d'un opérateur unitaire, c'est-à-dire qu'il ne fonctionne que sur un
 
 ### Syntaxe
 
-``` php
+```php
 ~$number
 ```
 
@@ -77,7 +77,7 @@ Cela va inverser tous les bits de $number.
 
 ### Exemple
 
-``` php
+```php
 Entrée : nombre = 5
 Réponse : Le ~ binaire de ce nombre sera -6.
 ```
@@ -90,7 +90,7 @@ Il s'agit d'un opérateur binaire, c'est-à-dire qu'il travaille sur deux opéra
 
 ### Syntaxe
 
-``` php
+```php
 $Premier << $Second
 ```
 
@@ -98,7 +98,7 @@ Cela va décaler les bits de ```$Premier``` vers la gauche. ```$Second``` décid
 
 ### Exemple
 
-``` php
+```php
 Entrée : Premier = 5, Second = 1
 Réponse : Le << binaire de ces deux valeurs sera 10.
 ```
@@ -113,7 +113,7 @@ Il s'agit également d'un opérateur binaire, c'est-à-dire qu'il fonctionne sur
 
 ### Syntaxe
 
-``` php
+```php
 $Premier >> $Second
 ```
 
@@ -121,7 +121,7 @@ Cela va décaler les bits de ```$Premier``` vers la droite. ```$Second``` décid
 
 ### Exemple
 
-``` php
+```php
 Entrée : Premier = 5, Second = 1
 Réponse : La combinaison >> binaire de ces deux valeurs sera 2.
 ```

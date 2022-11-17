@@ -4,25 +4,27 @@ Une référence PHP est un alias, qui permet à deux variables différentes de r
 
 exemple :
 
-``` php
+```php
 <?php
 class A {
     public $foo = 1;
 }  
 
 $a = new A;
-$b = $a;     // $a et $b sont des copies du même identifiant
-             // ($a) = ($b) = <id>
+// $a et $b sont des copies du même identifiant
+// ($a) = ($b) = <id>
+$b = $a;
 $b->foo = 2;
-echo $a->foo."\n";
+echo($a->foo."\n");
 
 
 $c = new A;
-$d = &$c;    // $c et $d sont des références
-             // ($c,$d) = <id>
+// $c et $d sont des références
+// ($c,$d) = <id>
+$d = &$c;
 
 $d->foo = 2;
-echo $c->foo."\n";
+echo($c->foo."\n");
 
 
 $e = new A;
@@ -33,14 +35,14 @@ function foo($obj) {
 }
 
 foo($e);
-echo $e->foo."\n";
+echo($e->foo."\n");
 
 ?>
 ```
 
 L'exemple ci-dessus va afficher :
 
-``` php
+```php
 2
 2
 2

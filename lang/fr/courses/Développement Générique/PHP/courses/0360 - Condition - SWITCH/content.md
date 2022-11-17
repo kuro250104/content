@@ -6,7 +6,7 @@ La boucle ```switch``` permet d’économiser du code, car elle évite au dével
 
 La boucle ```switch``` s’écrit de la manière suivante :
 
-``` php
+```php
 switch(variable) {
     case 1: 
     // Code à exécuter
@@ -43,33 +43,33 @@ De manière générale, pour des raisons de logique et de lisibilité du code, l
 
 Ci-dessous, quelques exemples afin d’illustrer l’utilisation de la boucle ```switch``` :
 
-``` php
+```php
 $variable = "Voiture"
 switch ($variable) {
     case "Camion":
-        echo "$variable est un camion.";
+        echo("$variable est un camion.");
     break;
     case "Voiture":
-        echo "$variable est une voiture.";
+        echo("$variable est une voiture.");
     break;
 } // Retourne "$variable est une voiture."
 
 $variable = "Tomate"
 switch ($variable) {
 case "Courgette":
-    echo "$variable est une courgette.";
+    echo("$variable est une courgette.");
 break;
 case "Carotte":
-    echo "$variable est une carotte.";
+    echo("$variable est une carotte.");
 break;
 case "Champignon":
-    echo "$variable est un champignon.";
+    echo("$variable est un champignon.");
 break;
 case "Tomate":
-    echo "$variable est une tomate.";
+    echo("$variable est une tomate.");
 break;
 case "Radis":
-    echo "$variable est un radis.";
+    echo("$variable est un radis.");
 break;
 } // Retourne $variable est une tomate.
 ```

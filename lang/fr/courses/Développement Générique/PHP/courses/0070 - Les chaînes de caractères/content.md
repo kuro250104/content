@@ -21,16 +21,16 @@ Les guillemets simples (‘’) sont utilisables en PHP. C’est d’ailleurs le
 
 Exemple :
 
-``` php
-'Ceci est une chaîne de caractères'
+```php
+echo('Ceci est une chaîne de caractères');
 ```
 
 Lorsqu’une apostrophe doit être utilisée au sein d’une chaîne entourée de guillemets simples, il est nécessaire d’échapper l’apostrophe avec un antislash, afin que le navigateur ne confonde pas l’apostrophe avec un guillemet de fin de chaîne.
 
 Exemple :
 
-``` php
-'J\'utilise une chaîne de caractères’
+```php
+echo('J\'utilise une chaîne de caractères’);
 ```
 
 Cet exemple retourne bien la phrase : **J’utilise une chaîne de caractères**.
@@ -39,8 +39,8 @@ De même, si un antislash doit être utilisé comme caractère au sein d’une s
 
 Exemple :
 
-``` php
-'Les fichiers se trouvent sur le disque C:\\'
+```php
+echo('Les fichiers se trouvent sur le disque C:\\');
 ```
 
 Cet exemple donne le résultat suivant : **‘Les fichiers se trouvent sur le disque C:\’**
@@ -51,17 +51,17 @@ Les guillemets doublent peuvent également être utilisés pour entourer une cha
 
 Exemple :
 
-``` php
-"J'utilise une chaîne de caractères"
+```php
+echo("J'utilise une chaîne de caractères");
 ```
 
 L’utilisation des guillemets double rend moins compliqué l’affichage du contenu d’un variable. En effet, il n’y a pas besoin d’utiliser la concaténation. 
 
 Exemple :
 
-``` php
+```php
 $var = "test";
-"Ceci est un ${var}.";
+echo("Ceci est un ${var}.");
 ```
 
 L’exemple ci-dessus retourne bien la phrase **Ceci est un test**. Le contenu de la variable ```$var``` a donc été affiché correctement. 
@@ -70,8 +70,8 @@ Ce type de guillemets, comme évoqué dans l’introduction de ce point, rend au
 
 Exemple :
 
-``` php
-"Ceci est une\nchaîne de caractères"
+```php
+echo("Ceci est une\nchaîne de caractères");
 ```
 
 Voici ce que retourne cet exemple :
@@ -87,9 +87,9 @@ Qu’il s’agisse de guillemets simples ou doubles, le langage PHP permet la co
 
 Exemple :
 
-``` php
+```php
 $var = "test";
-"Ceci est un deuxième " . $test
+echo("Ceci est un deuxième " . $test);
 ```
 
 Cet exemple retourne bien la phrase “**Ceci est un deuxième test**”.
