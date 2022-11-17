@@ -27,24 +27,7 @@ Les fonctionnalités suivantes sont à réaliser dans l'ordre (n'essayez pas de 
 
 Voici le schéma de base du sapin, incluant toutes les options : 
 
-```
-            *
-           ***
-        S*******S
-           ***
-         *******
-      S***********S
-         *******
-       ***********
-    S***************S
-       ***********
-     ***************
-  S*******************S
-   | | | | *** | | | |
-   0 0 0 0 *** 0 0 0 0
-           ***
-           ***
-```
+![Représentation du sapin à réaliser](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/projects/images_projets/image_dessin_sapin.png)
 
 ### Contraintes
 
