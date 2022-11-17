@@ -27,7 +27,7 @@ Les fonctionnalités suivantes sont à réaliser dans l'ordre (n'essayez pas de 
 
 Voici le schéma de base du sapin, incluant toutes les options : 
 
-```bash
+```
             *
            ***
         S*******S
