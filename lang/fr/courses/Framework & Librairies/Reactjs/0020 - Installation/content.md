@@ -105,4 +105,43 @@ Le serveur va servir l'application en utilisant le port par défaut, 5000. S'il 
 
 Babel est un compilateur JavaScript qui compile de nombreuses variantes (es2015, es6, etc.,) de JavaScript en code JavaScript standard supporté par tous les navigateurs. React utilise JSX, une extension de JavaScript pour concevoir le code de l'interface utilisateur. Babel est utilisé pour compiler le code JSX en code JavaScript.
 
-Pour installer Babel et son compagnon React, exécutez la commande suivante : -.
+Pour installer Babel et son compagnon React, exécutez la commande suivante :
+
+```bash
+npm install babel-cli@6 babel-preset-react-app@3 -g
+... 
+... 
++ babel-cli@6.26.0 
++ babel-preset-react-app@3.1.2 
+updated 2 packages in 8.685s
+```
+
+Babel nous aide à écrire notre application dans la prochaine génération de syntaxe JavaScript avancée.
+
+## Create React App toolchain
+
+Create React App est un outil CLI moderne pour créer une application React à page unique. Il s'agit de l'outil standard soutenu par la communauté React. Il gère également le compilateur Babel. Installons Create React App dans notre système local.
+
+```bash
+> npm install -g create-react-app
++ create-react-app@4.0.1 
+added 6 packages from 4 contributors, removed 37 packages and updated 12 packages in 4.693s
+```
+
+### Updating the toolchain
+
+La chaîne d'outils React Create App utilise le paquet react-scripts pour construire et exécuter l'application. Une fois que nous avons commencé à travailler sur l'application, nous pouvons mettre à jour le react-script à la dernière version à tout moment en utilisant le gestionnaire de paquets npm.
+
+```bash
+npm install react-scripts@latest
+```
+
+### Avantages de l'utilisation de la chaîne d'outils React
+
+React toolchain offre de nombreuses fonctionnalités prêtes à l'emploi. Voici quelques-uns des avantages de l'utilisation de la chaîne d'outils React.
+
+- Structure prédéfinie et standard de l'application.
+- Modèle de projet prêt à l'emploi pour différents types d'applications.
+- Le serveur web de développement est inclus.
+- Un moyen simple d'inclure des composants React tiers.
+- Configuration par défaut pour tester l'application.
