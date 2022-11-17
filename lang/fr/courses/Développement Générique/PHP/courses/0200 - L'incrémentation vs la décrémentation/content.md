@@ -48,7 +48,7 @@ echo $a--; # retourne 9
 echo $a; # retourne 9
 ```
 
-### $a-- 
+### --$a
 
 Cette manière de décrémenter retourne le nombre **puis** enlève 1.
 
@@ -56,6 +56,6 @@ Exemple :
 
 ``` php
 $a = 10;
-echo $a--; # retourne 10
+echo --$a; # retourne 10
 echo $a; # retourne 9
 ```
