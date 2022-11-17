@@ -1,6 +1,6 @@
 ## Durée approximative
 
-2 jours
+1 jour
 
 ## Prérequis
 
