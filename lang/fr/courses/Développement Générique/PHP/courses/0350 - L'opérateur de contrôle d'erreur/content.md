@@ -27,4 +27,4 @@ $mon_fichier = @file ('non_persistent_file') or
 ?>
 ```
 
-L’opérateur ```@``` ne fonctionne qu’avec les expressions (exemples : devant les variables, les appels de fonctions, etc), il ne fonctionne pas fonctionner devant les définitions de fonctions ou de classes, ou de structure conditionnelle (exemples : if, foreach,...).
+L’opérateur ```@``` ne fonctionne qu’avec les expressions (exemples : devant les variables, les appels de fonctions, etc), il ne fonctionne pas devant les définitions de fonctions ou de classes, ou de structure conditionnelle (exemples : if, foreach,...).
