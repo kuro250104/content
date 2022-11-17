@@ -17,7 +17,7 @@ Le principe du projet est de générer un sapin de noël à partir d'un algorith
 
 Les fonctionnalités suivantes sont à réaliser dans l'ordre (n'essayez pas de tout faire en une seule fois si vous n'êtes pas parfaitement à l'aise avec l'algorithmique !).
 
-1. Réaliser un algorithme qui soit capable de "dessiner" le sapin ci-dessous. Ne prenez pas en compre les "S", ni les boules de noël en dessous du sapin.
+1. Réaliser un algorithme qui soit capable de "dessiner" le sapin ci-dessous. Ne prenez pas en compte les "S", ni les boules de noël en dessous du sapin.
 2. Créer une constante "FLOORS" au début de votre script. Celle-ci contiendra un nombre entier (Integer) ajustable, qui déterminera combien d'étages doit avoir le sapin. Votre algorithme doit maintenant dessiner autant d'étage que le nombre contenu dans cette constante.
 3. Créer une constante "GARLAND" au début de votre script. Celle-ci sera de type "Boolean", et devra être définir à TRUE ou FALSE. Si la valeur est vraie, alors les "S" devront s'afficher sur votre sapin, sinon ils ne devront pas s'afficher. Votre algorithme doit être adapté pour prendre en compte ce nouveau paramètre.
 4. Créer une constante "BALLS" au début de votre script. Celle-ci sera de type "Boolean", et devra être définir à TRUE ou FALSE. Si la valeur est vraie, alors les boules de noël en bas du sapin devront s'afficher, sinon elles ne s'affichent pas. Votre algorithme doit être adapté pour prendre en compte ce nouveau paramètre.
