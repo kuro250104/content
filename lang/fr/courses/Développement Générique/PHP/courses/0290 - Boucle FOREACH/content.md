@@ -17,7 +17,7 @@ Voici un exemple simple qui illustre le fonctionnement de l'instruction FOREACH 
 ``` php
 $season = array("été","printemps","hiver","automne"); 
 foreach( $season as $value ){ 
-    echo "La saison est: $value<br />"; 
+    echo("La saison est: $value<br />");
 }
 ```
 
