@@ -68,14 +68,14 @@ $tableau = array('val1', 'val2', 'val3');
 $tableau[] = 'val4';
 ```
 
-Une autre solution peut être d’utiliser une fonction fournie par PHP pour les tableaux : “**append()**” :
+Une autre solution peut être d’utiliser une fonction fournie par PHP pour les tableaux : ```append()``` :
 
 ```php
 # déclaration d'un tableau initial
 $tableau = array('val1', 'val2', 'val3');
 
 # ajout d'une valeur à la fin du tableau
-$tableau.append('val4');
+$tableau->append('val4');
 ```
 
 #### Modification d’un index précis
