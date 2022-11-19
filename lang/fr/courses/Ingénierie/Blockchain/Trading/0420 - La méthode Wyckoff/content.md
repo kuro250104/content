@@ -75,3 +75,110 @@ Les schémas d'accumulation et de distribution sont probablement la partie la pl
 
 ### Schéma d'accumulation
 
+![Schéma d'accumulation de Wyckoff](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0420%20-%20La%20m%C3%A9thode%20Wyckoff/images/image2.png)
+
+#### Phase A
+
+La force de vente diminue, et la tendance à la baisse commence à ralentir. Cette phase est généralement marquée par une augmentation du volume des transactions. Le support préliminaire (*PS - Preleminary Support*) indique que certains acheteurs se manifestent, mais pas encore assez pour arrêter la baisse.
+
+Le Selling Climax (SC) est formé par une intense activité de vente lorsque les investisseurs capitulent. Il s'agit souvent d'un point de forte volatilité, où la vente panique crée de grandes bougies et mèches. La forte baisse se transforme rapidement en rebond ou en rallye automatique (*AR - Automatic Rally*), car l'offre excessive est absorbée par les acheteurs. En général, le trading range (TR) d'un schéma d'accumulation est défini par l'espace entre le bas du SC et le haut du AR.
+
+Comme son nom l'indique, le test secondaire (*ST - Secondary Test*) se produit lorsque le marché chute près de la région SC, afin de vérifier si la tendance baissière est vraiment terminée ou non. À ce moment-là, le volume des échanges et la volatilité du marché ont tendance à être plus faibles. Bien que le ST forme souvent un bas plus élevé par rapport au SC, ce n'est pas toujours le cas.
+
+#### Phase B
+
+Sur la base de la loi de cause à effet de Wyckoff, la phase B peut être considérée comme la cause qui conduit à un effet.
+
+Essentiellement, la phase B est la phase de consolidation, au cours de laquelle l'homme composite accumule le plus grand nombre d'actifs. Au cours de cette phase, le marché a tendance à tester à la fois les niveaux de résistance (resistence) et de soutien (support) de la fourchette de négociation.
+
+Il peut y avoir de nombreux tests secondaires (ST) pendant la phase B. Dans certains cas, ils peuvent produire des sommets plus élevés (pièges à taureau - bull traps) et des creux plus bas (pièges à ours - *bear traps*) par rapport au SC et au AR de la phase A.
+
+#### Phase C
+
+Une phase d'accumulation typique C contient ce que l'on appelle un ressort. Elle agit souvent comme le dernier piège à ours avant que le marché ne commence à faire des creux plus élevés. Pendant la phase C, l'homme composite s'assure qu'il reste peu d'offre sur le marché, c'est-à-dire que ceux qui devaient vendre l'ont déjà fait.
+
+Le printemps casse souvent les niveaux de support pour arrêter les traders et tromper les investisseurs. On peut le décrire comme une dernière tentative d'acheter des actions à un prix plus bas avant le début de la tendance à la hausse. Le piège à ours incite les investisseurs particuliers à abandonner leurs avoirs. 
+
+Dans certains cas, cependant, les niveaux de soutien parviennent à se maintenir, et le ressort ne se produit tout simplement pas. En d'autres termes, il peut y avoir des schémas d'accumulation qui présentent tous les autres éléments mais pas le ressort. Néanmoins, le schéma global reste valable.
+
+#### Phase D
+
+La phase D représente la transition entre la cause et l'effet. Elle se situe entre la zone d'accumulation (phase C) et la rupture du range de trading (phase E). 
+
+Typiquement, la phase D montre une augmentation significative du volume d'échange et de la volatilité. Elle présente généralement un dernier point de soutien (LPS), ce qui permet d'atteindre un plus bas niveau avant que le marché n'augmente. Le LPS précède souvent une rupture des niveaux de résistance, qui crée à son tour des sommets plus élevés. Cela indique des signes de force (SOS - Sign Of Strength), car les résistances précédentes deviennent de nouveaux supports.
+
+En dépit d'une terminologie quelque peu confuse, il peut y avoir plus d'un LPS pendant la phase D. Ils ont souvent un volume de négociation accru tout en testant les nouvelles lignes de support. Dans certains cas, le prix peut créer une petite zone de consolidation avant de rompre effectivement la fourchette de négociation plus large et de passer à la phase E.
+
+#### Phase E
+
+La phase E est la dernière étape d'un schéma d'accumulation. Elle est marquée par une rupture évidente de la fourchette de négociation, causée par une demande accrue du marché. C'est à ce moment-là que la fourchette de négociation est effectivement brisée et que la tendance à la hausse commence.
+
+### Schéma de distribution
+
+En substance, le schéma de distribution fonctionne à l'inverse de l'accumulation, mais avec une terminologie légèrement différente.
+
+![Schéma de distribution de Wyckoff](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0420%20-%20La%20m%C3%A9thode%20Wyckoff/images/image1.png)
+
+#### Phase A
+
+La première phase se produit lorsqu'une tendance haussière établie commence à ralentir en raison d'une diminution de la demande. L'offre préliminaire (PSY - Preleminary Supply) suggère que la force de vente se manifeste, bien qu'elle ne soit pas encore assez forte pour arrêter le mouvement haussier. Le Buying Climax (BC) est alors formé par une activité d'achat intense. Elle est généralement causée par des traders inexpérimentés qui achètent sous le coup de l'émotion. 
+
+Ensuite, la forte hausse provoque une réaction automatique (AR), car la demande excessive est absorbée par les teneurs de marché. En d'autres termes, l'homme composite commence à distribuer ses avoirs aux acheteurs tardifs. Le test secondaire (ST) se produit lorsque le marché revisite la région BC, formant souvent un sommet inférieur.
+
+#### Phase B
+
+La phase B d'une distribution agit comme la zone de consolidation (Cause) qui précède une tendance à la baisse (Effet). Durant cette phase, l'homme composite vend progressivement ses actifs, absorbant et affaiblissant la demande du marché. 
+
+Habituellement, les bandes supérieures et inférieures de la fourchette de négociation sont testées à plusieurs reprises, ce qui peut inclure des pièges baissiers et haussiers à court terme. Parfois, le marché passe au-dessus du niveau de résistance créé par la BC, ce qui donne lieu à une ST que l'on peut également appeler une poussée ascendante (UT - Upthrust).
+
+#### Phase C
+
+Dans certains cas, le marché présente un dernier piège haussier après la période de consolidation. On l'appelle UTAD ou Upthrust After Distribution. C'est, fondamentalement, l'opposé d'un ressort d'accumulation.
+
+#### Phase D
+
+La phase D d'une distribution est à peu près la même que celle de l'accumulation. Elle comporte généralement un dernier point d'approvisionnement (LPSY - Last Point of Supply) au milieu de la fourchette, créant un sommet inférieur. À partir de ce point, de nouveaux LPSY sont créés - autour ou en dessous de la zone de support. Un signe évident de faiblesse (SOW - Sign of Weakness) apparaît lorsque le marché casse sous les lignes de support.
+
+#### Phase E
+
+La dernière étape d'une distribution marque le début d'une tendance à la baisse, avec une cassure évidente en dessous de la fourchette de négociation, causée par une forte domination de l'offre sur la demande.
+
+## La méthode Wyckoff fonctionne-t-elle ?
+
+Naturellement, le marché ne suit pas toujours ces modèles avec précision. Dans la pratique, les schémas d'accumulation et de distribution peuvent se produire de différentes manières. Par exemple, dans certaines situations, la phase B peut durer beaucoup plus longtemps que prévu. Ou encore, les tests de printemps et UTAD peuvent être totalement absents.
+
+Pourtant, l'ouvrage de Wyckoff offre un large éventail de techniques fiables, fondées sur ses nombreux principes et théories. Son travail est certainement précieux pour des milliers d'investisseurs, de traders et d'analystes du monde entier. Par exemple, les schémas d'accumulation et de distribution peuvent s'avérer utiles lorsqu'on essaie de comprendre les cycles courants des marchés financiers.
+
+## L'approche en cinq étapes de Wyckoff
+
+Wyckoff a également développé une approche du marché en cinq étapes, basée sur ses nombreux principes et techniques. En bref, cette approche peut être considérée comme une manière de mettre son enseignement en pratique.
+
+### Étape 1 : Déterminer la tendance.
+
+Quelle est la tendance actuelle et quelle est son évolution probable ? Quelle est la relation entre l'offre et la demande ?
+
+### Étape 2 : Déterminer la solidité de l'actif.
+
+Quelle est la force de l'actif par rapport au marché ? Évoluent-ils de manière similaire ou opposée ?
+
+### ### Étape 3 : Recherchez des actifs avec une cause suffisante.
+
+Y a-t-il suffisamment de raisons pour prendre une position ? La cause est-elle suffisamment forte pour que les récompenses potentielles (effet) valent les risques ?
+
+Étape 4 : Déterminez la probabilité du mouvement.
+
+L'actif est-il prêt à bouger ? Quelle est sa position au sein de la tendance générale ? Que suggèrent les prix et les volumes ? Cette étape implique souvent l'utilisation des tests d'achat et de vente de Wyckoff.
+
+### Étape 5 : Choisissez le moment de votre entrée.
+
+La dernière étape concerne le choix du moment. Elle implique généralement l'analyse d'une action par rapport au marché général.
+
+Par exemple, un trader peut comparer l'évolution du cours d'une action par rapport à l'indice S&P 500. En fonction de sa position dans son schéma Wyckoff individuel, une telle analyse peut fournir des indications sur les prochains mouvements de l'actif. Au final, cela facilite l'établissement d'une bonne entrée.
+
+Notamment, cette méthode fonctionne mieux avec les actifs qui évoluent avec le marché ou l'indice général. Sur les marchés des crypto-monnaies, cependant, cette corrélation n'est pas toujours présente.
+
+## Conclusion
+
+Près d'un siècle s'est écoulé depuis sa création, mais la méthode Wyckoff est encore largement utilisée aujourd'hui. Elle est certainement bien plus qu'un indicateur TA, car elle englobe de nombreux principes, théories et techniques de trading. 
+
+En substance, la méthode Wyckoff permet aux investisseurs de prendre des décisions plus logiques plutôt que d'agir sous le coup de l'émotion. Les travaux approfondis de Wyckoff fournissent aux traders et aux investisseurs une série d'outils pour réduire les risques et augmenter leurs chances de réussite. Néanmoins, il n'existe pas de technique infaillible en matière d'investissement. Il faut toujours se méfier des risques, notamment au sein des marchés très volatils des crypto-monnaies.
