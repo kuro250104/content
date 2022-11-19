@@ -26,3 +26,26 @@ Lorsque la valeur de la ligne ADX est inférieure à 25, on considère que le ma
 
 Toute lecture de l'ADX supérieure à 25 est interprétée comme indiquant l'existence d'une véritable tendance. Les lectures entre 25 et 50 indiquent un début de tendance ou une tendance de force modérée. Les lectures entre 50 et 100 représentent des tendances de plus en plus fortes. Le graphique ci-dessous montre que l'ADX indique une tendance haussière de plus en plus forte à mesure que les lectures de l'indice directionnel moyen passent de moins de 10 à près de 50.
 
+![indicateur ADX](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0270%20-%20L'indicateur%20ADX/images/image1.jpg)
+
+La direction de la force de la tendance - de plus en plus forte ou de moins en moins forte - peut facilement être déterminée en regardant simplement la pente de la ligne ADX. Une ligne ADX en pente ascendante indique un renforcement de la tendance, tandis qu'une ligne ADX en pente descendante indique un affaiblissement de la tendance. Un angle de pente plus prononcé indique une tendance plus forte, tandis qu'un angle plus faible indique une tendance moins forte.
+
+__Remarque__ : Un changement dans la direction de la pente de l'ADX peut servir d'indicateur précoce d'une tendance en développement avant même que les lectures de l'ADX ne dépassent 25. En vous référant au graphique ci-dessus, vous pouvez voir que la pente ADX s'est tournée vers le haut bien avant que la lecture ADX n'atteigne 25 et indique l'existence d'une tendance. Mais avant d'acheter un titre chaque fois que la pente de l'ADX passe de la baisse à la hausse, gardez à l'esprit que la ligne de l'ADX pourrait tout aussi bien être retournée à la baisse avant qu'une véritable tendance à la hausse ne s'établisse - en d'autres termes, vous pourriez vous faire prendre un peu vite.
+
+## Le prix et l'ADX
+
+Les analystes et les investisseurs utilisent rarement l'indicateur ADX seul. Comme il n'indique pas la direction de la tendance, il est généralement utilisé en conjonction avec des indicateurs de tendance tels que les moyennes mobiles ou les zones de support et de résistance qui sont utilisées pour analyser le mouvement des prix.
+
+Par exemple, une application idéale de l'utilisation des indicateurs de tendance en combinaison avec l'ADX serait un cas où le prix d'un titre a été négocié dans une fourchette, avec des niveaux de prix de soutien et de résistance clairement définis, mais sort ensuite de cette fourchette de négociation en passant par un niveau de soutien ou de résistance. Si la rupture du cours est accompagnée d'une hausse des lectures ADX qui indiquent la présence d'une tendance, cela constituerait une indication confirmant la validité de la rupture, et un analyste projetterait une tendance se poursuivant dans la direction de la rupture.
+
+## L'ADX comme indicateur de divergence
+
+L'ADX est aussi parfois utilisé, comme d'autres indicateurs de momentum, comme un indicateur de divergence qui peut signaler un changement de tendance ou un retournement de marché imminent.
+
+Les valeurs de l'ADX atteindront des niveaux de plus en plus élevés avec le prix dans un marché qui a une forte tendance à la hausse. Mais si les niveaux de l'ADX commencent à baisser alors même que les prix augmentent, cette divergence entre le mouvement des prix et l'ADX peut indiquer que le marché perd son élan et qu'un retournement à la baisse est possible. Dans une telle situation, les analystes surveilleront attentivement l'évolution des prix pour trouver d'autres indications d'un éventuel changement de tendance, la baisse de l'ADX ayant servi en quelque sorte de signal d'alerte précoce.
+
+## Conclusion - la valeur de l'ADX
+
+L'ADX s'est révélé être un indicateur très utile pour les analystes techniques et est devenu l'un des outils techniques les plus fréquemment utilisés. Il s'agit de l'un des indicateurs de force de tendance les plus fiables et il a aidé de nombreux analystes à identifier correctement les marchés à tendance et à éviter ainsi d'être incités à acheter de fausses ruptures ou à acheter des marchés qui sont fondamentalement plats et ne vont nulle part.
+
+Wilder a développé un certain nombre d'indicateurs techniques, mais a toujours affirmé que l'ADX était sa meilleure création. Vous pourriez bien envisager d'ajouter l'indicateur ADX à votre arsenal d'analyse technique.
