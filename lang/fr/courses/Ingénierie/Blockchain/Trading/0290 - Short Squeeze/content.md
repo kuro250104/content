@@ -38,3 +38,14 @@ Les ventes forcées à découvert sont également assez courantes sur les march�
 
 Jetez un coup d'œil à cette fourchette de prix du bitcoin ci-dessous, datant de début 2019. Le prix était contenu dans une fourchette après un fort mouvement à la baisse. Le sentiment du marché était probablement assez faible, car de nombreux investisseurs seraient à la recherche de positions courtes, s'attendant à la poursuite de la tendance à la baisse.
 
+![Exemple de graphique](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0290%20-%20Short%20Squeeze/images/image1.png)
+
+Cependant, le prix a traversé la zone avec une telle hâte que la zone n'a même pas été retestée pendant longtemps. Elle n'a été retestée que des années plus tard, pendant la pandémie de coronavirus (également connue sous le nom de "jeudi noir"). Ce mouvement rapide était très probablement dû à une importante couverture à découvert.
+
+## Conclusion
+
+En résumé, un resserrement des positions à découvert se produit lorsque des vendeurs à découvert se retrouvent piégés et sont contraints de couvrir leurs positions, ce qui entraîne une forte hausse des prix. 
+
+Les ventes à découvert peuvent être particulièrement volatiles sur les marchés à fort effet de levier. Lorsque de nombreux traders et investisseurs utilisent un effet de levier élevé, les mouvements de prix ont également tendance à être plus marqués, car les liquidations en cascade peuvent entraîner un effet de cascade.
+
+Assurez-vous de comprendre les implications d'une liquidation en cascade avant de prendre une position courte. Sinon, vous risquez de subir d'énormes pertes.
