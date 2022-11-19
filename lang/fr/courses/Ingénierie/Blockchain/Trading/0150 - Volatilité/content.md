@@ -1,0 +1,13 @@
+En finance, la volatilité décrit la rapidité et l'ampleur des variations du prix d'un actif. Elle est généralement calculée en termes d'écarts types du rendement annuel d'un actif sur une période donnée. Parce qu'elle est une mesure de la rapidité et du degré des changements de prix, la volatilité est souvent utilisée comme une mesure efficace du risque d'investissement associé à un actif.
+
+## La volatilité sur les marchés traditionnels
+
+La volatilité est le plus souvent abordée sur le marché boursier et, en raison de son importance dans l'évaluation du risque, des systèmes bien établis (indices de volatilité) existent sur les marchés traditionnels pour mesurer et potentiellement anticiper les niveaux de volatilité futurs. Par exemple, l'indice de volatilité (VIX) du Chicago Board Options Exchange est utilisé sur le marché boursier américain. L'indice VIX utilise les prix des options sur les actions de l'indice S&P 500 pour mesurer la volatilité du marché sur une période de 30 jours.
+
+Bien que principalement associée aux actions, la volatilité est également importante sur d'autres marchés traditionnels. En 2014, le CBOE a lancé un nouvel indice de volatilité pour les bons du Trésor américain à 10 ans qui mesurait la confiance et le risque des investisseurs sur le marché obligataire. Bien qu'il existe moins d'outils standardisés pour la mesurer, la volatilité est également une composante essentielle de l'évaluation des opportunités sur le marché des changes.
+
+## Volatilité sur les marchés des crypto-monnaies
+
+Comme sur les autres marchés, la volatilité est une mesure importante du risque sur les marchés des crypto-monnaies. En raison de leur nature numérique, de leur faible niveau actuel de réglementation et de la taille réduite du marché, les crypto-monnaies sont beaucoup plus volatiles que la plupart des autres catégories d'actifs. Ce niveau de volatilité plus élevé est en partie responsable de l'intérêt massif pour les investissements en crypto-monnaies, car il a permis à certains investisseurs de réaliser des rendements importants sur des périodes relativement courtes. Il est probable que la volatilité des marchés des crypto-monnaies diminuera à long terme en raison d'une adoption plus large et de la croissance du marché, ainsi que d'une réglementation accrue.
+
+Les marchés des crypto-monnaies étant devenus plus matures, les investisseurs s'intéressent davantage à la mesure de leur volatilité. C'est pourquoi il existe désormais des indices de volatilité pour certaines des principales crypto-monnaies. Le plus notable est l'indice de volatilité du bitcoin (BVOL), mais il existe des indices de volatilité similaires pour suivre les marchés d'autres crypto-monnaies, notamment l'Ethereum et le Litecoin.

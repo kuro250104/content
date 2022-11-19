@@ -1,0 +1,24 @@
+de croire que le trading peut être une activité rentable. Pour ce faire, vous devez choisir la théorie de base du marché à laquelle vous croyez.
+
+Une "marche aléatoire" (*Random Walk*) est un phénomène statistique dans lequel une variable ne suit aucune tendance discernable et évolue apparemment au hasard. La théorie de la marche aléatoire appliquée au trading, clairement exposée par Burton Malkiel, professeur d'économie à l'université de Princeton, postule que le prix des titres évolue de manière aléatoire (d'où le nom de la théorie) et que, par conséquent, toute tentative de prédire l'évolution future des prix, par le biais d'une analyse fondamentale ou technique, est futile. L'implication pour les traders est qu'il est impossible de surpasser la moyenne générale du marché autrement que par pure chance. Ceux qui souscrivent à la théorie de la marche aléatoire recommandent d'utiliser une stratégie "acheter et conserver", en investissant dans une sélection d'actions représentatives du marché global - par exemple, un fonds commun de placement indiciel ou un ETF.
+
+## Hypothèses de base de la théorie de la marche aléatoire
+
+1. La théorie de la marche aléatoire suppose que le prix de chaque action suit une marche aléatoire.
+2. La théorie de la marche aléatoire suppose également que le mouvement du prix d'un titre est indépendant du mouvement du prix d'un autre titre.
+
+L'une des principales critiques de la théorie de la marche aléatoire est que le marché boursier est composé d'un grand nombre d'investisseurs et que le temps que chaque investisseur passe sur le marché est différent. Il est donc possible que des tendances se dessinent dans les prix des titres à court terme, et un investisseur avisé peut surpasser le marché en achetant stratégiquement des actions lorsque le prix est bas et en vendant des actions lorsque le prix est élevé dans un court laps de temps.
+
+D'autres critiques affirment que la théorie de la marche aléatoire repose sur des bases erronées et que les prix des actions suivent des modèles ou des tendances, même à long terme. Ils affirment qu'étant donné que le prix d'un titre est affecté par un très grand nombre de facteurs, il peut être impossible de trouver le modèle ou la tendance suivie par le prix de ce titre, mais ce n'est pas parce qu'un modèle ne peut être trouvé qu'il n'existe pas.
+
+## Une marche non aléatoire
+
+À l'opposé de la théorie de la marche aléatoire se trouve la thèse des adeptes de l'analyse technique, ceux qui pensent que les mouvements de prix futurs peuvent être prédits sur la base des tendances, des modèles et de l'action historique des prix. Ce point de vue implique que les traders disposant d'une analyse du marché et de compétences commerciales supérieures peuvent obtenir des résultats nettement supérieurs à la moyenne du marché.
+
+Les deux parties peuvent présenter des preuves à l'appui de leur position, c'est donc à chacun de choisir ce qu'il croit. Cependant, il existe un fait, peut-être décisif, qui va à l'encontre de la théorie de la marche aléatoire : le fait qu'il existe des traders individuels qui surperforment constamment la moyenne du marché pendant de longues périodes. Selon la théorie de la marche aléatoire, un trader ne devrait être capable de surpasser le marché global que par chance. Cela signifie qu'il existe des traders qui, à tout moment, surpassent la moyenne du marché par pur hasard. Mais quelles sont alors les chances que ces mêmes traders soient "chanceux" année après année pendant des décennies ? Pourtant, il existe bel et bien de tels traders, des personnes comme Paul Tudor Jones, qui ont réussi à générer des rendements supérieurs à la moyenne de manière constante sur une longue période.
+
+Il est important de noter que même les plus fervents adeptes de l'analyse technique - ceux qui pensent qu'il est possible de prévoir les mouvements de prix futurs sur le marché - ne croient pas qu'il existe un moyen de prédire infailliblement l'action future des prix. Il est plus exact de dire que les mouvements de prix futurs probables peuvent être prédits en utilisant l'analyse technique, et qu'en négociant sur la base de ces probabilités, il est possible de générer des retours sur investissement plus élevés.
+
+Alors, qui faut-il croire ? Si vous croyez à la théorie de la marche aléatoire, alors vous devriez simplement investir dans un bon ETF ou fonds commun de placement conçu pour refléter la performance de l'indice S&P 500, et espérer un marché haussier global. Si, au contraire, vous croyez que les mouvements de prix ne sont pas aléatoires, alors vous devriez perfectionner vos compétences en matière d'analyse fondamentale ou technique, convaincu que ce travail vous rapportera des bénéfices supérieurs en négociant activement le marché.
+
+Puisque vous lisez ces lignes sur le trading, nous supposons que vous faites partie de ce dernier camp. Nous sommes tout à fait d'accord avec vous. Alors continuez de lire...

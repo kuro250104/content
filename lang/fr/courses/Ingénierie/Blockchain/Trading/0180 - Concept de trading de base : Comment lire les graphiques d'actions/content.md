@@ -1,0 +1,14 @@
+Si vous souhaitez négocier activement des actions, vous devez savoir comment lire les graphiques boursiers. Même les traders qui utilisent principalement l'analyse fondamentale pour sélectionner les actions ont souvent recours à l'analyse technique de l'évolution du cours des actions pour déterminer les points d'achat, ou d'entrée, et de vente, ou de sortie, spécifiques.
+
+Les graphiques boursiers sont disponibles gratuitement sur des sites Web tels que Google Finance et Yahoo Finance, et les sociétés de courtage mettent toujours des graphiques boursiers à la disposition de leurs clients. En bref, vous ne devriez pas avoir de mal à trouver des graphiques boursiers à examiner.
+
+## Construction des graphiques boursiers - lignes, barres, chandeliers
+
+Les graphiques boursiers peuvent varier dans leur construction, allant des graphiques à barres aux graphiques en chandeliers, en passant par les graphiques en lignes et les graphiques à points et figures. Presque tous les graphiques boursiers vous offrent la possibilité de passer d'un type de graphique à un autre, ainsi que la possibilité de superposer divers indicateurs techniques sur un graphique. Vous pouvez également varier l'horizon temporel affiché par un graphique. Les graphiques quotidiens sont probablement les plus utilisés, mais il existe également des graphiques intrajournaliers, hebdomadaires, mensuels, cumulatifs sur 5 et 10 ans, ainsi que l'historique complet d'une action.
+
+Il existe des avantages et des inconvénients relatifs à l'utilisation de différents styles de construction de graphiques et à l'utilisation de différentes périodes d'analyse. Le style et l'horizon temporel qui vous conviennent le mieux en tant qu'analyste ou négociant individuel ne peuvent être découverts qu'en effectuant une analyse graphique des actions. L'analyse des graphiques boursiers peut vous fournir des indications précieuses sur l'évolution probable du cours des actions. Vous devez choisir le style de graphique qui vous permet de lire et d'analyser le graphique le plus facilement et de réaliser des transactions rentables.
+
+## Observation d'un graphique boursier
+
+Vous trouverez ci-dessous le graphique journalier d'Apple Inc. (AAPL). Il s'agit d'un graphique en chandelier, avec des bougies blanches indiquant les jours de hausse de l'action et des bougies rouges indiquant les jours de baisse. En outre, plusieurs indicateurs techniques ont été ajoutés à ce graphique : une moyenne mobile de 50 périodes et une moyenne mobile de 200 périodes, qui apparaissent sous forme de lignes bleues et rouges sur le graphique ; l'indicateur de force relative (RSI) qui apparaît dans une fenêtre séparée au-dessus de la fenêtre principale du graphique ; l'indicateur de convergence divergence de la moyenne mobile (MACD) qui apparaît dans une fenêtre séparée sous le graphique.
+
