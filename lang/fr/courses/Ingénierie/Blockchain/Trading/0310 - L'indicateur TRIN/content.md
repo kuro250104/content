@@ -40,3 +40,12 @@ Les analystes utilisent généralement l'indicateur TRIN pour identifier les con
 
 Le graphique ci-dessous montre que les traders qui ont acheté sur le marché lorsque le TRIN montrait des valeurs supérieures à 3,00, indiquant des conditions de survente aux niveaux de marché indiqués par les flèches vertes vers le haut, se seraient très bien comportés. Cependant, les traders qui ont vendu le marché sur la base de valeurs TRIN inférieures à 0,50, indiquant des conditions de surachat, n'auraient pas été aussi rentables sur la même période.
 
+![Exemple d'indicateur TRIN](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0310%20-%20L'indicateur%20TRIN/images/image1.jpg)
+
+Le TRIN est généralement un indicateur avancé, qui prévoit un changement de direction du marché avant qu'il ne se produise. En observant le graphique ci-dessus, on peut facilement voir que le TRIN a souvent anticipé d'un jour ou deux le changement de direction du marché boursier. Bien que cela puisse donner à un trader l'opportunité de "vendre le haut" ou "d'acheter le bas", la plupart des traders attendront une confirmation de l'action des prix dans les valeurs de l'indice boursier avant de trader sur la base d'un retournement de marché anticipé.
+
+Lorsque les valeurs TRIN sont relativement stables et autour du niveau d'équilibre de 1,00, de nombreux traders se tiennent à l'écart et attendent une nouvelle action du marché avant d'effectuer ou d'ajuster tout investissement. L'activité du marché qui se produit sans faire bouger l'indicateur TRIN dans un sens ou dans l'autre est plus susceptible de s'avérer insignifiante pour la journée de négociation.
+
+## Conclusion
+
+L'indicateur TRIN peut être très utile aux traders d'indices boursiers qui cherchent à attraper et à profiter des renversements de tendance sur les marchés boursiers ; cependant, en raison de sa capacité à être extrêmement volatile, il est l'un des indicateurs techniques connus pour être enclins à générer de faux signaux.
