@@ -1,0 +1,28 @@
+Il s'agit d'une stratégie de scalping simple pour les day traders, qui utilise l'indicateur de barre d'épingle, l'une des formations de chandelier les plus fiables, pour identifier les renversements de marché.
+
+La barre d'épingle, également connue sous le nom de marteau, est un indicateur de chandelier unique qui signale un fort rejet de tout mouvement de prix supplémentaire dans une direction et un renversement dans la direction opposée. Les chandeliers de la barre d'épingle sont caractérisés par de longues mèches, ou queues, qui indiquent le rejet du prix dans la direction de la queue, et des corps de chandelier courts qui indiquent un renversement imminent du marché.
+
+![Pin Bar Patterns](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0400%20-%20Strat%C3%A9gie%20de%20scalping%20%C3%A0%20la%20barre%20d'%C3%A9pingle%20pour%20les%20Day%20Traders/images/image2.jpg)
+
+Une barre d'épingle baissière indique un renversement à la baisse, et une barre d'épingle haussière indique un renversement à la hausse. La caractéristique essentielle d'un chandelier en forme de barre d'épingle est la queue (Tail) allongée qui montre que, pendant la formation du chandelier, le prix s'est déplacé de manière significative dans une direction, puis est revenu de manière spectaculaire dans la direction opposée, de sorte que le chandelier se referme près de son ouverture. Le corps du chandelier de la barre d'épingle est très court et la queue du chandelier est au moins deux à trois fois plus longue que le corps du chandelier. La mèche du côté opposé du corps du chandelier par rapport à la longue queue doit être très courte ou inexistante, sans mèche du tout.
+
+## Négocier des barres d'épingle sur le graphique des cinq minutes
+
+Le cadre temporel du graphique de cinq minutes est le préféré des scalpeurs qui cherchent à réaliser rapidement de petits profits. Cependant, il arrive que vous puissiez attraper un renversement de tendance sur l'échelle de temps de cinq minutes qui s'avère être le début d'un renversement de tendance majeur vous permettant de réaliser des profits importants.
+
+La configuration pour trader avec des pin bars sur le graphique de cinq minutes utilise deux moyennes mobiles, une moyenne mobile exponentielle de 10 périodes et une moyenne mobile exponentielle de 21 périodes. La stratégie de trading est la suivante :
+
+- Le prix doit être sensiblement supérieur ou inférieur aux deux moyennes mobiles. La position du prix à l'écart des moyennes mobiles lorsque la formation de la barre d'épingle se produit confirme un possible renversement du marché en vertu du fait qu'elle indique que le prix a pu devenir un peu trop étendu.
+- La possibilité que le marché soit temporairement suracheté ou survendu - et donc qu'il soit prêt pour un renversement et une correction - est renforcée si plusieurs chandeliers consécutifs ont déplacé le prix dans une direction immédiatement avant la formation de la barre d'épingle. Ceci est illustré dans le graphique ci-dessous où, juste à gauche du milieu du graphique, cinq chandeliers descendants consécutifs précèdent la formation d'une barre d'épingle qui signale avec précision un renversement du marché à la hausse.
+
+![Représentation graphique des pins bars](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0400%20-%20Strat%C3%A9gie%20de%20scalping%20%C3%A0%20la%20barre%20d'%C3%A9pingle%20pour%20les%20Day%20Traders/images/image1.jpg)
+
+- Lorsqu'un chandelier en forme de barre d'épingle est formé, les traders doivent entrer dans la direction du renversement indiqué immédiatement après la fermeture de la barre d'épingle. N'entrez pas avant, car une bougie peut sembler former une barre d'épingle, pour qu'un mouvement soudain du prix juste avant la fermeture de la bougie annule la formation de la barre d'épingle.
+- Un ordre stop-loss doit être placé juste au-delà de la queue extrême du chandelier de la barre d'épingle (dans l'exemple montré dans la photo ci-dessus, un ordre stop-loss serait placé juste en dessous du bas de la barre d'épingle de renversement haussier). C'est l'une des meilleures caractéristiques de cette stratégie de trading - le fait qu'elle présente un risque très faible, permettant aux traders d'exécuter raisonnablement un arrêt très serré et fermé. Lorsque cette stratégie fonctionne, le prix ne dépasse généralement pas le bas ou le haut extrême représenté par la queue de la barre d'épingle.
+- Un objectif de profit peut être le retour du prix pour toucher ou croiser l'une des moyennes mobiles. Les traders plus agressifs peuvent viser des profits plus importants en restant dans la transaction, en cherchant à ce que la tendance inverse se poursuive, mais en déplaçant leur ordre stop-loss au seuil de rentabilité, leur point d'entrée dans la transaction, afin de se prémunir contre une perte.
+
+## Conclusion
+
+L'indication de renversement de la barre d'épingle est plus forte, plus susceptible d'être précise, lorsqu'elle se produit à un niveau de prix de soutien ou de résistance précédemment identifié, puisque le prix est plus susceptible de s'inverser à de tels niveaux. Les niveaux de support ou de résistance peuvent être n'importe quels niveaux de prix à partir desquels le marché a précédemment inversé sa direction, tels que les points pivots, les hauts ou bas hebdomadaires, ou les niveaux de retracement de Fibonacci.
+
+Cette stratégie de trading est très populaire auprès des traders de forex, mais peut également être appliquée au trading d'actions ou de matières premières.

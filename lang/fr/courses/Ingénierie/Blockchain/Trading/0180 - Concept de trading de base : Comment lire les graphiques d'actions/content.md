@@ -1,0 +1,82 @@
+Si vous souhaitez négocier activement des actions, vous devez savoir comment lire les graphiques boursiers. Même les traders qui utilisent principalement l'analyse fondamentale pour sélectionner les actions ont souvent recours à l'analyse technique de l'évolution du cours des actions pour déterminer les points d'achat, ou d'entrée, et de vente, ou de sortie, spécifiques.
+
+Les graphiques boursiers sont disponibles gratuitement sur des sites Web tels que Google Finance et Yahoo Finance, et les sociétés de courtage mettent toujours des graphiques boursiers à la disposition de leurs clients. En bref, vous ne devriez pas avoir de mal à trouver des graphiques boursiers à examiner.
+
+## Construction des graphiques boursiers - lignes, barres, chandeliers
+
+Les graphiques boursiers peuvent varier dans leur construction, allant des graphiques à barres aux graphiques en chandeliers, en passant par les graphiques en lignes et les graphiques à points et figures. Presque tous les graphiques boursiers vous offrent la possibilité de passer d'un type de graphique à un autre, ainsi que la possibilité de superposer divers indicateurs techniques sur un graphique. Vous pouvez également varier l'horizon temporel affiché par un graphique. Les graphiques quotidiens sont probablement les plus utilisés, mais il existe également des graphiques intrajournaliers, hebdomadaires, mensuels, cumulatifs sur 5 et 10 ans, ainsi que l'historique complet d'une action.
+
+Il existe des avantages et des inconvénients relatifs à l'utilisation de différents styles de construction de graphiques et à l'utilisation de différentes périodes d'analyse. Le style et l'horizon temporel qui vous conviennent le mieux en tant qu'analyste ou négociant individuel ne peuvent être découverts qu'en effectuant une analyse graphique des actions. L'analyse des graphiques boursiers peut vous fournir des indications précieuses sur l'évolution probable du cours des actions. Vous devez choisir le style de graphique qui vous permet de lire et d'analyser le graphique le plus facilement et de réaliser des transactions rentables.
+
+## Observation d'un graphique boursier
+
+Vous trouverez ci-dessous le graphique journalier d'Apple Inc. (AAPL). Il s'agit d'un graphique en chandelier, avec des bougies blanches indiquant les jours de hausse de l'action et des bougies rouges indiquant les jours de baisse. En outre, plusieurs indicateurs techniques ont été ajoutés à ce graphique : une moyenne mobile de 50 périodes et une moyenne mobile de 200 périodes, qui apparaissent sous forme de lignes bleues et rouges sur le graphique ; l'indicateur de force relative (RSI) qui apparaît dans une fenêtre séparée au-dessus de la fenêtre principale du graphique ; l'indicateur de convergence divergence de la moyenne mobile (MACD) qui apparaît dans une fenêtre séparée sous le graphique.
+
+![Exemple d'un graphique boursier](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0180%20-%20Concept%20de%20trading%20de%20base%20%3A%20Comment%20lire%20les%20graphiques%20d'actions/images/image2.jpg)
+
+Le volume d'échange quotidien est indiqué en bas de la fenêtre du graphique principal. Notez l'important pic de volume qui s'est produit le 1er février, lorsque le titre s'est envolé et a entamé une forte tendance à la hausse qui a duré jusqu'au début du mois de juin. Notez également l'important volume de vente (indiqué par les barres de volume rouges qui indiquent les jours où le volume de vente est supérieur au volume d'achat) qui se produit lorsque l'action se déplace brusquement vers le bas autour du 12 juin.
+
+## L'importance du volume
+
+Le volume apparaît sur presque tous les graphiques boursiers que vous trouverez. C'est parce que le volume des transactions est considéré comme un indicateur technique essentiel par presque tous les négociants en actions. Sur le graphique ci-dessus, en plus de montrer le niveau total du volume des transactions pour chaque jour, les jours où le volume d'achat est plus important sont indiqués par des barres bleues et les jours où le volume de vente est plus important sont indiqués par des barres rouges.
+
+La raison pour laquelle le volume est considéré comme un indicateur technique très important est simple. La grande majorité des achats et des ventes en bourse sont effectués par de grands négociants institutionnels, tels que les banques d'investissement, et par des gestionnaires de fonds, tels que les gestionnaires de fonds communs de placement ou de fonds négociés en bourse (ETF). Lorsque ces investisseurs effectuent des achats ou des ventes importants d'une action, cela crée un volume de transactions élevé, et c'est ce type d'achats et de ventes importants par les grands investisseurs qui font généralement monter ou descendre une action.
+
+Par conséquent, les négociants individuels ou institutionnels surveillent les chiffres du volume pour trouver des indications sur l'activité d'achat ou de vente importante des grandes institutions. Ces informations peuvent être utilisées pour prévoir la tendance future du cours de l'action ou pour identifier les niveaux clés de soutien et de résistance du cours.
+
+En fait, de nombreux traders individuels déterminent leurs décisions d'achat et de vente presque uniquement en fonction des actions identifiées des grands traders institutionnels. Ils achètent des actions lorsque le volume et le mouvement des prix indiquent que les grandes institutions achètent, et vendent ou évitent d'acheter des actions lorsqu'il y a des indications de vente par les grandes institutions. Une telle stratégie fonctionne mieux lorsqu'elle est appliquée à des actions importantes qui sont généralement très négociées. Elle sera probablement moins efficace lorsqu'elle est appliquée aux actions de petites entreprises qui ne sont pas encore sur les écrans radar des grands investisseurs institutionnels et dont les volumes d'échange sont relativement faibles, même les jours où l'action est plus négociée que d'habitude.
+
+## Les modèles de volume de base
+
+Il existe quatre modèles de volume de base que les traders observent généralement comme indicateurs :
+
+- **Volume d'échange élevé les jours de hausse** - Il s'agit d'une indication haussière que le prix d'une action va continuer à augmenter.
+- **Faible volume de transactions lors des jours de baisse** - Il s'agit également d'une indication haussière, car elle indique que les jours où le cours de l'action recule un peu, peu d'investisseurs participent aux transactions. Par conséquent, ces jours de baisse survenant dans un marché haussier global sont généralement interprétés comme des retraits ou des corrections temporaires plutôt que comme des indicateurs significatifs de l'évolution future des prix.
+- **Volume élevé de transactions les jours de baisse** - Ceci est considéré comme un indicateur baissier pour une action, car il montre que les principaux traders institutionnels vendent agressivement l'action.
+- **Faible volume de transactions les jours de hausse** - Il s'agit d'un autre indicateur baissier, bien qu'il ne soit pas aussi fort que le volume élevé de transactions les jours de baisse. Le faible volume tend à considérer l'action commerciale de ces jours comme moins importante et généralement comme la preuve d'un simple retracement à contre-tendance à court terme dans une tendance baissière globale à long terme.
+
+## Utilisation des indicateurs techniques
+
+Lorsqu'ils analysent les graphiques boursiers pour investir en bourse, les traders utilisent une variété d'indicateurs techniques pour les aider à déterminer plus précisément l'évolution probable des prix, à identifier les tendances et à anticiper les revirements du marché, des tendances haussières aux tendances baissières et vice-versa.
+
+L'un des indicateurs techniques les plus couramment utilisés est la moyenne mobile. Les moyennes mobiles les plus fréquemment appliquées aux graphiques boursiers quotidiens sont la moyenne mobile sur 20 jours, 50 jours et 200 jours. En général, tant qu'une moyenne mobile à court terme est supérieure à une moyenne mobile à long terme, on considère qu'une action est dans une tendance générale à la hausse. Inversement, si les moyennes mobiles à court terme sont inférieures aux moyennes mobiles à long terme, cela indique une tendance générale à la baisse.
+
+Un autre indicateur couramment utilisé est la ligne de tendance. Une ligne de tendance est tracée sur un graphique reliant les points de prix les plus bas d'une tendance à la hausse ou les points de prix les plus élevés d'une tendance à la baisse. Si le cours passe nettement en dessous de la ligne de tendance dans une tendance haussière, cela indique un possible retournement du marché à la baisse, tandis que si le cours passe nettement au-dessus d'une ligne de tendance baissière, cela indique un possible retournement à la hausse.
+
+## L'importance de la moyenne mobile à 200 jours
+
+La moyenne mobile à 200 jours est considérée par la plupart des analystes comme un indicateur critique sur un graphique boursier. Les traders qui sont haussiers sur une action veulent voir le prix de l'action rester au-dessus de la moyenne mobile à 200 jours. Les traders baissiers qui vendent à découvert une action veulent voir le prix de l'action rester en dessous de la moyenne mobile à 200 jours. Si le cours d'une action passe d'un niveau inférieur à la moyenne mobile sur 200 jours à un niveau supérieur, cela est généralement interprété comme un retournement haussier du marché. Un croisement à la baisse du prix à partir du dessus de la moyenne mobile de 200 jours est interprété comme une indication baissière pour l'action.
+
+L'interaction entre les moyennes mobiles à 50 et 200 jours est également considérée comme un indicateur fort de l'évolution future des prix. Lorsque la moyenne mobile à 50 jours passe du dessous au-dessus de la moyenne mobile à 200 jours, cet événement est appelé par les analystes techniques un "golden cross". Un croisement en or est essentiellement une indication que l'action est "en or" et qu'elle est destinée à une hausse substantielle des prix. À l'inverse, si la moyenne mobile sur 50 jours passe du haut au bas de la moyenne mobile sur 200 jours, les analystes parlent de "croisement fatal". Vous pouvez probablement comprendre par vous-même qu'un "croisement fatal" n'est pas considéré comme étant de bon augure pour l'évolution future du cours d'une action.
+
+## Indicateurs de tendance et de momentum
+
+Il existe une liste pratiquement infinie d'indicateurs techniques parmi lesquels les traders peuvent choisir pour analyser un graphique. Expérimentez avec divers indicateurs pour découvrir ceux qui fonctionnent le mieux pour votre style de négociation particulier et pour les actions spécifiques que vous négociez. Vous constaterez probablement que certains indicateurs fonctionnent très bien pour prévoir l'évolution du cours de certaines actions, mais pas pour d'autres.
+
+Les analystes techniques utilisent souvent des indicateurs de différents types en conjonction les uns avec les autres. Les indicateurs techniques sont classés en deux catégories de base : les indicateurs de tendance, comme les moyennes mobiles, et les indicateurs de momentum, comme le MACD ou l'indice directionnel moyen (ADX). Les indicateurs de tendance sont utilisés pour identifier la direction générale du prix d'une action, à la hausse ou à la baisse, tandis que les indicateurs de momentum évaluent la force du mouvement du prix.
+
+## Analyse des tendances
+
+Lors de l'examen d'un graphique boursier, outre la détermination de la tendance générale de l'action, à la hausse ou à la baisse, il est également utile de chercher à identifier les aspects d'une tendance tels que les suivants :
+
+- **Depuis combien de temps une tendance est-elle en place ?** Les actions ne restent pas indéfiniment dans des tendances à la hausse ou à la baisse. Il y a toujours des changements de tendance. Si une tendance se poursuit pendant une longue période sans qu'aucun mouvement de retracement correctif significatif n'ait lieu dans la direction opposée, vous devez être particulièrement attentif aux signes d'un retournement imminent du marché.
+- **Comment une action a-t-elle tendance à se négocier ?** Certaines actions évoluent selon des tendances relativement lentes et bien définies. D'autres ont tendance à connaître une plus grande volatilité sur une base régulière, avec des mouvements brusques à la hausse ou à la baisse, même au milieu d'une tendance générale à long terme. Si vous négociez une action qui présente généralement une forte volatilité, vous savez qu'il ne faut pas accorder trop d'importance à l'action d'une seule journée.
+- **Y a-t-il des signes d'un possible renversement de tendance ?** Une analyse minutieuse de l'évolution du cours des actions révèle souvent des signes de retournement de tendance potentiel. Les indicateurs de momentum indiquent souvent qu'une tendance s'essouffle avant que le prix d'une action n'atteigne son sommet, ce qui donne aux traders alertes l'occasion de se retirer d'une action à un bon prix avant qu'elle ne s'inverse à la baisse. Divers chandeliers ou autres modèles de graphiques sont également souvent utilisés pour identifier les renversements majeurs du marché.
+
+## Identifier les niveaux de soutien et de résistance
+
+Les graphiques boursiers peuvent être particulièrement utiles pour identifier les niveaux de soutien et de résistance des actions. Les niveaux de soutien sont des niveaux de prix où de nouveaux achats sont intervenus pour soutenir le cours d'une action et la faire repartir à la hausse. À l'inverse, les niveaux de résistance représentent les prix auxquels une action a montré une tendance à échouer dans ses tentatives de hausse et à se retourner vers le bas.
+
+L'identification des niveaux de soutien et de résistance peut être particulièrement utile pour négocier une action qui a tendance à se négocier dans une fourchette établie sur une longue période de temps. Certains négociants en actions, ayant identifié une telle action, chercheront à acheter l'action aux niveaux de soutien et à la vendre aux niveaux de résistance, encore et encore, gagnant de plus en plus d'argent à mesure que l'action traverse le même terrain plusieurs fois.
+
+Pour les actions qui ont des niveaux de soutien et de résistance bien identifiés, les ruptures de prix au-delà de l'un ou l'autre de ces niveaux peuvent être des indicateurs importants de l'évolution future des prix. Par exemple, si une action n'a jamais réussi à dépasser 50 dollars, mais qu'elle y parvient finalement, cela peut être le signe que l'action va passer à un niveau de prix nettement supérieur.
+
+Le graphique de General Electric (GE) ci-dessous montre que l'action s'est négociée dans une fourchette étroite entre 29 et 30 dollars par action pendant plusieurs mois, mais une fois que le cours de l'action a franchi le niveau de soutien de 29 dollars, il a continué à chuter de manière substantielle.
+
+![Exemple d'un graphique de General Electric](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/Ing%C3%A9nierie/Blockchain/Trading/0180%20-%20Concept%20de%20trading%20de%20base%20%3A%20Comment%20lire%20les%20graphiques%20d'actions/images/image1.jpg)
+
+## Conclusion - Utilisation de l'analyse des graphiques boursiers
+
+L'analyse des graphiques boursiers n'est pas infaillible, même dans les mains de l'analyste technique le plus expert. Si elle l'était, tous les investisseurs en bourse seraient multimillionnaires. Cependant, apprendre à lire un graphique boursier vous aidera certainement à mettre toutes les chances de votre côté pour réussir en bourse.
+
+L'analyse des graphiques boursiers est une compétence, et comme toute autre compétence, on ne devient expert qu'en la pratiquant. La bonne nouvelle, c'est que pratiquement toute personne disposée à travailler assidûment à l'analyse des graphiques boursiers peut devenir, si ce n'est un expert, du moins un assez bon expert, suffisamment bon pour améliorer sa rentabilité globale dans les opérations boursières. Il est donc dans votre intérêt, en tant que trader, de commencer ou de poursuivre votre formation en analyse des graphiques boursiers.
