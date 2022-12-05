@@ -48,6 +48,8 @@ Exemple :
 
 L’exemple ci-dessus est constitué d’une balise d’ouverture ```<h1>``` et d’une balise de fermeture ```</h1>``` afin d’indiquer que cet élément est un titre.
 
+__Remarque__ : il existe quelques exceptions à cette règle que nous aborderons dans d'autres cours.
+
 ## Navigateurs Web
 
 Le rôle principal des navigateurs web tels que Google Chrome, Mozilla Firefox, Opera, Safari, etc. est d’interpréter le code HTML dans le document et d’afficher la page web en tenant compte des balises. 
