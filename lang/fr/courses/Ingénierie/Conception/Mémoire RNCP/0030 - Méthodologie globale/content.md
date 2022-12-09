@@ -1,9 +1,7 @@
 La rédaction d'un mémoire est relativement simple lorsque l'on respecte quelques règles de base. Les voici : 
 
-1. Ne jamais rédiger de texte lors de phases de brainstorming ou de recherche. Ne pas respecter cette simple règle peut entraîner des répercutions importantes : 
-    - text
-    - textes
-    - text
+1. Ne jamais rédiger de texte lors de phases de brainstorming ou de recherche. Ne pas respecter cette simple règle peut entraîner des répercutions importantes :
+  - 
 
 
 
