@@ -1,4 +1,12 @@
+La réalisation de bibliographie est souvent obligatoire dans la rédaction de documents. S'il s'agit d'un point particulièrement simple à mettre en place qui ne nécessite pas particulièrement de réflexion, il reste néanmoins important de mettre en place certaines règles afin de respecter les conventions qui conviennents. 
 
+De la sorte, des consignes sont généralement formalisées et communiquées. Celles-ci respectent généralement une norme ISO ([ISO-690](https://www.iso.org/fr/standard/43320.html)) qui décrit précisément comment réaliser une bibliographie. En l'absence de consigne particulière, il conviendra de respecter cette norme ISO de telle sorte à rendre une bibliographie respectant les standards internationnaux.
+
+La réalisation d'une bibliographie induit la citation des oeuvres utilisées lors de la rédaction de vos textes. Il existe trois différentes méthodes.
+
+## Méthode de Harvard
+
+La méthode dite "de Harvard", aussi appelée "système de nom et de date"
 
 
 --------------------------------
