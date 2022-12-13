@@ -1,12 +1,26 @@
 La réalisation de bibliographie est souvent obligatoire dans la rédaction de documents. S'il s'agit d'un point particulièrement simple à mettre en place qui ne nécessite pas particulièrement de réflexion, il reste néanmoins important de mettre en place certaines règles afin de respecter les conventions qui conviennents. 
 
-De la sorte, des consignes sont généralement formalisées et communiquées. Celles-ci respectent généralement une norme ISO ([ISO-690](https://www.iso.org/fr/standard/43320.html)) qui décrit précisément comment réaliser une bibliographie. En l'absence de consigne particulière, il conviendra de respecter cette norme ISO de telle sorte à rendre une bibliographie respectant les standards internationnaux.
+De la sorte, des consignes sont généralement formalisées et communiquées. Celles-ci respectent généralement une norme ISO ([ISO-690](https://fr.wikipedia.org/wiki/ISO_690)) qui décrit précisément comment réaliser une bibliographie. En l'absence de consigne particulière, il conviendra de respecter cette norme ISO de telle sorte à rendre une bibliographie respectant les standards internationnaux.
 
 La réalisation d'une bibliographie induit la citation des oeuvres utilisées lors de la rédaction de vos textes. Il existe trois différentes méthodes.
 
 ## Méthode de Harvard
 
-La méthode dite "de Harvard", aussi appelée "système de nom et de date"
+La méthode dite "de Harvard", aussi appelée "système de nom et de date" s'effectue directement au sein du texte. Elle respecte les règles suivantes : 
+
+- Le nom de famille de l'auteur et l'année de publication de la source doivent être intégrées entre parenthèses dans le corp du texte ;
+- Si le nom de l'auteur est utilisé dans une phrase, celui-ci doit être sorti de la parenthèse ;
+- La pagination doit être indiquée après l'année de l'oeuvre (optionnel)
+
+Si plusieurs ressources sont citées, alors il faut toutes les inclure dans la même parenthèse, en les séparant par des point-virgules.
+
+### Exemples de l'utilisation de la méthode Harvard
+
+Voici quelques exemples représentatifs de l'utilisation de la méthode Harvard :
+
+-  Stieg (1981b, p. 556) ;
+-  (Crane 1972) ;
+-  (Smith 1980 ; Chapman 1981)
 
 ## Méthode numérique
 
@@ -19,13 +33,13 @@ La méthode dite "de Harvard", aussi appelée "système de nom et de date"
 ## --------------------------------
 
 - Bibliographie (iso 690 - https://fr.wikipedia.org/wiki/ISO_690#Utilisation)
-  - souvent obligatoire, le mieux est de respecter la norme ISO 690 en l'absence de consignes différentes
-  - Induit de citer les oeuvres utilisées lors de la rédaction de vos textes. 3 méthodes différentes : 
+  - X
+  - X
     1. système de "nom et de date" (= "méthode de harvard")
-      - nom de famille de l'auteur + année de publication entre parenthèse dans le corp du texte
-      - nom de l'auteur sorti de la parenthèse s'il est utilisé dans la phrase.
-      - Pagination précise indiquée après l'année si nécessaire
-      - Plusieurs ressources citées : toutes incluses dans la mm parenthèse, séparée par des point-virgule
+      - X
+      - X
+      - X
+      - X
       - exemples : 
         - ...
         - ...
