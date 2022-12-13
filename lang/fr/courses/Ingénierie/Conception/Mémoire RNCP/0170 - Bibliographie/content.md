@@ -8,8 +8,15 @@ La réalisation d'une bibliographie induit la citation des oeuvres utilisées lo
 
 La méthode dite "de Harvard", aussi appelée "système de nom et de date"
 
+## Méthode numérique
 
---------------------------------
+...
+
+## Méthode des notes courantes
+
+...
+
+## --------------------------------
 
 - Bibliographie (iso 690 - https://fr.wikipedia.org/wiki/ISO_690#Utilisation)
   - souvent obligatoire, le mieux est de respecter la norme ISO 690 en l'absence de consignes différentes
