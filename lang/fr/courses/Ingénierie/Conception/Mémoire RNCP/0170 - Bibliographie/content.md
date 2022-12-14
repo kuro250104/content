@@ -4,7 +4,9 @@ De la sorte, des consignes sont généralement formalisées et communiquées. Ce
 
 La réalisation d'une bibliographie induit la citation des oeuvres utilisées lors de la rédaction de vos textes. Il existe trois différentes méthodes.
 
-## Méthode de Harvard
+## Les trois méthodes de citation
+
+### Méthode de Harvard
 
 La méthode dite "de Harvard", aussi appelée "système de nom et de date" s'effectue directement au sein du texte. Elle respecte les règles suivantes : 
 
@@ -14,67 +16,58 @@ La méthode dite "de Harvard", aussi appelée "système de nom et de date" s'eff
 
 Si plusieurs ressources sont citées, alors il faut toutes les inclure dans la même parenthèse, en les séparant par des point-virgules.
 
-### Exemples de l'utilisation de la méthode Harvard
+#### Exemples de l'utilisation de la méthode Harvard
 
 Voici quelques exemples représentatifs de l'utilisation de la méthode Harvard :
 
--  Stieg (1981b, p. 556) ;
--  (Crane 1972) ;
--  (Smith 1980 ; Chapman 1981)
+-  Jules Renard (1925, p. 207) ;
+-  (Voltaire 1808) ;
+-  (Montesquieu 1879 ; Victor Hugo 1878)
 
-## Méthode numérique
+### Méthode des notes courantes
 
-...
+L'utilisation du système de notes courantes est très largement connu aujourd'hui du fait de son utilisation courante dans les articles de journaux ou dans les livres grands publics. Voici les règles qu'elle suit : 
 
-## Méthode des notes courantes
+- Chaque citation ou référence est directement suivie d'un index numérique, positionné en exposant, entre crochets ou entre parenthèses.
+- Les numéros sont incrémentés à chaque nouvelle référence
+- Lorsque une seule et même référence est citée plusieurs fois, le même numéro est utilisé à chaque fois
+- Lorsque plusieurs références sont citées, les numéros correspondants sont mis bout-à-bout, séparés par des virgules
 
-...
+Une note est ensuite présente en côté ou bas de page pour chaque index de référence présent sur la page. Chaque index numérique est donc repris et détail précisément la source de la citation.
 
-## --------------------------------
+### Méthode numérique
 
-- Bibliographie (iso 690 - https://fr.wikipedia.org/wiki/ISO_690#Utilisation)
-  - X
-  - X
-    1. système de "nom et de date" (= "méthode de harvard")
-      - X
-      - X
-      - X
-      - X
-      - exemples : 
-        - ...
-        - ...
-        - ...
-    2. système numérique
-      - les citations indiquent entre parenthèse, crochet ou en exposant un numéro.
-      - Les numéros sont incrémentés à chaque nouvelle ressource
-      - plusieurs fois la meme ressource = même numéro
-      - plusieurs ressources citées : numéros correspondant sont mis bout à bout, séparés par des virgules.
-      - ex : 
-        - ...
-        - ...
-        - ...
-    3. système de notes courantes
-      - Un numéro est identifié entre parenthèse, entre crochet ou en exposant et renvoie vers une note numérotée souvent en bordure de page ou en bas de page.
-      - La note en extrémité de page suit ensuiteles règles du système numérique (point n°2)
-  - Induit aussi de dresser une liste de l'ensemble des éléments utilisés (=bibliographie)
-  - Formalisme (2 exigences):
-    - système cohérent de ponctuation et de typographie pour l'ensemble de la liste;
-    - séparer nettement chaque élément par un signe de ponctuation ou variation typographique
-  - Ordre global définit par la norme ISO 690 (La nature précise des éléments peuvent varier selon les types de ressources citées.) : 
-    1. Nom(s) du/des créateur(s) ;
-    2. Titre ;
-    3. Indication de support, si nécessaire ;
-    4. Édition ;
-    5. Lieu et éditeur ;
-    6. Date (peut être déplacée après le nom du créateur si la méthode de citation « auteur-date » est utilisée) ;
-    7. Titre de publication en série, s'il s'applique ;
-    8. Numérotation dans la ressource ;
-    9. Numéro normalisé, s'il s'applique (ISBN, ISSN, DOI, etc.) ;
-    10. Disponibilité, accès ou information relatives à la localisation ;
-    11. Informations générales complémentaires.
+La méthode numérique est similaire à la méthode de notes courantes, à ceci près qu'aucune note n'est présente en bordure ou en bas de page. A la place, une liste est dressée, et recense l'ensemble des citations indexées ainsi que leur provenance.
 
-  - Détail des éléments possibles par type de ressource
-    - Livre ou autre ressource monographique, imprimé ou en ligne
+## Formalisme
+
+Seule deux exigences sont énoncés par la norme ISO 690 :
+
+1. Le système de ponctuaction et de typographie doit être cohérent et similaire pour l'ensemble des sources (ne changez pas de manière de présenter les choses en plein milieu !)
+2. Chaque élément d'une référence doit être séparer proprement par un signe de ponctuation ou par une variation typographique. Pensez à utiliser toujours les mêmes conformément au premier point mentionné ci-dessus
+
+## Éléments de citations
+
+La norme ISO 690 défini un ordre général des éléments qui peuvent (ou doivent) être mentionnés dans le cadre d'une référence : 
+
+1. le ou les nom(s) du ou des créateur(s) ;
+2. le titre ;
+3. l'indication du support si nécessaire ;
+4. l'édition ;
+5. le lieu et l'éditeur ;
+6. la date de publication (celle-ci peut être déplacée après le nom de l'auteur si la méthode de Harvard est utilisée) ;
+7. le titre de la publication en série s'il s'applique ;
+8. la numérotation dans la ressource ;
+9. le numéro normalisé s'il existe (ISBN, ISSN, DOI, etc...) ;
+10. la disponibilité, l'accès ou les informations relatives à la localisation ;
+11. les informations générales complémentaires.
+
+## Détail des éléments possibles par type de ressource
+
+Les éléments de citation changent en fonction du type de ressource citée. Voici une liste des changements possibles, présentés par la norme ISO 690, en fonction de chaque type de ressource.
+
+### Livre ou autre ressource monographique, imprimé ou en ligne
+
 | **Éléments (dans l'ordre)** | **Statut** |
 | --- | --- |
 | Nom du/des créateur(s) de la ressource | Requis |
@@ -96,7 +89,7 @@ Voici quelques exemples représentatifs de l'utilisation de la méthode Harvard 
 | Localisation | Requis pour les ressources imprimées si l'existence de quelques exemplaires seulement est connue |
 | Autres informations à insérer dans la position appropriée | Facultatif |
 
-    - Contribution dans un livre ou une autre ressource monographique, imprimé ou en ligne
+### Contribution dans un livre ou une autre ressource monographique, imprimé ou en ligne
 
 | **Éléments (dans l'ordre)** | **Statut** |
 | --- | --- |
@@ -125,7 +118,7 @@ Voici quelques exemples représentatifs de l'utilisation de la méthode Harvard 
 | Localisation | Requis pour les ressources imprimées si l'existence de quelques exemplaires seulement est connue |
 | Autres informations à insérer dans la position appropriée | Facultatif |
 
-    - Publication en série complète, ou livraison d'une publication en série, imprimée ou en ligne
+### Publication en série complète, ou livraison d'une publication en série, imprimée ou en ligne
 
 | **Éléments (dans l'ordre)** | **Statut** |
 | --- | --- |
@@ -144,7 +137,7 @@ Voici quelques exemples représentatifs de l'utilisation de la méthode Harvard 
 | Localisation | Requis pour les ressources imprimées si l'existence de quelques exemplaires seulement est connue |
 | Autres informations à insérer dans la position appropriée | Facultatif |
 
-    - Contribution dans une publication en série, imprimée ou en ligne
+### Contribution dans une publication en série, imprimée ou en ligne
 
 | **Éléments (dans l'ordre)** | **Statut** |
 | --- | --- |
@@ -168,7 +161,7 @@ Voici quelques exemples représentatifs de l'utilisation de la méthode Harvard 
 | Localisation | Requis pour les ressources imprimées si l'existence de quelques exemplaires seulement est connue |
 | Autres informations à insérer dans la position appropriée | Facultatif |
 
-    - Messages électroniques, listes de discussion, forums de discussion, etc.
+### Messages électroniques, listes de discussion, forums de discussion, etc.
 
 | **Éléments (dans l'ordre)** | **Statut** |
 | --- | --- |
@@ -184,4 +177,3 @@ Voici quelques exemples représentatifs de l'utilisation de la méthode Harvard 
 | Date de citation | Requis pour les ressources en ligne |
 | Disponibilité et accès | Requis pour les ressources en ligne |
 | Autres informations à insérer dans la position appropriée | Facultatif |
-
