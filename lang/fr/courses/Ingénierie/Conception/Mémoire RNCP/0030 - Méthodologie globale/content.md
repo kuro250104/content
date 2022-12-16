@@ -1,17 +1,11 @@
 La rédaction d'un mémoire est relativement simple lorsque l'on respecte quelques règles de base. Les voici : 
 
 1. Ne jamais rédiger de texte lors de phases de brainstorming ou de recherche. Ne pas respecter cette simple règle peut entraîner des répercutions importantes :
-  - 
+  - **des incohérences dans vos textes**. Il est très courant de modifier l'ordre des informations lors de la phase de rédaction. Ainsi il n'est pas rare de trouver des incohérences du fait de l'ajout ou de la modification d'informations post rédactionnel. Ces modifications entrainent souvent la nécessité de reprendre la globalité du texte et sont donc très chronophages ;
+  - **des répétitions**. Si vous dressez une liste des idées que vous souhaitez aborder pour chaque partie, il sera simple et rapide d'identifier les doublons et de les corriger. A l'inverse, si vous rédigez votre document directement, sans passer par cette phase de listing, vous aurez beaucoup plus de difficulté à identifier les répétitions d'idées car elles seront noyées dans une masse importante de texte ;
+  - **des informations superflues**. Lors de la phase de brainstorming et de recherche, il est courant de lister des informations et idées qui ne nécessiteront pas d'être exploitées au final. Si vous les rédiger directement sous forme de texte, vous pourrez être moins enclin à les enlever ou à les remarquer. De même, il sera bien plus simple de les remarquer si elles sont sous forme de liste, et donc de se rendre compte que lesdites informations sont superflues et donc à retirer.
+2. Travaillez **systématiquement** sur un système cloud pour éviter la perte de données. Ceux qui disposent du pack Office 365 en entreprise sont souvent habitués à l'utiliser et le choisiront donc principalement. Pour ceux qui n'aiment pas Office ou qui souhaitent rester sur des solutions gratuites, il est possible d'utiliser Google Drive, qui est entièrement gratuit et accessible avec une simple adresse gmail.
+3. Si possible, ne travaillez pas sans connexion internet. Essayez d'éviter le mix du travail avec et sans connexion, cela entrainerait la possibilité de ne pas avoir vos fichiers en ligne systématiquement à jour (surtout si vous travaillez depuis plusieurs appareils).
+4. Effectuez des sauvegardes multiples régulièrement. Même s'il est peu probable que les systèmes de Cloud tels qu'Office ou Google Drive puissent vous poser des soucis, personne n'est jamais à l'abri d'une coupure d'internet ou d'un datacenter qui prend feu (spéciale dédicace à OVH 🤗). Ainsi il reste bon de conserver en plus des systèmes clouds quelques sauvegardes sur vos ordinateurs ou sur quelques clés USB.
 
-
-
-
-
-
-
---------------------
-
-- Méthodologie globale
-  - Ne pas rédiger lors d'une phase de brainstorming ou de recherche
-  - toujours travailler sur un système cloud : éviter la perte de données
-  - Sauvegarde multiples régulières
+Cette liste n'est pas exhaustive, et il ne s'agit pas non plus d'obligations formelles, cependant il s'agit de bonnes pratiques nécessaires et issues de nombreuses années d'expérience en rédaction et accompagnement à la rédaction de mémoires.
