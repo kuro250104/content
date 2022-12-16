@@ -2,10 +2,9 @@ La premièe difficulté lors de la rédaction d'un mémoire RNCP est souvent de 
 
 Pour trouver ce sujet d'intérêt, il faut commencer par viser large, voir très large. La rédaction d'un mémoire étant souvent affiliée à un travail en entreprise ou en alternance, voici quelques étapes à suivre pour vous faciliter la tâche : 
 
-1. Commencez par faire une liste descriptive de votre entreprise et des services qu'elle propose.
+## 1 - Liste descriptive de votre entreprise et de ses services
 
-de votre métier, de votre rôle dans l'entreprise, de vos attributions ou encore des actions que vous y mener. Par exemple :
-
+Commencez par faire une liste descriptive de votre entreprise et des services qu'elle propose. Mentionnez votre métier, votre rôle dans l'entreprise, vos attributions ou encore les actions que vous y mener. Par exemple :
 
   - **L'entreprise** :
     - agence de communication ;
@@ -34,13 +33,20 @@ de votre métier, de votre rôle dans l'entreprise, de vos attributions ou encor
     - force de proposition pour les projets internes ;
     - force de proposition pour l'amélioration de la gestion des projets ;
     - ...
-2. De cette première liste, déduisez-en les sujets (larges) qui vous concernent. Par exemple :
+
+## Identifiez les sujets qui vous concernent
+
+De cette première liste, déduisez-en les sujets (larges) qui vous concernent. Par exemple :
+
   - développement ;
   - gestion de projet ;
   - documentation ;
   - relation client ;
   - management ;
   - ...
-3. Hierarchisez l'importance des sujets identifiés dans la précédente liste en fonction de vos préférences.
+
+## Organisez le tout
+
+Hierarchisez l'importance des sujets identifiés dans la précédente liste en fonction de vos préférences.
 
 Vous devriez maintenant avoir identifié quelques sujets (vastes) susceptibles de vous plaire et de convenir à la réalisation d'un mémoire.
