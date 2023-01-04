@@ -45,6 +45,7 @@ Exemple :
 Le tableau ci-dessous dresse la liste des formats vidéos pris en charge en fonction du navigateur :
 
 | Navigateur | **MP3** | **WAV** | **OGG** |
+| --- | --- | --- | --- |
 | Edge/IE | Oui | Oui | Oui |
 | Chrome | Oui | Oui | Oui |
 | Firefox | Oui | Oui | Oui |
