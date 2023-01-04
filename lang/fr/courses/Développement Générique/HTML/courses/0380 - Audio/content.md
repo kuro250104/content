@@ -15,6 +15,7 @@ Comme pour les vidéos, le langage HTML prend en charge 3 formats audios :
 Le tableau ci-dessous résume la prise en charge des trois formats selon le navigateur :
 
 | Navigateur | **MP3** | **WAV** | **OGG** |
+| --- | --- | --- | --- |
 | Edge/IE | Oui | Non | Non |
 | Chrome | Oui | Oui | Oui |
 | Firefox | Oui | Oui | Oui |
