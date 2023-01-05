@@ -69,7 +69,7 @@ div {
 
 ## Lancer l’animation dans une direction alternée ou en cycle alterné
 
-La propriété animation-direction définit si l’animation doit se jouer vers l’avant, vers l’arrière ou en cycles alternés. 
+La propriété ```animation-direction``` définit si l’animation doit se jouer vers l’avant, vers l’arrière ou en cycles alternés. 
 
 Cette propriété prend une des 4 valeurs suivantes :
 
