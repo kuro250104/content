@@ -1,7 +1,7 @@
 L'ensemble des méthodes communes pour HTTP/1.1 est défini ci-dessous et cet ensemble peut être étendu en fonction des besoins. Ces noms de méthodes sont sensibles à la casse et doivent être utilisés en majuscules :	
 
 - **GET** : La méthode **GET** est utilisée pour récupérer des informations sur un serveur donné à l'aide d'un URI donné. Les requêtes utilisant **GET** doivent uniquement récupérer des données et ne doivent avoir aucun autre effet sur les données.
-HEAD: Identique à la méthode **GET**, mais elle transfère uniquement la ligne d'état et la section d'en-tête.
+- **HEAD** : Identique à la méthode **GET**, mais elle transfère uniquement la ligne d'état et la section d'en-tête.
 - **POST** : Une requête **POST** est utilisée pour envoyer des données au serveur, par exemple, des informations sur les clients, le téléchargement de fichiers, etc. à l'aide de formulaires HTML.
 - **PUT** : Remplace toutes les représentations actuelles de la ressource cible par le contenu téléchargé.
 - **DELETE** : Supprime toutes les représentations actuelles de la ressource cible indiquée par l'URI.
