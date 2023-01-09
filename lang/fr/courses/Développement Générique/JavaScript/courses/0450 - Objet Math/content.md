@@ -80,7 +80,7 @@ L’objet Math n’a pas que des méthodes permettant d’arrondir un nombre pou
 
 Cette méthode retourne le signe du nombre passé en paramètre. En d’autres termes, cette méthode indique si le nombre est positif, nul ou négatif.
 
-```Math.sign()``` retourne 1 si le nombres passé en paramètre est positif, -1 s’il est négatif, et 0 s’il est nul.
+```Math.sign()``` retourne 1 si le nombre passé en paramètre est positif, -1 s’il est négatif, et 0 s’il est nul.
 
 Exemple :
 
