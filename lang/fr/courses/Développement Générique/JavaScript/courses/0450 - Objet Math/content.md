@@ -39,7 +39,7 @@ Il existe 4 méthodes permettant de convertir un nombre - décimal ou non - en n
 Exemple :
 
 ```js
-Math.round(5.6); // Ici, la méthode retourne 5, car c'est le nombre entier le plus proche
+Math.round(5.6); // Ici, la méthode retourne 6, car c'est le nombre entier le plus proche
 ```
 
 #### La méthode ceil()
