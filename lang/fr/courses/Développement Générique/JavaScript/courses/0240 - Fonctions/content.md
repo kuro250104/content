@@ -23,7 +23,7 @@ __Remarque__ :
 
 Il existe 3 méthodes pour appeler une fonction :
 
-- Lorsqu’un évènement de produit (par exemple, lorsque l’utilisateur clique sur un bouton)
+- Lorsqu’un évènement se produit (par exemple, lorsque l’utilisateur clique sur un bouton)
 - Lorsqu’elle est appelée directement depuis le code JavaScript
 - Automatiquement (la fonction s’appelle elle-même)
 
