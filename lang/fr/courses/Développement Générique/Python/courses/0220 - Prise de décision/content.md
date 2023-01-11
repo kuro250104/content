@@ -6,13 +6,13 @@ Voici la forme générale d'une structure de décision type que l'on trouve dans
 
 ![Forme générale de structure de décision type](https://raw.githubusercontent.com/Microleadoff/content/master/lang/fr/courses/D%C3%A9veloppement%20G%C3%A9n%C3%A9rique/Python/courses/0220%20-%20Prise%20de%20d%C3%A9cision/images/image1.png)
 
-Le langage de programmation Python considère toute valeur non nulle ou non nulle comme VRAIE, et toute valeur nulle ou nulle comme FAUX.
+Le langage de programmation Python considère toute valeur non nulle comme VRAIE, et toute valeur nulle comme FAUX.
 
 Le langage de programmation Python fournit les types d'instructions décisionnelles suivants :
 
-| instruction if | Une instruction if consiste en une expression booléenne suivie d'une ou plusieurs instructions. |
-| instruction if...else | Une instruction if peut être suivie d'une instruction else facultative, qui s'exécute lorsque l'expression booléenne est FALSE. |
-| instruction emboîté if | Vous pouvez utiliser une instruction if ou else if à l'intérieur d'une ou plusieurs autres instructions if ou else if. |
+- ```instruction if``` : Une instruction if consiste en une expression booléenne suivie d'une ou plusieurs instructions. 
+- ```instruction if...else``` : Une instruction if peut être suivie d'une instruction else facultative, qui s'exécute lorsque l'expression booléenne est FALSE. 
+- ```instruction emboîté if``` : Vous pouvez utiliser une instruction if ou else if à l'intérieur d'une ou plusieurs autres instructions if ou else if. 
 
 Passons rapidement en revue chaque relevé décisionnel.
 
