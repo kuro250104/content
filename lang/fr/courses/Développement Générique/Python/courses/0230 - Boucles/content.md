@@ -8,9 +8,9 @@ Une instruction de boucle nous permet d'exécuter une instruction ou un groupe d
 
 Le langage de programmation Python propose les types de boucles suivants pour répondre aux besoins de bouclage.
 
-| boucle while | Répète une instruction ou un groupe d'instructions pendant qu'une condition donnée est VRAIE. Elle teste la condition avant d'exécuter le corps de la boucle. |
-| boucle for | Exécute une séquence d'instructions plusieurs fois et abrège le code qui gère la variable de la boucle. |
-| boucles imbriquées | Vous pouvez utiliser une ou plusieurs boucles à l'intérieur d'une autre boucle while ou for. |
+- ```boucle while``` : Répète une instruction ou un groupe d'instructions pendant qu'une condition donnée est VRAIE. Elle teste la condition avant d'exécuter le corps de la boucle. 
+- ```boucle for``` : Exécute une séquence d'instructions plusieurs fois et abrège le code qui gère la variable de la boucle. 
+- ```boucles imbriquées``` : Vous pouvez utiliser une ou plusieurs boucles à l'intérieur d'une autre boucle while ou for. 
 
 ## Déclarations de contrôle de boucle
 
