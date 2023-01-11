@@ -236,7 +236,8 @@ Les dictionnaires n'ont aucun concept d'ordre parmi les éléments. Il est incor
 Il est parfois nécessaire d'effectuer des conversions entre les types intégrés. Pour convertir entre les types, il suffit d'utiliser les noms de type comme une fonction.
 
 Il existe plusieurs fonctions intégrées permettant d'effectuer la conversion d'un type de données à un autre. Ces fonctions renvoient un nouvel objet représentant la valeur convertie.
-
+| Fonctions | |
+| --- | --- | 
 | ```int(x [,base])``` | Convertit ```x``` en un nombre entier. La base spécifie la base si x est une chaîne de caractères. |
 | ```float(x)``` | Convertit ```x``` en un nombre à virgule flottante. |
 | ```complex(real [,imag])``` | Crée un nombre complexe. |

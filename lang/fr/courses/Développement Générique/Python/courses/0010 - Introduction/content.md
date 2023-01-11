@@ -14,7 +14,7 @@ Python a été développé par Guido van Rossum à la fin des années 80 et au d
 - Python est protégé par des droits d'auteur. Comme Perl, le code source de Python est désormais disponible sous la licence publique générale GNU (GPL).
 - Python est désormais maintenu par un conseil de direction du langage Python du Python Software Foundation, bien que Guido van Rossum joue toujours un rôle de référent dans la direction de son évolution.
 - Python 1.0 a été publié en novembre 1994, puis, en 2000, Python 2.0 a été publié. Python 2.7.11 fut la dernière édition de Python 2 (abandonnée en janvier 2020).
-- Python 3.0 a été publié en 2008 et n'est pas rétrocompatible avec Python 2. Cette version apporte la suppression des constructions de programmation et des modules en double. Python 3.10 est la dernière version en date de Python 3.
+- Python 3.0 a été publié en 2008 et n'est pas rétrocompatible avec Python 2. Cette version apporte la suppression des constructions de programmation et des modules en double.
 
 ## Caractéristiques de Python
 
