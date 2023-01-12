@@ -65,13 +65,13 @@ class ElectricKettle:
 
     def boil(self):
         if self.__power.voltage() > 110:
-            print "Kettle on fire!"
+            print("Kettle on fire!")
         else:
             if self.__power.live() == 1 and \
                 self.__power.neutral() == -1:
-                print "Coffee time!"
+                print("Coffee time!")
             else:
-                print "No power."
+                print("No power.")
 
 def main():
     # Plug in

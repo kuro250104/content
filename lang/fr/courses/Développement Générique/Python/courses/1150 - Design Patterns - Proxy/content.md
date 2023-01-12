@@ -10,7 +10,7 @@ class Image:
         self._filename = filename
     
     def load_image_from_disk( self ):
-        print("loading " + self._filename )
+        print("loading " + self._filename)
     
     def display_image( self ):
         print("display " + self._filename)
@@ -25,10 +25,10 @@ class ProxyImage( Proxy ):
         if self._proxystate == None:
             self._subject.load_image_from_disk()
             self._proxystate = 1
-        print("display " + self._subject._filename )
+        print("display " + self._subject._filename)
 
-proxy_image1 = ProxyImage ( Image("HiRes_10Mb_Photo1") )
-proxy_image2 = ProxyImage ( Image("HiRes_10Mb_Photo2") )
+proxy_image1 = ProxyImage(Image("HiRes_10Mb_Photo1"))
+proxy_image2 = ProxyImage(Image("HiRes_10Mb_Photo2"))
 
 proxy_image1.display_image() # loading necessary
 proxy_image1.display_image() # loading unnecessary
