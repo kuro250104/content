@@ -12,7 +12,7 @@ Cependant, voici une petite introduction à la programmation orientée objet (PO
 - **Surcharge de fonctions** : L'attribution de plus d'un comportement à une fonction particulière. L'opération effectuée varie en fonction des types d'objets ou d'arguments impliqués.
 - **Variable d'instance** : Variable définie à l'intérieur d'une méthode et appartenant uniquement à l'instance actuelle d'une classe.
 - **Héritage** : Le transfert des caractéristiques d'une classe à d'autres classes qui en sont dérivées.
-- **Instance** : Un objet individuel d'une certaine classe. Un objet obj qui appartient à la classe Circle, par exemple, est une instance de la classe Circle.
+- **Instance** : Un objet individuel d'une certaine classe. Un objet ```obj``` qui appartient à la classe Circle, par exemple, est une instance de la classe Circle.
 - **Instanciation** : La création d'une instance d'une classe.
 - **Méthode** : Un type particulier de fonction qui est défini dans la définition d'une classe.
 - **Objet** : Une instance unique d'une structure de données définie par sa classe. Un objet comprend à la fois des membres de données (variables de classe et variables d'instance) et des méthodes.
@@ -20,7 +20,7 @@ Cependant, voici une petite introduction à la programmation orientée objet (PO
 
 ## Création de classes
 
-L'instruction ```class``` crée une nouvelle définition de classe. Le nom de la classe suit immédiatement le mot-clé class suivi d'un deux-points comme suit :
+L'instruction ```class``` crée une nouvelle définition de classe. Le nom de la classe suit immédiatement le mot-clé ```class``` suivi d'un deux-points comme suit :
 
 ```python
 class ClassName:
@@ -46,15 +46,15 @@ class Employee:
         Employee.empCount += 1
     
     def displayCount(self):
-        print ("Total Employee %d" % Employee.empCount)
+        print("Total Employee %d" % Employee.empCount)
 
     def displayEmployee(self):
-        print ("Name : ", self.name,  ", Salary: ", self.salary)
+        print("Name :", self.name,  ", Salary:", self.salary)
 ```
 
-- La variable ```empCount``` est une variable de classe dont la valeur est partagée entre toutes les instances de a dans cette classe. On peut y accéder sous la forme Employee.empCount depuis l'intérieur ou l'extérieur de la classe.
+- La variable ```empCount``` est une variable de classe dont la valeur est partagée entre toutes les instances de a dans cette classe. On peut y accéder sous la forme ```Employee.empCount``` depuis l'intérieur ou l'extérieur de la classe.
 - La première méthode ```__init__()``` est une méthode spéciale, appelée constructeur de classe ou méthode d'initialisation, que Python appelle lorsque vous créez une nouvelle instance de cette classe.
-- Vous déclarez les autres méthodes de la classe comme des fonctions normales, à l'exception du fait que le premier argument de chaque méthode est self. Python ajoute l'argument self à la liste pour vous ; vous n'avez pas besoin de l'inclure lorsque vous appelez les méthodes.
+- Vous déclarez les autres méthodes de la classe comme des fonctions normales, à l'exception du fait que le premier argument de chaque méthode est ```self```. Python ajoute l'argument self à la liste pour vous ; vous n'avez pas besoin de l'inclure lorsque vous appelez les méthodes.
 
 ## Création d'objets d'instance
 
@@ -79,7 +79,7 @@ Vous accédez aux attributs de l'objet en utilisant l'opérateur point avec l'ob
 ```python
 emp1.displayEmployee()
 emp2.displayEmployee()
-print ("Total Employee %d" % Employee.empCount)
+print("Total Employee %d" % Employee.empCount)
 ```
 
 Maintenant, en mettant tous les concepts ensemble :
@@ -100,7 +100,7 @@ class Employee:
         print ("Total Employee %d" % Employee.empCount)
 
     def displayEmployee(self):
-        print ("Name : ", self.name,  ", Salary: ", self.salary)
+        print ("Name :", self.name,  ", Salary:", self.salary)
 
 
 #This would create first object of Employee class"
@@ -115,8 +115,8 @@ print ("Total Employee %d" % Employee.empCount)
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-Name :  Zara ,Salary:  2000
-Name :  Manni ,Salary:  5000
+Name : Zara ,Salary: 2000
+Name : Manni ,Salary: 5000
 Total Employee 2
 ```
 
@@ -170,15 +170,15 @@ class Employee:
         print ("Total Employee %d" % Employee.empCount)
 
     def displayEmployee(self):
-        print ("Name : ", self.name,  ", Salary: ", self.salary)
+        print ("Name :", self.name,  ", Salary:", self.salary)
 
 emp1 = Employee("Zara", 2000)
 emp2 = Employee("Manni", 5000)
-print ("Employee.__doc__:", Employee.__doc__)
-print ("Employee.__name__:", Employee.__name__)
-print ("Employee.__module__:", Employee.__module__)
-print ("Employee.__bases__:", Employee.__bases__)
-print ("Employee.__dict__:", Employee.__dict__ )
+print("Employee.__doc__:", Employee.__doc__)
+print("Employee.__name__:", Employee.__name__)
+print("Employee.__module__:", Employee.__module__)
+print("Employee.__bases__:", Employee.__bases__)
+print("Employee.__dict__:", Employee.__dict__ )
 ```
 
 Voici le résultat de l'exécution du code ci-dessus :
@@ -206,7 +206,7 @@ Python supprime automatiquement les objets inutiles (types intégrés ou instanc
 
 Le ramasseur d'ordures de Python fonctionne pendant l'exécution du programme et est déclenché lorsque le nombre de références d'un objet atteint zéro. Le nombre de références d'un objet varie en fonction du nombre d'alias qui pointent vers lui.
 
-Le nombre de références d'un objet augmente lorsqu'un nouveau nom lui est attribué ou lorsqu'il est placé dans un conteneur (liste, tuple ou dictionnaire). Le nombre de références d'un objet diminue lorsqu'il est supprimé avec del, que sa référence est réaffectée ou que sa référence sort de la portée. Lorsque le nombre de références d'un objet atteint zéro, Python le récupère automatiquement.
+Le nombre de références d'un objet augmente lorsqu'un nouveau nom lui est attribué ou lorsqu'il est placé dans un conteneur (liste, tuple ou dictionnaire). Le nombre de références d'un objet diminue lorsqu'il est supprimé avec ```del```, que sa référence est réaffectée ou que sa référence sort de la portée. Lorsque le nombre de références d'un objet atteint zéro, Python le récupère automatiquement.
 
 ```python
 a = 40      # Create object <40>
@@ -233,7 +233,7 @@ class Point:
         self.y = y
     def __del__(self):
         class_name = self.__class__.__name__
-        print (class_name, "destroyed")
+        print(class_name, "destroyed")
 
 pt1 = Point()
 pt2 = pt1
@@ -286,23 +286,23 @@ class SubClassName (ParentClass1[, ParentClass2, ...]):
 class Parent:        # define parent class
     parentAttr = 100
     def __init__(self):
-        print ("Calling parent constructor")
+        print("Calling parent constructor")
 
     def parentMethod(self):
-        print ('Calling parent method')
+        print('Calling parent method')
 
     def setAttr(self, attr):
         Parent.parentAttr = attr
 
     def getAttr(self):
-        print ("Parent attribute :", Parent.parentAttr)
+        print("Parent attribute :", Parent.parentAttr)
 
 class Child(Parent): # define child class
     def __init__(self):
-        print ("Calling child constructor")
+        print("Calling child constructor")
 
     def childMethod(self):
-        print ('Calling child method')
+        print('Calling child method')
 
 c = Child()          # instance of child
 c.childMethod()      # child calls its method
@@ -405,7 +405,7 @@ class Vector:
 
 v1 = Vector(2,10)
 v2 = Vector(5,-2)
-print (v1 + v2)
+print(v1 + v2)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -433,7 +433,7 @@ class JustCounter:
 counter = JustCounter()
 counter.count()
 counter.count()
-print (counter.__secretCount)
+print(counter.__secretCount)
 ```
 
 Voici le résultat de l'exécution du code ci-dessus :
@@ -451,7 +451,7 @@ Python protège ces membres en modifiant en interne le nom pour inclure le nom d
 
 ```python
 # .........................
-print (counter._JustCounter__secretCount)
+print(counter._JustCounter__secretCount)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
