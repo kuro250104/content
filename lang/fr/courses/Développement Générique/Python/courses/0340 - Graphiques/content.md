@@ -52,7 +52,7 @@ Pour afficher les sommets du graphe, il suffit de trouver les clés du dictionna
 
 ```python
 class graph:
-    def __init__(self,gdict=None):
+    def __init__(self, gdict=None):
         if gdict is None:
             gdict = []
         self.gdict = gdict
@@ -85,7 +85,7 @@ Trouver les bords du graphe est un peu plus délicat que de trouver les sommets,
 
 ```python
 class graph:
-    def __init__(self,gdict=None):
+    def __init__(self, gdict=None):
         if gdict is None:
             gdict = {}
         self.gdict = gdict
@@ -99,7 +99,7 @@ class graph:
         for vrtx in self.gdict:
             for nxtvrtx in self.gdict[vrtx]:
                 if {nxtvrtx, vrtx} not in edgename:
-                edgename.append({vrtx, nxtvrtx})
+                    edgename.append({vrtx, nxtvrtx})
         return edgename
 # Create the dictionary with graph elements
 graph_elements = { 
@@ -129,7 +129,7 @@ L'ajout d'un sommet est simple : nous ajoutons une clé supplémentaire au dicti
 
 ```python
 class graph:
-    def __init__(self,gdict=None):
+    def __init__(self, gdict=None):
         if gdict is None:
             gdict = {}
         self.gdict = gdict
@@ -168,7 +168,7 @@ L'ajout d'une bordure à un graphe existant implique de traiter le nouveau somme
 
 ```python
 class graph:
-    def __init__(self,gdict=None):
+    def __init__(self, gdict=None):
         if gdict is None:
             gdict = {}
         self.gdict = gdict
@@ -191,7 +191,7 @@ class graph:
         for vrtx in self.gdict:
             for nxtvrtx in self.gdict[vrtx]:
                 if {nxtvrtx, vrtx} not in edgename:
-                edgename.append({vrtx, nxtvrtx})
+                    edgename.append({vrtx, nxtvrtx})
             return edgename
 # Create the dictionary with graph elements
 graph_elements = { 
