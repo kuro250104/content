@@ -3,13 +3,13 @@ Python fournit deux fonctionnalités très importantes pour gérer toute erreur 
 - **Gestion des exceptions** - Ce sujet sera traité dans ce cours. Voici une liste des exceptions standard disponibles en Python - Standard Exceptions.
 - **Assertions**.
 
-## Exceptions standard
+## Exceptions standards
 
 Voici une liste des exceptions standard disponibles en Python :
 
-- ```Exception``` : Classe de base pour toutes les exceptions
-- ```StopIteration``` : Levée lorsque la méthode next() d'un itérateur ne pointe vers aucun objet.
-- ```SystemExit``` : Levée par la fonction sys.exit().
+- ```Exception``` : Classe de base pour toutes les exceptions.
+- ```StopIteration``` : Levée lorsque la méthode ```next()``` d'un itérateur ne pointe vers aucun objet.
+- ```SystemExit``` : Levée par la fonction ```sys.exit()```.
 - ```StandardError``` : Classe de base pour toutes les exceptions intégrées sauf StopIteration et SystemExit.
 - ```ArithmeticError``` : Classe de base pour toutes les erreurs qui se produisent lors de calculs numériques.
 - ```OverflowError``` : S'affiche lorsqu'un calcul dépasse la limite maximale pour un type numérique.
@@ -17,7 +17,7 @@ Voici une liste des exceptions standard disponibles en Python :
 - ```ZeroDivisonError``` : Levée lorsque la division ou le modulo par zéro a lieu pour tous les types numériques.
 - ```AssertionError``` : Levée en cas d'échec de l'instruction Assert.
 - ```AttributeError``` : Levée en cas d'échec de la référence ou de l'affectation d'un attribut.
-- ```EOFError``` : Évoquée lorsqu'il n'y a aucune entrée provenant de la fonction raw_input() ou input() et que la fin du fichier est atteinte.
+- ```EOFError``` : Évoquée lorsqu'il n'y a aucune entrée provenant de la fonction ```raw_input()``` ou ```input()``` et que la fin du fichier est atteinte.
 - ```ImportError``` : S'affiche lorsqu'une déclaration d'importation échoue.
 - ```KeyboardInterrupt``` : Levée lorsque l'utilisateur interrompt l'exécution du programme, généralement en appuyant sur Ctrl+c.
 - ```LookupError``` : Classe de base pour toutes les erreurs de consultation.
@@ -26,7 +26,7 @@ Voici une liste des exceptions standard disponibles en Python :
 - ```NameError``` : Levée lorsqu'un identifiant n'est pas trouvé dans l'espace de noms local ou global.
 - ```UnboundLocalError``` : Lancée lorsqu'on essaie d'accéder à une variable locale dans une fonction ou une méthode mais qu'aucune valeur ne lui a été attribuée.
 - ```EnvironmentError``` : Classe de base pour toutes les exceptions qui se produisent en dehors de l'environnement Python.
-- ```IOError``` : Levée lorsqu'une opération d'entrée/sortie échoue, comme l'instruction print ou la fonction open() lorsqu'on essaie d'ouvrir un fichier qui n'existe pas.
+- ```IOError``` : Levée lorsqu'une opération d'entrée/sortie échoue, comme l'instruction print ou la fonction ```open()``` lorsqu'on essaie d'ouvrir un fichier qui n'existe pas.
 - ```OSError``` : Levée pour les erreurs liées au système d'exploitation.
 - ```SyntaxError``` : S'affiche lorsqu'il y a une erreur dans la syntaxe Python.
 - ```IndentationError``` : S'affiche lorsque l'indentation n'est pas spécifiée correctement.
@@ -42,7 +42,7 @@ Voici une liste des exceptions standard disponibles en Python :
 Une assertion est un contrôle d'intégrité que vous pouvez activer ou désactiver lorsque vous avez terminé de tester le programme.
 
 - La façon la plus simple de penser à une assertion est de la comparer à une instruction ```raise-if``` (ou, pour être plus précis, une instruction ```raise-if-not```). Une expression est testée, et si le résultat est faux, une exception est levée.
-- Les assertions sont exécutées par l'instruction assert, le mot-clé le plus récent de Python, introduit dans la version 1.5.
+- Les assertions sont exécutées par l'instruction ```assert```, le mot-clé le plus récent de Python, introduit dans la version 1.5.
 - Les programmeurs placent souvent les assertions au début d'une fonction pour vérifier la validité des entrées, et après un appel de fonction pour vérifier la validité des sorties.
 
 ## L'instruction assert
@@ -65,9 +65,9 @@ def KelvinToFahrenheit(Temperature):
     assert (Temperature >= 0),"Colder than absolute zero!"
     return ((Temperature-273)*1.8)+32
 
-print (KelvinToFahrenheit(273))
-print (int(KelvinToFahrenheit(505.78)))
-print (KelvinToFahrenheit(-5))
+print(KelvinToFahrenheit(273))
+print(int(KelvinToFahrenheit(505.78)))
+print(KelvinToFahrenheit(-5))
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -77,7 +77,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 451
 Traceback (most recent call last):
 File "test.py", line 9, in <module>
-print KelvinToFahrenheit(-5)
+print(KelvinToFahrenheit(-5))
 File "test.py", line 4, in KelvinToFahrenheit
 assert (Temperature >= 0),"Colder than absolute zero!"
 AssertionError: Colder than absolute zero!
@@ -126,9 +126,9 @@ try:
     fh = open("testfile", "w")
     fh.write("This is my test file for exception handling!!")
 except IOError:
-    print ("Error: can\'t find file or read data")
+    print("Error: can\'t find file or read data")
 else:
-    print ("Written content in the file successfully")
+    print("Written content in the file successfully")
     fh.close()
 ```
 
@@ -147,9 +147,9 @@ try:
     fh = open("testfile", "r")
     fh.write("This is my test file for exception handling!!")
 except IOError:
-    print ("Error: can\'t find file or read data")
+    print("Error: can\'t find file or read data")
 else:
-    print ("Written content in the file successfully")
+    print("Written content in the file successfully")
 ```
 
 On obtient ainsi le résultat suivant :
@@ -160,7 +160,7 @@ Error: can't find file or read data
 
 ## La clause except sans exception
 
-Vous pouvez également utiliser l'instruction except sans exception définie comme suit
+Vous pouvez également utiliser l'instruction ```except``` sans exception définie comme suit
 
 ```python
 try:
@@ -177,7 +177,7 @@ Ce type d'instruction ```try-except``` capture toutes les exceptions qui se prod
 
 ## La clause except avec plusieurs exceptions
 
-Vous pouvez également utiliser la même instruction except pour traiter plusieurs exceptions, comme suit :
+Vous pouvez également utiliser la même instruction ```except``` pour traiter plusieurs exceptions, comme suit :
 
 ```python
 try:
@@ -205,7 +205,7 @@ finally:
     # ......................
 ```
 
-__Remarque__ : Vous pouvez fournir une ou plusieurs clauses except, ou une clause finally, mais pas les deux. Vous ne pouvez pas utiliser la clause else en même temps que la clause finally.
+__Remarque__ : Vous pouvez fournir une ou plusieurs clauses ```except```, ou une clause finally, mais pas les deux. Vous ne pouvez pas utiliser la clause ```else``` en même temps que la clause ```finally```.
 
 ### Exemple
 
@@ -214,7 +214,7 @@ try:
     fh = open("testfile", "w")
     fh.write("This is my test file for exception handling!!")
 finally:
-    print ("Error: can\'t find file or read data")
+    print("Error: can\'t find file or read data")
     fh.close()
 ```
 
@@ -248,7 +248,7 @@ Lorsqu'une exception est levée dans le bloc ```try```, l'exécution passe immé
 
 ## Argument d'une exception
 
-Une exception peut avoir un argument, qui est une valeur donnant des informations supplémentaires sur le problème. Le contenu de l'argument varie selon l'exception. Vous capturez l'argument d'une exception en fournissant une variable dans la clause except comme suit :
+Une exception peut avoir un argument, qui est une valeur donnant des informations supplémentaires sur le problème. Le contenu de l'argument varie selon l'exception. Vous capturez l'argument d'une exception en fournissant une variable dans la clause ```except``` comme suit :
 
 ```python
 try:
@@ -272,7 +272,7 @@ def temp_convert(var):
     try:
         return int(var)
     except ValueError as Argument:
-        print ("The argument does not contain numbers\n", Argument)
+        print("The argument does not contain numbers\n", Argument)
 
 # Call above function here.
 temp_convert("xyz")
@@ -293,7 +293,7 @@ raise [Exception [, args [, traceback]]]
 
 Ici, Exception est le type d'exception (par exemple, NameError) et argument est une valeur pour l'argument d'exception. L'argument est facultatif ; s'il n'est pas fourni, l'argument exception est None.
 
-Le dernier argument, traceback, est également facultatif (et rarement utilisé en pratique), et s'il est présent, il s'agit de l'objet traceback utilisé pour l'exception.
+Le dernier argument, ```traceback```, est également facultatif (et rarement utilisé en pratique), et s'il est présent, il s'agit de l'objet ```traceback``` utilisé pour l'exception.
 
 ### Exemple
 
@@ -308,7 +308,7 @@ def functionName( level ):
     return level
 ```
 
-__Remarque__ : Pour capturer une exception, la clause "except" doit faire référence à la même exception lancée, soit sous forme d'objet de classe, soit sous forme de simple chaîne de caractères. Par exemple, pour capturer l'exception ci-dessus, nous devons écrire la clause except comme suit :
+__Remarque__ : Pour capturer une exception, la clause ```except``` doit faire référence à la même exception lancée, soit sous forme d'objet de classe, soit sous forme de simple chaîne de caractères. Par exemple, pour capturer l'exception ci-dessus, nous devons écrire la clause ```except``` comme suit :
 
 ```python
 try:
@@ -333,7 +333,7 @@ try:
     l = functionName(-10)
     print ("level = ",l)
 except Exception as e:
-    print ("error in level argument",e.args[0])
+    print("error in level argument",e.args[0])
 ```
 
 Cela donnera le résultat suivant :
@@ -348,15 +348,15 @@ Python vous permet également de créer vos propres exceptions en dérivant des 
 
 Voici un exemple lié à ```RuntimeError```. Ici, une classe est créée qui est sous-classée de ```RuntimeError```. Cette classe est utile lorsque vous devez afficher des informations plus spécifiques lorsqu'une exception est détectée.
 
-Dans le bloc ```try```, l'exception définie par l'utilisateur est levée et attrapée dans le bloc except. La variable e est utilisée pour créer une instance de la classe ```Networkerror```.
+Dans le bloc ```try```, l'exception définie par l'utilisateur est levée et attrapée dans le bloc ```except```. La variable e est utilisée pour créer une instance de la classe ```Networkerror```.
 
 ```python
 class Networkerror(RuntimeError):
     def __init__(self, arg):
         self.args = arg
-So once you have defined the above class, you can raise the exception as follows −
+# So once you have defined the above class, you can raise the exception as follows −
 try:
     raise Networkerror("Bad hostname")
 except Networkerror,e:
-    print e.args
+    print(e.args)
 ```
