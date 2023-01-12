@@ -32,15 +32,15 @@ class PDFHandler(Handler):
             super(PDFHandler, self).handle(request)
 
     def output_report(self, title, text):
-        print '<html>'
-        print ' <head>'
-        print ' <title>%s</title>' % title
-        print ' </head>'
-        print ' <body>'
+        print('<html>')
+        print(' <head>')
+        print(' <title>%s</title>' % title)
+        print(' </head>')
+        print(' <body>')
         for line in text:
-            print ' <p>%s' % line
-        print ' </body>'
-        print '</html>'
+            print(' <p>%s' % line)
+        print(' </body>')
+        print('</html>')
 
 class TextHandler(Handler):
 
@@ -51,13 +51,13 @@ class TextHandler(Handler):
             super(TextHandler, self).handle(request)
 
     def output_report(self, title, text):
-        print 5*'*' + title + 5*'*'
+        print(5 * '*' + title + 5 * '*')
         for line in text:
-            print line
+            print(line)
 
 class ErrorHandler(Handler):
     def handle(self, request):
-        print "Invalid request"
+        print("Invalid request")
 
 if __name__ == '__main__':
     report = Report(ReportFormat.TEXT)
