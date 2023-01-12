@@ -20,8 +20,8 @@ Pour accéder aux éléments du dictionnaire, vous pouvez utiliser les crochets 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
 
 # Accessing the dictionary with its key
-print "dict['Name']: ", dict['Name']
-print "dict['Age']: ", dict['Age']
+print("dict['Name']:", dict['Name'])
+print("dict['Age']:", dict['Age'])
 ```
 
 ### Réponse
@@ -29,8 +29,8 @@ print "dict['Age']: ", dict['Age']
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-dict['Name']:  Zara
-dict['Age']:  7
+dict['Name']: Zara
+dict['Age']: 7
 ```
 
 ## Mise à jour du dictionnaire
@@ -42,10 +42,10 @@ Vous pouvez mettre à jour un dictionnaire en ajoutant une nouvelle entrée ou u
 ```python
 # Declare a dictionary
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-dict['Age'] = 8; # update existing entry
-dict['School'] = "DPS School"; # Add new entry
-print "dict['Age']: ", dict['Age']
-print "dict['School']: ", dict['School']
+dict['Age'] = 8 # update existing entry
+dict['School'] = "DPS School" # Add new entry
+print("dict['Age']:", dict['Age'])
+print("dict['School']:", dict['School'])
 ```
 
 ### Réponse
@@ -53,8 +53,8 @@ print "dict['School']: ", dict['School']
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-dict['Age']:  8
-dict['School']:  DPS School
+dict['Age']: 8
+dict['School']: DPS School
 ```
 
 ## Supprimer les éléments du dictionnaire
@@ -65,12 +65,12 @@ Vous pouvez soit supprimer des éléments individuels du dictionnaire, soit effa
 
 ```python
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-del dict['Name']; # remove entry with key 'Name'
-dict.clear();     # remove all entries in dict
-del dict ;        # delete entire dictionary
+del dict['Name'] # remove entry with key 'Name'
+dict.clear()     # remove all entries in dict
+del dict        # delete entire dictionary
 
-print "dict['Age']: ", dict['Age']
-print "dict['School']: ", dict['School']
+print("dict['Age']:", dict['Age'])
+print("dict['School']:", dict['School'])
 ```
 
 ### Réponse
@@ -81,7 +81,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 dict['Age']:
 Traceback (most recent call last):
     File "test.py", line 8, in <module>
-        print "dict['Age']: ", dict['Age'];
+        print("dict['Age']:", dict['Age'])
 TypeError: 'type' object is unsubscriptable
 ```
 

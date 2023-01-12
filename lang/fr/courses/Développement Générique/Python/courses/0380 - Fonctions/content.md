@@ -1,6 +1,6 @@
 Une fonction est un bloc de code organisé et réutilisable qui est utilisé pour effectuer une action unique et connexe. Les fonctions offrent une meilleure modularité à votre application et un haut degré de réutilisation du code.
 
-Comme vous le savez déjà, Python vous offre de nombreuses fonctions intégrées comme print(), etc. mais vous pouvez également créer vos propres fonctions. Ces fonctions sont appelées fonctions définies par l'utilisateur.
+Comme vous le savez déjà, Python vous offre de nombreuses fonctions intégrées comme ```print()```, etc. mais vous pouvez également créer vos propres fonctions. Ces fonctions sont appelées fonctions définies par l'utilisateur.
 
 ## Définition d'une fonction
 
@@ -28,9 +28,9 @@ Par défaut, les paramètres ont un comportement positionnel et vous devez les r
 La fonction suivante prend une chaîne de caractères comme paramètre d'entrée et l'imprime sur l'écran standard.
 
 ```python
-def printme( str ):
+def printme(str):
     "This prints a passed string into this function"
-    print (str)
+    print(str)
     return
 ```
 
@@ -44,9 +44,9 @@ Une fois la structure de base d'une fonction finalisée, vous pouvez l'exécuter
 #!/usr/bin/python3
 
 # Function definition is here
-def printme( str ):
+def printme(str):
     "This prints a passed string into this function"
-    print (str)
+    print(str)
     return
 
 # Now you can call printme function
@@ -69,26 +69,26 @@ Tous les paramètres (arguments) du langage Python sont transmis par référence
 #!/usr/bin/python3
 
 # Function definition is here
-def changeme( mylist ):
+def changeme(mylist):
     "This changes a passed list into this function"
-    print ("Values inside the function before change: ", mylist)
+    print("Values inside the function before change: ", mylist)
     
-    mylist[2]=50
-    print ("Values inside the function after change: ", mylist)
+    mylist[2] = 50
+    print("Values inside the function after change:", mylist)
     return
 
 # Now you can call changeme function
 mylist = [10,20,30]
-changeme( mylist )
-print ("Values outside the function: ", mylist)
+changeme(mylist)
+print("Values outside the function:", mylist)
 ```
 
 Ici, nous maintenons la référence de l'objet passé et ajoutons les valeurs dans le même objet. Par conséquent, cela produirait le résultat suivant :
 
 ```bash
-Values inside the function before change:  [10, 20, 30]
-Values inside the function after change:  [10, 20, 50]
-Values outside the function:  [10, 20, 50]
+Values inside the function before change: [10, 20, 30]
+Values inside the function after change: [10, 20, 50]
+Values outside the function: [10, 20, 50]
 ```
 
 Il existe un autre exemple où l'argument est transmis par référence et où la référence est écrasée dans la fonction appelée.
@@ -97,23 +97,23 @@ Il existe un autre exemple où l'argument est transmis par référence et où la
 #!/usr/bin/python3
 
 # Function definition is here
-def changeme( mylist ):
+def changeme(mylist):
     "This changes a passed list into this function"
     mylist = [1,2,3,4] # This would assi new reference in mylist
-    print ("Values inside the function: ", mylist)
+    print("Values inside the function:", mylist)
     return
 
 # Now you can call changeme function
 mylist = [10,20,30]
-changeme( mylist )
-print ("Values outside the function: ", mylist)
+changeme(mylist)
+print("Values outside the function:", mylist)
 ```
 
 Le paramètre ```mylist``` est local à la fonction changeme. Changer ```mylist``` dans la fonction n'affecte pas ```mylist```. La fonction n'accomplit rien et finalement cela produirait le résultat suivant :
 
 ```bash
-Values inside the function:  [1, 2, 3, 4]
-Values outside the function:  [10, 20, 30]
+Values inside the function: [1, 2, 3, 4]
+Values outside the function: [10, 20, 30]
 ```
 
 ## Arguments de fonction
@@ -122,7 +122,7 @@ Vous pouvez appeler une fonction en utilisant les types d'arguments formels suiv
 
 - Arguments requis
 - Arguments de mots-clés
-- Arguments par défaut
+- Arguments par défauts
 - Arguments de longueur variable
 - Arguments requis
 
@@ -134,9 +134,9 @@ Pour appeler la fonction ```printme()```, vous devez absolument passer un argume
 #!/usr/bin/python3
 
 # Function definition is here
-def printme( str ):
+def printme(str):
     "This prints a passed string into this function"
-    print (str)
+    print(str)
     return
 
 # Now you can call printme function
@@ -162,13 +162,13 @@ Cela vous permet de sauter des arguments ou de les placer dans le désordre, car
 #!/usr/bin/python3
 
 # Function definition is here
-def printme( str ):
+def printme(str):
     "This prints a passed string into this function"
-    print (str)
+    print(str)
     return
 
 # Now you can call printme function
-printme( str = "My string")
+printme(str = "My string")
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -183,21 +183,21 @@ L'exemple suivant donne une image plus claire. Notez que l'ordre des paramètres
 #!/usr/bin/python3
 
 # Function definition is here
-def printinfo( name, age ):
+def printinfo(name, age):
     "This prints a passed info into this function"
-    print ("Name: ", name)
-    print ("Age ", age)
+    print("Name:", name)
+    print("Age:", age)
     return
 
 # Now you can call printinfo function
-printinfo( age = 50, name = "miki" )
+printinfo(age = 50, name = "Miki")
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-Name:  miki
-Age  50
+Name: Miki
+Age: 50
 ```
 
 ## Arguments par défaut
@@ -208,24 +208,24 @@ Un argument par défaut est un argument qui prend une valeur par défaut si une 
 #!/usr/bin/python3
 
 # Function definition is here
-def printinfo( name, age = 35 ):
+def printinfo(name, age = 35):
     "This prints a passed info into this function"
-    print ("Name: ", name)
-    print ("Age ", age)
+    print("Name:", name)
+    print("Age:", age)
     return
 
 # Now you can call printinfo function
-printinfo( age = 50, name = "miki" )
-printinfo( name = "miki" )
+printinfo(age = 50, name = "Miki")
+printinfo(name = "Miki")
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-Name:  miki
-Age  50
-Name:  miki
-Age  35
+Name: Miki
+Age: 50
+Name: Miki
+Age: 35
 ```
 
 ## Arguments de longueur variable
@@ -235,30 +235,30 @@ Vous pouvez être amené à traiter une fonction pour plus d'arguments que ceux 
 La syntaxe d'une fonction avec des arguments variables sans mot-clé est donnée ci-dessous :
 
 ```python
-def functionname([formal_args,] *var_args_tuple ):
+def functionname([formal_args,] *var_args_tuple):
     "function_docstring"
-    function_suite
+    function_suit
     return [expression]
 ```
 
-Un astérisque (*) est placé devant le nom de la variable qui contient les valeurs de tous les arguments variables qui ne sont pas des mots clés. Ce tuple reste vide si aucun argument supplémentaire n'est spécifié lors de l'appel de la fonction. Voici un exemple simple :
+Un astérisque ```*``` est placé devant le nom de la variable qui contient les valeurs de tous les arguments variables qui ne sont pas des mots clés. Ce tuple reste vide si aucun argument supplémentaire n'est spécifié lors de l'appel de la fonction. Voici un exemple simple :
 
 ```python
 #!/usr/bin/python3
 
 # Function definition is here
-def printinfo( arg1, *vartuple ):
+def printinfo(arg1, *vartuple):
     "This prints a variable passed arguments"
-    print ("Output is: ")
-    print (arg1)
+    print("Output is:")
+    print(arg1)
     
     for var in vartuple:
-        print (var)
+        print(var)
     return
 
 # Now you can call printinfo function
-printinfo( 10 )
-printinfo( 70, 60, 50 )
+printinfo(10)
+printinfo(70, 60, 50)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -279,14 +279,14 @@ Ces fonctions sont dites anonymes parce qu'elles ne sont pas déclarées de mani
 - Les formes lambda peuvent prendre un nombre quelconque d'arguments mais ne renvoient qu'une seule valeur sous la forme d'une expression. Elles ne peuvent pas contenir de commandes ou d'expressions multiples.
 - Une fonction anonyme ne peut pas être un appel direct à l'impression car lambda nécessite une expression.
 - Les fonctions lambda ont leur propre espace de noms local et ne peuvent pas accéder à des variables autres que celles de leur liste de paramètres et celles de l'espace de noms global.
-- Bien qu'il semble que les lambdas soient une version d'une fonction en une ligne, ils ne sont pas équivalents aux instructions inline en C ou C++, dont le but est d'allouer la pile en passant la fonction, pendant l'invocation pour des raisons de performance.
+- Bien qu'il semble que les lambda soient une version d'une fonction en une ligne, ils ne sont pas équivalents aux instructions ```inline``` en C ou C++, dont le but est d'allouer la pile en passant la fonction, pendant l'invocation pour des raisons de performance.
 
 ### Syntaxe
 
 La syntaxe des fonctions lambda ne contient qu'une seule instruction, qui est la suivante :
 
 ```python
-lambda [arg1 [,arg2,.....argn]]:expression
+lambda[arg1 [,arg2,.....argn]]:expression
 ```
 
 L'exemple suivant montre comment fonctionne la forme ```lambda``` d'une fonction :
@@ -298,20 +298,20 @@ L'exemple suivant montre comment fonctionne la forme ```lambda``` d'une fonction
 sum = lambda arg1, arg2: arg1 + arg2
 
 # Now you can call sum as a function
-print ("Value of total : ", sum( 10, 20 ))
-print ("Value of total : ", sum( 20, 20 ))
+print("Value of total :", sum(10, 20))
+print("Value of total :", sum(20, 20))
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-Value of total :  30
-Value of total :  40
+Value of total : 30
+Value of total : 40
 ```
 
 ## L'instruction return
 
-L'instruction ```return [expression]``` permet de quitter une fonction, en renvoyant éventuellement une expression à l'appelant. Une instruction return sans argument est identique à return None.
+L'instruction ```return [expression]``` permet de quitter une fonction, en renvoyant éventuellement une expression à l'appelant. Une instruction ```return``` sans argument est identique à ```return None```.
 
 Tous les exemples donnés ci-dessous ne renvoient aucune valeur. Vous pouvez retourner une valeur à partir d'une fonction comme suit :
 
@@ -319,22 +319,22 @@ Tous les exemples donnés ci-dessous ne renvoient aucune valeur. Vous pouvez ret
 #!/usr/bin/python3
 
 # Function definition is here
-def sum( arg1, arg2 ):
+def sum(arg1, arg2):
     # Add both the parameters and return them."
     total = arg1 + arg2
-    print ("Inside the function : ", total)
+    print("Inside the function :", total)
     return total
 
 # Now you can call sum function
-total = sum( 10, 20 )
-print ("Outside the function : ", total )
+total = sum(10, 20)
+print("Outside the function :", total )
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-Inside the function :  30
-Outside the function :  30
+Inside the function : 30
+Outside the function : 30
 ```
 
 ## Portée des variables
@@ -357,20 +357,20 @@ Cela signifie que les variables locales ne sont accessibles qu'à l'intérieur d
 
 total = 0   # This is global variable.
 # Function definition is here
-def sum( arg1, arg2 ):
+def sum(arg1, arg2):
     # Add both the parameters and return them."
     total = arg1 + arg2; # Here total is local variable.
-    print ("Inside the function local total : ", total)
+    print("Inside the function local total :", total)
     return total
 
 # Now you can call sum function
-sum( 10, 20 )
-print ("Outside the function global total : ", total )
+sum(10, 20)
+print("Outside the function global total :", total)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-Inside the function local total :  30
-Outside the function global total :  0
+Inside the function local total : 30
+Outside the function global total : 0
 ```

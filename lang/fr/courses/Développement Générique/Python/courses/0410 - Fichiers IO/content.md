@@ -6,7 +6,7 @@ La façon la plus simple de produire une sortie est d'utiliser l'instruction pri
 
 ```python
 #!/usr/bin/python3
-print ("Python is really a great language,", "isn't it?")
+print("Python is really a great language,","isn't it?")
 ```
 
 Cela donne le résultat suivant sur votre écran standard :
@@ -19,7 +19,7 @@ Python is really a great language, isn't it?
 
 Python 2 dispose de deux fonctions intégrées pour lire les données de l'entrée standard, qui par défaut provient du clavier. Ces fonctions sont ```input()``` et ```raw_input()```.
 
-Dans Python 3, la fonction ```raw_input()``` est dépréciée. De plus, les fonctions ```input()``` lisent les données du clavier sous forme de chaîne de caractères, qu'elle soit entourée de guillemets ('' ou "") ou non.
+Dans Python 3, la fonction ```raw_input()``` est dépréciée. De plus, les fonctions ```input()``` lisent les données du clavier sous forme de chaîne de caractères, qu'elle soit entourée de guillemets (' ' ou " ") ou non.
 
 ## La fonction input
 
@@ -54,7 +54,7 @@ Avant de pouvoir lire ou écrire un fichier, vous devez l'ouvrir à l'aide de la
 ### Syntaxe
 
 ```python
-file object = open(file_name [, access_mode][, buffering])
+file object = open(file_name [,access_mode][,buffering])
 ```
 
 Voici les détails des paramètres :
@@ -69,9 +69,9 @@ Voici une liste des différents modes d'ouverture d'un fichier :
 - ```rb``` : Ouvre un fichier en lecture seule au format binaire. Le pointeur de fichier est placé au début du fichier. C'est le mode par défaut.
 - ```r+``` : Ouvre un fichier pour la lecture et l'écriture. Le pointeur de fichier est placé au début du fichier.
 - ```rb+``` : Ouvre un fichier en lecture et en écriture au format binaire. Le pointeur de fichier est placé au début du fichier.
-- ```w``` : Ouvre un fichier pour l'écriture uniquement. Ecrase le fichier si celui-ci existe. Si le fichier n'existe pas, crée un nouveau fichier pour l'écriture.
+- ```w``` : Ouvre un fichier pour l'écriture uniquement. Écrase le fichier si celui-ci existe. Si le fichier n'existe pas, crée un nouveau fichier pour l'écriture.
 - ```wb``` : Ouvre un fichier en écriture uniquement au format binaire. Écrase le fichier s'il existe. Si le fichier n'existe pas, crée un nouveau fichier à écrire.
-- ```w+``` : Ouvre un fichier en écriture et en lecture. Ecrase le fichier existant si le fichier existe. Si le fichier n'existe pas, crée un nouveau fichier pour la lecture et l'écriture.
+- ```w+``` : Ouvre un fichier en écriture et en lecture. Écrase le fichier existant si le fichier existe. Si le fichier n'existe pas, crée un nouveau fichier pour la lecture et l'écriture.
 - ```wb+``` : Ouvre un fichier en écriture et en lecture au format binaire. Écrase le fichier existant s'il existe. Si le fichier n'existe pas, crée un nouveau fichier pour la lecture et l'écriture.
 - ```a``` : Ouvre un fichier pour y ajouter des données. Le pointeur de fichier est à la fin du fichier si le fichier existe. C'est-à-dire que le fichier est en mode ajout. Si le fichier n'existe pas, il crée un nouveau fichier pour l'écriture.
 - ```ab``` : Ouvre un fichier à annexer au format binaire. Le pointeur de fichier est à la fin du fichier si le fichier existe. C'est-à-dire que le fichier est en mode ajout. Si le fichier n'existe pas, il crée un nouveau fichier à écrire.
@@ -97,18 +97,18 @@ __Remarque__ : L'attribut softspace n'est pas pris en charge dans Python 3.x.
 
 # Open a file
 fo = open("foo.txt", "wb")
-print ("Name of the file: ", fo.name)
-print ("Closed or not : ", fo.closed)
-print ("Opening mode : ", fo.mode)
+print("Name of the file :", fo.name)
+print("Closed or not :", fo.closed)
+print("Opening mode :", fo.mode)
 fo.close()
 ```
 
 On obtient ainsi le résultat suivant :
 
 ```bash
-Name of the file:  foo.txt
-Closed or not :  False
-Opening mode :  wb
+Name of the file : foo.txt
+Closed or not : False
+Opening mode : wb
 ```
 
 ## La méthode close()
@@ -130,7 +130,7 @@ fileObject.close();
 
 # Open a file
 fo = open("foo.txt", "wb")
-print ("Name of the file: ", fo.name)
+print("Name of the file :", fo.name)
 
 # Close opened file
 fo.close()
@@ -139,7 +139,7 @@ fo.close()
 On obtient ainsi le résultat suivant :
 
 ```bash
-Name of the file:  foo.txt
+Name of the file : foo.txt
 ```
 
 ## Lecture et écriture de fichiers
@@ -168,7 +168,7 @@ Ici, le paramètre passé est le contenu à écrire dans le fichier ouvert.
 
 # Open a file
 fo = open("foo.txt", "w")
-fo.write( "Python is a great language.\nYeah its great!!\n")
+fo.write("Python is a great language.\nYeah its great!!\n")
 
 # Close opend file
 fo.close()
@@ -201,9 +201,9 @@ Prenons un fichier ```foo.txt```, que nous avons créé ci-dessus.
 #!/usr/bin/python3
 
 # Open a file
-fo = open("foo.txt", "r+")
+fo = open("foo.txt","r+")
 str = fo.read(10)
-print ("Read String is : ", str)
+print ("Read String is :", str)
 
 # Close opened file
 fo.close()
@@ -212,7 +212,7 @@ fo.close()
 On obtient ainsi le résultat suivant :
 
 ```bash
-Read String is :  Python is
+Read String is : Python is
 ```
 
 ## Positions des fichiers
@@ -221,7 +221,7 @@ La méthode ```tell()``` vous indique la position actuelle dans le fichier ; en 
 
 La méthode ```seek(offset[, from])``` modifie la position actuelle du fichier. L'argument offset indique le nombre d'octets à déplacer. L'argument from spécifie la position de référence à partir de laquelle les octets doivent être déplacés.
 
-Si from a la valeur 0, le début du fichier est utilisé comme position de référence. S'il a la valeur 1, la position actuelle est utilisée comme position de référence. S'il est défini à 2, la fin du fichier sera prise comme position de référence.
+Si ```from``` a la valeur 0, le début du fichier est utilisé comme position de référence. S'il a la valeur 1, la position actuelle est utilisée comme position de référence. S'il est défini à 2, la fin du fichier sera prise comme position de référence.
 
 ### Exemple
 
@@ -233,16 +233,16 @@ Prenons un fichier ```foo.txt```, que nous avons créé ci-dessus :
 # Open a file
 fo = open("foo.txt", "r+")
 str = fo.read(10)
-print ("Read String is : ", str)
+print("Read String is :", str)
 
 # Check current position
 position = fo.tell()
-print ("Current file position : ", position)
+print("Current file position :", position)
 
 # Reposition pointer at the beginning once again
 position = fo.seek(0, 0)
 str = fo.read(10)
-print ("Again read String is : ", str)
+print("Again read String is :", str)
 
 # Close opened file
 fo.close()
@@ -251,9 +251,9 @@ fo.close()
 On obtient ainsi le résultat suivant :
 
 ```bash
-Read String is :  Python is
-Current file position :  10
-Again read String is :  Python is
+Read String is : Python is
+Current file position : 10
+Again read String is : Python is
 ```
 
 ## Renommer et supprimer des fichiers
@@ -281,7 +281,7 @@ L'exemple suivant permet de renommer un fichier existant test1.txt :
 import os
 
 # Rename a file from test1.txt to test2.txt
-os.rename( "test1.txt", "test2.txt" )
+os.rename("test1.txt", "test2.txt")
 ```
 
 ## La méthode remove()
@@ -334,7 +334,7 @@ os.mkdir("test")
 
 ## La méthode chdir()
 
-Vous pouvez utiliser la méthode ```chdir()``` pour changer le répertoire courant. La méthode chdir() prend un argument, qui est le nom du répertoire que vous voulez faire devenir le répertoire courant.
+Vous pouvez utiliser la méthode ```chdir()``` pour changer le répertoire courant. La méthode ```chdir()``` prend un argument, qui est le nom du répertoire que vous voulez faire devenir le répertoire courant.
 
 ### Syntaxe
 
@@ -354,7 +354,8 @@ import os
 os.chdir("/home/newdir")
 ```
 
-La méthode ```getcwd()```
+### La méthode getcwd()
+
 La méthode ```getcwd()``` affiche le répertoire de travail actuel.
 
 ### Syntaxe
@@ -394,8 +395,8 @@ Voici un exemple pour supprimer le répertoire ```/tmp/test```. Il est nécessai
 #!/usr/bin/python3
 import os
 
-# This would  remove "/tmp/test"  directory.
-os.rmdir( "/tmp/test"  )
+# This would  remove "/tmp/test" directory.
+os.rmdir("/tmp/test")
 ```
 
 ## Méthodes relatives aux fichiers et répertoires

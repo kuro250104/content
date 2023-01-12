@@ -13,10 +13,10 @@ class ComputerState(object):
     def switch(self, state):
         """ Switch to new state """
         if state.name in self.allowed:
-            print 'Current:',self,' => switched to new state',state.name
+            print('Current:', self, '=> switched to new state', state.name)
             self.__class__ = state
         else:
-            print 'Current:',self,' => switching to',state.name,'not possible.'
+            print('Current:', self, '=> switching to' ,state.name, 'not possible')
 
     def __str__(self):
         return self.name
@@ -69,11 +69,11 @@ Le programme ci-dessus génère le résultat suivant :
 
 
 ```bash
-Current: off  => switched to new sate on
-Current: on  => switched to new sate off
-Current: off  => switched to new sate on
-Current: on  => switched to new sate suspend
-Current: suspend  => switching to hibernate not possible.
-Current: suspend  => switched to new sate on
-Current: on  => switched to new sate off
+Current: off => switched to new sate on
+Current: on => switched to new sate off
+Current: off => switched to new sate on
+Current: on => switched to new sate suspend
+Current: suspend => switching to hibernate not possible
+Current: suspend => switched to new sate on
+Current: on => switched to new sate off
 ```

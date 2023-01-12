@@ -4,14 +4,14 @@ Créer un tuples est aussi simple que de mettre différentes valeurs séparées 
 
 ```python
 tup1 = ('physics', 'chemistry', 1997, 2000)
-tup2 = (1, 2, 3, 4, 5 )
+tup2 = (1, 2, 3, 4, 5)
 tup3 = "a", "b", "c", "d"
 ```
 
 Le tuple vide est écrit comme deux parenthèses ne contenant rien :
 
 ```python
-tup1 = ();
+tup1 = ()
 ```
 
 Pour écrire un tuple contenant une seule valeur, vous devez inclure une virgule, même s'il n'y a qu'une seule valeur.
@@ -30,13 +30,13 @@ Pour accéder aux valeurs d'un tuple, il faut utiliser les crochets pour le déc
 #!/usr/bin/python3
 
 tup1 = ('physics', 'chemistry', 1997, 2000)
-tup2 = (1, 2, 3, 4, 5, 6, 7 )
+tup2 = (1, 2, 3, 4, 5, 6, 7)
 
-print ("tup1[0]: ", tup1[0])
-print ("tup2[1:5]: ", tup2[1:5])
-When the above code is executed, it produces the following result −
-tup1[0]:  physics
-tup2[1:5]:  (2, 3, 4, 5)
+print("tup1[0]:", tup1[0])
+print("tup2[1:5]:", tup2[1:5])
+# When the above code is executed, it produces the following result :
+tup1[0]: physics
+tup2[1:5]: (2, 3, 4, 5)
 ```
 
 ## Mise à jour des Tuples
@@ -54,7 +54,7 @@ tup2 = ('abc', 'xyz')
 
 # So let's create a new tuple as follows
 tup3 = tup1 + tup2
-print (tup3)
+print(tup3)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -72,12 +72,12 @@ Pour supprimer explicitement un tuple entier, il suffit d'utiliser l'instruction
 ```python
 #!/usr/bin/python3
 
-tup = ('physics', 'chemistry', 1997, 2000);
+tup = ('physics', 'chemistry', 1997, 2000)
 
-print (tup)
+print(tup)
 del tup;
-print ("After deleting tup : ")
-print (tup)
+print("After deleting tup :")
+print(tup)
 ```
 
 Cela donne le résultat suivant.
@@ -95,7 +95,7 @@ __Remarque__ : Une exception est levée. C'est parce qu'après ```del tup```, le
 
 ## Opérations de base sur les tuples
 
-Les tuples répondent aux opérateurs + et * de la même manière que les chaînes de caractères ; ils signifient ici aussi concaténation et répétition, sauf que le résultat est un nouveau tuple, et non une chaîne de caractères.
+Les tuples répondent aux opérateurs ```+``` et ```*``` de la même manière que les chaînes de caractères; ils signifient ici aussi concaténation et répétition, sauf que le résultat est un nouveau tuple, et non une chaîne de caractères.
 
 En fait, les tuples répondent à toutes les opérations générales de séquence que nous avons utilisées sur les chaînes de caractères dans le chapitre précédent.
 
@@ -105,7 +105,7 @@ En fait, les tuples répondent à toutes les opérations générales de séquenc
 | ```(1, 2, 3) + (4, 5, 6)``` | ```(1, 2, 3, 4, 5, 6)``` | Concaténation |
 | ```('Hi!',) * 4``` | ```('Hi!', 'Hi!', 'Hi!', 'Hi!')``` | Répétition |
 | ```3 in (1, 2, 3)``` | ```True``` | Adhésion |
-| ```for x in (1,2,3) : print (x, end = ' ')``` | ```1 2 3``` | Itération |
+| ```for x in (1,2,3) : print(x, end = ' ')``` | ```1 2 3``` | Itération |
 
 ## Indexation, découpage et matrices
 
@@ -117,9 +117,9 @@ T=('C++', 'Java', 'Python')
 
 | **Expression Python** | **Résultats** | **Description** |
 | --- | --- | --- |
-| ```T[2]``` | ```Python``` | Les décalages commencent à zéro |
-| ```T[-2]``` | ```Java``` | Négatif : compter à partir de la droite |
-| ```T[1:]``` | ```('Java', 'Python')``` | Découpage des sections de recherche |
+| ```T[2]``` | ```Python``` | Les décalages commencent à zéro. |
+| ```T[-2]``` | ```Java``` | Négatif : Compter à partir de la droite. |
+| ```T[1:]``` | ```('Java', 'Python')``` | Découpage des sections de recherche. |
 
 ## Délimiteurs non englobants
 

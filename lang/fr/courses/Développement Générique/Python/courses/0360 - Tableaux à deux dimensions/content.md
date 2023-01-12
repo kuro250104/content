@@ -133,7 +133,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ## Suppression des valeurs
 
-Nous pouvons supprimer l'ensemble du tableau interne ou certains éléments de données spécifiques du tableau interne en affectant les valeurs à l'aide de la méthode del() avec index. Mais si vous devez supprimer des éléments de données spécifiques dans l'un des tableaux internes, utilisez le processus de mise à jour décrit ci-dessus.
+Nous pouvons supprimer l'ensemble du tableau interne ou certains éléments de données spécifiques du tableau interne en affectant les valeurs à l'aide de la méthode ```del()``` avec index. Mais si vous devez supprimer des éléments de données spécifiques dans l'un des tableaux internes, utilisez le processus de mise à jour décrit ci-dessus.
 
 ### Exemple
 

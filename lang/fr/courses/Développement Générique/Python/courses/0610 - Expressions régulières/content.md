@@ -13,10 +13,10 @@ Nous allons couvrir deux fonctions importantes, qui seront utilisées pour manip
 - ```\b``` : limite entre le mot et le non-mot.
 - ```\s``` : correspond à un seul caractère d'espace -- espace, nouvelle ligne, retour, tabulation.
 - ```\S``` : correspond à tout caractère autre qu'un espace.
-- ```\t, \n, \r``` : tabulation, nouvelle ligne, retour
+- ```\t, \n, \r``` : tabulation, nouvelle ligne, retour.
 - ```\d``` : chiffre décimal [0-9].
-- ```^``` : correspond au début de la chaîne
-- ```$``` : correspond à la fin de la chaîne de caractères
+- ```^``` : correspond au début de la chaîne.
+- ```$``` : correspond à la fin de la chaîne de caractères.
 - ```\N``` : inhibe la "spécificité" d'un caractère.
 
 ## Indicateurs de compilation
@@ -62,19 +62,19 @@ line = "Cats are smarter than dogs"
 matchObj = re.match( r'(.*) are (.*?) .*', line, re.M|re.I)
 
 if matchObj:
-    print ("matchObj.group() : ", matchObj.group())
-    print ("matchObj.group(1) : ", matchObj.group(1))
-    print ("matchObj.group(2) : ", matchObj.group(2))
+    print("matchObj.group() :", matchObj.group())
+    print("matchObj.group(1) :", matchObj.group(1))
+    print("matchObj.group(2) :", matchObj.group(2))
 else:
-    print ("No match!!")
+    print("No match!!")
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-matchObj.group() :  Cats are smarter than dogs
-matchObj.group(1) :  Cats
-matchObj.group(2) :  smarter
+matchObj.group() : Cats are smarter than dogs
+matchObj.group(1) : Cats
+matchObj.group(2) : smarter
 ```
 
 ## La fonction de recherche
@@ -109,19 +109,19 @@ line = "Cats are smarter than dogs";
 searchObj = re.search( r'(.*) are (.*?) .*', line, re.M|re.I)
 
 if searchObj:
-   print ("searchObj.group() : ", searchObj.group())
-   print ("searchObj.group(1) : ", searchObj.group(1))
-   print ("searchObj.group(2) : ", searchObj.group(2))
+   print("searchObj.group() :", searchObj.group())
+   print("searchObj.group(1) :, searchObj.group(1))
+   print("searchObj.group(2) :", searchObj.group(2))
 else:
-   print ("Nothing found!!")
+   print("Nothing found!!")
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-matchObj.group() :  Cats are smarter than dogs
-matchObj.group(1) :  Cats
-matchObj.group(2) :  smarter
+matchObj.group() : Cats are smarter than dogs
+matchObj.group(1) : Cats
+matchObj.group(2) : smarter
 ```
 
 ## Correspondance et recherche
@@ -134,26 +134,26 @@ Python propose deux opérations primitives différentes basées sur les expressi
 #!/usr/bin/python3
 import re
 
-line = "Cats are smarter than dogs";
+line = "Cats are smarter than dogs"
 
 matchObj = re.match( r'dogs', line, re.M|re.I)
 if matchObj:
-    print ("match --> matchObj.group() : ", matchObj.group())
+    print("match --> matchObj.group() :", matchObj.group())
 else:
-    print ("No match!!")
+    print("No match!!")
 
 searchObj = re.search( r'dogs', line, re.M|re.I)
 if searchObj:
-    print ("search --> searchObj.group() : ", searchObj.group())
+    print("search --> searchObj.group() :", searchObj.group())
 else:
-    print ("Nothing found!!")
+    print("Nothing found!!")
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
 No match!!
-search --> matchObj.group() :  dogs
+search --> matchObj.group() : dogs
 ```
 
 ## Recherche et remplacement
@@ -178,23 +178,23 @@ phone = "2004-959-559 # This is Phone Number"
 
 # Delete Python-style comments
 num = re.sub(r'#.*$', "", phone)
-print ("Phone Num : ", num)
+print("Phone Num :", num)
 
 # Remove anything other than digits
 num = re.sub(r'\D', "", phone)    
-print ("Phone Num : ", num)
+print("Phone Num :", num)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-Phone Num :  2004-959-559
-Phone Num :  2004959559
+Phone Num : 2004-959-559
+Phone Num : 2004959559
 ```
 
 ## Modificateurs d'expressions régulières : Drapeaux d'option
 
-Les littéraux d'expression régulière peuvent inclure un modificateur facultatif pour contrôler divers aspects de la correspondance. Les modificateurs sont spécifiés sous la forme d'un drapeau optionnel. Vous pouvez fournir plusieurs modificateurs à l'aide de l'opérateur OU exclusif (|), comme indiqué précédemment, et ils peuvent être représentés par l'un des éléments suivants :
+Les littéraux d'expression régulière peuvent inclure un modificateur facultatif pour contrôler divers aspects de la correspondance. Les modificateurs sont spécifiés sous la forme d'un drapeau optionnel. Vous pouvez fournir plusieurs modificateurs à l'aide de l'opérateur OU exclusif (```|```), comme indiqué précédemment, et ils peuvent être représentés par l'un des éléments suivants :
 
 - ```re.I``` : Effectue une correspondance insensible à la casse.
 - ```re.L``` : Interprète les mots en fonction de la locale actuelle. Cette interprétation affecte le groupe alphabétique (\w et \W), ainsi que le comportement des limites de mots (\b et \B).
@@ -221,41 +221,41 @@ Les littéraux d'expression régulière peuvent inclure un modificateur facultat
 
 ### Classes de caractères spéciaux
 
-- ```.``` : Correspond à n'importe quel caractère sauf le saut de ligne
-- ```\d``` : Correspond à un chiffre : ```[0-9]```
-- ```\D``` : Correspond à un non-chiffre : ```[^0-9]```
-- ```\s``` : Correspond à un caractère d'espacement : ```[ \t\r\n\f]```
-- ```\S``` : Correspond à un caractère sans espace : ```[^ \t\r\n\f]```
-- ```\w``` : Correspond à un seul caractère de mot : ```[A-Za-z0-9_]```
-- ```\W``` : Correspond à un caractère non-mot : ```[^A-Za-z0-9_]```
+- ```.``` : Correspond à n'importe quel caractère sauf le saut de ligne.
+- ```\d``` : Correspond à un chiffre : ```[0-9]```.
+- ```\D``` : Correspond à un non-chiffre : ```[^0-9]```.
+- ```\s``` : Correspond à un caractère d'espacement : ```[ \t\r\n\f]```.
+- ```\S``` : Correspond à un caractère sans espace : ```[^ \t\r\n\f]```.
+- ```\w``` : Correspond à un seul caractère de mot : ```[A-Za-z0-9_]```.
+- ```\W``` : Correspond à un caractère non-mot : ```[^A-Za-z0-9_]```.
 
 ### Cas de répétition
 
-- ```ruby ?``` : Correspond à "rub" ou "ruby" : le y est optionnel
-- ```ruby*``` : Correspond à "rub" plus 0 ou plus ys
-- ```ruby+``` : Correspond à "rub" plus 1 y ou plus
-- ```\d{3}``` : Correspond à 3 chiffres exactement
-- ```\d{3,}``` : Correspond à 3 chiffres ou plus
+- ```ruby ?``` : Correspond à "rub" ou "ruby" : le y est optionnel.
+- ```ruby*``` : Correspond à "rub" plus 0 ou plus ys.
+- ```ruby+``` : Correspond à "rub" plus 1 y ou plus.
+- ```\d{3}``` : Correspond à 3 chiffres exactement.
+- ```\d{3,}``` : Correspond à 3 chiffres ou plus.
 - ```\d{3,5}``` : Correspond à 3, 4 ou 5 chiffres.
 
 ### Répétition non avortée
 
 Cela correspond au plus petit nombre de répétitions :
 
-- ```<.*>``` : Greedy repetition: matches ```<python>perl>```
-- ```<.*?>``` : Nongreedy: matches ```<python>``` in ```<python>perl>```
+- ```<.*>``` : Greedy repetition: matches ```<python>perl>```.
+- ```<.*?>``` : Nongreedy: matches ```<python>``` in ```<python>perl>```.
 
 ### Regroupement avec parenthèses
 
-- ```\D\d+``` : Pas de groupe : + répète ```\d```
-- ```(\D\d)+``` : groupé : + répète la paire ```\D\d```
+- ```\D\d+``` : Pas de groupe : + répète ```\d```.
+- ```(\D\d)+``` : Groupé : + répète la paire ```\D\d```.
 - ```([Pp]ython(,) ?)+``` : Correspond à "Python", "Python, python, python", etc.
 
 ### Références de retour
 
 Cette fonction permet de faire correspondre à nouveau un groupe précédemment apparié :
 
-- ```([Pp])ython&\1ails``` : Match ```python&pails``` or ```Python&Pails```
+- ```([Pp])ython&\1ails``` : Match ```python&pails``` or ```Python&Pails```.
 - ```(['"])[^\1]*\1``` : Single or double-quoted string. \1 matches whatever the 1st group matched. \2 matches whatever the 2nd group matched, etc.
 
 ### Alternatives
@@ -274,12 +274,12 @@ Il faut préciser la position du match.
 - ```Python\Z``` : Correspond à "Python" à la fin d'une chaîne de caractères.
 - ```\bPython\b``` : Correspond à "Python" à la limite d'un mot.
 - ```\brub\B``` : ```\B``` est une limite de non-mot : correspond à "rub" dans "rube" et "ruby" mais pas seul.
-- ```Python(?= !)``` : correspond à "Python", s'il est suivi d'un point d'exclamation.
+- ```Python(?= !)``` : Correspond à "Python", s'il est suivi d'un point d'exclamation.
 - ```Python( ?!!)``` : Correspond à "Python", s'il n'est pas suivi d'un point d'exclamation.
 
 ### Syntaxe spéciale avec parenthèses
 
-- ```R(?#comment)``` : correspond à "R". Le reste est un commentaire
+- ```R(?#comment)``` : Correspond à "R". Le reste est un commentaire.
 - ```R(?i)uby``` : Insensible à la casse lors de la recherche de "uby".
-- ```R(?i:uby)``` : Idem que ci-dessus
-- ```rub(?:y|le))``` : Groupe seulement sans créer de référence arrière \1
+- ```R(?i:uby)``` : Idem que ci-dessus.
+- ```rub(?:y|le))``` : Groupe seulement sans créer de référence arrière \1.

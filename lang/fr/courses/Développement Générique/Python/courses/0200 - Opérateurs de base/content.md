@@ -6,7 +6,7 @@ Le langage Python prend en charge les types d'opérateurs suivants :
 
 - Opérateurs arithmétiques
 - Opérateurs de comparaison (relationnels)
-- Opérateurs d'affectation
+- Opérateurs d'affectations
 - Opérateurs logiques
 - Opérateurs binaires
 - Opérateurs d'appartenance
@@ -20,13 +20,13 @@ Supposons que la variable ```a``` contient la valeur ```10``` et que la variable
 
 | **Opérateur** | **Description** | **Exemple** |
 | --- | --- | --- |
-| + Addition | Ajoute l’opérande de droite à l’opérande de gauche | a + b = 31 |
-| - Soustraction | Soustrait l'opérande de droite de l'opérande de gauche. | a – b = -11 |
-| * Multiplication | Multiplie l'opérande de droite de l'opérande de gauche. | a * b = 210 |
-| / Division | Divise l'opérande de gauche par l'opérande de droite. | b / a = 2.1 |
-| % Modulus | Divise l'opérande de gauche par l'opérande de droite et renvoie le reste. | b % a = 1 |
-| ** Exposant | Effectue un calcul exponentiel (puissance) sur les opérateurs | a**b = 10 puissance 20 |
-| // | Division plancher : La division d'opérandes où le résultat est le quotient dans lequel les chiffres après la virgule sont supprimés. Mais si l'un des opérandes est négatif, le résultat est flotté, c'est-à-dire arrondi à partir de zéro (vers l'infini négatif) | 9//2 = 4 et 9.0//2.0 = 4.0, -11//3 = -4, -11.0//3 = -4.0 |
+| ```+ Addition``` | Ajoute l’opérande de droite à l’opérande de gauche. | a + b = 31 |
+| ```- Soustraction``` | Soustrait l'opérande de droite de l'opérande de gauche. | a – b = -11 |
+| ```* Multiplication``` | Multiplie l'opérande de droite de l'opérande de gauche. | a * b = 210 |
+| ```/ Division``` | Divise l'opérande de gauche par l'opérande de droite. | b / a = 2.1 |
+| ```% Modulus``` | Divise l'opérande de gauche par l'opérande de droite et renvoie le reste. | b % a = 1 |
+| ```** Exposant```| Effectue un calcul exponentiel (puissance) sur les opérateurs. | a**b = 10 puissances 20 |
+| ```// Division plancher```| La division d'opérandes où le résultat est le quotient dans lequel les chiffres après la virgule sont supprimés. Mais si l'un des opérandes est négatif, le résultat est flotté, c'est-à-dire arrondi à partir de zéro (vers l'infini négatif). | 9//2 = 4 et 9.0//2.0 = 4.0, -11//3 = -4, -11.0//3 = -4.0 |
 
 ## Opérateurs de comparaison Python
 
@@ -45,12 +45,12 @@ Supposons que la variable ```a``` possède la valeur ```10``` et que la variable
 
 ## Opérateurs d'assignation Python
 
-Supposons que la variable a contient la valeur 10 et que la variable b contient la valeur 20, alors :
+Supposons que la variable ```a``` contient la valeur ```10``` et que la variable ```b``` contient la valeur ```20```, alors :
 
 | **Opérateur** | **Description** | **Exemple** |
 | --- | --- | --- |
 | ```=``` | Affecte les valeurs des opérandes de droite aux opérandes de gauche. | c = a + b affecte la valeur de a + b à c |
-| ```+= Ajoute AND``` | Il ajoute l'opérande de droite à l'opérande de gauche et assigne le résultat à l'opérande de gauche | c += a est équivalent à c = c + a |
+| ```+= Ajoute AND``` | Il ajoute l'opérande de droite à l'opérande de gauche et assigne le résultat à l'opérande de gauche. | c += a est équivalent à c = c + a |
 | ```-= Soustraire AND``` | Il soustrait l'opérande de droite de l'opérande de gauche et assigne le résultat à l'opérande de gauche. | c -= est équivalent à c = c - a |
 | ```*= Multiplie AND``` | Il multiplie l'opérande de droite par l'opérande de gauche et assigne le résultat à l'opérande de gauche. | c *= est équivalent à c = c * a |
 | ```/= Divise AND``` | Il divise l'opérande gauche avec l'opérande droite et assigne le résultat à l'opérande gauche. | c /= est équivalent à c = c / ac /= est équivalent à c = c / a |
@@ -60,7 +60,7 @@ Supposons que la variable a contient la valeur 10 et que la variable b contient 
 
 ## Opérateurs Bitwise de Python
 
-L'opérateur Bitwise fonctionne sur les bits et effectue des opérations bit par bit. Supposons que ```a = 60``` ; et ```b = 13``` ; Maintenant, en format binaire, ils seront comme suit -
+L'opérateur Bitwise fonctionne sur les bits et effectue des opérations bit par bit. Supposons que ```a = 60``` ; et ```b = 13``` ; Maintenant, en format binaire, ils seront comme suit :
 
 ```bash
 a = 0011 1100
@@ -91,7 +91,7 @@ Les opérateurs logiques suivants sont supportés par le langage Python. Supposo
 
 | **Opérateur** | **Description** | **Exemple** |
 | --- | --- | --- |
-| ```et Logique AND``` | Si les deux opérandes sont vrais, alors la condition devient vraie | (a and b) est faux. |
+| ```et Logique AND``` | Si les deux opérandes sont vrais, alors la condition devient vraie. | (a and b) est faux. |
 | ```ou Logique OR``` | Si l'un des deux opérandes est différent de zéro, la condition devient vraie. | (a or b) est vrai. |
 | ```non Logique NOT``` | Utilisé pour inverser l'état logique de son opérande. | Pas(a et b) est Vrai. |
 
@@ -117,16 +117,18 @@ Les opérateurs d'identité comparent les emplacements mémoire de deux objets. 
 
 Le tableau suivant répertorie tous les opérateurs, de la plus haute préséance à la plus basse :
 
-| ```**``` | Exponentiation (augmentation à la puissance) |
-| ```~ + -``` | Complément, unaire plus et moins (les noms de méthode pour les deux derniers sont +@ et -@) |
-| ```* / % //``` | Multiplier, diviser, modulo et division plancher |
-| ```+ -``` | Addition et soustraction |
-| ```>> <<``` | Décalage binaire à droite et à gauche |
-| ```&``` | AND binaire |
-| ```^ |``` | "OR" exclusif binaire et "OR" ordinaire |
-| ```<= < > >=``` | Opérateurs de comparaison |
-| ```<> == !=``` | Opérateurs d'égalité |
-| ```= %= /= //= -= += *= **=``` | Opérateurs d'assignation |
-| ```is is not``` | Opérateurs d'identité |
-| ```in not in``` | Opérateurs d'adhésion |
-| ```not or and``` | Opérateurs logiques |
+| **Opérateur** | **Déscription** |
+| --- | --- |
+| ```**``` | Exponentiation (augmentation à la puissance). |
+| ```~ + -``` | Complément, unaire plus et moins (les noms de méthode pour les deux derniers sont +@ et -@). |
+| ```* / % //``` | Multiplier, diviser, modulo et division plancher. |
+| ```+ -``` | Addition et soustraction. |
+| ```>> <<``` | Décalage binaire à droite et à gauche. |
+| ```&``` | AND binaire. |
+| ```^``` | "OR" exclusif binaire et "OR" ordinaire. |
+| ```<= < > >=``` | Opérateurs de comparaison. |
+| ```<> == !=``` | Opérateurs d'égalité. |
+| ```= %= /= //= -= += *= **=``` | Opérateurs d'assignation. |
+| ```is is not``` | Opérateurs d'identité. |
+| ```in not in``` | Opérateurs d'adhésion. |
+| ```not or and``` | Opérateurs logiques. |

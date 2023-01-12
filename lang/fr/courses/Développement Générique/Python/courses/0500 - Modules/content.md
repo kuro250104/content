@@ -7,8 +7,8 @@ Exemple
 Le code Python d'un module nommé ```aname``` se trouve normalement dans un fichier nommé ```aname```.py. Voici un exemple d'un module simple, ```support.py``` :
 
 ```python
-def print_func( par ):
-    print "Hello : ", par
+def print_func(par):
+    print("Hello :", par)
     return
 ```
 
@@ -40,15 +40,15 @@ Hello : Zara
 
 Un module est chargé une seule fois, quel que soit le nombre de fois où il est importé. Cela permet d'éviter que l'exécution du module ne se répète, en cas d'importations multiples.
 
-## L'instruction from...import
+## L'instruction from ... import
 
-L'instruction from de Python vous permet d'importer des attributs spécifiques d'un module dans l'espace de noms actuel. L'instruction ```from...import``` a la syntaxe suivante :
+L'instruction from de Python vous permet d'importer des attributs spécifiques d'un module dans l'espace de noms actuel. L'instruction ```from...import``` à la syntaxe suivante :
 
 ```python
 from modname import name1[, name2[, ... nameN]]
 ```
 
-Par exemple, pour importer la fonction fibonacci du module fib, utilisez l'instruction suivante :
+Par exemple, pour importer la fonction Fibonacci du module fib, utilisez l'instruction suivante :
 
 ```python
 #!/usr/bin/python3
@@ -67,9 +67,9 @@ def fib(n): # return Fibonacci series up to n
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 ```
 
-Cette instruction n'importe pas l'intégralité du module fib dans l'espace de noms actuel ; elle introduit simplement l'élément fibonacci du module fib dans la table de symboles globale du module d'importation.
+Cette instruction n'importe pas l'intégralité du module fib dans l'espace de noms actuel ; elle introduit simplement l'élément ```fibonacci``` du module fib dans la table de symboles globale du module d'importation.
 
-## L'instruction from...import *
+## L'instruction from ... import *
 
 Il est également possible d'importer tous les noms d'un module dans l'espace de noms courant en utilisant l'instruction import suivante :
 
@@ -125,7 +125,7 @@ La variable ```PYTHONPATH``` est une variable d'environnement, constituée d'une
 Voici un ```PYTHONPATH``` typique d'un système Windows :
 
 ```bash
-set PYTHONPATH = c:\python34\lib;
+set PYTHONPATH = c:\python34\lib
 ```
 
 Voici un ```PYTHONPATH``` typique d'un système UNIX :
@@ -142,7 +142,7 @@ Les variables sont des noms (identificateurs) qui correspondent à des objets. U
 - Chaque fonction possède son propre espace de noms local. Les méthodes de classe suivent la même règle de scoping que les fonctions ordinaires.
 - Python fait des suppositions sur le caractère local ou global des variables. Il part du principe que toute variable à laquelle une valeur est attribuée dans une fonction est locale.
 - Par conséquent, pour attribuer une valeur à une variable globale dans une fonction, vous devez d'abord utiliser l'instruction ```global```.
-- L'instruction global VarName indique à Python que VarName est une variable globale. Python cesse de rechercher la variable dans l'espace de nom local.
+- L'instruction globale VarName indique à Python que VarName est une variable globale. Python cesse de rechercher la variable dans l'espace de nom local.
 
 Par exemple, nous définissons une variable Money dans l'espace de noms global. Dans la fonction Money, nous attribuons une valeur à Money, donc Python considère Money comme une variable locale.
 
@@ -159,10 +159,10 @@ def AddMoney():
 
 print (Money)
 AddMoney()
-print (Money)
+print(Money)
 ```
 
-## La fonction dir( )
+## La fonction dir()
 
 La fonction intégrée ```dir()``` renvoie une liste triée de chaînes de caractères contenant les noms définis par un module.
 
@@ -175,7 +175,7 @@ La liste contient les noms de tous les modules, variables et fonctions qui sont 
 import math
 
 content = dir(math)
-print (content)
+print(content)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -203,7 +203,7 @@ Le type de retour de ces deux fonctions est un dictionnaire. Par conséquent, le
 
 Lorsqu'un module est importé dans un script, le code de la partie de haut niveau d'un module n'est exécuté qu'une seule fois.
 
-Par conséquent, si vous souhaitez réexécuter le code de haut niveau d'un module, vous pouvez utiliser la fonction reload(). La fonction reload() importe à nouveau un module précédemment importé. La syntaxe de la fonction reload() est la suivante :
+Par conséquent, si vous souhaitez réexécuter le code de haut niveau d'un module, vous pouvez utiliser la fonction ```reload()```. La fonction ```reload()``` importe à nouveau un module précédemment importé. La syntaxe de la fonction ```reload()``` est la suivante :
 
 ```python
 reload(module_name)
@@ -225,7 +225,7 @@ Considérons un fichier ```Pots.py``` disponible dans le répertoire Phone. Ce f
 #!/usr/bin/python3
 
 def Pots():
-print ("I'm Pots Phone") 
+print("I'm Pots Phone") 
 ```
 
 De même, nous avons deux autres fichiers ayant des fonctions différentes avec le même nom que ci-dessus. Il s'agit de :

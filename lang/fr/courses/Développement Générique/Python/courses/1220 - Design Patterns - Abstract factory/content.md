@@ -80,9 +80,9 @@ if __name__ == "__main__":
     layers = ui.getLayersWindow()
     main = ui.getMainWindow()
 
-    print "%s:%s" % (toolbox.getToolkit(), toolbox.getType())
-    print "%s:%s" % (layers.getToolkit(), layers.getType())
-    print "%s:%s" % (main.getToolkit(), main.getType())
+    print("%s:%s" % (toolbox.getToolkit(), toolbox.getType()))
+    print("%s:%s" % (layers.getToolkit(), layers.getType()))
+    print("%s:%s" % (main.getToolkit(), main.getType()))
 ```
 
 ### Réponse

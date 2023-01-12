@@ -44,9 +44,9 @@ This is a test e-mail message.
 try:
     smtpObj = smtplib.SMTP('localhost')
     smtpObj.sendmail(sender, receivers, message)         
-    print "Successfully sent email"
+    print(Successfully sent email)
 except SMTPException:
-    print "Error: unable to send email"
+    print(Error: unable to send email)
 ```
 
 Ici, vous avez placé un e-mail de base dans un message, en utilisant un guillemet triple, en prenant soin de formater correctement les en-têtes. Un e-mail nécessite un en-tête ```From```, ```To```, et un ```Subject```, séparés du corps de l'e-mail par une ligne blanche.
@@ -89,9 +89,9 @@ This is an e-mail message to be sent in HTML format
 try:
     smtpObj = smtplib.SMTP('localhost')
     smtpObj.sendmail(sender, receivers, message)         
-    print "Successfully sent email"
+    print("Successfully sent email")
 except SMTPException:
-    print "Error: unable to send email"
+    print("Error: unable to send email")
 ```
 
 ## Envoi de pièces jointes dans un email
@@ -119,8 +119,8 @@ fo = open(filename, "rb")
 filecontent = fo.read()
 encodedcontent = base64.b64encode(filecontent)  # base64
 
-sender = 'webmaster@microlead.fr'
-reciever = 'admin@gmail.com'
+sender = "webmaster@microlead.fr"
+reciever = "admin@gmail.com"
 
 marker = "AUNIQUEMARKER"
 
@@ -157,7 +157,7 @@ message = part1 + part2 + part3
 try:
     smtpObj = smtplib.SMTP('localhost')
     smtpObj.sendmail(sender, reciever, message)
-    print "Successfully sent email"
+    print("Successfully sent email"
 except Exception:
-    print ("Error: unable to send email")
+    print("Error: unable to send email")
 ```

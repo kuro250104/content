@@ -28,8 +28,8 @@ Voici un exemple de clause if d'une seule ligne :
 #!/usr/bin/python3
 
 var = 100
-if ( var  == 100 ) : print ("Value of expression is 100")
-print ("Good bye!")
+if var  == 100: print("Value of expression is 100")
+print("Good bye!")
 ```
 
 ### Sortie

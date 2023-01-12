@@ -43,15 +43,15 @@ Voici un lien simple, qui est lié à un script CGI appelé hello.py. Ce fichier
 ```python
 #!/usr/bin/python
 
-print ("Content-type:text/html\r\n\r\n")
-print ('<html>')
-print ('<head>')
-print ('<title>Hello Word - First CGI Program</title>')
-print ('</head>')
-print ('<body>')
-print ('<h2>Hello Word! This is my first CGI program</h2>')
-print ('</body>')
-print ('</html>')
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Hello Word - First CGI Program</title>')
+print("</head>")
+print("<body>")
+print("<h2>Hello Word! This is my first CGI program</h2>")
+print("</body>")
+print("</html>")
 ```
 
 __Remarque__ : La première ligne du script doit être le chemin de l'exécutable Python. Sous Linux, il doit être #!/usr/bin/python3
@@ -110,10 +110,10 @@ Voici un petit programme CGI pour lister toutes les variables CGI.
 
 import os
 
-print ("Content-type: text/html\r\n\r\n");
-print ("<font size=+1>Environment</font><\br>");
+print("Content-type: text/html\r\n\r\n");
+print("<font size=+1>Environment</font><\br>");
 for param in os.environ.keys():
-    print ("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
+    print("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 ```
 
 ## Méthodes GET et POST
@@ -158,15 +158,15 @@ form = cgi.FieldStorage()
 first_name = form.getvalue('first_name')
 last_name  = form.getvalue('last_name')
 
-print ("Content-type:text/html\r\n\r\n")
-print ("<html>")
-print ("<head>")
-print ("<title>Hello - Second CGI Program</title>")
-print ("</head>")
-print ("<body>")
-print ("<h2>Hello %s %s</h2>" % (first_name, last_name))
-print ("</body>")
-print ("</html>")
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Hello - Second CGI Program</title>")
+print("</head>")
+print("<body>")
+print("<h2>Hello %s %s</h2>" % (first_name, last_name))
+print("</body>")
+print("</html>")
 ```
 
 ### Exemple de formulaire simple : méthode GET
@@ -201,15 +201,15 @@ form = cgi.FieldStorage()
 first_name = form.getvalue('first_name')
 last_name  = form.getvalue('last_name')
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>"
-print "<title>Hello - Second CGI Program</title>"
-print "</head>"
-print "<body>"
-print "<h2>Hello %s %s</h2>" % (first_name, last_name)
-print "</body>"
-print "</html>"
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Hello - Second CGI Program</title>")
+print("</head>")
+print("<body>")
+print("<h2>Hello %s %s</h2>" % (first_name, last_name))
+print("</body>")
+print("</html>")
 ```
 
 Reprenons le même exemple que ci-dessus qui transmet deux valeurs en utilisant le formulaire HTML et le bouton "submit". Nous utilisons le même script CGI ```hello_get.py``` pour gérer cette entrée.
@@ -259,16 +259,16 @@ if form.getvalue('physics'):
 else:
    physics_flag = "OFF"
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>"
-print "<title>Checkbox - Third CGI Program</title>"
-print "</head>"
-print "<body>"
-print "<h2> CheckBox Maths is : %s</h2>" % math_flag
-print "<h2> CheckBox Physics is : %s</h2>" % physics_flag
-print "</body>"
-print "</html>"
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Checkbox - Third CGI Program</title>")
+print("</head>")
+print("<body>")
+print("<h2> CheckBox Maths is : %s</h2>" % math_flag")
+print("<h2> CheckBox Physics is : %s</h2>" % physics_flag")
+print("</body>")
+print("</html>")
 ```
 
 ### Passer les données d'un bouton radio à un programme CGI
@@ -302,15 +302,15 @@ if form.getvalue('subject'):
 else:
     subject = "Not set"
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>"
-print "<title>Radio - Fourth CGI Program</title>"
-print "</head>"
-print "<body>"
-print "<h2> Selected Subject is %s</h2>" % subject
-print "</body>"
-print "</html>"
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Radio - Fourth CGI Program</title>")
+print("</head>")
+print("<body>")
+print("<h2> Selected Subject is %s</h2>" % subject")
+print("</body>")
+print("</html>")
 ```
 
 ### Passer les données de la zone de texte au programme CGI
@@ -345,14 +345,14 @@ if form.getvalue('textcontent'):
 else:
     text_content = "Not entered"
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>";
-print "<title>Text Area - Fifth CGI Program</title>"
-print "</head>"
-print "<body>"
-print "<h2> Entered Text Content is %s</h2>" % text_content
-print "</body>"
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Text Area - Fifth CGI Program</title>")
+print("</head>")
+print("<body>")
+print("<h2> Entered Text Content is %s</h2>" % text_content")
+print("</body>")
 ```
 
 ### Transmettre les données de la boîte de dépôt à un programme CGI
@@ -388,15 +388,15 @@ if form.getvalue('dropdown'):
 else:
     subject = "Not entered"
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>"
-print "<title>Dropdown Box - Sixth CGI Program</title>"
-print "</head>"
-print "<body>"
-print "<h2> Selected Subject is %s</h2>" % subject
-print "</body>"
-print "</html>"
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Dropdown Box - Sixth CGI Program</title>")
+print("</head>")
+print("<body>")
+print("<h2> Selected Subject is %s</h2>" % subject")
+print("</body>")
+print("</html>")
 ```
 
 ## Utilisation des cookies en CGI
@@ -423,12 +423,12 @@ Il est très facile d'envoyer des cookies au navigateur. Ces cookies sont envoy�
 
 ```python
 #!/usr/bin/python
-print "Set-Cookie:UserID = ABC;\r\n"
-print "Set-Cookie:Password = ABC123;\r\n"
-print "Set-Cookie:Expires = Monday, 13-Dec-2021 17:17:40 GMT;\r\n"
-print "Set-Cookie:Domain = www.microlead.fr;\r\n"
-print "Set-Cookie:Path = /perl;\n"
-print "Content-type:text/html\r\n\r\n"
+print("Set-Cookie:UserID = ABC;\r\n")
+print("Set-Cookie:Password = ABC123;\r\n")
+print("Set-Cookie:Expires = Monday, 13-Dec-2021 17:17:40 GMT;\r\n")
+print("Set-Cookie:Domain = www.microlead.fr;\r\n")
+print("Set-Cookie:Path = /perl;\n")
+print("Content-type:text/html\r\n\r\n")
 # ...........Rest of the HTML Content....
 ```
 
@@ -462,8 +462,8 @@ if environ.has_key('HTTP_COOKIE'):
         if key == "Password":
             password = value
 
-print "User ID  = %s" % user_id
-print "Password = %s" % password
+print("User ID  = %s" % user_id")
+print("Password = %s" % password)")
 ```
 
 Cela donne le résultat suivant pour les cookies définis par le script ci-dessus :
@@ -515,7 +515,7 @@ if fileitem.filename:
 else:
     message = 'No file was uploaded'
 
-print """\
+print(""")
 Content-Type: text/html\n
 <html>
     <body>
@@ -541,14 +541,14 @@ Par exemple, si vous voulez que le fichier FileName puisse être téléchargé �
 #!/usr/bin/python
 
 # HTTP Header
-print "Content-Type:application/octet-stream; name = \"FileName\"\r\n";
-print "Content-Disposition: attachment; filename = \"FileName\"\r\n\n";
+print("Content-Type:application/octet-stream; name = \"FileName\"\r\n")
+print("Content-Disposition: attachment; filename = \"FileName\"\r\n\n")
 
 # Actual File Content will go here.
 fo = open("foo.txt", "rb")
 
 str = fo.read();
-print str
+print("str")
 
 # Close opend file
 fo.close()
