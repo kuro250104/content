@@ -117,7 +117,7 @@ Les opérateurs d'identité comparent les emplacements mémoire de deux objets. 
 
 Le tableau suivant répertorie tous les opérateurs, de la plus haute préséance à la plus basse :
 
-| **Opérateur** | **Déscription** | **Exemple** |
+| **Opérateur** | **Déscription** |
 | ```**``` | Exponentiation (augmentation à la puissance) |
 | ```~ + -``` | Complément, unaire plus et moins (les noms de méthode pour les deux derniers sont +@ et -@) |
 | ```* / % //``` | Multiplier, diviser, modulo et division plancher |
