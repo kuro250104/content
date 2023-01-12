@@ -71,7 +71,7 @@ Python comprend les fonctions suivantes, qui permettent d'effectuer des calculs 
 - ```abs(x)``` : La valeur absolue de x : la distance (positive) entre x et zéro.
 - ```ceil(x)``` : Le plafond de x : le plus petit entier non inférieur à x.
 - ```cmp(x, y)``` : -1 si x < y, 0 si x == y, ou 1 si x > y. Déprécié en Python 3. Utilisez plutôt return (x>y)-(x<y).
-- ```exp(x)``` : L'exponentielle de x : e
+- ```exp(x)``` : L'exponentielle de x : e.
 - ```fabs(x)``` : La valeur absolue de x.
 - ```floor(x)``` : Le plancher de x : le plus grand nombre entier non supérieur à x.
 - ```log(x)``` : Le logarithme naturel de x, pour x > 0,$.
