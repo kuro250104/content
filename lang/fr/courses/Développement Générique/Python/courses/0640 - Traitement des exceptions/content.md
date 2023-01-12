@@ -20,7 +20,7 @@ for entry in randomList:
         print("Oops!",sys.exc_info()[0],"occured.")
         print("Next entry.")
         print()
-print("The reciprocal of",entry,"is",r)
+print("The reciprocal of", entry, "is",r)
 ```
 
 ### Réponse
