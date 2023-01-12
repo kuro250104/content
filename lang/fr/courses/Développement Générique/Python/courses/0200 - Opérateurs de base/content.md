@@ -119,16 +119,16 @@ Le tableau suivant répertorie tous les opérateurs, de la plus haute préséanc
 
 | **Opérateur** | **Déscription** |
 | --- | --- |
-| ```**``` | Exponentiation (augmentation à la puissance) |
-| ```~ + -``` | Complément, unaire plus et moins (les noms de méthode pour les deux derniers sont +@ et -@) |
-| ```* / % //``` | Multiplier, diviser, modulo et division plancher |
-| ```+ -``` | Addition et soustraction |
-| ```>> <<``` | Décalage binaire à droite et à gauche |
-| ```&``` | AND binaire |
-| ```^``` | "OR" exclusif binaire et "OR" ordinaire |
-| ```<= < > >=``` | Opérateurs de comparaison |
-| ```<> == !=``` | Opérateurs d'égalité |
-| ```= %= /= //= -= += *= **=``` | Opérateurs d'assignation |
-| ```is is not``` | Opérateurs d'identité |
-| ```in not in``` | Opérateurs d'adhésion |
-| ```not or and``` | Opérateurs logiques |
+| ```**``` | Exponentiation (augmentation à la puissance). |
+| ```~ + -``` | Complément, unaire plus et moins (les noms de méthode pour les deux derniers sont +@ et -@). |
+| ```* / % //``` | Multiplier, diviser, modulo et division plancher. |
+| ```+ -``` | Addition et soustraction. |
+| ```>> <<``` | Décalage binaire à droite et à gauche. |
+| ```&``` | AND binaire. |
+| ```^``` | "OR" exclusif binaire et "OR" ordinaire. |
+| ```<= < > >=``` | Opérateurs de comparaison. |
+| ```<> == !=``` | Opérateurs d'égalité. |
+| ```= %= /= //= -= += *= **=``` | Opérateurs d'assignation. |
+| ```is is not``` | Opérateurs d'identité. |
+| ```in not in``` | Opérateurs d'adhésion. |
+| ```not or and``` | Opérateurs logiques. |
