@@ -126,12 +126,12 @@ Python inclut les fonctions de liste suivantes :
 
 Python comprend les méthodes de la liste suivante :
 
-- ```list.append(obj)``` : Ajoute l'objet obj à la liste
+- ```list.append(obj)``` : Ajoute l'objet obj à la liste.
 - ```list.count(obj)``` : Retourne le nombre d'occurrences de l'objet dans la liste.
 - ```list.extend(seq)``` : Ajoute le contenu de la seq à la liste.
 - ```list.index(obj)``` : Retourne l'indice le plus bas dans la liste où l'objet apparaît.
 - ```list.insert(index, obj)``` : Insère l'objet obj dans la liste à l'emplacement de l'index.
-- ```list.pop(obj = list[-1])``` : Retire et retourne le dernier objet ou obj de la liste
+- ```list.pop(obj = list[-1])``` : Retire et retourne le dernier objet ou obj de la liste.
 - ```list.remove(obj)``` : Supprime l'objet obj de la liste.
 - ```list.reverse()``` : Inverse les objets de la liste à la place.
 - ```list.sort([func])``` : Trie les objets de la liste, utilise le func de comparaison s'il est donné.
