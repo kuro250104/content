@@ -1,4 +1,4 @@
-Chaque clé est séparée de sa valeur par deux points ( :), les éléments sont séparés par des virgules, et le tout est entouré d'accolades. Un dictionnaire vide, sans aucun élément, est écrit avec seulement deux accolades, comme ceci : {}.
+Chaque clé est séparée de sa valeur par deux points ```:```, les éléments sont séparés par des virgules, et le tout est entouré d'accolades. Un dictionnaire vide, sans aucun élément, est écrit avec seulement deux accolades, comme ceci : ```{}```.
 
 Les clés sont uniques dans un dictionnaire, alors que les valeurs peuvent ne pas l'être. Les valeurs d'un dictionnaire peuvent être de n'importe quel type, mais les clés doivent être d'un type de données immuable, comme les chaînes de caractères, les nombres ou les tuples.
 
@@ -10,15 +10,15 @@ Pour accéder aux éléments d'un dictionnaire, vous pouvez utiliser les crochet
 #!/usr/bin/python3
 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-print ("dict['Name']: ", dict['Name'])
-print ("dict['Age']: ", dict['Age'])
+print("dict['Name']:", dict['Name'])
+print("dict['Age']:", dict['Age'])
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-dict['Name']:  Zara
-dict['Age']:  7
+dict['Name']: Zara
+dict['Age']: 7
 ```
 
 Si nous essayons d'accéder à un élément de données avec une clé qui ne fait pas partie du dictionnaire, nous obtenons une erreur comme suit :
@@ -27,7 +27,7 @@ Si nous essayons d'accéder à un élément de données avec une clé qui ne fai
 #!/usr/bin/python3
 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
-print ("dict['Alice']: ", dict['Alice'])
+print("dict['Alice']:", dict['Alice'])
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -48,18 +48,18 @@ Vous pouvez mettre à jour un dictionnaire en ajoutant une nouvelle entrée ou u
 #!/usr/bin/python3
 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-dict['Age'] = 8; # update existing entry
+dict['Age'] = 8 # update existing entry
 dict['School'] = "DPS School" # Add new entry
 
-print ("dict['Age']: ", dict['Age'])
-print ("dict['School']: ", dict['School'])
+print("dict['Age']:", dict['Age'])
+print("dict['School']:", dict['School'])
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-dict['Age']:  8
-dict['School']:  DPS School
+dict['Age']: 8
+dict['School']: DPS School
 ```
 
 ## Supprimer des éléments de dictionnaire
@@ -77,8 +77,8 @@ del dict['Name'] # remove entry with key 'Name'
 dict.clear()     # remove all entries in dict
 del dict         # delete entire dictionary
 
-print ("dict['Age']: ", dict['Age'])
-print ("dict['School']: ", dict['School'])
+print("dict['Age']:", dict['Age'])
+print("dict['School']:", dict['School'])
 ```
 
 Cela produit le résultat suivant.
@@ -89,7 +89,7 @@ Une exception est levée car après ```del dict```, le dictionnaire n'existe plu
 dict['Age']:
 Traceback (most recent call last):
     File "test.py", line 8, in <module>
-        print "dict['Age']: ", dict['Age'];
+        print "dict['Age']:", dict['Age'];
 TypeError: 'type' object is unsubscriptable
 ```
 
@@ -107,13 +107,13 @@ Il y a deux points importants à retenir au sujet des clés de dictionnaire :
 #!/usr/bin/python3
 
 dict = {'Name': 'Zara', 'Age': 7, 'Name': 'Manni'}
-print ("dict['Name']: ", dict['Name'])
+print("dict['Name']:", dict['Name'])
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
-dict['Name']:  Manni
+dict['Name']: Manni
 ```
 
 **(b)** Les clés doivent être immuables. Cela signifie que vous pouvez utiliser des chaînes de caractères, des nombres ou des tuples comme clés de dictionnaire, mais quelque chose comme ```['clé']``` n'est pas autorisé. Voici un exemple simple :
@@ -122,7 +122,7 @@ dict['Name']:  Manni
 #!/usr/bin/python3
 
 dict = {['Name']: 'Zara', 'Age': 7}
-print ("dict['Name']: ", dict['Name'])
+print("dict['Name']:", dict['Name'])
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -130,7 +130,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 ```python
 Traceback (most recent call last):
     File "test.py", line 3, in <module>
-        dict = {['Name']: 'Zara', 'Age': 7}
+        dict = {['Name']:'Zara', 'Age': 7}
 TypeError: list objects are unhashable
 ```
 
@@ -148,8 +148,8 @@ Python inclut les méthodes de dictionnaire suivantes :
 - ```dict.clear()``` : Supprime tous les éléments du dictionnaire dict.
 - ```dict.copy()``` : Retourne une copie superficielle du dictionnaire dict.
 - ```dict.fromkeys()``` : crée un nouveau dictionnaire avec les clés de seq et les valeurs de value.
-- ```dict.get(key, default=None)``` : pour la clé key, retourne la valeur ou la valeur par défaut si la clé n'est pas dans le dictionnaire
-- ```dict.has_key(key)``` : supprimé, utilisez l'opération in à la place.
+- ```dict.get(key, default=None)``` : Pour la clé key, retourne la valeur ou la valeur par défaut si la clé n'est pas dans le dictionnaire.
+- ```dict.has_key(key)``` : Supprimé, utilisez l'opération in à la place.
 - ```dict.items()``` : Retourne une liste de paires de tuplets (clé, valeur) du dict.
 - ```dict.keys()``` : Retourne la liste des clés du dictionnaire dict.
 - ```dict.setdefault(key, default = None)``` : Similaire à get(), mais définira dict[key] = default si la clé n'est pas déjà dans le dict.
