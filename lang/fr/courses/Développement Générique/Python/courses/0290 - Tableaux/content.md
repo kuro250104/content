@@ -37,13 +37,13 @@ Les Typecodes sont les codes qui sont utilisés pour définir le type de valeur 
 
 | **Typecode** | **Valeur** |
 | --- | --- |
-| b | Représente un entier signé de taille 1 octet |
+| b | Représente un entier signé de taille 1 octet. |
 | B | Représente un nombre entier non signé de taille 1 octet. |
-| c | Représente un caractère de taille 1 octet |
-| i | Représente un entier signé de taille 2 octets |
+| c | Représente un caractère de taille 1 octet. |
+| i | Représente un entier signé de taille 2 octets. |
 | l | Représente un nombre entier non signé de 2 octets. |
-| f | Représente un point flottant de taille 4 octets |
-| d | Représente un point flottant de taille 8 octets |
+| f | Représente un point flottant de taille 4 octets. |
+| d | Représente un point flottant de taille 8 octets. |
 
 Avant d'examiner les différentes opérations sur les tableaux, créons et imprimons un tableau en utilisant Python.
 
@@ -83,9 +83,9 @@ from array import *
 
 array1 = array('i', [10,20,30,40,50])
 
-print (array1[0])
+print(array1[0])
 
-print (array1[2])
+print(array1[2])
 ```
 
 ### Réponse
@@ -172,7 +172,7 @@ from array import *
 
 array1 = array('i', [10,20,30,40,50])
 
-print (array1.index(40))
+print(array1.index(40))
 ```
 
 ### Réponse
