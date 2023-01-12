@@ -11,7 +11,7 @@ tup3 = "a", "b", "c", "d"
 Le tuple vide est écrit comme deux parenthèses ne contenant rien :
 
 ```python
-tup1 = ();
+tup1 = ()
 ```
 
 Pour écrire un tuple contenant une seule valeur, vous devez inclure une virgule, même s'il n'y a qu'une seule valeur.
@@ -72,7 +72,7 @@ Pour supprimer explicitement un tuple entier, il suffit d'utiliser l'instruction
 ```python
 #!/usr/bin/python3
 
-tup = ('physics', 'chemistry', 1997, 2000);
+tup = ('physics', 'chemistry', 1997, 2000)
 
 print (tup)
 del tup;
