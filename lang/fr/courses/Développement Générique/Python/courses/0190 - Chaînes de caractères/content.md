@@ -17,8 +17,8 @@ Pour accéder aux sous-chaînes, utilisez les crochets pour le découpage en tra
 var1 = 'Hello World!'
 var2 = "Python Programming"
 
-print ("var1[0]: ", var1[0])
-print ("var2[1:5]: ", var2[1:5])
+print("var1[0]: ", var1[0])
+print("var2[1:5]: ", var2[1:5])
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -36,7 +36,7 @@ Vous pouvez "mettre à jour" une chaîne existante en (ré)affectant une variabl
 #!/usr/bin/python3
 
 var1 = 'Hello World!'
-print ("Updated String :- ", var1[:6] + 'Python')
+print("Updated String :- ", var1[:6] + 'Python')
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -77,12 +77,12 @@ Supposons que la variable ```a``` soit ```Hello``` et que la variable ```b``` so
 | --- | --- | --- |
 | ```+``` | Concaténation - Ajoute les valeurs de part et d'autre de l'opérateur. | a + b donne HelloPython |
 | ```*``` | Répétition - Crée de nouvelles chaînes de caractères, en concaténant plusieurs copies de la même chaîne. | a*2 donne HelloHello |
-| ```[]``` | Slice - Donne le caractère à partir de l'indice donné | a[1] donne e |
-| ```[ : ]``` | Range Slice - Donne les caractères de la gamme donnée | a[1:4] donne ell |
-| ```in``` | Adhésion - Retourne vrai si un caractère existe dans la chaîne donnée | H donne 1 |
+| ```[]``` | Slice - Donne le caractère à partir de l'indice donné. | a[1] donne e |
+| ```[ : ]``` | Range Slice - Donne les caractères de la gamme donnée. | a[1:4] donne ell |
+| ```in``` | Adhésion - Retourne vrai si un caractère existe dans la chaîne donnée. | H donne 1 |
 | ```not in``` | Adhésion - Renvoie vrai si un caractère n'existe pas dans la chaîne donnée | M ne donne pas 1 |
 | ```r/R``` | Chaîne brute - Supprime la signification réelle des caractères d'échappement. La syntaxe des chaînes brutes est exactement la même que celle des chaînes normales, à l'exception de l'opérateur de chaîne brute, la lettre "r", qui précède les guillemets. Le "r" peut être minuscule (r) ou majuscule (R) et doit être placé immédiatement avant le premier guillemet. | print r'\n' donne \n et print R'\n' donne \n |
-| ```%``` | Format - Effectue le formatage des chaînes de caractères | Voir la section suivante |
+| ```%``` | Format - Effectue le formatage des chaînes de caractères. | Voir la section suivante |
 
 ## Opérateur de formatage de chaîne de caractères
 
@@ -91,7 +91,7 @@ L'une des fonctionnalités les plus intéressantes de Python est l'opérateur de
 ```python
 #!/usr/bin/python3
 
-print ("My name is %s and weight is %d kg!" % ('Zara', 21))
+print("My name is %s and weight is %d kg!" % ('Zara', 21))
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -118,17 +118,17 @@ Voici la liste complète des symboles qui peuvent être utilisés avec ```%``` :
 
 Les autres symboles et fonctionnalités pris en charge sont répertoriés dans le tableau suivant :
 
-- ```*``` : l'argument spécifie la largeur ou la précision
-- ```-``` : justification à gauche
-- ```+``` : afficher le signe
-- ```<sp>``` : laisser un espace blanc devant un nombre positif
-- ```#``` : ajoute le zéro de tête octal ('0') ou le zéro de tête hexadécimal '0x' ou '0X', selon que 'x' ou 'X' a été utilisé.
-- ```0``` : remplissage à partir de la gauche avec des zéros (au lieu d'espaces).
+- ```*``` : L'argument spécifie la largeur ou la précision.
+- ```-``` : Justification à gauche.
+- ```+``` : Afficher le signe.
+- ```<sp>``` : Laisser un espace blanc devant un nombre positif.
+- ```#``` : Ajoute le zéro de tête octal ('0') ou le zéro de tête hexadécimal '0x' ou '0X', selon que 'x' ou 'X' a été utilisé.
+- ```0``` : Remplissage à partir de la gauche avec des zéros (au lieu d'espaces).
 - ```%``` : '%%' vous laisse avec un seul littéral '%'.
-- ```(var)``` : variable de mappage (arguments du dictionnaire)
+- ```(var)``` : Variable de mappage (arguments du dictionnaire).
 - ```m.n.``` : m est la largeur totale minimale et n est le nombre de chiffres à afficher après le point décimal (si applicable).
 
-## Triple guillemets
+## Triples guillemets
 
 Les triples guillemets de Python viennent à la rescousse en permettant aux chaînes de caractères de s'étendre sur plusieurs lignes, y compris les NOUVELLES LIGNES, les TAB et tout autre caractère spécial.
 
@@ -144,7 +144,7 @@ NEWLINEs within the string, whether explicitly given like
 this within the brackets [ \n ], or just a NEWLINE within
 the variable assignment will also show up.
 """
-print (para_str)
+print(para_str)
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant. Notez comment chaque caractère spécial a été converti dans sa forme imprimée, jusqu'à la dernière NOUVELLE LIGNE à la fin de la chaîne entre le "up." et les guillemets fermants. Notez également que les NEWLINEs se produisent soit avec un retour chariot explicite à la fin d'une ligne, soit avec son code d'échappement (\n) : 
@@ -164,7 +164,7 @@ Les chaînes brutes ne traitent pas du tout la barre oblique inverse comme un ca
 ```python
 #!/usr/bin/python3
 
-print ('C:\\nowhere')
+print('C:\\nowhere')
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
@@ -178,7 +178,7 @@ Utilisons maintenant la chaîne brute. Nous mettons l'expression dans ```r'expre
 ```python
 #!/usr/bin/python3
 
-print (r'C:\\nowhere')
+print(r'C:\\nowhere')
 ```
 
 Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
