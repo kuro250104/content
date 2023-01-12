@@ -2,11 +2,11 @@ Les matrices sont un cas particulier de tableaux à deux dimensions où chaque �
 
 Les matrices sont des structures de données très importantes pour de nombreux calculs mathématiques et scientifiques. Comme nous avons déjà abordé la structure de données des tableaux bidimensionnels dans le chapitre précédent, nous allons nous concentrer sur les opérations de structure de données spécifiques aux matrices dans ce chapitre.
 
-Nous utiliserons également le paquetage numpy pour la manipulation des données matricielles.
+Nous utiliserons également le paquetage ```numpy``` pour la manipulation des données matricielles.
 
 ## Exemple de matrice
 
-Considérons le cas d'un enregistrement de la température pendant une semaine, mesurée le matin, à midi, le soir et la nuit. Il peut être présenté comme une matrice 7X5 en utilisant un tableau et la méthode reshape disponible dans numpy.
+Considérons le cas d'un enregistrement de la température pendant une semaine, mesurée le matin, à midi, le soir et la nuit. Il peut être présenté comme une matrice 7X5 en utilisant un tableau et la méthode ```reshape``` disponible dans ```numpy```.
 
 ```python
 from numpy import * 
@@ -63,11 +63,11 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 23
 ```
 
-## Adding a row
+## Ajouter une ligne
 
-Use the below mentioned code to add a row in a matrix.
+Utiliser le code çi-dessous pour ajouter une ligne dans la matrice.
 
-### Example
+### Exemple
 
 ```python
 from numpy import * 
@@ -99,7 +99,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ## Ajout d'une colonne
 
-Nous pouvons ajouter une colonne à une matrice en utilisant la méthode insert(). ici nous devons mentionner l'index où nous voulons ajouter la colonne et un tableau contenant les nouvelles valeurs des colonnes ajoutées. Dans l'exemple ci-dessous nous ajoutons une nouvelle colonne à la cinquième position depuis le début.
+Nous pouvons ajouter une colonne à une matrice en utilisant la méthode ```insert()```. Ici nous devons mentionner l'index où nous voulons ajouter la colonne et un tableau contenant les nouvelles valeurs des colonnes ajoutées. Dans l'exemple ci-dessous nous ajoutons une nouvelle colonne à la cinquième position depuis le début.
 
 ### Exemple
 
@@ -132,7 +132,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ## Supprimer une ligne
 
-Nous pouvons supprimer une ligne d'une matrice en utilisant la méthode delete(). Nous devons spécifier l'index de la ligne et également la valeur de l'axe qui est 0 pour une ligne et 1 pour une colonne.
+Nous pouvons supprimer une ligne d'une matrice en utilisant la méthode ```delete()```. Nous devons spécifier l'index de la ligne et également la valeur de l'axe qui est 0 pour une ligne et 1 pour une colonne.
 
 ### Exemple
 
@@ -164,7 +164,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ## Supprimer une colonne
 
-Nous pouvons supprimer une colonne d'une matrice en utilisant la méthode delete(). Nous devons spécifier l'index de la colonne et également la valeur de l'axe qui est 0 pour une ligne et 1 pour une colonne.
+Nous pouvons supprimer une colonne d'une matrice en utilisant la méthode ```delete()```. Nous devons spécifier l'index de la colonne et également la valeur de l'axe qui est 0 pour une ligne et 1 pour une colonne.
 
 ### Exemple
 
@@ -214,7 +214,7 @@ print(m)
 
 ### Réponse
 
-Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
+Lorsque le code çi-dessus est exécuté, il produit le résultat suivant :
 
 ```bash
 [
