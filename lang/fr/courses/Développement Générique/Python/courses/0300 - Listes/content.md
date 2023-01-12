@@ -11,9 +11,9 @@ La liste est le type de données le plus polyvalent disponible en Python, qui pe
 Pour créer une liste, il suffit de mettre entre crochets différentes valeurs séparées par des virgules. Par exemple :
 
 ```python
-list1 = ['physics', 'chemistry', 1997, 2000];
-list2 = [1, 2, 3, 4, 5 ];
-list3 = ["a", "b", "c", "d"];
+list1 = ['physics', 'chemistry', 1997, 2000]
+list2 = [1, 2, 3, 4, 5 ]
+list3 = ["a", "b", "c", "d"]
 ```
 
 Comme pour les indices de chaînes de caractères, les indices de listes commencent à 0, et les listes peuvent être découpées, concaténées, etc.
