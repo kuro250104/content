@@ -23,8 +23,8 @@ print("Blu is a {}".format(blu.__class__.species))
 print("Woo is also a {}".format(woo.__class__.species))
 
 # access the instance attributes
-print("{} is {} years old".format( blu.name, blu.age))
-print("{} is {} years old".format( woo.name, woo.age))
+print("{} is {} years old".format(blu.name, blu.age))
+print("{} is {} years old".format(woo.name, woo.age))
 ```
 
 ### Réponse
