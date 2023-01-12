@@ -125,7 +125,7 @@ Le tableau suivant répertorie tous les opérateurs, de la plus haute préséanc
 | ```+ -``` | Addition et soustraction |
 | ```>> <<``` | Décalage binaire à droite et à gauche |
 | ```&``` | AND binaire |
-| ```^ |``` | "OR" exclusif binaire et "OR" ordinaire |
+| ```^``` | "OR" exclusif binaire et "OR" ordinaire |
 | ```<= < > >=``` | Opérateurs de comparaison |
 | ```<> == !=``` | Opérateurs d'égalité |
 | ```= %= /= //= -= += *= **=``` | Opérateurs d'assignation |
