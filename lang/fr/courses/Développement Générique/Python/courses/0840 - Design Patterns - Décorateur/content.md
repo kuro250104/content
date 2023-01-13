@@ -21,7 +21,7 @@ class Abstract_Coffee(object):
         pass
 
     def get_tax(self):
-        return 0.1*self.get_cost()
+        return 0.1 * self.get_cost()
 
 class Concrete_Coffee(Abstract_Coffee):
     def get_cost(self):
