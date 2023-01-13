@@ -40,7 +40,7 @@ Cet algorithme de recherche fonctionne sur la position de sondage de la valeur r
 Il existe une formule spécifique pour calculer la position médiane qui est indiquée dans le programme ci-dessous :
 
 ```python
-def intpolsearch(values,x ):
+def intpolsearch(values, x):
     idx0 = 0
     idxn = (len(values) - 1)
     while idx0 <= idxn and x >= values[idx0] and x <= values[idxn]:
