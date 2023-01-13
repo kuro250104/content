@@ -45,11 +45,11 @@ def bsearch(list, val):
         return None
 
 # Initialize the sorted list
-list = [2,7,19,34,53,72]
+list = [2, 7, 19, 34, 53, 72]
 
 # Print the search result
-print(bsearch(list,72))
-print(bsearch(list,11))
+print(bsearch(list, 72))
+print(bsearch(list, 11))
 ```
 
 ### Réponse
