@@ -18,7 +18,7 @@ Les sockets ont leur propre vocabulaire :
 - ```hostname``` : L'identifiant d'une interface réseau :
     - Une chaîne, qui peut être un nom d'hôte, une adresse en quart de point ou une adresse IPV6 en notation deux points (et éventuellement point).
     - Une chaîne ```<broadcast>```, qui spécifie une adresse INADDR_BROADCAST.
-    - Une chaîne de longueur zéro, qui spécifie INADDR_ANY, ou
+    - Une chaîne de longueur zéro, qui spécifie INADDR_ANY.
     - Un nombre entier, interprété comme une adresse binaire dans l'ordre des octets de l'hôte.
 - ```port``` : Chaque serveur écoute les clients qui l'appellent sur un ou plusieurs ports. Un port peut être un numéro de port Fixnum, une chaîne contenant un numéro de port, ou le nom d'un service.
 
