@@ -32,7 +32,7 @@ La notation θ(n) est la manière formelle d'exprimer à la fois la borne infér
 
 Une liste de quelques notations asymptotiques courantes est mentionnée ci-dessous :
 
-| **Coût** | **Notation** |
+| **Complexité** | **Notation** |
 | -- | -- | 
 | constant | Ο(1) |
 | logarithmique | Ο(log n) |
