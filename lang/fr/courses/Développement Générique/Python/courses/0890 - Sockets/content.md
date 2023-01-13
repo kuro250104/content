@@ -24,10 +24,10 @@ Les sockets ont leur propre vocabulaire :
 
 ## Le module socket
 
-Pour créer une socket, vous devez utiliser la fonction socket.socket() disponible dans le module socket, qui a la syntaxe générale :
+Pour créer un socket, vous devez utiliser la fonction socket.socket() disponible dans le module socket, qui a la syntaxe générale :
 
 ```python
-s = socket.socket (socket_family, socket_type, protocol = 0)
+s = socket.socket(socket_family, socket_type, protocol = 0)
 ```
 
 Voici la description des paramètres :
@@ -40,7 +40,7 @@ Une fois que vous avez l'objet socket, vous pouvez utiliser les fonctions requis
 
 ## Méthodes pour les sockets de serveur
 
-- ```s.bind()``` : Cette méthode lie l'adresse (nom d'hôte, numéro de port) à la socket.
+- ```s.bind()``` : Cette méthode lie l'adresse (nom d'hôte, numéro de port) au socket.
 - ```s.listen()``` : Cette méthode configure et démarre l'écouteur TCP.
 - ```s.accept()``` : Cette méthode accepte passivement la connexion du client TCP, en attendant que la connexion arrive (blocage).
 
@@ -50,11 +50,11 @@ Une fois que vous avez l'objet socket, vous pouvez utiliser les fonctions requis
 
 ## Méthodes générales de prise en charge
 
-- ```s.recv()``` : Cette méthode reçoit le message TCP
-- ```s.send()``` : Cette méthode transmet un message TCP
-- ```s.recvfrom()``` : Cette méthode reçoit un message UDP
-- ```s.sendto()``` : Cette méthode transmet un message UDP
-- ```s.close()``` : Cette méthode ferme la socket
+- ```s.recv()``` : Cette méthode reçoit le message TCP.
+- ```s.send()``` : Cette méthode transmet un message TCP.
+- ```s.recvfrom()``` : Cette méthode reçoit un message UDP.
+- ```s.sendto()``` : Cette méthode transmet un message UDP.
+- ```s.close()``` : Cette méthode ferme le socket.
 - ```s.gethostname()``` : Renvoie le nom d'hôte.
 
 ## Un simple serveur
@@ -90,7 +90,7 @@ while True:
 
     print("Got a connection from %s" % str(addr))
 
-    msg = 'Thank you for connecting'+ "\r\n"
+    msg = 'Thank you for connecting' + "\r\n"
     clientsocket.send(msg.encode('ascii'))
     clientsocket.close()
 ```
@@ -125,7 +125,7 @@ s.connect((host, port))
 msg = s.recv(1024)                                     
 
 s.close()
-print (msg.decode('ascii'))
+print(msg.decode('ascii'))
 ```
 
 Maintenant, exécutez ce ```server.py``` en arrière-plan et ensuite exécutez le client.py ci-dessus pour voir le résultat.
