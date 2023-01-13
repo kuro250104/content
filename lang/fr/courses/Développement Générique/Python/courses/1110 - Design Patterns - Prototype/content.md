@@ -83,16 +83,16 @@ def main():
     ObjectFactory.initialize()
     
     instance = ObjectFactory.getType1Value1()
-    print "%s: %s" % (instance.getType(), instance.getValue())
+    print("%s: %s" % (instance.getType(), instance.getValue()))
     
     instance = ObjectFactory.getType1Value2()
-    print "%s: %s" % (instance.getType(), instance.getValue())
+    print("%s: %s" % (instance.getType(), instance.getValue()))
     
     instance = ObjectFactory.getType2Value1()
-    print "%s: %s" % (instance.getType(), instance.getValue())
+    print("%s: %s" % (instance.getType(), instance.getValue()))
     
     instance = ObjectFactory.getType2Value2()
-    print "%s: %s" % (instance.getType(), instance.getValue())
+    print("%s: %s" % (instance.getType(), instance.getValue()))
 
 if __name__ == "__main__":
     main()

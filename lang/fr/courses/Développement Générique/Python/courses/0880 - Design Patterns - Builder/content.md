@@ -53,9 +53,9 @@ class Car:
         self.__engine = engine
 
     def specification(self):
-        print "body: %s" % self.__body.shape
-        print "engine horsepower: %d" % self.__engine.horsepower
-        print "tire size: %d\'" % self.__wheels[0].size
+        print("body: %s" % self.__body.shape)
+        print("engine horsepower: %d" % self.__engine.horsepower)
+        print("tire size: %d\'" % self.__wheels[0].size)
 
 class Builder:
     def getWheel(self): pass
@@ -99,7 +99,7 @@ def main():
     director.setBuilder(jeepBuilder)
     jeep = director.getCar()
     jeep.specification()
-    print ""
+    print("")
 
 if __name__ == "__main__":
     main()

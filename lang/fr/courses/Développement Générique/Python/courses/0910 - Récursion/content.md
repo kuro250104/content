@@ -20,7 +20,7 @@ def bsearch(list, idx0, idxn, val):
     else:
         return midval
 
-list = [8,11,24,56,88,131]
+list = [8, 11, 24, 56, 88, 131]
 print(bsearch(list, 0, 5, 24))
 print(bsearch(list, 0, 5, 51))
 ```
