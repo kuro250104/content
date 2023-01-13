@@ -33,14 +33,14 @@ False
 
 ## Recherche par interpolation
 
-Cet algorithme de recherche fonctionne sur la position de sondage de la valeur requise. Pour que cet algorithme fonctionne correctement, la collection de données doit être triée et répartie de manière égale.Initialement, la position de sondage est la position de l'élément le plus central de la collection.Si une correspondance se produit, l'index de l'élément est renvoyé.Si l'élément central est supérieur à l'élément , la position de sondage est à nouveau calculée dans le sous-groupe à droite de l'élément central. Sinon, l'élément est recherché dans le sous-réseau à gauche de l'élément du milieu. Ce processus se poursuit également dans le sous-groupe jusqu'à ce que la taille du sous-groupe soit réduite à zéro.
+Cet algorithme de recherche fonctionne sur la position de sondage de la valeur requise. Pour que cet algorithme fonctionne correctement, la collection de données doit être triée et répartie de manière égale. Initialement, la position de sondage est la position de l'élément le plus central de la collection. Si une correspondance se produit, l'index de l'élément est renvoyé. Si l'élément central est supérieur à l'élément, la position de sondage est à nouveau calculée dans le sous-groupe à droite de l'élément central. Sinon, l'élément est recherché dans le sous-réseau à gauche de l'élément du milieu. Ce processus se poursuit également dans le sous-groupe jusqu'à ce que la taille du sous-groupe soit réduite à zéro.
 
 ### Exemple
 
 Il existe une formule spécifique pour calculer la position médiane qui est indiquée dans le programme ci-dessous :
 
 ```python
-def intpolsearch(values,x ):
+def intpolsearch(values, x):
     idx0 = 0
     idxn = (len(values) - 1)
     while idx0 <= idxn and x >= values[idx0] and x <= values[idxn]:

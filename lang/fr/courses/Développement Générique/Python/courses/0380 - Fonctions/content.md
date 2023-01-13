@@ -15,7 +15,7 @@ Vous pouvez définir des fonctions pour fournir la fonctionnalité requise. Voic
 ### Syntaxe
 
 ```python
-def functionname( parameters ):
+def functionname(parameters):
     "function_docstring"
     function_suite
     return [expression]
@@ -109,7 +109,7 @@ changeme(mylist)
 print("Values outside the function:", mylist)
 ```
 
-Le paramètre ```mylist``` est local à la fonction changeme. Changer ```mylist``` dans la fonction n'affecte pas ```mylist```. La fonction n'accomplit rien et finalement cela produirait le résultat suivant :
+Le paramètre ```mylist``` est local à la fonction ```changeme```. Changer ```mylist``` dans la fonction n'affecte pas ```mylist```. La fonction n'accomplit rien et finalement cela produirait le résultat suivant :
 
 ```bash
 Values inside the function: [1, 2, 3, 4]
@@ -122,9 +122,8 @@ Vous pouvez appeler une fonction en utilisant les types d'arguments formels suiv
 
 - Arguments requis
 - Arguments de mots-clés
-- Arguments par défauts
+- Arguments par défaut
 - Arguments de longueur variable
-- Arguments requis
 
 Les arguments requis sont les arguments passés à une fonction dans un ordre positionnel correct. Ici, le nombre d'arguments dans l'appel de fonction doit correspondre exactement à la définition de la fonction.
 

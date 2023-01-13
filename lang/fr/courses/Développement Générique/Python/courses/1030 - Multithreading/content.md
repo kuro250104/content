@@ -27,7 +27,7 @@ Le module thread est "déprécié" depuis un certain temps. Les utilisateurs son
 Pour créer un autre thread, vous devez appeler la méthode suivante disponible dans le module thread :
 
 ```python
-_thread.start_new_thread ( function, args[, kwargs] )
+_thread.start_new_thread(function, args[, kwargs])
 ```
 
 Cet appel de méthode constitue un moyen rapide et efficace de créer de nouveaux threads sous Linux et Windows.
@@ -45,19 +45,19 @@ import _thread
 import time
 
 # Define a function for the thread
-def print_time( threadName, delay):
+def print_time(threadName, delay):
     count = 0
     while count < 5:
         time.sleep(delay)
         count += 1
-        print ("%s: %s" % ( threadName, time.ctime(time.time()) ))
+        print("%s: %s" % (threadName, time.ctime(time.time())))
 
 # Create two threads as follows
 try:
-    _thread.start_new_thread( print_time, ("Thread-1", 2, ) )
-    _thread.start_new_thread( print_time, ("Thread-2", 4, ) )
+    _thread.start_new_thread(print_time, ("Thread-1", 2, ))
+    _thread.start_new_thread(print_time, ("Thread-2", 4, ))
 except:
-    print ("Error: unable to start thread")
+    print("Error: unable to start thread")
 
 while 1:
     pass
@@ -129,16 +129,16 @@ class myThread (threading.Thread):
         self.name = name
         self.counter = counter
     def run(self):
-        print ("Starting " + self.name)
+        print("Starting " + self.name)
         print_time(self.name, self.counter, 5)
-        print ("Exiting " + self.name)
+        print("Exiting " + self.name)
 
 def print_time(threadName, delay, counter):
     while counter:
         if exitFlag:
             threadName.exit()
         time.sleep(delay)
-        print ("%s: %s" % (threadName, time.ctime(time.time())))
+        print("%s: %s" % (threadName, time.ctime(time.time())))
         counter -= 1
 
 # Create new threads
@@ -150,7 +150,7 @@ thread1.start()
 thread2.start()
 thread1.join()
 thread2.join()
-print ("Exiting Main Thread")
+print("Exiting Main Thread")
 ```
 
 ### Résultat
@@ -200,7 +200,7 @@ class myThread (threading.Thread):
         self.name = name
         self.counter = counter
     def run(self):
-        print ("Starting " + self.name)
+        print("Starting " + self.name)
         # Get lock to synchronize threads
         threadLock.acquire()
         print_time(self.name, self.counter, 3)
@@ -210,7 +210,7 @@ class myThread (threading.Thread):
 def print_time(threadName, delay, counter):
     while counter:
         time.sleep(delay)
-        print ("%s: %s" % (threadName, time.ctime(time.time())))
+        print("%s: %s" % (threadName, time.ctime(time.time())))
         counter -= 1
 
 threadLock = threading.Lock()
@@ -231,7 +231,7 @@ threads.append(thread2)
 # Wait for all threads to complete
 for t in threads:
     t.join()
-print ("Exiting Main Thread")
+print("Exiting Main Thread")
 ```
 
 ### Résultat
@@ -257,7 +257,7 @@ Le module Queue vous permet de créer un nouvel objet queue qui peut contenir un
 - ```get()``` - La méthode ```get()``` supprime et renvoie un élément de la file d'attente.
 - ```put()``` - La méthode put ajoute un élément à la file d'attente.
 - ```qsize()``` - La méthode ```qsize()``` retourne le nombre d'éléments qui sont actuellement dans la file d'attente.
-- ```empty()``` - La fonction empty( ) retourne True si la file d'attente est vide ; sinon, False.
+- ```empty()``` - La fonction ```empty()``` retourne True si la file d'attente est vide ; sinon, False.
 - ```full()``` - La fonction ```full()``` retourne True si la file d'attente est pleine ; sinon, False.
 
 ### Exemple
@@ -278,9 +278,9 @@ class myThread (threading.Thread):
         self.name = name
         self.q = q
     def run(self):
-        print ("Starting " + self.name)
+        print("Starting " + self.name)
         process_data(self.name, self.q)
-        print ("Exiting " + self.name)
+        print("Exiting " + self.name)
 
 def process_data(threadName, q):
     while not exitFlag:
@@ -288,7 +288,7 @@ def process_data(threadName, q):
         if not workQueue.empty():
             data = q.get()
             queueLock.release()
-            print ("%s processing %s" % (threadName, data))
+            print("%s processing %s" % (threadName, data))
         else:
             queueLock.release()
             time.sleep(1)
@@ -323,7 +323,7 @@ exitFlag = 1
 # Wait for all threads to complete
 for t in threads:
     t.join()
-print ("Exiting Main Thread")
+print("Exiting Main Thread")
 ```
 
 ### Résultat

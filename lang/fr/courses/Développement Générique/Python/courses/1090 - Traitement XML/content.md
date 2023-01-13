@@ -74,7 +74,7 @@ Voici d'autres méthodes importantes à comprendre avant de poursuivre :
 La méthode suivante crée un nouvel objet analyseur et le renvoie. L'objet d'analyse créé sera du premier type d'analyseur trouvé par le système.
 
 ```python
-xml.sax.make_parser( [parser_list] )
+xml.sax.make_parser([parser_list])
 ```
 
 Voici le détail des paramètres :
@@ -86,7 +86,7 @@ Voici le détail des paramètres :
 La méthode suivante crée un analyseur SAX et l'utilise pour analyser un document.
 
 ```python
-xml.sax.parse( xmlfile, contenthandler[, errorhandler])
+xml.sax.parse(xmlfile, contenthandler[, errorhandler])
 ```
 
 Voici le détail des paramètres :
@@ -130,24 +130,24 @@ class MovieHandler( xml.sax.ContentHandler ):
     def startElement(self, tag, attributes):
         self.CurrentData = tag
         if tag == "movie":
-            print ("*****Movie*****")
+            print("*****Movie*****")
             title = attributes["title"]
-            print ("Title:", title)
+            print("Title:", title)
 
     # Call when an elements ends
     def endElement(self, tag):
         if self.CurrentData == "type":
-            print ("Type:", self.type)
+            print("Type:", self.type)
         elif self.CurrentData == "format":
-            print ("Format:", self.format)
+            print("Format:", self.format)
         elif self.CurrentData == "year":
-            print ("Year:", self.year)
+            print("Year:", self.year)
         elif self.CurrentData == "rating":
-            print ("Rating:", self.rating)
+            print("Rating:", self.rating)
         elif self.CurrentData == "stars":
-            print ("Stars:", self.stars)
+            print("Stars:", self.stars)
         elif self.CurrentData == "description":
-            print ("Description:", self.description)
+            print("Description:", self.description)
         self.CurrentData = ""
 
     # Call when a character is read
@@ -174,7 +174,7 @@ if ( __name__ == "__main__"):
 
     # override the default ContextHandler
     Handler = MovieHandler()
-    parser.setContentHandler( Handler )
+    parser.setContentHandler(Handler)
 
     parser.parse("movies.xml")
 ```
@@ -224,7 +224,7 @@ Le DOM est extrêmement utile pour les applications à accès aléatoire. SAX ne
 
 Le moyen le plus simple de charger rapidement un document XML est de créer un objet minidom à l'aide du module xml.dom. L'objet minidom fournit une méthode d'analyse simple qui crée rapidement un arbre DOM à partir du fichier XML.
 
-L'exemple de phrase appelle la fonction parse( file [,parser] ) de l'objet minidom pour analyser le fichier XML, désigné par file dans un objet DOM tree.
+L'exemple de phrase appelle la fonction parse(file[,parser]) de l'objet minidom pour analyser le fichier XML, désigné par file dans un objet DOM tree.
 
 ### Exemple
 
@@ -238,25 +238,25 @@ import xml.dom.minidom
 DOMTree = xml.dom.minidom.parse("movies.xml")
 collection = DOMTree.documentElement
 if collection.hasAttribute("shelf"):
-    print ("Root element : %s" % collection.getAttribute("shelf"))
+    print("Root element : %s" % collection.getAttribute("shelf"))
 
 # Get all the movies in the collection
 movies = collection.getElementsByTagName("movie")
 
 # Print detail of each movie.
 for movie in movies:
-    print ("*****Movie*****")
+    print("*****Movie*****")
     if movie.hasAttribute("title"):
-        print ("Title: %s" % movie.getAttribute("title"))
+        print("Title: %s" % movie.getAttribute("title"))
 
     type = movie.getElementsByTagName('type')[0]
-    print ("Type: %s" % type.childNodes[0].data)
+    print("Type: %s" % type.childNodes[0].data)
     format = movie.getElementsByTagName('format')[0]
-    print ("Format: %s" % format.childNodes[0].data)
+    print("Format: %s" % format.childNodes[0].data)
     rating = movie.getElementsByTagName('rating')[0]
-    print ("Rating: %s" % rating.childNodes[0].data)
+    print("Rating: %s" % rating.childNodes[0].data)
     description = movie.getElementsByTagName('description')[0]
-    print ("Description: %s" % description.childNodes[0].data)
+    print("Description: %s" % description.childNodes[0].data)
 ```
 
 ### Résultat

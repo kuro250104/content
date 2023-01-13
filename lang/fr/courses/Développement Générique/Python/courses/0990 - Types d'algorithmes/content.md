@@ -26,12 +26,14 @@ La notation Ω(n) est la manière formelle d'exprimer la borne inférieure du te
 
 ### Notation thêta, θ
 
-La notation θ(n) est la manière formelle d'exprimer à la fois la borne inférieure et la borne supérieure du temps d'exécution d'un algorithme
+La notation θ(n) est la manière formelle d'exprimer à la fois la borne inférieure et la borne supérieure du temps d'exécution d'un algorithme…
 
 ## Notations asymptotiques courantes
 
 Une liste de quelques notations asymptotiques courantes est mentionnée ci-dessous :
 
+| **Complexité** | **Notation** |
+| -- | -- | 
 | constant | Ο(1) |
 | logarithmique | Ο(log n) |
 | linéaire | Ο(n) |
