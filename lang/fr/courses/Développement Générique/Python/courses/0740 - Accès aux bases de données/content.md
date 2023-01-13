@@ -20,7 +20,7 @@ L'API DB fournit un standard minimal pour travailler avec des bases de données 
 - Importer le module API.
 - Obtenir une connexion avec la base de données.
 - Émettre des instructions SQL et des procédures stockées.
-- Fermeture de la connexion
+- Fermeture de la connexion.
 
 Python a un support intégré pour SQLite. Dans cette section, nous allons apprendre tous les concepts en utilisant MySQL. Le module MySQLdb, une interface populaire avec MySQL, n'est pas compatible avec Python 3. Nous utiliserons plutôt le module PyMySQL.
 
