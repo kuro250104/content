@@ -66,7 +66,7 @@ class Node:
     def PrintTree(self):
         if self.left:
             self.left.PrintTree()
-        print( self.data),
+        print(self.data),
         if self.right:
             self.right.PrintTree()
 
@@ -133,7 +133,7 @@ class Node:
     def PrintTree(self):
         if self.left:
             self.left.PrintTree()
-        print( self.data),
+        print(self.data),
         if self.right:
             self.right.PrintTree()
     # Inorder traversal
@@ -198,7 +198,7 @@ class Node:
     def PrintTree(self):
         if self.left:
             self.left.PrintTree()
-        print( self.data),
+        print(self.data),
         if self.right:
             self.right.PrintTree()
     # Preorder traversal
@@ -264,7 +264,7 @@ class Node:
     def PrintTree(self):
         if self.left:
             self.left.PrintTree()
-print( self.data),
+print(self.data),
 if self.right:
 self.right.PrintTree()
 # Postorder traversal
