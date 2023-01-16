@@ -62,7 +62,7 @@ Voici une fonction qui convertit une température donnée des degrés Kelvin en 
 
 ```python
 def KelvinToFahrenheit(Temperature):
-    assert (Temperature >= 0),"Colder than absolute zero!"
+    assert (Temperature >= 0), "Colder than absolute zero!"
     return ((Temperature-273)*1.8)+32
 
 print(KelvinToFahrenheit(273))
@@ -79,7 +79,7 @@ Traceback (most recent call last):
 File "test.py", line 9, in <module>
 print(KelvinToFahrenheit(-5))
 File "test.py", line 4, in KelvinToFahrenheit
-assert (Temperature >= 0),"Colder than absolute zero!"
+assert (Temperature >= 0), "Colder than absolute zero!"
 AssertionError: Colder than absolute zero!
 ```
 
@@ -99,15 +99,15 @@ Voici la syntaxe simple des blocs ```try....except...else``` :
 
 ```python
 try:
-    You do your operations here
-    ......................
+    # You do your operations here
+    # ......................
 except ExceptionI:
-    If there is ExceptionI, then execute this block.
+    # If there is ExceptionI, then execute this block.
 except ExceptionII:
-    If there is ExceptionII, then execute this block.
-    ......................
+    # If there is ExceptionII, then execute this block.
+    # ......................
 else:
-    If there is no exception then execute this block.
+    # If there is no exception then execute this block.
 ```
 
 Voici quelques points importants concernant la syntaxe mentionnée ci-dessus :
@@ -164,13 +164,13 @@ Vous pouvez également utiliser l'instruction ```except``` sans exception défin
 
 ```python
 try:
-    You do your operations here
-    ......................
+    # You do your operations here
+    # ......................
 except:
-    If there is any exception, then execute this block.
-    ......................
+    # If there is any exception, then execute this block.
+    # ......................
 else:
-    If there is no exception then execute this block.
+    # If there is no exception then execute this block.
 ```
 
 Ce type d'instruction ```try-except``` capture toutes les exceptions qui se produisent. L'utilisation de ce type d'instruction ```try-except``` n'est cependant pas considérée comme une bonne pratique de programmation, car elle permet d'attraper toutes les exceptions mais ne permet pas au programmeur d'identifier la cause première du problème qui peut survenir.
@@ -331,9 +331,9 @@ def functionName( level ):
 
 try:
     l = functionName(-10)
-    print ("level = ",l)
+    print("level = ", l)
 except Exception as e:
-    print("error in level argument",e.args[0])
+    print("error in level argument", e.args[0])
 ```
 
 Cela donnera le résultat suivant :
@@ -344,7 +344,7 @@ error in level argument -10
 
 ## Exceptions définies par l'utilisateur
 
-Python vous permet également de créer vos propres exceptions en dérivant des classes à partir des exceptions standard intégrées.
+Python vous permet également de créer vos propres exceptions en dérivant des classes à partir des exceptions standards intégrées.
 
 Voici un exemple lié à ```RuntimeError```. Ici, une classe est créée qui est sous-classée de ```RuntimeError```. Cette classe est utile lorsque vous devez afficher des informations plus spécifiques lorsqu'une exception est détectée.
 
