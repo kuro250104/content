@@ -6,18 +6,18 @@ Nous allons couvrir deux fonctions importantes, qui seront utilisées pour manip
 
 ## Modèles de base qui correspondent à des caractères uniques
 
-- ```a, X, 9, <``` : les caractères ordinaires se correspondent exactement.
-- ```. (un point)``` : correspond à n'importe quel caractère unique, à l'exception de la nouvelle ligne '\n'.
-- ```\w``` : correspond à un caractère "mot" : une lettre, un chiffre ou une barre inférieure [a-zA-Z0-9_].
-- ```\W``` : correspond à tout caractère autre qu'un mot.
-- ```\b``` : limite entre le mot et le non-mot.
-- ```\s``` : correspond à un seul caractère d'espace -- espace, nouvelle ligne, retour, tabulation.
-- ```\S``` : correspond à tout caractère autre qu'un espace.
-- ```\t, \n, \r``` : tabulation, nouvelle ligne, retour.
-- ```\d``` : chiffre décimal [0-9].
-- ```^``` : correspond au début de la chaîne.
-- ```$``` : correspond à la fin de la chaîne de caractères.
-- ```\N``` : inhibe la "spécificité" d'un caractère.
+- ```a, X, 9, <``` : Les caractères ordinaires se correspondent exactement.
+- ```. (un point)``` : Correspond à n'importe quel caractère unique, à l'exception de la nouvelle ligne '\n'.
+- ```\w``` : Correspond à un caractère "mot" : une lettre, un chiffre ou une barre inférieure [a-zA-Z0-9_].
+- ```\W``` : Correspond à tout caractère autre qu'un mot.
+- ```\b``` : Limite entre le mot et le non-mot.
+- ```\s``` : Correspond à un seul caractère d'espace -- espace, nouvelle ligne, retour, tabulation.
+- ```\S``` : Correspond à tout caractère autre qu'un espace.
+- ```\t, \n, \r``` : Tabulation, nouvelle ligne, retour.
+- ```\d``` : Chiffre décimal [0-9].
+- ```^``` : Correspond au début de la chaîne.
+- ```$``` : Correspond à la fin de la chaîne de caractères.
+- ```\N``` : Inhibe la "spécificité" d'un caractère.
 
 ## Indicateurs de compilation
 
@@ -273,7 +273,7 @@ Il faut préciser la position du match.
 - ```\APython``` : Correspond à "Python" au début d'une chaîne de caractères.
 - ```Python\Z``` : Correspond à "Python" à la fin d'une chaîne de caractères.
 - ```\bPython\b``` : Correspond à "Python" à la limite d'un mot.
-- ```\brub\B``` : ```\B``` est une limite de non-mot : correspond à "rub" dans "rube" et "ruby" mais pas seul.
+- ```\brub\B``` : ```\B``` est une limite de non-mot : Correspond à "rub" dans "rube" et "ruby" mais pas seul.
 - ```Python(?= !)``` : Correspond à "Python", s'il est suivi d'un point d'exclamation.
 - ```Python( ?!!)``` : Correspond à "Python", s'il n'est pas suivi d'un point d'exclamation.
 
