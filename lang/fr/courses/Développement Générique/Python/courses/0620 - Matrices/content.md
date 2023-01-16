@@ -65,7 +65,7 @@ Lorsque le code ci-dessus est exécuté, il produit le résultat suivant :
 
 ## Ajouter une ligne
 
-Utiliser le code çi-dessous pour ajouter une ligne dans la matrice.
+Pour ajouter une ligne dans la matrice, nous devons utiliser la méthode ```apend()```. 
 
 ### Exemple
 
