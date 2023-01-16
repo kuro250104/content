@@ -6,21 +6,21 @@ Ce cours vous permettra de démarrer rapidement avec PostgreSQL et de vous famil
 
 PostgreSQL (prononcé comme post-gress-Q-L) est un système de gestion de base de données relationnelle (SGBD) open source développé par une équipe mondiale de volontaires. PostgreSQL n'est contrôlé par aucune société ou autre entité privée et le code source est disponible gratuitement.
 
-## AUne brève histoire de PostgreSQL
+## Une brève histoire de PostgreSQL
 
 PostgreSQL, initialement appelé Postgres, a été créé à l'UCB par un professeur d'informatique nommé Michael Stonebraker. Stonebraker a lancé Postgres en 1986 comme projet de suivi de son prédécesseur, Ingres, aujourd'hui propriété de Computer Associates.
 
 - **1977-1985** − Un projet appelé INGRES a été développé.
-    - Preuve de concept pour les bases de données relationnelles
-    - Création de la société Ingres en 1980
-    - Rachetée par Computer Associates en 1994
+    - Preuve de concept pour les bases de données relationnelles.
+    - Création de la société Ingres en 1980.
+    - Rachetée par Computer Associates en 1994.
 - **1986-1994** − POSTGRES
     - Développement des concepts d'INGRES en mettant l'accent sur l'orientation objet et le langage d'interrogation Quel.
     - La base de code d'INGRES n'a pas été utilisée comme base pour POSTGRES.
     - Commercialisé sous le nom d'Illustra (racheté par Informix, racheté par IBM)
 - **1994-1995** − Postgres95
-    - Le support de SQL a été ajouté en 1994
-    - Sortie de Postgres95 en 1995
+    - Le support de SQL a été ajouté en 1994.
+    - Sortie de Postgres95 en 1995.
     - Reprise sous le nom de PostgreSQL 6.0 en 1996.
     - Création de l'équipe de développement mondial de PostgreSQL.
 

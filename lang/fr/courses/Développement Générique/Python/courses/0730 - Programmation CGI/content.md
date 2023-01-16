@@ -84,12 +84,12 @@ Content-type: text/html\r\n\r\n
 
 Il existe quelques autres en-têtes HTTP importants, que vous utiliserez fréquemment dans votre programmation CGI :
 
-- ```Content-type``` : A MIME string defining the format of the file being returned. Example is Content-type:text/html
+- ```Content-type``` : A MIME string defining the format of the file being returned. Example is ```Content-type:text/html```.
 - ```Expires: Date``` : The date the information becomes invalid. It is used by the browser to decide when a page needs to be refreshed. A valid date string is in the format 01 Jan 1998 12:00:00 GMT.
 - ```Location: URL``` : The URL that is returned instead of the URL requested. You can use this field to redirect a request to any file.
 - ```Last-modified: Date``` : The date of last modification of the resource.
 Content-length: The length, in bytes, of the data being returned. The browser uses this value to report the estimated download time for a file.
-- ```Set-Cookie: String``` : Set the cookie passed through the String
+- ```Set-Cookie: String``` : Set the cookie passed through the String.
 
 ## Variables d'environnement CGI
 
@@ -131,11 +131,11 @@ http://www.test.com/cgi-bin/hello.py?key1=value1&key2=value2
 - La méthode GET est la méthode par défaut pour transmettre des informations du navigateur au serveur web. Elle produit une longue chaîne de caractères qui apparaît dans le champ "Emplacement" de votre navigateur.
 - N'utilisez jamais la méthode GET si vous avez un mot de passe ou d'autres informations sensibles à transmettre au serveur.
 - La méthode GET a une limite de taille : seulement 1024 caractères peuvent être envoyés dans une chaîne de requête.
-- La méthode GET envoie des informations en utilisant l'en-tête QUERY_STRING et sera accessible dans votre programme CGI grâce à la variable d'environnement QUERY_STRING.
+- La méthode GET envoie des informations en utilisant l'en-tête QUERY_STRING et sera accessible dans votre programme CGI grâce à la variable d'environnement ```QUERY_STRING```.
 
 Vous pouvez transmettre des informations en concaténant simplement des paires de clés et de valeurs avec n'importe quelle URL ou vous pouvez utiliser les balises HTML ```<FORM>``` pour transmettre des informations en utilisant la méthode GET.
 
-### Exemple d'URL simple : méthode Get
+### Exemple d'URL simple : méthode GET
 
 Voici une URL simple, qui transmet deux valeurs au programme hello_get.py en utilisant la méthode GET.
 
@@ -143,7 +143,7 @@ Voici une URL simple, qui transmet deux valeurs au programme hello_get.py en uti
 /cgi-bin/hello_get.py?first_name=ZARA&last_name=ALI
 ```
 
-Voici le script ```hello_get.py``` qui permet de gérer les données fournies par le navigateur web. Nous allons utiliser le module cgi, qui permet d'accéder très facilement aux informations transmises :
+Voici le script ```hello_get.py``` qui permet de gérer les données fournies par le navigateur web. Nous allons utiliser le module CGI, qui permet d'accéder très facilement aux informations transmises :
 
 ```python
 #!/usr/bin/python
@@ -174,17 +174,17 @@ print("</html>")
 Cet exemple transmet deux valeurs en utilisant le formulaire HTML et le bouton "submit". Nous utilisons le même script CGI hello_get.py pour gérer cette entrée.
 
 ```html
-<form action = "/cgi-bin/hello_get.py" method = "get">
-    First Name: <input type = "text" name = "first_name">  <br />
+<form action="/cgi-bin/hello_get.py" method="get">
+    First Name: <input type="text" name="first_name"><br/>
 
-    Last Name: <input type = "text" name = "last_name" />
-    <input type = "submit" value = "Submit" />
+    Last Name: <input type="text" name="last_name"/>
+    <input type="submit" value="Submit"/>
 </form>
 ```
 
 ### Transmettre des informations en utilisant la méthode POST
 
-Une méthode généralement plus fiable pour transmettre des informations à un programme CGI est la méthode POST. Cette méthode regroupe les informations exactement de la même manière que la méthode GET, mais au lieu de les envoyer sous forme de chaîne de texte après un ? dans l'URL, elle les envoie sous forme de message séparé. Ce message arrive dans le script CGI sous la forme de l'entrée standard.
+Une méthode généralement plus fiable pour transmettre des informations à un programme CGI est la méthode POST. Cette méthode regroupe les informations exactement de la même manière que la méthode GET, mais au lieu de les envoyer sous forme de chaîne de texte après un ? Dans l'URL, elle les envoie sous forme de message séparé. Ce message arrive dans le script CGI sous la forme de l'entrée standard.
 
 Voici le même script ```hello_get.py``` qui gère la méthode GET ainsi que la méthode POST.
 
@@ -199,7 +199,7 @@ form = cgi.FieldStorage()
 
 # Get data from fields
 first_name = form.getvalue('first_name')
-last_name  = form.getvalue('last_name')
+last_name = form.getvalue('last_name')
 
 print("Content-type:text/html\r\n\r\n")
 print("<html>")
@@ -215,11 +215,11 @@ print("</html>")
 Reprenons le même exemple que ci-dessus qui transmet deux valeurs en utilisant le formulaire HTML et le bouton "submit". Nous utilisons le même script CGI ```hello_get.py``` pour gérer cette entrée.
 
 ```html
-<form action = "/cgi-bin/hello_get.py" method = "post">
-First Name: <input type = "text" name = "first_name"><br />
-Last Name: <input type = "text" name = "last_name" />
+<form action="/cgi-bin/hello_get.py" method="post">
+First Name: <input type="text" name="first_name"><br/>
+Last Name: <input type="text" name="last_name"/>
 
-<input type = "submit" value = "Submit" />
+<input type="submit" value="Submit"/>
 </form>
 ```
 
@@ -230,10 +230,10 @@ Les cases à cocher sont utilisées lorsqu'il faut sélectionner plus d'une opti
 Voici un exemple de code HTML pour un formulaire comportant deux cases à cocher :
 
 ```html
-<form action = "/cgi-bin/checkbox.cgi" method = "POST" target = "_blank">
-    <input type = "checkbox" name = "maths" value = "on" /> Maths
-    <input type = "checkbox" name = "physics" value = "on" /> Physics
-    <input type = "submit" value = "Select Subject" />
+<form action="/cgi-bin/checkbox.cgi" method="POST" target="_blank">
+    <input type="checkbox" name="maths" value="on"/> Maths
+    <input type="checkbox" name="physics" value="on"/> Physics
+    <input type="submit" value="Select Subject"/>
 </form>
 ```
 
@@ -278,10 +278,10 @@ Les boutons radio sont utilisés lorsqu'une seule option doit être sélectionn�
 Voici un exemple de code HTML pour un formulaire avec deux boutons radio :
 
 ```html
-<form action = "/cgi-bin/radiobutton.py" method = "post" target = "_blank">
-    <input type = "radio" name = "subject" value = "maths" /> Maths
-    <input type = "radio" name = "subject" value = "physics" /> Physics
-    <input type = "submit" value = "Select Subject" />
+<form action="/cgi-bin/radiobutton.py" method="post" target="_blank">
+    <input type="radio" name="subject" value="maths"/> Maths
+    <input type="radio" name="subject" value="physics"/> Physics
+    <input type="submit" value="Select Subject"/>
 </form>
 ```
 
@@ -308,7 +308,7 @@ print("<head>")
 print("<title>Radio - Fourth CGI Program</title>")
 print("</head>")
 print("<body>")
-print("<h2> Selected Subject is %s</h2>" % subject")
+print("<h2> Selected Subject is %s</h2>" % subject)
 print("</body>")
 print("</html>")
 ```
@@ -320,11 +320,11 @@ L'élément TEXTAREA est utilisé lorsque du texte multiligne doit être transmi
 Voici un exemple de code HTML pour un formulaire avec une case TEXTAREA :
 
 ```html
-<form action = "/cgi-bin/textarea.py" method = "post" target = "_blank">
-    <textarea name = "textcontent" cols = "40" rows = "4">
+<form action="/cgi-bin/textarea.py" method="post" target="_blank">
+    <textarea name="textcontent" cols="40" rows="4">
         Tapez votre texte ici...
     </textarea>
-    <input type = "submit" value = "Submit" />
+    <input type="submit" value="Submit"/>
 </form>
 ```
 
@@ -351,7 +351,7 @@ print("<head>")
 print("<title>Text Area - Fifth CGI Program</title>")
 print("</head>")
 print("<body>")
-print("<h2> Entered Text Content is %s</h2>" % text_content")
+print("<h2> Entered Text Content is %s</h2>" % text_content)
 print("</body>")
 ```
 
@@ -362,12 +362,12 @@ La liste déroulante est utilisée lorsque de nombreuses options sont disponible
 Voici un exemple de code HTML pour un formulaire avec une seule liste déroulante :
 
 ```html
-<form action = "/cgi-bin/dropdown.py" method = "post" target = "_blank">
-    <select name = "dropdown">
-        <option value = "Maths" selected>Maths</option>
-        <option value = "Physics">Physics</option>
+<form action="/cgi-bin/dropdown.py" method="post" target="_blank">
+    <select name="dropdown">
+        <option value="Maths" selected>Maths</option>
+        <option value="Physics">Physics</option>
     </select>
-    <input type = "submit" value = "Submit"/>
+    <input type="submit" value="Submit"/>
 </form>
 ```
 
@@ -394,7 +394,7 @@ print("<head>")
 print("<title>Dropdown Box - Sixth CGI Program</title>")
 print("</head>")
 print("<body>")
-print("<h2> Selected Subject is %s</h2>" % subject")
+print("<h2> Selected Subject is %s</h2>" % subject)
 print("</body>")
 print("</html>")
 ```
@@ -438,7 +438,7 @@ Il est facultatif de définir les attributs des cookies comme Expires, Domain et
 
 ### Récupération des cookies
 
-Il est très facile de récupérer tous les cookies définis. Les cookies sont stockés dans la variable d'environnement CGI HTTP_COOKIE et ils ont la forme suivante :
+Il est très facile de récupérer tous les cookies définis. Les cookies sont stockés dans la variable d'environnement CGI ```HTTP_COOKIE``` et ils ont la forme suivante :
 
 ```bash
 key1 = value1;key2 = value2;key3 = value3....
@@ -455,7 +455,7 @@ import cgi, cgitb
 
 if environ.has_key('HTTP_COOKIE'):
     for cookie in map(strip, split(environ['HTTP_COOKIE'], ';')):
-        (key, value ) = split(cookie, '=');
+        (key, value) = split(cookie, '=');
         if key == "UserID":
             user_id = value
 
@@ -463,7 +463,7 @@ if environ.has_key('HTTP_COOKIE'):
             password = value
 
 print("User ID  = %s" % user_id")
-print("Password = %s" % password)")
+print("Password = %s" % password")
 ```
 
 Cela donne le résultat suivant pour les cookies définis par le script ci-dessus :
@@ -480,9 +480,9 @@ Pour télécharger un fichier, le formulaire HTML doit avoir l'attribut enctype 
 ```html
 <html>
     <body>
-        <form enctype = "multipart/form-data" action = "save_file.py" method = "post">
-        <p>File: <input type = "file" name = "filename" /></p>
-        <p><input type = "submit" value = "Upload" /></p>
+        <form enctype="multipart/form-data" action="save_file.py" method="post">
+        <p>File: <input type="file" name="filename"/></p>
+        <p><input type&="submit" value="Upload"/></p>
         </form>
     </body>
 </html>
