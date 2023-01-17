@@ -265,8 +265,8 @@ print("<head>")
 print("<title>Checkbox - Third CGI Program</title>")
 print("</head>")
 print("<body>")
-print("<h2> CheckBox Maths is : %s</h2>" % math_flag")
-print("<h2> CheckBox Physics is : %s</h2>" % physics_flag")
+print("<h2> CheckBox Maths is : %s</h2>" % math_flag)
+print("<h2> CheckBox Physics is : %s</h2>" % physics_flag)
 print("</body>")
 print("</html>")
 ```
@@ -462,8 +462,8 @@ if environ.has_key('HTTP_COOKIE'):
         if key == "Password":
             password = value
 
-print("User ID  = %s" % user_id")
-print("Password = %s" % password")
+print("User ID  = %s" % user_id)
+print("Password = %s" % password)
 ```
 
 Cela donne le résultat suivant pour les cookies définis par le script ci-dessus :
@@ -482,7 +482,7 @@ Pour télécharger un fichier, le formulaire HTML doit avoir l'attribut enctype 
     <body>
         <form enctype="multipart/form-data" action="save_file.py" method="post">
         <p>File: <input type="file" name="filename"/></p>
-        <p><input type&="submit" value="Upload"/></p>
+        <p><input type="submit" value="Upload"/></p>
         </form>
     </body>
 </html>
@@ -515,17 +515,17 @@ if fileitem.filename:
 else:
     message = 'No file was uploaded'
 
-print(""")
+print("""
 Content-Type: text/html\n
 <html>
     <body>
         <p>%s</p>
     </body>
 </html>
-""" % (message,)
+""" % message)
 ```
 
-Si vous exécutez le script ci-dessus sur Unix/Linux, alors vous devez prendre soin de remplacer le séparateur de fichier comme suit, sinon sur votre machine Windows l'instruction open() ci-dessus devrait fonctionner correctement.
+Si vous exécutez le script ci-dessus sur Unix/Linux, alors vous devez prendre soin de remplacer le séparateur de fichier comme suit, sinon sur votre machine Windows l'instruction ```open()``` ci-dessus devrait fonctionner correctement.
 
 ```python
 fn = os.path.basename(fileitem.filename.replace("\\", "/" ))
