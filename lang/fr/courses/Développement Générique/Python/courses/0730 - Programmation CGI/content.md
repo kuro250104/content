@@ -46,7 +46,7 @@ Voici un lien simple, qui est lié à un script CGI appelé hello.py. Ce fichier
 print("Content-type:text/html\r\n\r\n")
 print("<html>")
 print("<head>")
-print("<title>Hello Word - First CGI Program</title>')
+print("<title>Hello Word - First CGI Program</title>")
 print("</head>")
 print("<body>")
 print("<h2>Hello Word! This is my first CGI program</h2>")
@@ -66,7 +66,7 @@ http://localhost:8080/cgi-bin/hello.py
 
 Ce script hello.py est un simple script Python, qui écrit sa sortie sur le fichier STDOUT, c'est-à-dire sur l'écran. Il existe une fonctionnalité importante et supplémentaire qui est la première ligne à être imprimée ```Content-type:text/html\r\n\r\n```. Cette ligne est renvoyée au navigateur et spécifie le type de contenu à afficher sur l'écran du navigateur.
 
-A présent, vous devez avoir compris le concept de base des CGI et vous pouvez écrire de nombreux programmes CGI compliqués en utilisant Python. Ce script peut interagir avec n'importe quel autre système externe pour échanger des informations, par exemple un SGBDR.
+À présent, vous devez avoir compris le concept de base des CGI et vous pouvez écrire de nombreux programmes CGI compliqués en utilisant Python. Ce script peut interagir avec n'importe quel autre système externe pour échanger des informations, par exemple un SGBDR.
 
 ## En-tête HTTP
 
