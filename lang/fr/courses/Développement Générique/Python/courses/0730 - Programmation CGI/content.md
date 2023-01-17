@@ -84,12 +84,12 @@ Content-type: text/html\r\n\r\n
 
 Il existe quelques autres en-têtes HTTP importants, que vous utiliserez fréquemment dans votre programmation CGI :
 
-- ```Content-type``` : A MIME string defining the format of the file being returned. Example is ```Content-type:text/html```.
-- ```Expires: Date``` : The date the information becomes invalid. It is used by the browser to decide when a page needs to be refreshed. A valid date string is in the format 01 Jan 1998 12:00:00 GMT.
-- ```Location: URL``` : The URL that is returned instead of the URL requested. You can use this field to redirect a request to any file.
-- ```Last-modified: Date``` : The date of last modification of the resource.
-Content-length: The length, in bytes, of the data being returned. The browser uses this value to report the estimated download time for a file.
-- ```Set-Cookie: String``` : Set the cookie passed through the String.
+- ```Content-type``` : Un string MIME se définit le format du fichier qu'il retourne. Exemple : ```Content-type:text/html```.
+- ```Expires: Date``` : La date à laquelle l'information devient invalide. Il est utilisé par le navigateur pour décider quand la page doit se rafraîchir. Un format de date valide est présenter comme ceci : ```01 Jan 1998 12:00:00 GMT```.
+- ```Location: URL``` : L'URL qui est retournée ou lieu de l'URL demandée. Vous pouvez utilisez ce champs pour redirigé vers n'importe quel fichier.
+- ```Last-modified: Date``` : La date de la derniere modification de la ressource.
+- ```Content-length``` : La longueur, en octets, des données renvoyées. Le navigateur utilise cette valeur pour indiquer le temps de téléchargement estimé d'un fichier.
+- ```Set-Cookie: String``` : Définissez le cookie transmis par le ```string```.
 
 ## Variables d'environnement CGI
 
