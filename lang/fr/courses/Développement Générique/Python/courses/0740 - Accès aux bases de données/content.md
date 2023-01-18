@@ -86,7 +86,7 @@ Voici un exemple de connexion à la base de données MySQL "TESTDB" :
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost", "testuser", "test123", "TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -124,7 +124,7 @@ Créons une table de base de données EMPLOYEE :
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -231,7 +231,7 @@ con.execute('insert into Login values("%s", "%s")' % \
 
 L'opération READ sur une base de données signifie que l'on va chercher des informations utiles dans la base de données.
 
-Une fois la connexion à la base de données établie, vous êtes prêt à effectuer une requête dans cette base de données. Vous pouvez utiliser la méthode ```fetchone()``` pour extraire un seul enregistrement ou la méthode fetchall() pour extraire plusieurs valeurs d'une table de base de données.
+Une fois la connexion à la base de données établie, vous êtes prêt à effectuer une requête dans cette base de données. Vous pouvez utiliser la méthode ```fetchone()``` pour extraire un seul enregistrement ou la méthode ```fetchall()``` pour extraire plusieurs valeurs d'une table de base de données.
 
 - ```fetchone()``` - Elle récupère la ligne suivante d'un ensemble de résultats de requête. Un ensemble de résultats est un objet qui est renvoyé lorsqu'un objet curseur est utilisé pour interroger une table.
 - ```fetchall()``` - Elle récupère toutes les lignes d'un ensemble de résultats. Si certaines lignes ont déjà été extraites du jeu de résultats, elle récupère les lignes restantes du jeu de résultats.
