@@ -255,7 +255,7 @@ Exiting Main Thread
 Le module Queue vous permet de créer un nouvel objet queue qui peut contenir un nombre spécifique d'éléments. Les méthodes suivantes permettent de contrôler la file d'attente : 
 
 - ```get()``` - La méthode ```get()``` supprime et renvoie un élément de la file d'attente.
-- ```put()``` - La méthode put ajoute un élément à la file d'attente.
+- ```put()``` - La méthode ```put()``` ajoute un élément à la file d'attente.
 - ```qsize()``` - La méthode ```qsize()``` retourne le nombre d'éléments qui sont actuellement dans la file d'attente.
 - ```empty()``` - La fonction ```empty()``` retourne True si la file d'attente est vide ; sinon, False.
 - ```full()``` - La fonction ```full()``` retourne True si la file d'attente est pleine ; sinon, False.

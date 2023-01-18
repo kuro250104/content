@@ -86,7 +86,7 @@ Voici un exemple de connexion à la base de données MySQL "TESTDB" :
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -96,7 +96,7 @@ cursor.execute("SELECT VERSION()")
 
 # Fetch a single row using fetchone() method.
 data = cursor.fetchone()
-print ("Database version : %s " % data)
+print("Database version : %s " % data)
 
 # disconnect from server
 db.close()
@@ -124,7 +124,7 @@ Créons une table de base de données EMPLOYEE :
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -160,7 +160,7 @@ L'exemple suivant exécute l'instruction SQL INSERT pour créer un enregistremen
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB" )
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -190,7 +190,7 @@ L'exemple ci-dessus peut être écrit comme suit pour créer des requêtes SQL d
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -231,7 +231,7 @@ con.execute('insert into Login values("%s", "%s")' % \
 
 L'opération READ sur une base de données signifie que l'on va chercher des informations utiles dans la base de données.
 
-Une fois la connexion à la base de données établie, vous êtes prêt à effectuer une requête dans cette base de données. Vous pouvez utiliser la méthode ```fetchone()``` pour extraire un seul enregistrement ou la méthode fetchall() pour extraire plusieurs valeurs d'une table de base de données.
+Une fois la connexion à la base de données établie, vous êtes prêt à effectuer une requête dans cette base de données. Vous pouvez utiliser la méthode ```fetchone()``` pour extraire un seul enregistrement ou la méthode ```fetchall()``` pour extraire plusieurs valeurs d'une table de base de données.
 
 - ```fetchone()``` - Elle récupère la ligne suivante d'un ensemble de résultats de requête. Un ensemble de résultats est un objet qui est renvoyé lorsqu'un objet curseur est utilisé pour interroger une table.
 - ```fetchall()``` - Elle récupère toutes les lignes d'un ensemble de résultats. Si certaines lignes ont déjà été extraites du jeu de résultats, elle récupère les lignes restantes du jeu de résultats.
@@ -247,7 +247,7 @@ La procédure suivante interroge tous les enregistrements de la table EMPLOYEE d
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -267,7 +267,7 @@ try:
         sex = row[3]
         income = row[4]
         # Now print fetched result
-        print("fname = %s,lname = %s,age = %d,sex = %s,income = %d" % \
+        print("fname = %s, lname = %s, age = %d, sex = %s, income = %d" % \
             (fname, lname, age, sex, income ))
 except:
     print("Error: unable to fetch data")
@@ -298,7 +298,7 @@ La procédure suivante met à jour tous les enregistrements dont le SEXE est 'M'
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -331,7 +331,7 @@ L'opération DELETE est nécessaire lorsque vous souhaitez supprimer certains en
 import pymysql
 
 # Open database connection
-db = pymysql.connect("localhost","testuser","test123","TESTDB" )
+db = pymysql.connect("localhost", "testuser", "test123", "TESTDB")
 
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
@@ -407,7 +407,7 @@ Pour déconnecter la connexion à la base de données, utilisez la méthode ```c
 db.close()
 ```
 
-Si la connexion à une base de données est fermée par l'utilisateur avec la méthode close(), toutes les transactions en cours sont annulées par la base de données. Cependant, au lieu de dépendre des détails d'implémentation de niveau inférieur de la base de données, votre application ferait mieux d'appeler explicitement commit ou rollback.
+Si la connexion à une base de données est fermée par l'utilisateur avec la méthode ```close()```, toutes les transactions en cours sont annulées par la base de données. Cependant, au lieu de dépendre des détails d'implémentation de niveau inférieur de la base de données, votre application ferait mieux d'appeler explicitement commit ou rollback.
 
 ## Traitement des erreurs
 
