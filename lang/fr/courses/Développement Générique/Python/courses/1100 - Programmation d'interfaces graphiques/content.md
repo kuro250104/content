@@ -33,7 +33,7 @@ top.mainloop()
 
 Tkinter fournit divers contrôles, tels que des boutons, des étiquettes et des boîtes de texte utilisés dans une application GUI. Ces contrôles sont communément appelés widgets.
 
-Il y a actuellement 15 types de widgets dans Tkinter. Nous présentons ces widgets ainsi qu'une brève description dans le tableau suivant :
+Il y a actuellement 19 types de widgets dans Tkinter. Nous présentons ces widgets ainsi qu'une brève description dans le tableau suivant :
 
 - ```Button``` : Le widget Button est utilisé pour afficher les boutons dans votre application.
 - ```Canvas``` : Le widget Canvas est utilisé pour dessiner des formes, telles que des lignes, des ovales, des polygones et des rectangles, dans votre application.
