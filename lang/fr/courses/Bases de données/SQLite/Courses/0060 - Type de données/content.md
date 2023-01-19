@@ -10,7 +10,7 @@ Chaque valeur stockée dans une base de données SQLite possède l'une des class
 
 - **NULL** - La valeur est une valeur NULL.
 - **INTEGER** - La valeur est un nombre entier signé, stocké dans 1, 2, 3, 4, 6 ou 8 octets selon l'ampleur de la valeur.
-- **REAL** - La valeur est une valeur à virgule flottante, stockée comme un nombre à virgule flottante IEEE de 8 octets..
+- **REAL** - La valeur est une valeur à virgule flottante, stockée comme un nombre à virgule flottante IEEE de 8 octets.
 - **TEXT** - La valeur est une chaîne de texte, stockée en utilisant l'encodage de la base de données (UTF-8, UTF-16BE ou UTF-16LE).
 - **BLOB** - La valeur est un blob de données, stocké exactement comme il a été entré. La classe de stockage SQLite est légèrement plus générale qu'un type de données. La classe de stockage INTEGER, par exemple, comprend 6 types de données entières de longueurs différentes.
 
