@@ -15,7 +15,7 @@ Le moteur SQLite n'est pas un processus autonome comme les autres bases de donn�
 - SQLite ne nécessite pas de processus ou de système de serveur distinct pour fonctionner (sans serveur).
 - SQLite est livré avec zéro-configuration, ce qui signifie qu'aucune installation ou administration n'est nécessaire.
 - Une base de données SQLite complète est stockée dans un seul fichier disque multiplateforme.
-- SQLite est très petit et léger, moins de 400KiB entièrement configuré ou moins de 250KiB avec des fonctionnalités optionnelles omises.
+- SQLite est très petit et léger, moins de 400KiB entièrement configurés ou moins de 250KiB avec des fonctionnalités optionnelles omises.
 - SQLite est autonome, ce qui signifie qu'il n'a pas de dépendances externes.
 - Les transactions SQLite sont entièrement conformes à la norme ACID, permettant un accès sécurisé à partir de plusieurs processus ou threads.
 - SQLite prend en charge la plupart des fonctionnalités du langage d'interrogation de la norme SQL92 (SQL2).
@@ -49,12 +49,12 @@ Les commandes SQLite standard pour interagir avec les bases de données relation
 
 **Commande et description**
 
-- **INSERT** - Créer un enregistrement
-- **UPDATE** - Modifie les enregistrements
-- **DELETE** - Supprime les enregistrements
+- **INSERT** - Créer un enregistrement.
+- **UPDATE** - Modifie les enregistrements.
+- **DELETE** - Supprime les enregistrements.
 
 ## DQL - Data Query Language
 
 **Commande et description**
 
-- **SELECT** - Extracts certain records from one or more tables.
+- **SELECT** - Extrais certaines données d'une ou plusieurs tables.
