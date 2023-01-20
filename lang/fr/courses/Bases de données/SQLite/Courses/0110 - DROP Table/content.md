@@ -28,7 +28,7 @@ sqlite>DROP TABLE COMPANY;
 sqlite>
 ```
 
-Maintenant, si vous essayez la commande .TABLES, vous ne trouverez plus la table COMPANY.
+Maintenant, si vous essayez la commande ```.tables```, vous ne trouverez plus la table COMPANY.
 
 ```sql
 sqlite>.tables
