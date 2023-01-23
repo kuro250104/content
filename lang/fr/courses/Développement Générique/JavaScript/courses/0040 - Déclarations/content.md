@@ -42,7 +42,7 @@ var addition : a + b;
 
 ## Taille des lignes et retours à la ligne
 
-Pour des raisons de lisibilité du code, les développeurs s’arrangent pour que leurs lignes de codes ne dépassent pas 80 caractères. (entre 79 et 129 en fonction des 
+Pour des raisons de lisibilité du code, les développeurs s’arrangent pour que leurs lignes de codes ne dépassent pas 80 caractères. (entre 79 et 129 en fonction des règles des entreprises dans lesquelles ils travaillent) 
 
 Afin de respecter cette règle, le meilleur endroit pour faire un retour à la ligne est après un opérateur.
 
