@@ -34,11 +34,11 @@ Le tableau suivant présente un certain nombre d'exemples de parties WHERE compo
 
 **Déclaration et description**
 
-- ```WHERE SALARY LIKE '200%'``` - Trouve toutes les valeurs qui commencent par 200
+- ```WHERE SALARY LIKE '200%'``` - Trouve toutes les valeurs qui commencent par 200.
 - ```WHERE SALARY LIKE '%200%'``` - Trouve toutes les valeurs qui ont 200 dans n'importe quelle position.
 - ```WHERE SALARY LIKE '_00%'``` - Trouve toutes les valeurs qui ont 00 en deuxième et troisième positions.
 - ```WHERE SALARY LIKE '2 _%_%'``` - Trouve toutes les valeurs qui commencent par 2 et qui ont au moins 3 caractères de long.
-- ```WHERE SALARY LIKE '%2'``` - Trouve toutes les valeurs qui se terminent par 2
+- ```WHERE SALARY LIKE '%2'``` - Trouve toutes les valeurs qui se terminent par 2.
 - ```WHERE SALARY LIKE '_2%3'``` - Trouve toutes les valeurs qui ont un 2 en deuxième position et qui se terminent par un 3.
 - ```WHERE SALARY LIKE '2___3'``` - Trouve toutes les valeurs dans un nombre à cinq chiffres qui commence par 2 et se termine par 3.
 
@@ -78,7 +78,7 @@ ID          NAME        AGE         ADDRESS     SALARY
 Voici un exemple qui affichera tous les enregistrements de la table SOCIÉTÉ où ADRESSE aura un trait d'union (-) dans le texte.
 
 ```sql
-sqlite> SELECT * FROM COMPANY WHERE ADDRESS  LIKE '%-%';
+sqlite> SELECT * FROM COMPANY WHERE ADDRESS LIKE '%-%';
 ```
 
 Cela donnera le résultat suivant.
