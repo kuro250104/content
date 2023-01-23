@@ -249,7 +249,7 @@ Cette propriété est l'abréviation de ```flex-grow```, ```flex-shrink``` et ``
 
 Cette propriété permet de remplacer l'alignement par défaut (ou celui spécifié par ```align-items```) pour les **items** de manière individuelle.
 
-Les valeurs disponibles sont les mêmes que pour la propriété ``àlign-items```, vous pouvez donc vous y référer.
+Les valeurs disponibles sont les mêmes que pour la propriété ```align-items```, vous pouvez donc vous y référer.
 
 ```css
 .item {
