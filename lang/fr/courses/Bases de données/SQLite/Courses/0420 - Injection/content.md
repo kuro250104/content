@@ -20,7 +20,7 @@ $name = "Qadir'; DELETE FROM users;";
 @$db->query("SELECT * FROM users WHERE username = '{$name}'");
 ```
 
-L'appel de fonction est censé récupérer un enregistrement de la table users dont la colonne name correspond au nom spécifié par l'utilisateur. Dans des circonstances normales, $name ne devrait contenir que des caractères alphanumériques et peut-être des espaces, comme la chaîne ilia. Cependant, dans ce cas, en ajoutant une requête entièrement nouvelle à $name, l'appel à la base de données tourne au désastre : la requête DELETE injectée supprime tous les enregistrements des utilisateurs.
+L'appel de fonction est censé récupérer un enregistrement de la table users dont la colonne name correspond au nom spécifié par l'utilisateur. Dans des circonstances normales, $name ne devrait contenir que des caractères alphanumériques et peut-être des espaces. Cependant, dans ce cas, en ajoutant une requête entièrement nouvelle à $name, l'appel à la base de données tourne au désastre : la requête DELETE injectée supprime tous les enregistrements des utilisateurs.
 
 Certaines interfaces de bases de données ne permettent pas l'empilement de requêtes ou l'exécution de plusieurs requêtes en un seul appel de fonction. Si vous essayez d'empiler des requêtes, l'appel échoue mais SQLite et PostgreSQL, exécutent allègrement les requêtes empilées, exécutant toutes les requêtes fournies dans une seule chaîne et créant un sérieux problème de sécurité.
 
