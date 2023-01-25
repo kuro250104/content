@@ -46,7 +46,7 @@ La liste ci-dessous répertorie les paramètres avec leur description.
 
 - **dbname** - Le nom de la base de données à créer.
 - **description** - Spécifie un commentaire à associer à la base de données nouvellement créée.
-- **options** - arguments de ligne de commande, que createdb accepte.
+- **options** - Arguments de ligne de commande, que createdb accepte.
 
 ### Options
 
