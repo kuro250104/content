@@ -120,7 +120,7 @@ Voici un exemple de suppression de la colonne "sexe" d'une table existante :
 testdb=# ALTER TABLE COMPANY DROP GENDER;
 ```
 
-Maintenant, la table COMPANY est modifiée et le résultat de l'instruction SELECT est le suivant :
+Maintenant, la table COMPANY est modifiée et le résultat de l'instruction **SELECT** est le suivant :
 
 ```bash
 id | name  | age | address   | salary
