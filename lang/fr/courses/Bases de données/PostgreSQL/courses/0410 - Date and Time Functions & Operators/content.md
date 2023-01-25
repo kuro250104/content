@@ -22,11 +22,10 @@ Le tableau suivant liste les comportements des opérateurs arithmétiques de bas
 | ``` * ``` | 900 * intervalle '1 second' | intervalle '00:15:00' |
 | ``` * ``` | 21 * intervalle '1 day' | intervalle '21 days' |
 | ``` * ``` | double precision '3.5' * interval '1 hour' | intervalle '03:30:00' |
-| ``` * ``` | intervalle "1 heure" / double précision "1,5". | intervalle '00:40:00' |
-| ``` * ``` | --- | --- |
-| ``` - ``` | --- | --- |
+| ``` * ``` | intervalle "1 heure" / double précision "1,5" | intervalle '00:40:00' |
+| --- | --- | --- |
 
-Vous trouverez ci-dessous la liste de toutes les fonctions importantes liées à la date et à l'heure.
+Vous trouverez ci-dessous la liste de toutes les fonctions importantes liées à la date et à l'heure :
 
 **Function & Description**
 
