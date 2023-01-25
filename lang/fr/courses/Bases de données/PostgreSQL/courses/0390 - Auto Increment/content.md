@@ -6,7 +6,7 @@ Le nom de type serial crée une colonne de type integer. Le nom de type bigseria
 
 ## Syntaxe
 
-L'utilisation de base de SERIAL dataype est la suivante -
+L'utilisation de base de SERIAL dataype est la suivante :
 
 ```sql
 CREATE TABLE tablename (
@@ -16,7 +16,7 @@ CREATE TABLE tablename (
 
 ## Exemple
 
-Considérons que la table SOCIÉTÉ doit être créée de la manière suivante : -.
+Considérons que la table SOCIÉTÉ doit être créée de la manière suivante :
 
 ```sql
 testdb=# CREATE TABLE COMPANY(
@@ -28,33 +28,33 @@ testdb=# CREATE TABLE COMPANY(
 );
 ```
 
-Maintenant, insérez les enregistrements suivants dans la table SOCIÉTÉ -
+Maintenant, insérez les enregistrements suivants dans la table SOCIÉTÉ :
 
 ```sql
 INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
-VALUES ( 'Paul', 32, 'California', 20000.00 );
+VALUES ('Paul', 32, 'California', 20000.00);
 
 INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
-VALUES ('Allen', 25, 'Texas', 15000.00 );
+VALUES ('Allen', 25, 'Texas', 15000.00);
 
 INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
-VALUES ('Teddy', 23, 'Norway', 20000.00 );
+VALUES ('Teddy', 23, 'Norway', 20000.00);
 
 INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
-VALUES ( 'Mark', 25, 'Rich-Mond ', 65000.00 );
+VALUES ('Mark', 25, 'Rich-Mond ', 65000.00);
 
 INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
-VALUES ( 'David', 27, 'Texas', 85000.00 );
+VALUES ('David', 27, 'Texas', 85000.00);
 
 
 INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
-VALUES ( 'Kim', 22, 'South-Hall', 45000.00 );
+VALUES ('Kim', 22, 'South-Hall', 45000.00);
 
 INSERT INTO COMPANY (NAME,AGE,ADDRESS,SALARY)
-VALUES ( 'James', 24, 'Houston', 10000.00 );
+VALUES ('James', 24, 'Houston', 10000.00);
 ```
 
-Ceci va insérer sept tuples dans la table COMPANY et COMPANY aura les enregistrements suivants -
+Ceci va insérer sept tuples dans la table COMPANY et COMPANY aura les enregistrements suivants :
 
 ```bash
 id | name  | age | address    | salary
