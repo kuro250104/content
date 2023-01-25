@@ -4,10 +4,10 @@ SQLite supporte cinq fonctions de date et d'heure comme suit -
 
 **Function et Exemple**
 
-- ```date(timestring, modifiers...)``` - Cela renvoie la date dans ce format : AAAA-MM-JJ
+- ```date(timestring, modifiers...)``` - Cela renvoie la date dans ce format : AAAA-MM-JJ.
 - ```time(timestring, modifiers...)``` - Cela renvoie l'heure sous la forme HH:MM:SS.
 - ```datetime(timestring, modifiers...)``` - Cela donne YYYY-MM-DD HH:MM:SS.
-- ```julianday(timestring, modifiers...)``` - On obtient le nombre de jours écoulés depuis midi à Greenwich le 24 novembre 4714 avant J.-C..
+- ```julianday(timestring, modifiers...)``` - On obtient le nombre de jours écoulés depuis midi à Greenwich le 24 novembre 4714 avant J.-C. .
 - ```strftime(timestring, modifiers...)``` - Ceci renvoie la date formatée selon la chaîne de format spécifiée comme premier argument, formatée selon les formateurs expliqués ci-dessous.
 
 Les cinq fonctions de date et d'heure ci-dessus prennent une chaîne de temps comme argument. La chaîne de temps est suivie de zéro ou plusieurs modificateurs. La fonction strftime() prend également une chaîne de format comme premier argument. La section suivante vous donnera des détails sur les différents types de chaînes de temps et de modificateurs.
@@ -135,7 +135,7 @@ sqlite> SELECT (julianday('now') - 2440587.5)*86400.0;
 1367926077.12598
 ```
 
-Pour convertir les valeurs de l'heure UTC en valeurs de l'heure locale lors du formatage d'une date, utilisez les modificateurs utc ou localtime comme suit -
+Pour convertir les valeurs de l'heure UTC en valeurs de l'heure locale lors du formatage d'une date, utilisez les modificateurs utc ou localtime comme suit :
 
 ```sql
 sqlite> SELECT time('12:00', 'localtime');

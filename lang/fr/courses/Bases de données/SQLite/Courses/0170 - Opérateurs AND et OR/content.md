@@ -2,7 +2,7 @@ Les opérateurs SQLite AND & OR sont utilisés pour compiler plusieurs condition
 
 Ces opérateurs permettent d'effectuer des comparaisons multiples avec différents opérateurs dans la même instruction SQLite.
 
-## The AND Operator
+## L'opérateur AND
 
 L'opérateur AND permet l'existence de plusieurs conditions dans la clause WHERE d'une instruction SQLite. En utilisant l'opérateur AND, la condition complète sera considérée comme vraie lorsque toutes les conditions sont vraies. Par exemple, [condition1] AND [condition2] ne sera vraie que si la condition1 et la condition2 sont toutes deux vraies.
 
@@ -45,13 +45,13 @@ ID          NAME        AGE         ADDRESS     SALARY
 5           David       27          Texas       85000.0
 ```
 
-## The OR Operator
+## L'opérateur OR
 
 L'opérateur **OR** est également utilisé pour combiner plusieurs conditions dans la clause WHERE d'une instruction SQLite. En utilisant l'opérateur OR, la condition complète sera considérée comme vraie si au moins l'une des conditions est vraie. Par exemple, ```[condition1] OR [condition2]``` sera vraie si la condition1 ou la condition2 est vraie.
 
 ### Syntaxe
 
-Following is the basic syntax of **OR** operator with **WHERE** clause.
+Voici la syntaxe de base de l'opérateur **OR** avec la clause **WHERE**.
 
 ```sql
 SELECT column1, column2, columnN 

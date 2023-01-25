@@ -169,10 +169,17 @@ Exemple :
 
 ```html
 <body>
-	<div style="overflow-x: auto;">
+	<div class="tabl">
 		<table>
 			Contenu du tableau 
 		</table>
 	</div>
 </body>
+```
+Et le CSS sera :
+
+```css
+.tabl{
+	overflow-x: auto;
+}
 ```
