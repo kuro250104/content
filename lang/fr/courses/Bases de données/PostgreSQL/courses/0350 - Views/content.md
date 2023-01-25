@@ -2,7 +2,7 @@ Les vues sont des pseudo-tables. C'est-à-dire qu'elles ne sont pas de véritabl
 
 Une vue peut contenir toutes les lignes d'une table ou des lignes sélectionnées dans une ou plusieurs tables. Une vue peut être créée à partir d'une ou plusieurs tables, ce qui dépend de la requête PostgreSQL écrite pour créer une vue.
 
-Les vues, qui sont des sortes de tables virtuelles, permettent aux utilisateurs de faire ce qui suit .
+Les vues, qui sont des sortes de tables virtuelles, permettent aux utilisateurs de faire ce qui suit :
 
 - Structurer les données d'une manière que les utilisateurs ou les catégories d'utilisateurs trouvent naturelle ou intuitive.
 - Restreindre l'accès aux données de sorte qu'un utilisateur ne puisse voir que des données limitées au lieu du tableau complet.
@@ -14,7 +14,7 @@ Comme les vues ne sont pas des tables ordinaires, il se peut que vous ne puissie
 
 Les vues PostgreSQL sont créées à l'aide de l'instruction **CREATE VIEW**. Les vues PostgreSQL peuvent être créées à partir d'une table unique, de plusieurs tables ou d'une autre vue.
 
-La syntaxe de base de **CREATE VIEW** est la suivante : -.
+La syntaxe de base de **CREATE VIEW** est la suivante :
 
 ```sql
 CREATE [TEMP | TEMPORARY] VIEW view_name AS
@@ -27,7 +27,7 @@ Vous pouvez inclure plusieurs tables dans votre instruction SELECT de la même m
 
 ## Exemple
 
-Considérons que la table SOCIÉTÉ comporte les enregistrements suivants -
+Considérons que la table SOCIÉTÉ comporte les enregistrements suivants :
 
 ```bash
 id | name  | age | address    | salary
@@ -49,13 +49,13 @@ SELECT ID, NAME, AGE
 FROM  COMPANY;
 ```
 
-Maintenant, vous pouvez interroger COMPANY_VIEW de la même manière que vous interrogez une table réelle. Voici l'exemple suivant -
+Maintenant, vous pouvez interroger COMPANY_VIEW de la même manière que vous interrogez une table réelle. Voici l'exemple suivant :
 
 ```sql
 testdb=# SELECT * FROM COMPANY_VIEW;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 id | name  | age
@@ -72,13 +72,13 @@ id | name  | age
 
 ## Dropping Views
 
-Pour supprimer une vue, il suffit d'utiliser l'instruction **DROP VIEW** avec le nom de la vue. La syntaxe de base de l'instruction **DROP VIEW** est la suivante - 
+Pour supprimer une vue, il suffit d'utiliser l'instruction **DROP VIEW** avec le nom de la vue. La syntaxe de base de l'instruction **DROP VIEW** est la suivante : 
 
 ```sql
 testdb=# DROP VIEW view_name;
 ```
 
-La commande suivante va supprimer la vue COMPANY_VIEW, que nous avons créée dans la dernière section -
+La commande suivante va supprimer la vue COMPANY_VIEW, que nous avons créée dans la dernière section :
 
 ```sql
 testdb=# DROP VIEW COMPANY_VIEW;
