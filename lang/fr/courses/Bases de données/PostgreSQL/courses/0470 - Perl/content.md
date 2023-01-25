@@ -197,7 +197,7 @@ while(my @row = $sth->fetchrow_array()) {
         print "ID = ". $row[0] . "\n";
         print "NAME = ". $row[1] ."\n";
         print "ADDRESS = ". $row[2] ."\n";
-        print "SALARY =  ". $row[3] ."\n\n";
+        print "SALARY = ". $row[3] ."\n\n";
 }
 print "Operation done successfully\n";
 $dbh->disconnect();
@@ -210,22 +210,22 @@ Opened database successfully
 ID = 1
 NAME = Paul
 ADDRESS = California
-SALARY =  20000
+SALARY = 20000
 
 ID = 2
 NAME = Allen
 ADDRESS = Texas
-SALARY =  15000
+SALARY = 15000
 
 ID = 3
 NAME = Teddy
 ADDRESS = Norway
-SALARY =  20000
+SALARY = 20000
 
 ID = 4
 NAME = Mark
 ADDRESS = Rich-Mond
-SALARY =  65000
+SALARY = 65000
 
 Operation done successfully
 ```
