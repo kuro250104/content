@@ -1,6 +1,6 @@
 Les fonctions intégrées de PostgreSQL, également appelées fonctions d'agrégation, sont utilisées pour effectuer des traitements sur des chaînes de caractères ou des données numériques.
 
-Voici la liste de toutes les fonctions intégrées PostgreSQL d'usage courant -
+Voici la liste de toutes les fonctions intégrées PostgreSQL d'usage courant :
 
 - **Fonction COUNT PostgreSQL** - La fonction d'agrégation COUNT PostgreSQL est utilisée pour compter le nombre de lignes dans une table de base de données.
 - **Fonction MAX PostgreSQL** - La fonction d'agrégation MAX PostgreSQL nous permet de sélectionner la valeur la plus élevée (maximale) pour une certaine colonne.
