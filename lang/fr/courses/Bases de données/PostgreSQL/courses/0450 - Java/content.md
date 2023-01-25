@@ -9,7 +9,7 @@ La section suivante suppose que vous avez une petite connaissance des concepts d
 
 ## Connection à la base de données
 
-Le code Java suivant montre comment se connecter à une base de données existante. Si la base de données n'existe pas, elle sera créée et enfin un objet de base de données sera retourné.
+Le code Java suivant montre comment se connecter à une base de données existante. Si la base de données n'existe pas, elle sera créée et enfin un objet de base de données sera retourné :
 
 ```c
 import java.sql.Connection;
@@ -33,14 +33,14 @@ public class PostgreSQLJDBC {
 }
 ```
 
-Avant de compiler et d'exécuter le programme ci-dessus, trouvez le fichier pg_hba.conf dans votre répertoire d'installation PostgreSQL et ajoutez la ligne suivante -
+Avant de compiler et d'exécuter le programme ci-dessus, trouvez le fichier pg_hba.conf dans votre répertoire d'installation PostgreSQL et ajoutez la ligne suivante :
 
 ```bash
 # IPv4 local connections:
 host    all         all         127.0.0.1/32          md5
 ```
 
-Vous pouvez démarrer/redémarrer le serveur postgres s'il n'est pas en cours d'exécution à l'aide de la commande suivante -
+Vous pouvez démarrer/redémarrer le serveur postgres s'il n'est pas en cours d'exécution à l'aide de la commande suivante :
 
 ```bash
 [root@host]# service postgresql restart
@@ -58,7 +58,7 @@ Open database successfully
 
 ## Création d'une table
 
-Le programme Java suivant sera utilisé pour créer une table dans une base de données précédemment ouverte. Assurez-vous que cette table n'existe pas déjà dans votre base de données cible.
+Le programme Java suivant sera utilisé pour créer une table dans une base de données précédemment ouverte. Assurez-vous que cette table n'existe pas déjà dans votre base de données cible :
 
 ```java
 import java.sql.*;
@@ -89,8 +89,8 @@ public class PostgreSQLJDBC {
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName()+": "+ e.getMessage());
             System.exit(0);
         }
         System.out.println("Table created successfully");
@@ -98,7 +98,7 @@ public class PostgreSQLJDBC {
 }
 ```
 
-Lorsqu'un programme est compilé et exécuté, il créera la table COMPANY dans la base de données testdb et affichera les deux lignes suivantes -
+Lorsqu'un programme est compilé et exécuté, il créera la table COMPANY dans la base de données testdb et affichera les deux lignes suivantes :
 
 ```bash
 Opened database successfully
@@ -107,7 +107,7 @@ Table created successfully
 
 ## INSERT Operation
 
-Le programme Java suivant montre comment créer des enregistrements dans la table SOCIÉTÉ créée dans l'exemple ci-dessus.
+Le programme Java suivant montre comment créer des enregistrements dans la table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```java
 import java.sql.Connection;
@@ -147,7 +147,7 @@ public class PostgreSQLJDBC {
             c.commit();
             c.close();
         } catch (Exception e) {
-            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+            System.err.println(e.getClass().getName()+": "+ e.getMessage());
             System.exit(0);
         }
         System.out.println("Records created successfully");
@@ -155,7 +155,7 @@ public class PostgreSQLJDBC {
 }
 ```
 
-Lorsque le programme ci-dessus est compilé et exécuté, il créera des enregistrements donnés dans la table SOCIÉTÉ et affichera les deux lignes suivantes -
+Lorsque le programme ci-dessus est compilé et exécuté, il créera des enregistrements donnés dans la table SOCIÉTÉ et affichera les deux lignes suivantes :
 
 ```bash
 Opened database successfully
@@ -164,7 +164,7 @@ Records created successfully
 
 ## Opération SELECT
 
-Le programme Java suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus.
+Le programme Java suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```java
 import java.sql.Connection;
@@ -186,25 +186,25 @@ public class PostgreSQLJDBC {
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-            while ( rs.next() ) {
+            ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY;");
+            while (rs.next()) {
                 int id = rs.getInt("id");
                 String  name = rs.getString("name");
                 int age  = rs.getInt("age");
                 String  address = rs.getString("address");
                 float salary = rs.getFloat("salary");
-                System.out.println( "ID = " + id );
-                System.out.println( "NAME = " + name );
-                System.out.println( "AGE = " + age );
-                System.out.println( "ADDRESS = " + address );
-                System.out.println( "SALARY = " + salary );
+                System.out.println("ID = " + id);
+                System.out.println("NAME = " + name);
+                System.out.println("AGE = " + age);
+                System.out.println("ADDRESS = " + address);
+                System.out.println("SALARY = " + salary);
                 System.out.println();
             }
             rs.close();
             stmt.close();
             c.close();
-        } catch ( Exception e ) {
-            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName()+": "+ e.getMessage());
             System.exit(0);
         }
         System.out.println("Operation done successfully");
@@ -212,7 +212,7 @@ public class PostgreSQLJDBC {
 }
 ```
 
-Lorsque le programme est compilé et exécuté, il produira le résultat suivant -
+Lorsque le programme est compilé et exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully
@@ -245,7 +245,7 @@ Operation done successfully
 
 ## Opération UPDATE
 
-Le code Java suivant montre comment utiliser l'instruction UPDATE pour mettre à jour n'importe quel enregistrement, puis récupérer et afficher les enregistrements mis à jour dans la table COMPANY.
+Le code Java suivant montre comment utiliser l'instruction UPDATE pour mettre à jour n'importe quel enregistrement, puis récupérer et afficher les enregistrements mis à jour dans la table COMPANY :
 
 ```java
 import java.sql.Connection;
@@ -271,25 +271,25 @@ public class PostgreSQLJDBC {
             stmt.executeUpdate(sql);
             c.commit();
 
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-            while ( rs.next() ) {
+            ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY;");
+            while (rs.next()) {
                 int id = rs.getInt("id");
                 String  name = rs.getString("name");
                 int age  = rs.getInt("age");
                 String  address = rs.getString("address");
                 float salary = rs.getFloat("salary");
-                System.out.println( "ID = " + id );
-                System.out.println( "NAME = " + name );
-                System.out.println( "AGE = " + age );
-                System.out.println( "ADDRESS = " + address );
-                System.out.println( "SALARY = " + salary );
+                System.out.println("ID = " + id ;
+                System.out.println("NAME = " + name);
+                System.out.println("AGE = " + age);
+                System.out.println("ADDRESS = " + address);
+                System.out.println("SALARY = " + salary);
                 System.out.println();
             }
             rs.close();
             stmt.close();
             c.close();
         } catch ( Exception e ) {
-            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+            System.err.println(e.getClass().getName()+": "+ e.getMessage());
             System.exit(0);
         }
         System.out.println("Operation done successfully");
@@ -297,7 +297,7 @@ public class PostgreSQLJDBC {
 }
 ```
 
-Lorsque le programme est compilé et exécuté, il produira le résultat suivant -
+Lorsque le programme est compilé et exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully
@@ -330,7 +330,7 @@ Operation done successfully
 
 ## Opération DELETE
 
-Le code Java suivant montre comment nous pouvons utiliser l'instruction DELETE pour supprimer un enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY -.
+Le code Java suivant montre comment nous pouvons utiliser l'instruction DELETE pour supprimer un enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY :
 
 ```java
 import java.sql.Connection;
@@ -356,25 +356,25 @@ public class PostgreSQLJDBC6 {
             stmt.executeUpdate(sql);
             c.commit();
 
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-            while ( rs.next() ) {
+            ResultSet rs = stmt.executeQuery("SELECT * FROM COMPANY;");
+            while (rs.next()) {
                 int id = rs.getInt("id");
                 String  name = rs.getString("name");
                 int age  = rs.getInt("age");
                 String  address = rs.getString("address");
                 float salary = rs.getFloat("salary");
-                System.out.println( "ID = " + id );
-                System.out.println( "NAME = " + name );
-                System.out.println( "AGE = " + age );
-                System.out.println( "ADDRESS = " + address );
-                System.out.println( "SALARY = " + salary );
+                System.out.println("ID = " + id);
+                System.out.println("NAME = " + name);
+                System.out.println("AGE = " + age);
+                System.out.println("ADDRESS = " + address);
+                System.out.println("SALARY = " + salary);
                 System.out.println();
             }
             rs.close();
             stmt.close();
             c.close();
         } catch ( Exception e ) {
-            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+            System.err.println(e.getClass().getName()+": "+ e.getMessage());
             System.exit(0);
         }
         System.out.println("Operation done successfully");
@@ -382,7 +382,7 @@ public class PostgreSQLJDBC6 {
 }
 ```
 
-Lorsque le programme est compilé et exécuté, il produira le résultat suivant -
+Lorsque le programme est compilé et exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully
