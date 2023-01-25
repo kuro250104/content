@@ -1,12 +1,12 @@
 Ce chapitre fournit une liste des commandes SQL de PostgreSQL, suivie des règles syntaxiques précises pour chacune de ces commandes. Cet ensemble de commandes est tiré de l'outil de ligne de commande psql. Maintenant que vous avez installé Postgres, ouvrez l'outil psql sous la forme -
 
-```
+```sql
 Program Files → PostgreSQL 9.2 → SQL Shell(psql).
 ```
 
 Avec psql, vous pouvez générer une liste complète des commandes en utilisant la commande \help. Pour connaître la syntaxe d'une commande spécifique, utilisez la commande suivante -
 
-```
+```sql
 postgres-# \help <command_name>
 ```
 
@@ -25,7 +25,7 @@ Une instruction SQL est composée de jetons, chaque jeton pouvant représenter u
 
 Abandonner la transaction en cours.
 
-```
+```sql
 ABORT [ WORK | TRANSACTION ]
 ```
 
@@ -33,7 +33,7 @@ ABORT [ WORK | TRANSACTION ]
 
 Modifiez la définition d'une fonction agrégée.
 
-```
+```sql
 ALTER AGGREGATE name ( type ) RENAME TO new_name
 ALTER AGGREGATE name ( type ) OWNER TO new_owner
 ```
@@ -42,7 +42,7 @@ ALTER AGGREGATE name ( type ) OWNER TO new_owner
 
 Modifier un paramètre spécifique à une base de données.
 
-```
+```sql
 ALTER DATABASE name SET parameter { TO | = } { value | DEFAULT }
 ALTER DATABASE name RESET parameter
 ALTER DATABASE name RENAME TO new_name
@@ -53,7 +53,7 @@ ALTER DATABASE name OWNER TO new_owner
 
 Modifier la définition d'un paramètre spécifique au domaine.
 
-```
+```sql
 ALTER DOMAIN name { SET DEFAULT expression | DROP DEFAULT }
 ALTER DOMAIN name { SET | DROP } NOT NULL
 ALTER DOMAIN name ADD domain_constraint
@@ -65,7 +65,7 @@ ALTER DOMAIN name OWNER TO new_owner
 
 Modifier la définition d'une fonction.
 
-```
+```sql
 ALTER FUNCTION name ( [ type [, ...] ] ) RENAME TO new_name
 ALTER FUNCTION name ( [ type [, ...] ] ) OWNER TO new_owner
 ```
@@ -74,7 +74,7 @@ ALTER FUNCTION name ( [ type [, ...] ] ) OWNER TO new_owner
 
 Modifier un groupe d'utilisateurs.
 
-```
+```sql
 ALTER GROUP groupname ADD USER username [, ... ]
 ALTER GROUP groupname DROP USER username [, ... ]
 ALTER GROUP groupname RENAME TO new_name
@@ -84,7 +84,7 @@ ALTER GROUP groupname RENAME TO new_name
 
 Modifier la définition d'un indice.
 
-```
+```sql
 ALTER INDEX name OWNER TO new_owner
 ALTER INDEX name SET TABLESPACE indexspace_name
 ALTER INDEX name RENAME TO new_name
@@ -94,7 +94,7 @@ ALTER INDEX name RENAME TO new_name
 
 Modifier la définition d'un langage procédural.
 
-```
+```sql
 ALTER LANGUAGE name RENAME TO new_name
 ```
 
@@ -102,7 +102,7 @@ ALTER LANGUAGE name RENAME TO new_name
 
 Modifier la définition d'un opérateur.
 
-```
+```sql
 ALTER OPERATOR name ( { lefttype | NONE }, { righttype | NONE } )
 OWNER TO new_owner
 ```
@@ -111,7 +111,7 @@ OWNER TO new_owner
 
 Modifier la définition d'une classe d'opérateurs.
 
-```
+```sql
 ALTER OPERATOR CLASS name USING index_method RENAME TO new_name
 ALTER OPERATOR CLASS name USING index_method OWNER TO new_owner
 ```
@@ -120,7 +120,7 @@ ALTER OPERATOR CLASS name USING index_method OWNER TO new_owner
 
 Modifier la définition d'un schéma.
 
-```
+```sql
 ALTER SCHEMA name RENAME TO new_name
 ALTER SCHEMA name OWNER TO new_owner
 ```
@@ -129,7 +129,7 @@ ALTER SCHEMA name OWNER TO new_owner
 
 Modifier la définition d'un générateur de séquence.
 
-```
+```sql
 ALTER SEQUENCE name [ INCREMENT [ BY ] increment ]
 [ MINVALUE minvalue | NO MINVALUE ]
 [ MAXVALUE maxvalue | NO MAXVALUE ]
@@ -140,7 +140,7 @@ ALTER SEQUENCE name [ INCREMENT [ BY ] increment ]
 
 Modifier la définition d'un tableau.
 
-```
+```sql
 ALTER TABLE [ ONLY ] name [ * ]
 action [, ... ]
 ALTER TABLE [ ONLY ] name [ * ]
@@ -151,7 +151,7 @@ RENAME TO new_name
 
 Où l'action est l'une des lignes suivantes -
 
-```
+```sql
 ADD [ COLUMN ] column_type [ column_constraint [ ... ] ]
 DROP [ COLUMN ] column [ RESTRICT | CASCADE ]
 ALTER [ COLUMN ] column TYPE type [ USING expression ]
@@ -173,7 +173,7 @@ SET TABLESPACE tablespace_name
 
 Modifier la définition d'un tablespace.
 
-```
+```sql
 ALTER TABLESPACE name RENAME TO new_name
 ALTER TABLESPACE name OWNER TO new_owner
 ```
@@ -182,7 +182,7 @@ ALTER TABLESPACE name OWNER TO new_owner
 
 Modifier la définition d'un déclencheur.
 
-```
+```sql
 ALTER TRIGGER name ON table RENAME TO new_name
 ```
 
@@ -190,7 +190,7 @@ ALTER TRIGGER name ON table RENAME TO new_name
 
 Modifier la définition d'un type.
 
-```
+```sql
 ALTER TYPE name OWNER TO new_owner
 ```
 
@@ -198,7 +198,7 @@ ALTER TYPE name OWNER TO new_owner
 
 Modifier un compte utilisateur de la base de données.
 
-```
+```sql
 ALTER USER name [ [ WITH ] option [ ... ] ]
 ALTER USER name RENAME TO new_name
 ALTER USER name SET parameter { TO | = } { value | DEFAULT }
@@ -207,7 +207,7 @@ ALTER USER name RESET parameter
 
 Où l'option peut être -
 
-```
+```sql
 [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'
 | CREATEDB | NOCREATEDB
 | CREATEUSER | NOCREATEUSER
@@ -218,7 +218,7 @@ Où l'option peut être -
 
 Collecter des statistiques sur une base de données.
 
-```
+```sql
 ANALYZE [ VERBOSE ] [ table [ (column [, ...] ) ] ]
 ```
 
@@ -226,13 +226,13 @@ ANALYZE [ VERBOSE ] [ table [ (column [, ...] ) ] ]
 
 Démarrer un bloc de transaction.
 
-```
+```sql
 BEGIN [ WORK | TRANSACTION ] [ transaction_mode [, ...] ]
 ```
 
 Où transaction_mode est l'un de -
 
-```
+```sql
 ISOLATION LEVEL { 
     SERIALIZABLE | REPEATABLE READ | READ COMMITTED
     | READ UNCOMMITTED
@@ -243,7 +243,8 @@ READ WRITE | READ ONLY
 ### CHECKPOINT
 
 Force un point de contrôle du journal des transactions.
-```
+
+```sql
 CHECKPOINT
 ```
 
@@ -251,7 +252,7 @@ CHECKPOINT
 
 Fermer un curseur.
 
-```
+```sql
 CLOSE name
 ```
 
@@ -259,7 +260,7 @@ CLOSE name
 
 Regrouper une table en fonction d'un index.
 
-```
+```sql
 CLUSTER index_name ON table_name
 CLUSTER table_name
 CLUSTER
@@ -269,7 +270,7 @@ CLUSTER
 
 Définir ou modifier le commentaire d'un objet.
 
-```
+```sql
 COMMENT ON {
     TABLE object_name |
     COLUMN table_name.column_name |
@@ -299,7 +300,7 @@ IS 'text'
 
 Valider la transaction en cours.
 
-```
+```sql
 COMMIT [ WORK | TRANSACTION ]
 ```
 
@@ -307,7 +308,7 @@ COMMIT [ WORK | TRANSACTION ]
 
 Copier des données entre un fichier et une table.
 
-```
+```sql
 COPY table_name [ ( column [, ...] ) ]
 FROM { 'filename' | STDIN }
 [ WITH ]
@@ -334,7 +335,7 @@ TO { 'filename' | STDOUT }
 
 Définir une nouvelle fonction d'agrégation.
 
-```
+```sql
 CREATE AGGREGATE name (
     BASETYPE = input_data_type,
     SFUNC = sfunc,
@@ -348,7 +349,7 @@ CREATE AGGREGATE name (
 
 Définir une nouvelle distribution.
 
-```
+```sql
 CREATE CAST (source_type AS target_type)
 WITH FUNCTION func_name (arg_types)
 [ AS ASSIGNMENT | AS IMPLICIT ]
@@ -361,7 +362,7 @@ WITHOUT FUNCTION
 
 Définir un nouveau déclencheur de contrainte.
 
-```
+```sql
 CREATE CONSTRAINT TRIGGER name
 AFTER events ON
 table_name constraint attributes
@@ -372,7 +373,7 @@ FOR EACH ROW EXECUTE PROCEDURE func_name ( args )
 
 Définir une nouvelle conversion.
 
-```
+```sql
 CREATE [DEFAULT] CONVERSION name
 FOR source_encoding TO dest_encoding FROM func_name
 ```
@@ -381,7 +382,7 @@ FOR source_encoding TO dest_encoding FROM func_name
 
 Créez une nouvelle base de données.
 
-```
+```sql
 CREATE DATABASE name
 [ [ WITH ] [ OWNER [=] db_owner ]
     [ TEMPLATE [=] template ]
@@ -394,7 +395,7 @@ CREATE DATABASE name
 
 Définir un nouveau domaine.
 
-```
+```sql
 CREATE DOMAIN name [AS] data_type
 [ DEFAULT expression ]
 [ constraint [ ... ] ]
@@ -402,7 +403,7 @@ CREATE DOMAIN name [AS] data_type
 
 Où la contrainte est -
 
-```
+```sql
 [ CONSTRAINT constraint_name ]
 { NOT NULL | NULL | CHECK (expression) }
 ```
@@ -411,7 +412,7 @@ Où la contrainte est -
 
 Définir une nouvelle fonction.
 
-```
+```sql
 CREATE [ OR REPLACE ] FUNCTION name ( [ [ arg_name ] arg_type [, ...] ] )
 RETURNS ret_type
 { LANGUAGE lang_name
@@ -428,7 +429,7 @@ RETURNS ret_type
 
 Définir un nouveau groupe d'utilisateurs.
 
-```
+```sql
 CREATE GROUP name [ [ WITH ] option [ ... ] ]
 Where option can be:
 SYSID gid
@@ -439,7 +440,7 @@ SYSID gid
 
 Définir un nouvel index.
 
-```
+```sql
 CREATE [ UNIQUE ] INDEX name ON table [ USING method ]
 ( { column | ( expression ) } [ opclass ] [, ...] )
 [ TABLESPACE tablespace ]
@@ -450,7 +451,7 @@ CREATE [ UNIQUE ] INDEX name ON table [ USING method ]
 
 Définir un nouveau langage procédural.
 
-```
+```sql
 CREATE [ TRUSTED ] [ PROCEDURAL ] LANGUAGE name
 HANDLER call_handler [ VALIDATOR val_function ]
 ```
@@ -459,7 +460,7 @@ HANDLER call_handler [ VALIDATOR val_function ]
 
 Définir un nouvel opérateur.
 
-```
+```sql
 CREATE OPERATOR name (
     PROCEDURE = func_name
     [, LEFTARG = left_type ] [, RIGHTARG = right_type ]
@@ -475,7 +476,7 @@ CREATE OPERATOR name (
 
 Définir une nouvelle classe d'opérateurs.
 
-```
+```sql
 CREATE OPERATOR CLASS name [ DEFAULT ] FOR TYPE data_type
 USING index_method AS
 { OPERATOR strategy_number operator_name [ ( op_type, op_type ) ] [ RECHECK ]
@@ -488,7 +489,7 @@ USING index_method AS
 
 Définir une nouvelle règle de réécriture.
 
-```
+```sql
 CREATE [ OR REPLACE ] RULE name AS ON event
 TO table [ WHERE condition ]
 DO [ ALSO | INSTEAD ] { NOTHING | command | ( command ; command ... ) }
@@ -498,7 +499,7 @@ DO [ ALSO | INSTEAD ] { NOTHING | command | ( command ; command ... ) }
 
 Définir un nouveau schéma.
 
-```
+```sql
 CREATE SCHEMA schema_name
 [ AUTHORIZATION username ] [ schema_element [ ... ] ]
 CREATE SCHEMA AUTHORIZATION username
@@ -509,7 +510,7 @@ CREATE SCHEMA AUTHORIZATION username
 
 Définir un nouveau générateur de séquence.
 
-```
+```sql
 CREATE [ TEMPORARY | TEMP ] SEQUENCE name
 [ INCREMENT [ BY ] increment ]
 [ MINVALUE minvalue | NO MINVALUE ]
@@ -521,7 +522,7 @@ CREATE [ TEMPORARY | TEMP ] SEQUENCE name
 
 Définir une nouvelle table.
 
-```
+```sql
 CREATE [ [ GLOBAL | LOCAL ] { 
     TEMPORARY | TEMP } ] TABLE table_name ( { 
         column_name data_type [ DEFAULT default_expr ] [ column_constraint [ ... ] ]
@@ -537,7 +538,7 @@ CREATE [ [ GLOBAL | LOCAL ] {
 
 Où column_constraint est -
 
-```
+```sql
 [ CONSTRAINT constraint_name ] { 
     NOT NULL |
     NULL |
@@ -553,7 +554,7 @@ Où column_constraint est -
 
 Et table_constraint est -
 
-```
+```sql
 [ CONSTRAINT constraint_name ]
 { UNIQUE ( column_name [, ... ] ) [ USING INDEX TABLESPACE tablespace ] |
 PRIMARY KEY ( column_name [, ... ] ) [ USING INDEX TABLESPACE tablespace ] |
@@ -569,7 +570,7 @@ REFERENCES ref_table [ ( ref_column [, ... ] ) ]
 
 Définir une nouvelle table à partir des résultats d'une requête.
 
-```
+```sql
 CREATE [ [ GLOBAL | LOCAL ] { TEMPORARY | TEMP } ] TABLE table_name
 [ (column_name [, ...] ) ] [ [ WITH | WITHOUT ] OIDS ]
 AS query
@@ -579,7 +580,7 @@ AS query
 
 Définir un nouveau tablespace.
 
-```
+```sql
 CREATE TABLESPACE tablespace_name [ OWNER username ] LOCATION 'directory'
 ```
 
@@ -587,7 +588,7 @@ CREATE TABLESPACE tablespace_name [ OWNER username ] LOCATION 'directory'
 
 Définissez un nouveau déclencheur.
 
-```
+```sql
 CREATE TRIGGER name { BEFORE | AFTER } { event [ OR ... ] }
 ON table [ FOR [ EACH ] { ROW | STATEMENT } ]
 EXECUTE PROCEDURE func_name ( arguments )
@@ -597,7 +598,7 @@ EXECUTE PROCEDURE func_name ( arguments )
 
 Définir un nouveau type de données.
 
-```
+```sql
 CREATE TYPE name AS
 ( attribute_name data_type [, ... ] )
 CREATE TYPE name (
@@ -620,13 +621,13 @@ OUTPUT = output_function
 
 Définissez un nouveau compte d'utilisateur de la base de données.
 
-```
+```sql
 CREATE USER name [ [ WITH ] option [ ... ] ]
 ```
 
 Où l'option peut être -
 
-```
+```sql
 SYSID uid
 | [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'
 | CREATEDB | NOCREATEDB
@@ -639,7 +640,7 @@ SYSID uid
 
 Définir une nouvelle vue.
 
-```
+```sql
 CREATE [ OR REPLACE ] VIEW name [ ( column_name [, ...] ) ] AS query
 ```
 
@@ -647,7 +648,7 @@ CREATE [ OR REPLACE ] VIEW name [ ( column_name [, ...] ) ] AS query
 
 Désaffecter une déclaration préparée.
 
-```
+```sql
 DEALLOCATE [ PREPARE ] plan_name
 ```
 
@@ -655,7 +656,7 @@ DEALLOCATE [ PREPARE ] plan_name
 
 Définir un curseur.
 
-```
+```sql
 DECLARE name [ BINARY ] [ INSENSITIVE ] [ [ NO ] SCROLL ]
 CURSOR [ { WITH | WITHOUT } HOLD ] FOR query
 [ FOR { READ ONLY | UPDATE [ OF column [, ...] ] } ]
@@ -665,7 +666,7 @@ CURSOR [ { WITH | WITHOUT } HOLD ] FOR query
 
 Supprimer les lignes d'un tableau.
 
-```
+```sql
 DELETE FROM [ ONLY ] table [ WHERE condition ]
 ```
 
@@ -673,7 +674,7 @@ DELETE FROM [ ONLY ] table [ WHERE condition ]
 
 Supprimer une fonction d'agrégation.
 
-```
+```sql
 DROP AGGREGATE name ( type ) [ CASCADE | RESTRICT ]
 ```
 
@@ -681,7 +682,7 @@ DROP AGGREGATE name ( type ) [ CASCADE | RESTRICT ]
 
 Enlever un plâtre.
 
-```
+```sql
 DROP CAST (source_type AS target_type) [ CASCADE | RESTRICT ]
 ```
 
@@ -689,7 +690,7 @@ DROP CAST (source_type AS target_type) [ CASCADE | RESTRICT ]
 
 Remove a conversion.
 
-```
+```sql
 DROP CONVERSION name [ CASCADE | RESTRICT ]
 ```
 
@@ -697,7 +698,7 @@ DROP CONVERSION name [ CASCADE | RESTRICT ]
 
 Supprimer une base de données.
 
-```
+```sql
 DROP DATABASE name
 ```
 
@@ -705,7 +706,7 @@ DROP DATABASE name
 
 Supprimer un domaine.
 
-```
+```sql
 DROP DOMAIN name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -713,7 +714,7 @@ DROP DOMAIN name [, ...] [ CASCADE | RESTRICT ]
 
 Supprimer une fonction.
 
-```
+```sql
 DROP FUNCTION name ( [ type [, ...] ] ) [ CASCADE | RESTRICT ]
 ```
 
@@ -721,7 +722,7 @@ DROP FUNCTION name ( [ type [, ...] ] ) [ CASCADE | RESTRICT ]
 
 Supprimer un groupe d'utilisateurs.
 
-```
+```sql
 DROP GROUP name
 ```
 
@@ -729,7 +730,7 @@ DROP GROUP name
 
 Supprimer un index.
 
-```
+```sql
 DROP INDEX name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -737,7 +738,7 @@ DROP INDEX name [, ...] [ CASCADE | RESTRICT ]
 
 Supprimer un langage procédural.
 
-```
+```sql
 DROP [ PROCEDURAL ] LANGUAGE name [ CASCADE | RESTRICT ]
 ```
 
@@ -745,7 +746,7 @@ DROP [ PROCEDURAL ] LANGUAGE name [ CASCADE | RESTRICT ]
 
 Supprimer un opérateur.
 
-```
+```sql
 DROP OPERATOR name ( { left_type | NONE }, { right_type | NONE } )
 [ CASCADE | RESTRICT ]
 ```
@@ -754,7 +755,7 @@ DROP OPERATOR name ( { left_type | NONE }, { right_type | NONE } )
 
 Supprimer une classe d'opérateur.
 
-```
+```sql
 DROP OPERATOR CLASS name USING index_method [ CASCADE | RESTRICT ]
 ```
 
@@ -762,7 +763,7 @@ DROP OPERATOR CLASS name USING index_method [ CASCADE | RESTRICT ]
 
 Supprimer une règle de réécriture.
 
-```
+```sql
 DROP RULE name ON relation [ CASCADE | RESTRICT ]
 ```
 
@@ -770,7 +771,7 @@ DROP RULE name ON relation [ CASCADE | RESTRICT ]
 
 Supprimer un schéma.
 
-```
+```sql
 DROP SCHEMA name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -778,7 +779,7 @@ DROP SCHEMA name [, ...] [ CASCADE | RESTRICT ]
 
 Supprimer une séquence.
 
-```
+```sql
 DROP SEQUENCE name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -786,7 +787,7 @@ DROP SEQUENCE name [, ...] [ CASCADE | RESTRICT ]
 
 Retirer une table.
 
-```
+```sql
 DROP TABLE name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -794,7 +795,7 @@ DROP TABLE name [, ...] [ CASCADE | RESTRICT ]
 
 Supprimer un tablespace.
 
-```
+```sql
 DROP TABLESPACE tablespace_name
 ```
 
@@ -802,7 +803,7 @@ DROP TABLESPACE tablespace_name
 
 Retirer une gâchette.
 
-```
+```sql
 DROP TRIGGER name ON table [ CASCADE | RESTRICT ]
 ```
 
@@ -810,7 +811,7 @@ DROP TRIGGER name ON table [ CASCADE | RESTRICT ]
 
 Supprime un type de données.
 
-```
+```sql
 DROP TYPE name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -818,7 +819,7 @@ DROP TYPE name [, ...] [ CASCADE | RESTRICT ]
 
 Supprimez un compte d'utilisateur de base de données.
 
-```
+```sql
 DROP USER name
 ```
 
@@ -826,7 +827,7 @@ DROP USER name
 
 Supprimer une vue.
 
-```
+```sql
 DROP VIEW name [, ...] [ CASCADE | RESTRICT ]
 ```
 
@@ -834,7 +835,7 @@ DROP VIEW name [, ...] [ CASCADE | RESTRICT ]
 
 Valider la transaction en cours.
 
-```
+```sql
 END [ WORK | TRANSACTION ]
 ```
 
@@ -842,7 +843,7 @@ END [ WORK | TRANSACTION ]
 
 Exécuter une déclaration préparée.
 
-```
+```sql
 EXECUTE plan_name [ (parameter [, ...] ) ]
 ```
 
@@ -850,7 +851,7 @@ EXECUTE plan_name [ (parameter [, ...] ) ]
 
 Afficher le plan d'exécution d'une instruction.
 
-```
+```sql
 EXPLAIN [ ANALYZE ] [ VERBOSE ] statement
 ```
 
@@ -858,13 +859,13 @@ EXPLAIN [ ANALYZE ] [ VERBOSE ] statement
 
 Récupérer les lignes d'une requête à l'aide d'un curseur.
 
-```
+```sql
 FETCH [ direction { FROM | IN } ] cursor_name
 ```
 
 Où la direction peut être vide ou l'une de -
 
-```
+```sql
 NEXT
 PRIOR
 FIRST
@@ -885,7 +886,7 @@ BACKWARD ALL
 
 Définir les privilèges d'accès.
 
-```
+```sql
 GRANT { { SELECT | INSERT | UPDATE | DELETE | RULE | REFERENCES | TRIGGER }
 [,...] | ALL [ PRIVILEGES ] }
 ON [ TABLE ] table_name [, ...]
@@ -916,7 +917,7 @@ TO { username | GROUP group_name | PUBLIC } [, ...] [ WITH GRANT OPTION ]
 
 Créer de nouvelles lignes dans un tableau.
 
-```
+```sql
 INSERT INTO table [ ( column [, ...] ) ]
 { DEFAULT VALUES | VALUES ( { expression | DEFAULT } [, ...] ) | query }
 ```
@@ -925,7 +926,7 @@ INSERT INTO table [ ( column [, ...] ) ]
 
 Écoutez une notification.
 
-```
+```sql
 LISTEN name
 ```
 
@@ -933,7 +934,7 @@ LISTEN name
 
 Charge ou recharge un fichier de bibliothèque partagée.
 
-```
+```sql
 LOAD 'filename'
 ```
 
@@ -941,13 +942,13 @@ LOAD 'filename'
 
 Verrouillez une table.
 
-```
+```sql
 LOCK [ TABLE ] name [, ...] [ IN lock_mode MODE ] [ NOWAIT ]
 ```
 
 Où lock_mode est l'un de -
 
-```
+```sql
 ACCESS SHARE | ROW SHARE | ROW EXCLUSIVE | SHARE UPDATE EXCLUSIVE
 | SHARE | SHARE ROW EXCLUSIVE | EXCLUSIVE | ACCESS EXCLUSIVE
 ```
@@ -956,7 +957,7 @@ ACCESS SHARE | ROW SHARE | ROW EXCLUSIVE | SHARE UPDATE EXCLUSIVE
 
 Positionner un curseur.
 
-```
+```sql
 MOVE [ direction { FROM | IN } ] cursor_name
 ```
 
@@ -964,7 +965,7 @@ MOVE [ direction { FROM | IN } ] cursor_name
 
 Générer une notification.
 
-```
+```sql
 NOTIFY name
 ```
 
@@ -972,7 +973,7 @@ NOTIFY name
 
 Préparer une déclaration pour l'exécution.
 
-```
+```sql
 PREPARE plan_name [ (data_type [, ...] ) ] AS statement
 ```
 
@@ -980,7 +981,7 @@ PREPARE plan_name [ (data_type [, ...] ) ] AS statement
 
 Reconstruire les index.
 
-```
+```sql
 REINDEX { DATABASE | TABLE | INDEX } name [ FORCE ]
 ```
 
@@ -988,7 +989,7 @@ REINDEX { DATABASE | TABLE | INDEX } name [ FORCE ]
 
 Détruit un point de sauvegarde précédemment défini.
 
-```
+```sql
 RELEASE [ SAVEPOINT ] savepoint_name
 ```
 
@@ -996,7 +997,7 @@ RELEASE [ SAVEPOINT ] savepoint_name
 
 Restaure la valeur d'un paramètre d'exécution à la valeur par défaut.
 
-```
+```sql
 RESET name
 RESET ALL
 ```
@@ -1005,7 +1006,7 @@ RESET ALL
 
 Supprimer les privilèges d'accès.
 
-```
+```sql
 REVOKE [ GRANT OPTION FOR ]
 { { SELECT | INSERT | UPDATE | DELETE | RULE | REFERENCES | TRIGGER }
 [,...] | ALL [ PRIVILEGES ] }
@@ -1048,7 +1049,7 @@ FROM { username | GROUP group_name | PUBLIC } [, ...]
 
 Abandonner la transaction en cours.
 
-```
+```sql
 ROLLBACK [ WORK | TRANSACTION ]
 ```
 
@@ -1056,7 +1057,7 @@ ROLLBACK [ WORK | TRANSACTION ]
 
 Revenir à un point de sauvegarde.
 
-```
+```sql
 ROLLBACK [ WORK | TRANSACTION ] TO [ SAVEPOINT ] savepoint_name
 ```
 
@@ -1064,7 +1065,7 @@ ROLLBACK [ WORK | TRANSACTION ] TO [ SAVEPOINT ] savepoint_name
 
 Définir un nouveau point de sauvegarde dans la transaction en cours.
 
-```
+```sql
 SAVEPOINT savepoint_name
 ```
 
@@ -1072,7 +1073,7 @@ SAVEPOINT savepoint_name
 
 Récupérer les lignes d'une table ou d'une vue.
 
-```
+```sql
 SELECT [ ALL | DISTINCT [ ON ( expression [, ...] ) ] ]
 * | expression [ AS output_name ] [, ...]
 [ FROM from_item [, ...] ]
@@ -1098,7 +1099,7 @@ from_item [ NATURAL ] join_type from_item
 
 Définir une nouvelle table à partir des résultats d'une requête.
 
-```
+```sql
 SELECT [ ALL | DISTINCT [ ON ( expression [, ...] ) ] ]
 * | expression [ AS output_name ] [, ...]
 INTO [ TEMPORARY | TEMP ] [ TABLE ] new_table
@@ -1117,7 +1118,7 @@ INTO [ TEMPORARY | TEMP ] [ TABLE ] new_table
 
 Modifier un paramètre d'exécution.
 
-```
+```sql
 SET [ SESSION | LOCAL ] name { TO | = } { value | 'value' | DEFAULT }
 SET [ SESSION | LOCAL ] TIME ZONE { time_zone | LOCAL | DEFAULT }
 ```
@@ -1126,7 +1127,7 @@ SET [ SESSION | LOCAL ] TIME ZONE { time_zone | LOCAL | DEFAULT }
 
 Définir les modes de vérification des contraintes pour la transaction en cours.
 
-```
+```sql
 SET CONSTRAINTS { ALL | name [, ...] } { DEFERRED | IMMEDIATE }
 ```
 
@@ -1134,7 +1135,7 @@ SET CONSTRAINTS { ALL | name [, ...] } { DEFERRED | IMMEDIATE }
 
 Définit l'identifiant de l'utilisateur de la session et l'identifiant de l'utilisateur actuel de la session en cours.
 
-```
+```sql
 SET [ SESSION | LOCAL ] SESSION AUTHORIZATION username
 SET [ SESSION | LOCAL ] SESSION AUTHORIZATION DEFAULT
 RESET SESSION AUTHORIZATION
@@ -1144,14 +1145,14 @@ RESET SESSION AUTHORIZATION
 
 Définit les caractéristiques de la transaction en cours.
 
-```
+```sql
 SET TRANSACTION transaction_mode [, ...]
 SET SESSION CHARACTERISTICS AS TRANSACTION transaction_mode [, ...]
 ```
 
 Où transaction_mode est l'un de -
 
-```
+```sql
 ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED
 | READ UNCOMMITTED }
 READ WRITE | READ ONLY
@@ -1161,7 +1162,7 @@ READ WRITE | READ ONLY
 
 Affiche la valeur d'un paramètre d'exécution.
 
-```
+```sql
 SHOW name
 SHOW ALL
 ```
@@ -1170,13 +1171,13 @@ SHOW ALL
 
 Démarrer un bloc de transaction.
 
-```
+```sql
 START TRANSACTION [ transaction_mode [, ...] ]
 ```
 
 Où transaction_mode est l'un de -
 
-```
+```sql
 ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED
 | READ UNCOMMITTED }
 READ WRITE | READ ONLY
@@ -1186,7 +1187,7 @@ READ WRITE | READ ONLY
 
 Videz une table.
 
-```
+```sql
 TRUNCATE [ TABLE ] name
 ```
 
@@ -1194,7 +1195,7 @@ TRUNCATE [ TABLE ] name
 
 Arrêtez d'écouter une notification.
 
-```
+```sql
 UNLISTEN { name | * }
 ```
 
@@ -1202,7 +1203,7 @@ UNLISTEN { name | * }
 
 Mettre à jour les lignes d'une table.
 
-```
+```sql
 UPDATE [ ONLY ] table SET column = { expression | DEFAULT } [, ...]
 [ FROM from_list ]
 [ WHERE condition ]
@@ -1212,7 +1213,7 @@ UPDATE [ ONLY ] table SET column = { expression | DEFAULT } [, ...]
 
 Collecte des ordures et éventuellement analyse d'une base de données.
 
-```
+```sql
 VACUUM [ FULL ] [ FREEZE ] [ VERBOSE ] [ table ]
 VACUUM [ FULL ] [ FREEZE ] [ VERBOSE ] ANALYZE [ table [ (column [, ...] ) ] ]
 ```
