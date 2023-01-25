@@ -31,7 +31,7 @@ Voici des routines PHP importantes, qui peuvent répondre à votre besoin de tra
 
 **API & Description**
 
-- ```resource pg_connect ( string $connection_string [, int $connect_type ] )``` - Ceci ouvre une connexion à une base de données PostgreSQL spécifiée par la chaîne de connexion (connection_string). Si PGSQL_CONNECT_FORCE_NEW est passé comme connect_type, alors une nouvelle connexion est créée en cas de second appel à pg_connect(), même si la connection_string est identique à une connexion existante.
+- ```resource pg_connect ( string $connection_string [, int $connect_type ] )``` - Ceci ouvre une connexion à une base de données PostgreSQL spécifiée par la chaîne de connexion (connection_string). Si ```PGSQL_CONNECT_FORCE_NEW``` est passé comme ```connect_type```, alors une nouvelle connexion est créée en cas de second appel à ```pg_connect()```, même si la connection_string est identique à une connexion existante.
 - ```bool pg_connection_reset ( resource $connection )``` - Cette routine réinitialise la connexion. Elle est utile pour la récupération des erreurs. Elle renvoie TRUE en cas de succès ou FALSE en cas d'échec.
 - ```int pg_connection_status ( resource $connection )``` - Cette routine retourne l'état de la connexion spécifiée. Elle renvoie PGSQL_CONNECTION_OK ou PGSQL_CONNECTION_BAD.
 - ```string pg_dbname ([ resource $connection ] )``` - Cette routine retourne le nom de la base de données que la ressource de connexion PostgreSQL donnée.
@@ -49,16 +49,16 @@ Voici des routines PHP importantes, qui peuvent répondre à votre besoin de tra
 
 ## Connection à la base de données
 
-Le code PHP suivant montre comment se connecter à une base de données existante sur une machine locale et finalement un objet de connexion de base de données sera retourné.
+Le code PHP suivant montre comment se connecter à une base de données existante sur une machine locale et finalement un objet de connexion de base de données sera retourné :
 
 ```php
 <?php
-    $host        = "host = 127.0.0.1";
-    $port        = "port = 5432";
-    $dbname      = "dbname = testdb";
+    $host = "host = 127.0.0.1";
+    $port = "port = 5432";
+    $dbnam = "dbname = testdb";
     $credentials = "user = postgres password=pass123";
 
-    $db = pg_connect( "$host $port $dbname $credentials"  );
+    $db = pg_connect("$host $port $dbname $credentials");
     if(!$db) {
         echo "Error : Unable to open database\n";
     } else {
@@ -67,7 +67,7 @@ Le code PHP suivant montre comment se connecter à une base de données existant
 ?>
 ```
 
-Maintenant, exécutons le programme ci-dessus pour ouvrir notre base de données testdb : si la base de données est ouverte avec succès, le message suivant apparaîtra -
+Maintenant, exécutons le programme ci-dessus pour ouvrir notre base de données testdb : si la base de données est ouverte avec succès, le message suivant apparaîtra :
 
 ```bash
 Opened database successfully
@@ -75,16 +75,16 @@ Opened database successfully
 
 ## Créer une table
 
-Le programme PHP suivant sera utilisé pour créer une table dans une base de données créée précédemment -.
+Le programme PHP suivant sera utilisé pour créer une table dans une base de données créée précédemment :
 
 ```php
 <?php
-    $host        = "host = 127.0.0.1";
-    $port        = "port = 5432";
-    $dbname      = "dbname = testdb";
+    $host = "host = 127.0.0.1";
+    $port = "port = 5432";
+    $dbname = "dbname = testdb";
     $credentials = "user = postgres password=pass123";
 
-    $db = pg_connect( "$host $port $dbname $credentials"  );
+    $db = pg_connect("$host $port $dbname $credentials");
     if(!$db) {
         echo "Error : Unable to open database\n";
     } else {
@@ -107,10 +107,10 @@ Le programme PHP suivant sera utilisé pour créer une table dans une base de do
         echo "Table created successfully\n";
     }
     pg_close($db);
-?>
+?>²-²
 ```
 
-When the above given program is executed, it will create COMPANY table in your testdb and it will display the following messages −
+Lorsque le programme ci-dessus est exécuté, il créera une table COMPANY dans votre testdb et affichera les messages suivants :
 
 ```bash
 Opened database successfully
@@ -119,16 +119,16 @@ Table created successfully
 
 ## Opération INSERT
 
-Le programme PHP suivant montre comment nous pouvons créer des enregistrements dans notre table SOCIÉTÉ créée dans l'exemple ci-dessus -.
+Le programme PHP suivant montre comment nous pouvons créer des enregistrements dans notre table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```php
 <?php
-    $host        = "host=127.0.0.1";
-    $port        = "port=5432";
-    $dbname      = "dbname = testdb";
+    $host = "host=127.0.0.1";
+    $port = "port=5432";
+    $dbname = "dbname = testdb";
     $credentials = "user = postgres password=pass123";
 
-    $db = pg_connect( "$host $port $dbname $credentials"  );
+    $db = pg_connect("$host $port $dbname $credentials");
     if(!$db) {
         echo "Error : Unable to open database\n";
     } else {
@@ -159,7 +159,7 @@ Le programme PHP suivant montre comment nous pouvons créer des enregistrements 
 ?>
 ```
 
-Lorsque le programme ci-dessus est exécuté, il créera les enregistrements donnés dans la table COMPANY et affichera les deux lignes suivantes -
+Lorsque le programme ci-dessus est exécuté, il créera les enregistrements donnés dans la table COMPANY et affichera les deux lignes suivantes :
 
 ```bash
 Opened database successfully
@@ -168,16 +168,16 @@ Records created successfully
 
 ## Opération SELECT
 
-Le programme PHP suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus -.
+Le programme PHP suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```php
 <?php
-    $host        = "host = 127.0.0.1";
-    $port        = "port = 5432";
-    $dbname      = "dbname = testdb";
+    $host = "host = 127.0.0.1";
+    $port = "port = 5432";
+    $dbname = "dbname = testdb";
     $credentials = "user = postgres password=pass123";
 
-    $db = pg_connect( "$host $port $dbname $credentials"  );
+    $db = pg_connect("$host $port $dbname $credentials");
     if(!$db) {
         echo "Error : Unable to open database\n";
     } else {
@@ -197,49 +197,49 @@ Le programme PHP suivant montre comment nous pouvons récupérer et afficher les
         echo "ID = ". $row[0] . "\n";
         echo "NAME = ". $row[1] ."\n";
         echo "ADDRESS = ". $row[2] ."\n";
-        echo "SALARY =  ".$row[4] ."\n\n";
+        echo "SALARY = ".$row[4] ."\n\n";
     }
     echo "Operation done successfully\n";
     pg_close($db);
 ?>
 ```
 
-Lorsque le programme ci-dessus est exécuté, il produit le résultat suivant. Notez que les champs sont retournés dans l'ordre où ils ont été utilisés lors de la création de la table.
+Lorsque le programme ci-dessus est exécuté, il produit le résultat suivant. Notez que les champs sont retournés dans l'ordre où ils ont été utilisés lors de la création de la table :
 
 ```bash
 Opened database successfully
 ID = 1
 NAME = Paul
 ADDRESS = California
-SALARY =  20000
+SALARY = 20000
 
 ID = 2
 NAME = Allen
 ADDRESS = Texas
-SALARY =  15000
+SALARY = 15000
 
 ID = 3
 NAME = Teddy
 ADDRESS = Norway
-SALARY =  20000
+SALARY = 20000
 
 ID = 4
 NAME = Mark
 ADDRESS = Rich-Mond
-SALARY =  65000
+SALARY = 65000
 
 Operation done successfully
 ```
 
 ## Opération UPDATE
 
-Le code PHP suivant montre comment utiliser l'instruction UPDATE pour mettre à jour n'importe quel enregistrement, puis récupérer et afficher les enregistrements mis à jour dans la table SOCIÉTÉ.
+Le code PHP suivant montre comment utiliser l'instruction UPDATE pour mettre à jour n'importe quel enregistrement, puis récupérer et afficher les enregistrements mis à jour dans la table SOCIÉTÉ :
 
 ```php
 <?php
-    $host        = "host=127.0.0.1";
-    $port        = "port=5432";
-    $dbname      = "dbname = testdb";
+    $host = "host=127.0.0.1";
+    $port = "port=5432";
+    $dbname = "dbname = testdb";
     $credentials = "user = postgres password=pass123";
 
     $db = pg_connect( "$host $port $dbname $credentials"  );
@@ -272,7 +272,7 @@ Le code PHP suivant montre comment utiliser l'instruction UPDATE pour mettre à 
         echo "ID = ". $row[0] . "\n";
         echo "NAME = ". $row[1] ."\n";
         echo "ADDRESS = ". $row[2] ."\n";
-        echo "SALARY =  ".$row[4] ."\n\n";
+        echo "SALARY = ".$row[4] ."\n\n";
     }
     echo "Operation done successfully\n";
     pg_close($db);
@@ -287,38 +287,38 @@ Record updated successfully
 ID = 2
 NAME = Allen
 ADDRESS = 25
-SALARY =  15000
+SALARY = 15000
 
 ID = 3
 NAME = Teddy
 ADDRESS = 23
-SALARY =  20000
+SALARY = 20000
 
 ID = 4
 NAME = Mark
 ADDRESS = 25
-SALARY =  65000
+SALARY = 65000
 
 ID = 1
 NAME = Paul
 ADDRESS = 32
-SALARY =  25000
+SALARY = 25000
 
 Operation done successfully
 ```
 
 ## Opération DELETE
 
-Le code PHP suivant montre comment utiliser l'instruction DELETE pour supprimer un enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY.
+Le code PHP suivant montre comment utiliser l'instruction DELETE pour supprimer un enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY :
 
 ```php
 <?php
-    $host        = "host = 127.0.0.1";
-    $port        = "port = 5432";
-    $dbname      = "dbname = testdb";
+    $host = "host = 127.0.0.1";
+    $port = "port = 5432";
+    $dbname = "dbname = testdb";
     $credentials = "user = postgres password=pass123";
 
-    $db = pg_connect( "$host $port $dbname $credentials"  );
+    $db = pg_connect("$host $port $dbname $credentials");
     if(!$db) {
         echo "Error : Unable to open database\n";
     } else {
@@ -348,14 +348,14 @@ Le code PHP suivant montre comment utiliser l'instruction DELETE pour supprimer 
         echo "ID = ". $row[0] . "\n";
         echo "NAME = ". $row[1] ."\n";
         echo "ADDRESS = ". $row[2] ."\n";
-        echo "SALARY =  ".$row[4] ."\n\n";
+        echo "SALARY = ".$row[4] ."\n\n";
     }
     echo "Operation done successfully\n";
     pg_close($db);
 ?>
 ```
 
-Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant -
+Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully
@@ -363,17 +363,17 @@ Record deleted successfully
 ID = 3
 NAME = Teddy
 ADDRESS = 23
-SALARY =  20000
+SALARY = 20000
 
 ID = 4
 NAME = Mark
 ADDRESS = 25
-SALARY =  65000
+SALARY = 65000
 
 ID = 1
 NAME = Paul
 ADDRESS = 32
-SALARY =  25000
+SALARY = 25000
 
 Operation done successfully
 ```
