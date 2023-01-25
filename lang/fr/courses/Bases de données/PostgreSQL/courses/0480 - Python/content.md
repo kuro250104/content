@@ -16,7 +16,7 @@ Voici les principales routines du module psycopg2, qui peuvent répondre à votr
 
 **API & Description**
 
-psycopg2.connect(database="testdb", user="postgres", password="cohondob", host="127.0.0.1", - ```port="5432")``` - Cette API ouvre une connexion à la base de données PostgreSQL. Si la base de données est ouverte avec succès, elle renvoie un objet de connexion.
+- ```psycopg2.connect(database="testdb", user="postgres", password="cohondob", host="127.0.0.1", port="5432")``` - Cette API ouvre une connexion à la base de données PostgreSQL. Si la base de données est ouverte avec succès, elle renvoie un objet de connexion.
 - ```connection.cursor()``` - Cette routine crée un curseur qui sera utilisé tout au long de votre programmation de base de données avec Python.
 - ```cursor.execute(sql [, optional parameters])``` - Cette routine exécute une instruction SQL. L'instruction SQL peut être paramétrée (c'est-à-dire des placeholders au lieu de littéraux SQL). Le module psycopg2 supporte les placeholders en utilisant le signe %s. Par exemple : ```cursor.execute("insert into people values (%s, %s)", (who, age))```.
 - ```cursor.executemany(sql, seq_of_parameters)``` - Cette routine exécute une commande SQL contre toutes les séquences de paramètres ou les mappings trouvés dans la séquence sql.
