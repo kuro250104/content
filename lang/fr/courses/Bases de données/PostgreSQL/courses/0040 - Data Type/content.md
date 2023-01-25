@@ -1,6 +1,6 @@
 Dans ce chapitre, nous allons parler des types de données utilisés dans PostgreSQL. Lors de la création d'une table, pour chaque colonne, vous spécifiez un type de données, c'est-à-dire le type de données que vous voulez stocker dans les champs de la table.
 
-Cela permet plusieurs avantages -
+Cela permet plusieurs avantages :
 
 - **Consistency** − Les opérations sur des colonnes de même type de données donnent des résultats cohérents et sont généralement les plus rapides.
 - **Validation** − L'utilisation correcte des types de données implique la validation du format des données et le rejet des données hors de la portée du type de données.
