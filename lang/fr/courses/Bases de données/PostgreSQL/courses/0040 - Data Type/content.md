@@ -1,6 +1,6 @@
 Dans ce chapitre, nous allons parler des types de données utilisés dans PostgreSQL. Lors de la création d'une table, pour chaque colonne, vous spécifiez un type de données, c'est-à-dire le type de données que vous voulez stocker dans les champs de la table.
 
-Cela permet plusieurs avantages -
+Cela permet plusieurs avantages :
 
 - **Consistency** − Les opérations sur des colonnes de même type de données donnent des résultats cohérents et sont généralement les plus rapides.
 - **Validation** − L'utilisation correcte des types de données implique la validation du format des données et le rejet des données hors de la portée du type de données.
@@ -15,16 +15,16 @@ Les types numériques se composent d'entiers de deux, quatre et huit octets, de 
 
 | **Nom** | **Taille de stockage** | **Description** | **Range** |
 | --- | --- | --- | --- |
-| smallint | 2 bytes | petit nombre d'entiers | -32768 to +32767 |
-| integer | 4 bytes | choix typique pour les entiers | -2147483648 to +2147483647 |
-| bigint | 8 bytes | grand nombre d'entiers | -9223372036854775808 to 9223372036854775807 |
-| decimal | variable | précision spécifiée par l'utilisateur, exact | up to 131072 digits before the decimal point; up to 16383 digits after the decimal point |
-| numeric | variable | précision spécifiée par l'utilisateur, exact | up to 131072 digits before the decimal point; up to 16383 digits after the decimal point |
-| real | 4 bytes | précision variable, inexacte | 6 decimal digits precision |
-| double precision | 8 bytes | précision variable, inexacte | 15 decimal digits precision |
-| smallserial | 2 bytes | petit entier auto incrémenté | 1 to 32767 |
-| serial | 4 bytes | nombre entier auto-incrémenté | 1 to 2147483647 |
-| bigserial | 8 bytes | grand entier auto incrémenté | 1 to 9223372036854775807 |
+| smallint | 2 bytes | Petit nombre d'entiers | -32768 to +32767 |
+| integer | 4 bytes | Choix typique pour les entiers | -2147483648 to +2147483647 |
+| bigint | 8 bytes | Grand nombre d'entiers | -9223372036854775808 to 9223372036854775807 |
+| decimal | variable | Précision spécifiée par l'utilisateur, exact | up to 131072 digits before the decimal point; up to 16383 digits after the decimal point |
+| numeric | variable | Précision spécifiée par l'utilisateur, exact | up to 131072 digits before the decimal point; up to 16383 digits after the decimal point |
+| real | 4 bytes | Précision variable, inexacte | 6 decimal digits precision |
+| double precision | 8 bytes | Précision variable, inexacte | 15 decimal digits precision |
+| smallserial | 2 bytes | Petit entier auto incrémenté | 1 to 32767 |
+| serial | 4 bytes | Nombre entier auto-incrémenté | 1 to 2147483647 |
+| bigserial | 8 bytes | Grand entier auto incrémenté | 1 to 9223372036854775807 |
 
 ## Types monétaires
 
@@ -32,7 +32,7 @@ Le type money stocke un montant en devise avec une précision fractionnaire fixe
 
 | **Nom** | **Taille de stockage** | **Description** | **Range** |
 | --- | --- | --- | --- |
-| money | 8 bytes | montant en devise | -92233720368547758.08 to +92233720368547758.07 |
+| money | 8 bytes | Montant en devise | -92233720368547758.08 to +92233720368547758.07 |
 
 ## Types de caractères
 
@@ -40,17 +40,17 @@ La liste ci-dessous énumère les types de caractères à usage général dispon
 
 **Name & Description**
 
-- **character varying(n), varchar(n)** - longueur variable avec limite
-- **character(n), char(n)** - longueur fixe, rembourré en blanc
-- **text** - longueur variable illimitée
+- **character varying(n), varchar(n)** - Longueur variable avec limite.
+- **character(n), char(n)** - Longueur fixe, rembourré en blanc.
+- **text** - Longueur variable illimitée.
 
 ## Le types Binary Data
 
-Le type de données bytea permet de stocker des chaînes de caractères binaires comme dans le tableau ci-dessous.
+Le type de données bytea permet de stocker des chaînes de caractères binaires comme dans le tableau ci-dessous :
 
 | **Nom** | **Taille de stockage** | **Description** |
 | --- | --- | --- |
-| bytea | 1 or 4 bytes plus the actual binary string | chaîne binaire de longueur variable |
+| bytea | 1 or 4 bytes plus the actual binary string | Chaîne binaire de longueur variable |
 
 ## Types de dates et de temps
 
@@ -58,12 +58,12 @@ PostgreSQL supporte un ensemble complet de types de dates et d'heures SQL, comme
 
 | **Nom** | **Taille de stockage** | **Description** | **Valeur min** | **Valeur max** |
 | --- | --- | --- | --- | --- |
-| timestamp [(p)] [without time zone ] | 8 bytes | la date et l'heure (sans fuseau horaire) | 4713 BC | 294276 AD |
-| TIMESTAMPTZ | 8 bytes | la date et l'heure, avec le fuseau horaire | 4713 BC | 294276 AD |
-| date | 4 bytes | date (pas d'heure de la journée) | 4713 BC | 5874897 AD |
-| time [ (p)] [ without time zone ] | 8 bytes | heure de la journée (sans date) | 00:00:00 | 24:00:00 |
-| time [ (p)] with time zone | 12 bytes | les heures de la journée uniquement, avec le fuseau horaire | 00:00:00+1459 | 24:00:00-1459 |
-| interval [fields ] [(p) ] | 12 bytes | intervalle de temps | -178000000 years | 178000000 years |
+| timestamp [(p)] [without time zone ] | 8 bytes | La date et l'heure (sans fuseau horaire) | 4713 BC | 294276 AD |
+| TIMESTAMPTZ | 8 bytes | La date et l'heure, avec le fuseau horaire | 4713 BC | 294276 AD |
+| date | 4 bytes | Date (pas d'heure de la journée) | 4713 BC | 5874897 AD |
+| time [ (p)] [ without time zone ] | 8 bytes | Heure de la journée (sans date) | 00:00:00 | 24:00:00 |
+| time [ (p)] with time zone | 12 bytes | Les heures de la journée uniquement, avec le fuseau horaire | 00:00:00+1459 | 24:00:00-1459 |
+| interval [fields ] [(p) ] | 12 bytes | Intervalle de temps | -178000000 years | 178000000 years |
 
 ## Le type Boolean
 
@@ -71,7 +71,7 @@ PostgreSQL fournit le type SQL standard Boolean. Le type de données booléen pe
 
 | **Nom** | **Taille de stockage** | **Description** |
 | --- | --- | --- |
-| boolean | 1 byte | l'état de vrai ou faux |
+| boolean | 1 byte | L'état de vrai ou faux |
 
 ## Le type Enumerated
 
@@ -116,7 +116,7 @@ Les types de chaînes de bits sont utilisés pour stocker les masques de bits. I
 
 ## Le type de recherche de texte
 
-Ce type prend en charge la recherche en texte intégral, qui consiste à parcourir une collection de documents en langage naturel pour trouver ceux qui correspondent le mieux à une requête. Il existe deux types de données pour ce type -
+Ce type prend en charge la recherche en texte intégral, qui consiste à parcourir une collection de documents en langage naturel pour trouver ceux qui correspondent le mieux à une requête. Il existe deux types de données pour ce type :
 
 **Nom et description**
 
@@ -131,7 +131,7 @@ Un exemple d'UUID est - 550e8400-e29b-41d4-a716-446655440000
 
 ## Le type XML
 
-Le type de données XML peut être utilisé pour stocker des données XML. Pour stocker des données XML, vous devez d'abord créer des valeurs XML à l'aide de la fonction xmlparse, comme suit  -
+Le type de données XML peut être utilisé pour stocker des données XML. Pour stocker des données XML, vous devez d'abord créer des valeurs XML à l'aide de la fonction xmlparse, comme suit :
 
 ```sql
 XMLPARSE (DOCUMENT '<?xml version="1.0"?>
@@ -158,7 +158,7 @@ PostgreSQL offre la possibilité de définir une colonne d'une table comme un ta
 
 ## Déclaration de tableaux
 
-Le type de tableau peut être déclaré comme
+Le type de tableau peut être déclaré comme ci-dessous :
 
 ```sql
 CREATE TABLE monthly_savings (
@@ -168,7 +168,7 @@ CREATE TABLE monthly_savings (
 );
 ```
 
-ou en utilisant le mot clé "ARRAY" comme
+ou en utilisant le mot clé "ARRAY" comme ci-dessous :
 
 ```sql
 CREATE TABLE monthly_savings (
@@ -180,7 +180,7 @@ CREATE TABLE monthly_savings (
 
 ## Insertion de valeurs
 
-Les valeurs d'un tableau peuvent être insérées comme une constante littérale, en enfermant les valeurs des éléments entre accolades et en les séparant par des virgules. Un exemple est présenté ci-dessous -
+Les valeurs d'un tableau peuvent être insérées comme une constante littérale, en enfermant les valeurs des éléments entre accolades et en les séparant par des virgules. Un exemple est présenté ci-dessous :
 
 ```sql
 INSERT INTO monthly_savings 
@@ -199,14 +199,14 @@ SELECT name FROM monhly_savings WHERE saving_per_quarter[2] > saving_per_quarter
 
 ## Modification de tableaux
 
-Un exemple de modification de tableaux est présenté ci-dessous.
+Un exemple de modification de tableaux est présenté ci-dessous :
 
 ```sql
 UPDATE monthly_savings SET saving_per_quarter = '{25000,25000,27000,27000}'
 WHERE name = 'Manisha';
 ```
 
-ou en utilisant la syntaxe de l'expression ARRAY -
+ou en utilisant la syntaxe de l'expression ARRAY :
 
 ```sql
 UPDATE monthly_savings SET saving_per_quarter = ARRAY[25000,25000,27000,27000]
@@ -215,7 +215,7 @@ WHERE name = 'Manisha';
 
 ## Recherche dans les tableaux
 
-Un exemple de recherche dans des tableaux est présenté ci-dessous.
+Un exemple de recherche dans des tableaux est présenté ci-dessous :
 
 ```sql
 SELECT * FROM monthly_savings WHERE saving_per_quarter[1] = 10000 OR
@@ -236,7 +236,7 @@ Ce type représente une liste de noms de champs et leurs types de données, c'es
 
 ## Déclaration de types composite
 
-L'exemple suivant montre comment déclarer un type composite
+L'exemple suivant montre comment déclarer un type composite :
 
 ```sql
 CREATE TYPE inventory_item AS (
@@ -246,7 +246,7 @@ CREATE TYPE inventory_item AS (
 );
 ```
 
-Ce type de données peut être utilisé dans les tables de création comme ci-dessous -.
+Ce type de données peut être utilisé dans les tables de création comme ci-dessous :
 
 ```sql
 CREATE TABLE on_hand (
@@ -257,7 +257,7 @@ CREATE TABLE on_hand (
 
 ## Valeurs composées
 
-Les valeurs composées peuvent être insérées comme une constante littérale, en mettant les valeurs des champs entre parenthèses et en les séparant par des virgules. Un exemple est présenté ci-dessous -
+Les valeurs composées peuvent être insérées comme une constante littérale, en mettant les valeurs des champs entre parenthèses et en les séparant par des virgules. Un exemple est présenté ci-dessous :
 
 ```sql
 INSERT INTO on_hand VALUES (ROW('fuzzy dice', 42, 1.99), 1000);
@@ -267,13 +267,13 @@ Ceci est valable pour l'inventaire_item défini ci-dessus. Le mot clé ROW est e
 
 ## Accéder à un champ d'un type composite
 
-Pour accéder à un champ d'une colonne composite, utilisez un point suivi du nom du champ, comme pour sélectionner un champ à partir d'un nom de table. Par exemple, pour sélectionner certains sous-champs de notre table d'exemple on_hand, la requête serait la suivante : -
+Pour accéder à un champ d'une colonne composite, utilisez un point suivi du nom du champ, comme pour sélectionner un champ à partir d'un nom de table. Par exemple, pour sélectionner certains sous-champs de notre table d'exemple on_hand, la requête serait la suivante :
 
 ```sql
 SELECT (item).name FROM on_hand WHERE (item).price > 9.99;
 ```
 
-Vous pouvez même utiliser également le nom de la table (par exemple dans une requête multitable), comme ceci -
+Vous pouvez même utiliser également le nom de la table (par exemple dans une requête multitable), comme ceci :
 
 ```sql
 SELECT (on_hand.item).name FROM on_hand WHERE (on_hand.item).price > 9.99;
@@ -283,14 +283,14 @@ SELECT (on_hand.item).name FROM on_hand WHERE (on_hand.item).price > 9.99;
 
 Les types de plage représentent des types de données qui utilisent une plage de données. Les types de plage peuvent être des plages discrètes (par exemple, toutes les valeurs entières de 1 à 10) ou des plages continues (par exemple, tout point dans le temps entre 10h00 et 11h00).
 
-Les types de plage intégrés disponibles incluent les plages suivantes : -
+Les types de plage intégrés disponibles incluent les plages suivantes :
 
-- **int4range** − Gamme d'entiers
-- **int8range** − Plage de bigint
-- **numrange** − Plage de valeurs numériques
-- **tsrange** − Plage d'horodatage sans fuseau horaire
-- **tstzrange** − Plage de l'horodatage avec le fuseau horaire
-- **daterange** − Plage de dates
+- **int4range** − Gamme d'entiers.
+- **int8range** − Plage de bigint.
+- **numrange** − Plage de valeurs numériques.
+- **tsrange** − Plage d'horodatage sans fuseau horaire.
+- **tstzrange** − Plage de l'horodatage avec le fuseau horaire.
+- **daterange** − Plage de dates.
 
 Il est possible de créer des types de plages personnalisés pour mettre à disposition de nouveaux types de plages, tels que des plages d'adresses IP utilisant le type inet comme base, ou des plages de valeurs flottantes utilisant le type de données float comme base.
 
@@ -302,15 +302,15 @@ Les identifiants d'objets (OID) sont utilisés en interne par PostgreSQL comme c
 
 | **Nom** | **Références** | **Description** | **Exemple de valeur** |
 | --- | --- | --- | --- |
-| oid | any | identifiant numérique de l'objet | 564182 |
-| regproc | pg_proc | nom de la fonction | sum |
-| regprocedure | pg_proc | fonction avec des types d'arguments | sum(int4) |
-| regoper | pg_operator | nom de l'opérateur | + |
-| regoperator | pg_operator | opérateur avec des types d'arguments | *(integer,integer) or -(NONE,integer) |
-| regclass | pg_class | nom de la relation | pg_type |
-| regtype | pg_type | nom du type de données | integer |
-| regconfig | pg_ts_config | configuration de la recherche de texte | English |
-| regdictionary | pg_ts_dict | recherche de texte dans un dictionnaire | simple |
+| oid | any | Identifiant numérique de l'objet | 564182 |
+| regproc | pg_proc | Nom de la fonction | sum |
+| regprocedure | pg_proc | Fonction avec des types d'arguments | sum(int4) |
+| regoper | pg_operator | Nom de l'opérateur | + |
+| regoperator | pg_operator | Opérateur avec des types d'arguments | *(integer,integer) or -(NONE,integer) |
+| regclass | pg_class | Nom de la relation | pg_type |
+| regtype | pg_type | Nom du type de données | integer |
+| regconfig | pg_ts_config | Configuration de la recherche de texte | English |
+| regdictionary | pg_ts_dict | Recherche de texte dans un dictionnaire | simple |
 
 ## Pseudo Types
 

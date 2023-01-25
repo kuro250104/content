@@ -4,7 +4,7 @@ Vous devez être prudent lorsque vous utilisez cette commande car une fois qu'un
 
 ## Syntaxe
 
-Basic syntax of DROP TABLE statement is as follows −
+La DROP TABLE est écrite comme cela :
 
 ```sql
 DROP TABLE table_name;
