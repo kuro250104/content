@@ -158,7 +158,7 @@ PostgreSQL offre la possibilité de définir une colonne d'une table comme un ta
 
 ## Déclaration de tableaux
 
-Le type de tableau peut être déclaré comme
+Le type de tableau peut être déclaré comme ci-dessous :
 
 ```sql
 CREATE TABLE monthly_savings (
@@ -168,7 +168,7 @@ CREATE TABLE monthly_savings (
 );
 ```
 
-ou en utilisant le mot clé "ARRAY" comme
+ou en utilisant le mot clé "ARRAY" comme ci-dessous :
 
 ```sql
 CREATE TABLE monthly_savings (
