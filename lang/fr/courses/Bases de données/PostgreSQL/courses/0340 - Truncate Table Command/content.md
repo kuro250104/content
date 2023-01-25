@@ -4,7 +4,7 @@ Cette commande a le même effet que la commande **DELETE** sur chaque table, mai
 
 ## Syntaxe
 
-La syntaxe de base de TRUNCATE TABLE est la suivante : -.
+La syntaxe de base de TRUNCATE TABLE est la suivante :
 
 ```sql
 TRUNCATE TABLE  table_name;
@@ -12,7 +12,7 @@ TRUNCATE TABLE  table_name;
 
 ## Exemple
 
-Considérons que la table SOCIÉTÉ possède les enregistrements suivants -
+Considérons que la table SOCIÉTÉ possède les enregistrements suivants :
 
 ```bash
 id | name  | age | address    | salary
@@ -27,13 +27,13 @@ id | name  | age | address    | salary
 (7 rows)
 ```
 
-L'exemple suivant permet de tronquer -
+L'exemple suivant permet de tronquer :
 
 ```sql
 testdb=# TRUNCATE TABLE COMPANY;
 ```
 
-Maintenant, la table COMPANY est tronquée et le résultat de l'instruction SELECT est le suivant -
+Maintenant, la table COMPANY est tronquée et le résultat de l'instruction SELECT est le suivant :
 
 ```sql
 testdb=# SELECT * FROM CUSTOMERS;
