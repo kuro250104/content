@@ -91,7 +91,7 @@ Le programme Perl suivant sera utilisé pour créer une table dans la base de do
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname=$database;host=127.0.0.1;port=5432";
 my $userid = "postgres";
@@ -132,7 +132,7 @@ Le programme Perl suivant montre comment nous pouvons créer des enregistrements
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
@@ -178,7 +178,7 @@ Le programme Perl suivant montre comment nous pouvons récupérer et afficher le
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
@@ -240,7 +240,7 @@ Le code Perl suivant montre comment utiliser l'instruction UPDATE pour mettre à
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
@@ -310,7 +310,7 @@ Le code Perl suivant montre comment utiliser l'instruction DELETE pour supprimer
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
