@@ -1,4 +1,4 @@
-Ce chapitre traite de la manière de créer une nouvelle base de données dans votre PostgreSQL. PostgreSQL propose deux façons de créer une nouvelle base de données -
+Ce chapitre traite de la manière de créer une nouvelle base de données dans votre PostgreSQL. PostgreSQL propose deux façons de créer une nouvelle base de données :
 
 - En utilisant CREATE DATABASE, une commande SQL.
 - Utilisation de createdb un exécutable en ligne de commande.
@@ -9,7 +9,7 @@ Cette commande va créer une base de données à partir de l'invite du shell Pos
 
 ### Syntaxe
 
-La syntaxe de base de l'instruction CREATE DATABASE est la suivante - 
+La syntaxe de base de l'instruction CREATE DATABASE est la suivante :
 
 ```sql
 CREATE DATABASE dbname;
@@ -19,7 +19,7 @@ où **dbname** est le nom de la base de données à créer.
 
 ### Exemple
 
-Voici un exemple simple, qui créera testdb dans votre schéma PostgreSQL
+Voici un exemple simple, qui créera testdb dans votre schéma PostgreSQL :
 
 ```sql
 postgres=# CREATE DATABASE testdb;
@@ -32,7 +32,7 @@ L'exécutable de ligne de commande de PostgreSQL, createdb, est une enveloppe au
 
 ### Syntaxe
 
-La syntaxe de createdb est indiquée ci-dessous -
+La syntaxe de createdb est indiquée ci-dessous :
 
 ```sql
 createdb [option...] [dbname [description]]
@@ -46,11 +46,11 @@ La liste ci-dessous répertorie les paramètres avec leur description.
 
 - **dbname** - Le nom de la base de données à créer.
 - **description** - Spécifie un commentaire à associer à la base de données nouvellement créée.
-- **options** - arguments de ligne de commande, que createdb accepte.
+- **options** - Arguments de ligne de commande, que createdb accepte.
 
 ### Options
 
-La liste suivante liste les arguments de ligne de commande que createdb accepte -
+La liste suivante liste les arguments de ligne de commande que createdb accepte :
 
 **Option et description**
 
@@ -75,7 +75,7 @@ password ******
 
 La commande ci-dessus vous demandera le mot de passe de l'utilisateur admin de PostgreSQL, qui est postgres, par défaut. Par conséquent, fournissez un mot de passe et procédez à la création de votre nouvelle base de données.
 
-Une fois qu'une base de données est créée à l'aide de l'une ou l'autre des méthodes mentionnées ci-dessus, vous pouvez la vérifier dans la liste des bases de données en utilisant la commande \l, c'est-à-dire, backslash el comme suit -
+Une fois qu'une base de données est créée à l'aide de l'une ou l'autre des méthodes mentionnées ci-dessus, vous pouvez la vérifier dans la liste des bases de données en utilisant la commande \l, c'est-à-dire, backslash el comme suit :
 
 ```bash
 postgres-# \l
