@@ -184,7 +184,7 @@ Modifier la définition d'un déclencheur.
 
 ```
 ALTER TRIGGER name ON table RENAME TO new_name
-### 
+```
 
 ### ALTER TYPE
 
@@ -482,6 +482,7 @@ USING index_method AS
     | FUNCTION support_number func_name ( argument_type [, ...] )
     | STORAGE storage_type
 } [, ... ]
+```
 
 ### CREATE RULE
 
