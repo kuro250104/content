@@ -1,14 +1,14 @@
-L'instruction SELECT de PostgreSQL est utilisée pour récupérer les données d'une table de base de données, qui renvoie les données sous la forme d'une table de résultats. Ces tables de résultats sont appelées ensembles de résultats.
+L'instruction **SELECT** de PostgreSQL est utilisée pour récupérer les données d'une table de base de données, qui renvoie les données sous la forme d'une table de résultats. Ces tables de résultats sont appelées ensembles de résultats.
 
 ## Syntaxe
 
-La syntaxe de base de l'instruction SELECT est la suivante -
+La syntaxe de base de l'instruction **SELECT** est la suivante :
 
 ```sql
 SELECT column1, column2, columnN FROM table_name;
 ```
 
-Ici, colonne1, colonne2... sont les champs d'une table, dont vous voulez récupérer les valeurs. Si vous voulez récupérer tous les champs disponibles dans le champ, vous pouvez utiliser la syntaxe suivante -
+Ici, colonne1, colonne2... sont les champs d'une table, dont vous voulez récupérer les valeurs. Si vous voulez récupérer tous les champs disponibles dans le champ, vous pouvez utiliser la syntaxe suivante :
 
 ```sql
 SELECT * FROM table_name;
@@ -16,7 +16,7 @@ SELECT * FROM table_name;
 
 ## Exemple
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```bash
 id | name  | age | address   | salary
@@ -37,7 +37,7 @@ L'exemple suivant permet de récupérer les champs ID, Nom et Salaire des client
 testdb=# SELECT ID, NAME, SALARY FROM COMPANY ;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
  id | name  | salary
@@ -52,13 +52,13 @@ Cela donnerait le résultat suivant -
 (7 rows)
 ```
 
-Si vous voulez récupérer tous les champs de la table CUSTOMERS, utilisez la requête suivante : -.
+Si vous voulez récupérer tous les champs de la table CUSTOMERS, utilisez la requête suivante :
 
 ```bash
 testdb=# SELECT * FROM COMPANY;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 id | name  | age | address   | salary

@@ -4,7 +4,7 @@ Les EXPRESSIONS PostgreSQL sont comme des formules et elles sont écrites en lan
 
 ## Syntaxe
 
-Considérons la syntaxe de base de l'instruction SELECT comme suit -
+Considérons la syntaxe de base de l'instruction **SELECT** comme suit :
 
 ```sql
 SELECT column1, column2, columnN
@@ -12,11 +12,11 @@ FROM table_name
 WHERE [CONDITION | EXPRESSION];
 ```
 
-Il existe différents types d'expressions PostgreSQL, qui sont mentionnés ci-dessous -
+Il existe différents types d'expressions PostgreSQL, qui sont mentionnés ci-dessous :
 
 ## PostgreSQL - Boolean Expressions
 
-Les expressions booléennes de PostgreSQL récupèrent les données sur la base d'une valeur unique correspondante. Voici la syntaxe -
+Les expressions booléennes de PostgreSQL récupèrent les données sur la base d'une valeur unique correspondante. Voici la syntaxe :
 
 ```sql
 SELECT column1, column2, columnN
@@ -24,7 +24,7 @@ FROM table_name
 WHERE SINGLE VALUE MATCHTING EXPRESSION;
 ```
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```bash
 testdb# select * from COMPANY;
@@ -40,13 +40,13 @@ testdb# select * from COMPANY;
 (7 rows)
 ```
 
-Voici un exemple simple montrant l'utilisation des expressions booléennes de PostgreSQL.
+Voici un exemple simple montrant l'utilisation des expressions booléennes de PostgreSQL :
 
 ```sql
 testdb=# SELECT * FROM COMPANY WHERE SALARY = 10000;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 id | name  | age | address  | salary
@@ -57,20 +57,20 @@ id | name  | age | address  | salary
 
 ## PostgreSQL - Numeric Expression
 
-Ces expressions sont utilisées pour effectuer toute opération mathématique dans toute requête. Voici la syntaxe -
+Ces expressions sont utilisées pour effectuer toute opération mathématique dans toute requête. Voici la syntaxe :
 
 ```sql
 SELECT numerical_expression as  OPERATION_NAME
 [FROM table_name WHERE CONDITION] ;
 ```
 
-Ici, numerical_expression est utilisé pour une expression mathématique ou toute formule. Voici un exemple simple montrant l'utilisation des expressions numériques SQL.
+Ici, numerical_expression est utilisé pour une expression mathématique ou toute formule. Voici un exemple simple montrant l'utilisation des expressions numériques SQL :
 
 ```bash
 testdb=# SELECT (15 + 6) AS ADDITION ;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant  -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 addition
@@ -79,13 +79,13 @@ addition
 (1 row)
 ```
 
-Il existe plusieurs fonctions intégrées telles que avg(), sum(), count() pour effectuer ce que l'on appelle des calculs de données agrégées par rapport à une table ou une colonne de table spécifique.
+Il existe plusieurs fonctions intégrées telles que ```avg()```, ```sum()```, ```count()``` pour effectuer ce que l'on appelle des calculs de données agrégées par rapport à une table ou une colonne de table spécifique.
 
 ```bash
 testdb=# SELECT COUNT(*) AS "RECORDS" FROM COMPANY;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 RECORDS
@@ -102,7 +102,7 @@ Les expressions de date renvoient les valeurs de date et d'heure actuelles du sy
 testdb=#  SELECT CURRENT_TIMESTAMP;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
              now

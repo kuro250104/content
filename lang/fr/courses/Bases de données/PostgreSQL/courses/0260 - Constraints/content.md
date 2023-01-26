@@ -8,8 +8,8 @@ Les contraintes suivantes sont couramment utilisées dans PostgreSQL.
 - **UNIQUE Constraint** − Permet de s'assurer que toutes les valeurs d'une colonne sont différentes.
 - **PRIMARY Key** − Identifie de manière unique chaque ligne/enregistrement dans une table de base de données.
 - **FOREIGN Key** − Constraint les données en fonction des colonnes d'autres tables.
-- **CHECK Constraint** − La contrainte CHECK garantit que toutes les valeurs d'une colonne remplissent certaines conditions.
-- **EXCLUSION Constraint** − La contrainte EXCLUDE garantit que si deux lignes quelconques sont comparées sur la ou les colonnes ou expressions spécifiées à l'aide du ou des opérateurs spécifiés, toutes ces comparaisons ne retourneront pas VRAI.
+- **CHECK Constraint** − La contrainte **CHECK** garantit que toutes les valeurs d'une colonne remplissent certaines conditions.
+- **EXCLUSION Constraint** − La contrainte **EXCLUDE** garantit que si deux lignes quelconques sont comparées sur la ou les colonnes ou expressions spécifiées à l'aide du ou des opérateurs spécifiés, toutes ces comparaisons ne retourneront pas VRAI.
 
 ## NOT NULL Constraint
 
@@ -19,7 +19,7 @@ Une valeur NULL n'est pas synonyme d'absence de données ; elle représente plut
 
 ### Exemple
 
-Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY1 et ajoute cinq colonnes, dont trois, ID et NAME et AGE, spécifient qu'elles n'acceptent pas les valeurs NULL -.
+Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY1 et ajoute cinq colonnes, dont trois, ID et NAME et AGE, spécifient qu'elles n'acceptent pas les valeurs NULL :
 
 ```sql
 CREATE TABLE COMPANY1(
@@ -33,11 +33,11 @@ CREATE TABLE COMPANY1(
 
 ## UNIQUE Constraint
 
-La contrainte UNIQUE empêche deux enregistrements d'avoir des valeurs identiques dans une colonne particulière. Dans la table SOCIÉTÉ, par exemple, vous pourriez vouloir empêcher deux personnes ou plus d'avoir un âge identique.
+La contrainte **UNIQUE** empêche deux enregistrements d'avoir des valeurs identiques dans une colonne particulière. Dans la table SOCIÉTÉ, par exemple, vous pourriez vouloir empêcher deux personnes ou plus d'avoir un âge identique.
 
 ### Exemple
 
-Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY3 et ajoute cinq colonnes. Ici, la colonne AGE est définie comme UNIQUE, de sorte que vous ne pouvez pas avoir deux enregistrements avec le même âge.
+Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY3 et ajoute cinq colonnes. Ici, la colonne AGE est définie comme UNIQUE, de sorte que vous ne pouvez pas avoir deux enregistrements avec le même âge :
 
 ```sql
 CREATE TABLE COMPANY3(
@@ -51,7 +51,7 @@ CREATE TABLE COMPANY3(
 
 ## PRIMARY KEY Constraint
 
-La contrainte PRIMARY KEY identifie de manière unique chaque enregistrement d'une table de base de données. Il peut y avoir plusieurs colonnes UNIQUE, mais une seule clé primaire dans une table. Les clés primaires sont importantes lors de la conception des tables de la base de données. Les clés primaires sont des identifiants uniques.
+La contrainte **PRIMARY KEY** identifie de manière unique chaque enregistrement d'une table de base de données. Il peut y avoir plusieurs colonnes **UNIQUE**, mais une seule clé primaire dans une table. Les clés primaires sont importantes lors de la conception des tables de la base de données. Les clés primaires sont des identifiants uniques.
 
 Nous les utilisons pour faire référence aux lignes de la table. Les clés primaires deviennent des clés étrangères dans d'autres tables, lors de la création de relations entre les tables. En raison d'un "oubli de codage de longue date", les clés primaires peuvent être NULL dans SQLite. Ce n'est pas le cas dans d'autres bases de données
 
@@ -63,7 +63,7 @@ Si une table a une clé primaire définie sur un ou plusieurs champs, vous ne po
 
 ## Exemple
 
-Vous avez déjà vu plusieurs exemples ci-dessus où nous avons créé la table COMAPNY4 avec ID comme clé primaire -.
+Vous avez déjà vu plusieurs exemples ci-dessus où nous avons créé la table COMAPNY4 avec ID comme clé primaire :
 
 ```sql
 CREATE TABLE COMPANY4(
@@ -81,7 +81,7 @@ Une contrainte de clé étrangère spécifie que les valeurs d'une colonne (ou d
 
 ### Exemple
 
-Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY5 et ajoute cinq colonnes.
+Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY5 et ajoute cinq colonnes :
 
 ```sql
 CREATE TABLE COMPANY6(
@@ -93,7 +93,7 @@ CREATE TABLE COMPANY6(
 );
 ```
 
-Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée DEPARTMENT1, qui ajoute trois colonnes. La colonne EMP_ID est la clé étrangère et fait référence au champ ID de la table COMPANY6.
+Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée DEPARTMENT1, qui ajoute trois colonnes. La colonne EMP_ID est la clé étrangère et fait référence au champ ID de la table COMPANY6 :
 
 ```sql
 CREATE TABLE DEPARTMENT1(
@@ -105,11 +105,11 @@ CREATE TABLE DEPARTMENT1(
 
 ## CHECK Constraint
 
-La contrainte CHECK permet à une condition de vérifier la valeur saisie dans un enregistrement. Si la condition est fausse, l'enregistrement viole la contrainte et n'est pas saisi dans la table.
+La contrainte **CHECK** permet à une condition de vérifier la valeur saisie dans un enregistrement. Si la condition est fausse, l'enregistrement viole la contrainte et n'est pas saisi dans la table.
 
 ### Exemple
 
-Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY5 et ajoute cinq colonnes. Ici, nous ajoutons un CHECK avec la colonne SALARY, de sorte que vous ne pouvez pas avoir de SALARY comme Zéro.
+Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY5 et ajoute cinq colonnes. Ici, nous ajoutons un **CHECK** avec la colonne SALARY, de sorte que vous ne pouvez pas avoir de SALARY comme Zéro :
 
 ```sql
 CREATE TABLE COMPANY5(
@@ -127,7 +127,7 @@ Les contraintes d'exclusion garantissent que si deux lignes quelconques sont com
 
 ### Exemple
 
-Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY7 et ajoute cinq colonnes. Ici, nous ajoutons une contrainte EXCLUDE -
+Par exemple, l'instruction PostgreSQL suivante crée une nouvelle table appelée COMPANY7 et ajoute cinq colonnes. Ici, nous ajoutons une contrainte **EXCLUDE** :
 
 ```sql
 CREATE TABLE COMPANY7(
@@ -144,9 +144,9 @@ CREATE TABLE COMPANY7(
 
 Ici, USING gist est le type d'index à construire et à utiliser pour l'application.
 
-Vous devez exécuter la commande CREATE EXTENSION btree_gist, une fois par base de données. Cela installera l'extension btree_gist, qui définit les contraintes d'exclusion sur les types de données scalaires simples.
+Vous devez exécuter la commande **CREATE EXTENSION** btree_gist, une fois par base de données. Cela installera l'extension btree_gist, qui définit les contraintes d'exclusion sur les types de données scalaires simples.
 
-Comme nous avons imposé que l'âge soit le même, voyons cela en insérant des enregistrements dans le tableau -
+Comme nous avons imposé que l'âge soit le même, voyons cela en insérant des enregistrements dans le tableau :
 
 ```sql
 INSERT INTO COMPANY7 VALUES(1, 'Paul', 32, 'California', 20000.00 );
@@ -154,7 +154,7 @@ INSERT INTO COMPANY7 VALUES(2, 'Paul', 32, 'Texas', 20000.00 );
 INSERT INTO COMPANY7 VALUES(3, 'Paul', 42, 'California', 20000.00 );
 ```
 
-Pour les deux premières instructions INSERT, les enregistrements sont ajoutés à la table COMPANY7. Pour la troisième instruction INSERT, l'erreur suivante apparaît -
+Pour les deux premières instructions **INSERT**, les enregistrements sont ajoutés à la table COMPANY7. Pour la troisième instruction **INSERT**, l'erreur suivante apparaît :
 
 ```bash
 ERROR:  conflicting key value violates exclusion constraint "company7_name_age_excl"
@@ -163,7 +163,7 @@ DETAIL:  Key (name, age)=(Paul, 42) conflicts with existing key (name, age)=(Pau
 
 ## Dropping Constraints
 
-Pour supprimer une contrainte, vous devez connaître son nom. Si le nom est connu, il est facile de la supprimer. Sinon, vous devez trouver le nom généré par le système. La commande psql \d table name peut être utile ici. La syntaxe générale est -
+Pour supprimer une contrainte, vous devez connaître son nom. Si le nom est connu, il est facile de la supprimer. Sinon, vous devez trouver le nom généré par le système. La commande psql \d table name peut être utile ici. La syntaxe générale est :
 
 ```sql
 ALTER TABLE table_name DROP CONSTRAINT some_name;

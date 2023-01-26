@@ -10,7 +10,7 @@ Les index peuvent également être uniques, comme la contrainte **UNIQUE**, en c
 
 ## The CREATE INDEX Command
 
-La syntaxe de base de la commande CREATE INDEX est la suivante :
+La syntaxe de base de la commande **CREATE INDEX** est la suivante :
 
 ```sql
 CREATE INDEX index_name ON table_name;
@@ -72,13 +72,13 @@ Voici un exemple dans lequel nous allons créer un index sur la table SOCIÉTÉ 
 # CREATE INDEX salary_index ON COMPANY (salary);
 ```
 
-Maintenant, dressons la liste de tous les indices disponibles dans la table COMPANY en utilisant la commande \d company.
+Maintenant, dressons la liste de tous les indices disponibles dans la table COMPANY en utilisant la commande ```\d``` company.
 
 ```sql
 # \d company
 ```
 
-Cela produira le résultat suivant, où company_pkey est un index implicite, qui a été créé lorsque la table a été créée :
+Cela produira le résultat suivant, où ```company_pkey``` est un index implicite, qui a été créé lorsque la table a été créée :
 
 ```bash
       Table "public.company"
@@ -94,7 +94,7 @@ Indexes:
     "salary_index" btree (salary)
 ```
 
-Vous pouvez répertorier l'ensemble des index de la base de données en utilisant la commande \di :
+Vous pouvez répertorier l'ensemble des index de la base de données en utilisant la commande ```\di``` :
 
 ## The DROP INDEX Command
 
