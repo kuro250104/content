@@ -4,7 +4,7 @@ Pour utiliser **UNION**, chaque **SELECT** doit avoir le même nombre de colonne
 
 ## Syntaxe
 
-The basic syntax of **UNION** is as follows −
+La syntaxe de base de **UNION** est la suivante :
 
 ```sql
 SELECT column1 [, column2 ]
@@ -22,7 +22,7 @@ Ici, la condition donnée peut être n'importe quelle expression donnée en fonc
 
 ## Exemple
 
-Considérons les deux tableaux suivants : (a) Le tableau de la SOCIÉTÉ est le suivant : -.
+Considérons les deux tableaux suivants : (a) Le tableau de la SOCIÉTÉ est le suivant :
 
 ```bash
 testdb=# SELECT * from COMPANY;
@@ -38,7 +38,7 @@ testdb=# SELECT * from COMPANY;
 (7 rows)
 ```
 
-(b) Une autre table est DEPARTMENT comme suit -
+(b) Une autre table est DEPARTMENT comme suit :
 
 ```bash
 testdb=# SELECT * from DEPARTMENT;
@@ -54,7 +54,7 @@ testdb=# SELECT * from DEPARTMENT;
 (7 rows)
 ```
 
-Maintenant, joignons ces deux tables en utilisant l'instruction SELECT avec la clause UNION comme suit -.
+Maintenant, joignons ces deux tables en utilisant l'instruction **SELECT** avec la clause **UNION** comme suit :
 
 ```sql
 testdb=# SELECT EMP_ID, NAME, DEPT FROM COMPANY INNER JOIN DEPARTMENT
@@ -64,7 +64,7 @@ testdb=# SELECT EMP_ID, NAME, DEPT FROM COMPANY INNER JOIN DEPARTMENT
             ON COMPANY.ID = DEPARTMENT.EMP_ID;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 emp_id | name  |  dept
@@ -85,7 +85,7 @@ L'opérateur **UNION ALL** est utilisé pour combiner les résultats de deux ins
 
 ## Syntaxe
 
-La syntaxe de base de **UNION ALL** est la suivante -
+La syntaxe de base de **UNION ALL** est la suivante :
 
 ```sql
 SELECT column1 [, column2 ]
@@ -103,7 +103,7 @@ Ici, la condition donnée peut être n'importe quelle expression donnée en fonc
 
 ## Exemple
 
-Maintenant, joignons les deux tables mentionnées ci-dessus dans notre déclaration SELECT comme suit -
+Maintenant, joignons les deux tables mentionnées ci-dessus dans notre déclaration **SELECT** comme suit :
 
 ```sql
 testdb=# SELECT EMP_ID, NAME, DEPT FROM COMPANY INNER JOIN DEPARTMENT
@@ -113,7 +113,7 @@ testdb=# SELECT EMP_ID, NAME, DEPT FROM COMPANY INNER JOIN DEPARTMENT
             ON COMPANY.ID = DEPARTMENT.EMP_ID;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 emp_id | name  | dept
