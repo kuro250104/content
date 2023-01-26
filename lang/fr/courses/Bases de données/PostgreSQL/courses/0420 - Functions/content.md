@@ -4,7 +4,7 @@ Les fonctions peuvent être créées dans le langage de votre choix comme SQL, P
 
 ## Syntaxe
 
-La syntaxe de base pour créer une fonction est la suivante : -.
+La syntaxe de base pour créer une fonction est la suivante :
 
 ```sql
 CREATE [OR REPLACE] FUNCTION function_name (arguments) 
@@ -31,7 +31,7 @@ Où,
 
 ## Exemple
 
-L'exemple suivant illustre la création et l'appel d'une fonction autonome. Cette fonction renvoie le nombre total d'enregistrements dans la table SOCIÉTÉ. Nous utilisons la table SOCIÉTÉ, qui contient les enregistrements suivants
+L'exemple suivant illustre la création et l'appel d'une fonction autonome. Cette fonction renvoie le nombre total d'enregistrements dans la table SOCIÉTÉ. Nous utilisons la table SOCIÉTÉ, qui contient les enregistrements suivants :
 
 ```bash
 testdb# select * from COMPANY;
@@ -47,7 +47,7 @@ testdb# select * from COMPANY;
 (7 rows)
 ```
 
-La fonction ```totalRecords()``` se présente comme suit -
+La fonction ```totalRecords()``` se présente comme suit :
 
 ```sql
 CREATE OR REPLACE FUNCTION totalRecords ()
@@ -61,19 +61,19 @@ END;
 $total$ LANGUAGE plpgsql;
 ```
 
-Lorsque la requête ci-dessus est exécutée, le résultat sera -
+Lorsque la requête ci-dessus est exécutée, le résultat sera :
 
 ```sql
 testdb# CREATE FUNCTION
 ```
 
-Maintenant, exécutons un appel à cette fonction et vérifions les enregistrements dans la table SOCIÉTÉ.
+Maintenant, exécutons un appel à cette fonction et vérifions les enregistrements dans la table SOCIÉTÉ :
 
 ```sql
 testdb=# select totalRecords();
 ```
 
-Lorsque la requête ci-dessus est exécutée, le résultat sera -
+Lorsque la requête ci-dessus est exécutée, le résultat sera :
 
 ```bash
 totalrecords
