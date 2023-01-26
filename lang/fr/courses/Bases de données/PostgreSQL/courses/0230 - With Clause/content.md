@@ -45,7 +45,7 @@ testdb# select * from COMPANY;
 (7 rows)
 ```
 
-Maintenant, écrivons une requête en utilisant la clause WITH pour sélectionner les enregistrements du tableau ci-dessus, comme suit :
+Maintenant, écrivons une requête en utilisant la clause **WITH** pour sélectionner les enregistrements du tableau ci-dessus, comme suit :
 
 ```sql
 With CTE AS
@@ -74,7 +74,7 @@ id | name  | age | address   | salary
 (7 rows)
 ```
 
-Maintenant, écrivons une requête en utilisant le mot clé RECURSIVE avec la clause WITH, pour trouver la somme des salaires inférieurs à 20000, comme suit :
+Maintenant, écrivons une requête en utilisant le mot clé **RECURSIVE** avec la clause **WITH**, pour trouver la somme des salaires inférieurs à 20000, comme suit :
 
 ```sql
 WITH RECURSIVE t(n) AS (
