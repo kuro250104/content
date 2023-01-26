@@ -44,4 +44,4 @@ relations found.
 testdb=# 
 ```
 
-Le message retourné par DROP TABLE indique que la commande drop a été exécutée avec succès.
+Le message retourné par **DROP TABLE** indique que la commande **DROP TABLE** a été exécutée avec succès.
