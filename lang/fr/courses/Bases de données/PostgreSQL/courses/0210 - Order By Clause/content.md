@@ -1,8 +1,8 @@
-La clause ORDER BY de PostgreSQL est utilisée pour trier les données dans un ordre croissant ou décroissant, en fonction d'une ou plusieurs colonnes.
+La clause **ORDER BY** de PostgreSQL est utilisée pour trier les données dans un ordre croissant ou décroissant, en fonction d'une ou plusieurs colonnes.
 
 ## Syntaxe
 
-La syntaxe de base de la clause ORDER BY est la suivante -
+La syntaxe de base de la clause **ORDER BY** est la suivante :
 
 ```sql
 SELECT column-list
@@ -11,11 +11,11 @@ FROM table_name
 [ORDER BY column1, column2, .. columnN] [ASC | DESC];
 ```
 
-Vous pouvez utiliser plus d'une colonne dans la clause ORDER BY. Assurez-vous que, quelle que soit la colonne que vous utilisez pour trier, cette colonne doit être disponible dans la liste des colonnes.
+Vous pouvez utiliser plus d'une colonne dans la clause **ORDER BY**. Assurez-vous que, quelle que soit la colonne que vous utilisez pour trier, cette colonne doit être disponible dans la liste des colonnes.
 
 ## Exemple
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```bash
 testdb# select * from COMPANY;
@@ -31,13 +31,13 @@ testdb# select * from COMPANY;
 (7 rows)
 ```
 
-Voici un exemple, qui trierait le résultat dans l'ordre croissant par SALAIRE -.
+Voici un exemple, qui trierait le résultat dans l'ordre croissant par SALAIRE :
 
 ```sql
 testdb=# SELECT * FROM COMPANY ORDER BY AGE ASC;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
   id | name  | age | address    | salary
@@ -55,13 +55,13 @@ Cela donnerait le résultat suivant -
 (10 rows)
 ```
 
-Voici un exemple, qui trierait le résultat dans l'ordre croissant par NOM et SALAIRE -.
+Voici un exemple, qui trierait le résultat dans l'ordre croissant par NOM et SALAIRE :
 
 ```sql
 testdb=# SELECT * FROM COMPANY ORDER BY NAME, SALARY ASC;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 id | name  | age | address      | salary
@@ -79,13 +79,13 @@ id | name  | age | address      | salary
 (10 rows)
 ```
 
-Voici un exemple, qui trierait le résultat dans l'ordre décroissant par NOM -.
+Voici un exemple, qui trierait le résultat dans l'ordre décroissant par NOM :
 
 ```sql
 testdb=# SELECT * FROM COMPANY ORDER BY NAME DESC;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 id | name  | age | address    | salary
