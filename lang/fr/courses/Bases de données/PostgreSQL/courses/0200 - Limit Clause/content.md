@@ -1,8 +1,8 @@
-La clause LIMIT de PostgreSQL est utilisée pour limiter la quantité de données retournées par l'instruction SELECT.
+La clause **LIMIT** de PostgreSQL est utilisée pour limiter la quantité de données retournées par l'instruction **SELECT**.
 
 ## Syntaxe
 
-La syntaxe de base de l'instruction SELECT avec la clause LIMIT est la suivante : -.
+La syntaxe de base de l'instruction **SELECT** avec la clause **LIMIT** est la suivante :
 
 ```sql
 SELECT column1, column2, columnN
@@ -10,7 +10,7 @@ FROM table_name
 LIMIT [no of rows]
 ```
 
-Voici la syntaxe de la clause LIMIT lorsqu'elle est utilisée avec la clause OFFSET -.
+Voici la syntaxe de la clause **LIMIT** lorsqu'elle est utilisée avec la clause **OFFSET** :
 
 ```sql
 SELECT column1, column2, columnN
@@ -22,7 +22,7 @@ LIMIT [no of rows] OFFSET [row num]
 
 ## Exemple
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```bash
 # select * from COMPANY;
@@ -38,13 +38,13 @@ Considérons la table COMPANY dont les enregistrements sont les suivants -
 (7 rows)
 ```
 
-Voici un exemple qui limite le nombre de lignes dans le tableau en fonction du nombre de lignes que vous voulez extraire du tableau -.
+Voici un exemple qui limite le nombre de lignes dans le tableau en fonction du nombre de lignes que vous voulez extraire du tableau :
 
 ```sql
 testdb=# SELECT * FROM COMPANY LIMIT 4;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 id | name  | age | address     | salary
@@ -56,13 +56,13 @@ id | name  | age | address     | salary
 (4 rows)
 ```
 
-Cependant, dans certaines situations, vous pouvez avoir besoin de prélever un ensemble d'enregistrements à partir d'un décalage particulier. Voici un exemple qui permet de récupérer trois enregistrements à partir de la troisième position.
+Cependant, dans certaines situations, vous pouvez avoir besoin de prélever un ensemble d'enregistrements à partir d'un décalage particulier. Voici un exemple qui permet de récupérer trois enregistrements à partir de la troisième position :
 
 ```sql
 testdb=# SELECT * FROM COMPANY LIMIT 3 OFFSET 2;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 id | name  | age | address   | salary
