@@ -1,10 +1,10 @@
-Ce chapitre fournit une liste des commandes SQL de PostgreSQL, suivie des règles syntaxiques précises pour chacune de ces commandes. Cet ensemble de commandes est tiré de l'outil de ligne de commande psql. Maintenant que vous avez installé Postgres, ouvrez l'outil psql sous la forme -
+Ce chapitre fournit une liste des commandes SQL de PostgreSQL, suivie des règles syntaxiques précises pour chacune de ces commandes. Cet ensemble de commandes est tiré de l'outil de ligne de commande psql. Maintenant que vous avez installé Postgres, ouvrez l'outil psql sous la forme :
 
 ```sql
 Program Files → PostgreSQL 9.2 → SQL Shell(psql).
 ```
 
-Avec psql, vous pouvez générer une liste complète des commandes en utilisant la commande \help. Pour connaître la syntaxe d'une commande spécifique, utilisez la commande suivante -
+Avec psql, vous pouvez générer une liste complète des commandes en utilisant la commande ```\help```. Pour connaître la syntaxe d'une commande spécifique, utilisez la commande suivante :
 
 ```sql
 postgres-# \help <command_name>
@@ -12,7 +12,7 @@ postgres-# \help <command_name>
 
 ## The SQL Statement
 
-Une instruction SQL est composée de jetons, chaque jeton pouvant représenter un mot-clé, un identifiant, un identifiant cité, une constante ou un symbole de caractère spécial. Le tableau ci-dessous utilise une simple instruction SELECT pour illustrer une instruction SQL de base, mais complète, et ses composants.
+Une instruction SQL est composée de jetons, chaque jeton pouvant représenter un mot-clé, un identifiant, un identifiant cité, une constante ou un symbole de caractère spécial. Le tableau ci-dessous utilise une simple instruction **SELECT** pour illustrer une instruction SQL de base, mais complète, et ses composants.
 
 |  | **SELECT** | **id, name** | **FROM** | **states** |
 | --- | --- | --- | --- | --- |
@@ -149,7 +149,7 @@ ALTER TABLE name
 RENAME TO new_name
 ```
 
-Où l'action est l'une des lignes suivantes -
+Où l'action est l'une des lignes suivantes :
 
 ```sql
 ADD [ COLUMN ] column_type [ column_constraint [ ... ] ]
@@ -205,7 +205,7 @@ ALTER USER name SET parameter { TO | = } { value | DEFAULT }
 ALTER USER name RESET parameter
 ```
 
-Où l'option peut être -
+Où l'option peut être :
 
 ```sql
 [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'
@@ -230,7 +230,7 @@ Démarrer un bloc de transaction.
 BEGIN [ WORK | TRANSACTION ] [ transaction_mode [, ...] ]
 ```
 
-Où transaction_mode est l'un de -
+Où transaction_mode est l'un de :
 
 ```sql
 ISOLATION LEVEL { 
@@ -401,7 +401,7 @@ CREATE DOMAIN name [AS] data_type
 [ constraint [ ... ] ]
 ```
 
-Où la contrainte est -
+Où la contrainte est :
 
 ```sql
 [ CONSTRAINT constraint_name ]
@@ -536,7 +536,7 @@ CREATE [ [ GLOBAL | LOCAL ] {
 [ TABLESPACE tablespace ]
 ```
 
-Où column_constraint est -
+Où column_constraint est :
 
 ```sql
 [ CONSTRAINT constraint_name ] { 
@@ -552,7 +552,7 @@ Où column_constraint est -
 [ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY IMMEDIATE ]
 ```
 
-Et table_constraint est -
+Et table_constraint est :
 
 ```sql
 [ CONSTRAINT constraint_name ]
@@ -625,7 +625,7 @@ Définissez un nouveau compte d'utilisateur de la base de données.
 CREATE USER name [ [ WITH ] option [ ... ] ]
 ```
 
-Où l'option peut être -
+Où l'option peut être :
 
 ```sql
 SYSID uid
@@ -863,7 +863,7 @@ Récupérer les lignes d'une requête à l'aide d'un curseur.
 FETCH [ direction { FROM | IN } ] cursor_name
 ```
 
-Où la direction peut être vide ou l'une de -
+Où la direction peut être vide ou l'une de :
 
 ```sql
 NEXT
@@ -946,7 +946,7 @@ Verrouillez une table.
 LOCK [ TABLE ] name [, ...] [ IN lock_mode MODE ] [ NOWAIT ]
 ```
 
-Où lock_mode est l'un de -
+Où lock_mode est l'un de :
 
 ```sql
 ACCESS SHARE | ROW SHARE | ROW EXCLUSIVE | SHARE UPDATE EXCLUSIVE
@@ -1175,7 +1175,7 @@ Démarrer un bloc de transaction.
 START TRANSACTION [ transaction_mode [, ...] ]
 ```
 
-Où transaction_mode est l'un de -
+Où transaction_mode est l'un de :
 
 ```sql
 ISOLATION LEVEL { SERIALIZABLE | REPEATABLE READ | READ COMMITTED
