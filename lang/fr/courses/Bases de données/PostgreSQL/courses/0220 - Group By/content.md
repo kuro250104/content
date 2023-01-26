@@ -34,7 +34,7 @@ Considérons la table COMPANY dont les enregistrements sont les suivants :
 (7 rows)
 ```
 
-Si vous voulez connaître le montant total du salaire de chaque client, alors la requête GROUP BY sera la suivante :
+Si vous voulez connaître le montant total du salaire de chaque client, alors la requête **GROUP BY** sera la suivante :
 
 ```sql
 testdb=# SELECT NAME, SUM(SALARY) FROM COMPANY GROUP BY NAME;
