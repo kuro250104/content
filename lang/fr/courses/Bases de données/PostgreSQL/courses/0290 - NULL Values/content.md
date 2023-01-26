@@ -4,7 +4,7 @@ Un champ avec une valeur NULL est un champ sans valeur. Il est très important d
 
 ## Syntaxe
 
-La syntaxe de base de l'utilisation de NULL lors de la création d'une table est la suivante : -.
+La syntaxe de base de l'utilisation de NULL lors de la création d'une table est la suivante :
 
 ```sql
 CREATE TABLE COMPANY(
@@ -22,7 +22,7 @@ Un champ avec une valeur **NULL** est un champ qui a été laissé vide lors de 
 
 ## Exemple
 
-La valeur **NULL** peut poser des problèmes lors de la sélection des données, car lorsqu'on compare une valeur inconnue à une autre valeur, le résultat est toujours inconnu et n'est pas inclus dans les résultats finaux. Considérons le tableau suivant, la SOCIÉTÉ ayant les enregistrements suivants -
+La valeur **NULL** peut poser des problèmes lors de la sélection des données, car lorsqu'on compare une valeur inconnue à une autre valeur, le résultat est toujours inconnu et n'est pas inclus dans les résultats finaux. Considérons le tableau suivant, la SOCIÉTÉ ayant les enregistrements suivants :
 
 ```bash
 ID          NAME        AGE         ADDRESS     SALARY
@@ -36,13 +36,13 @@ ID          NAME        AGE         ADDRESS     SALARY
 7           James       24          Houston     10000.0
 ```
 
-Utilisons l'instruction **UPDATE** pour définir quelques valeurs invalides comme étant **NULL** comme suit -
+Utilisons l'instruction **UPDATE** pour définir quelques valeurs invalides comme étant **NULL** comme suit :
 
 ```sql
 testdb=# UPDATE COMPANY SET ADDRESS = NULL, SALARY = NULL where ID IN(6,7);
 ```
 
-Maintenant, la table COMPANY devrait avoir les enregistrements suivants -
+Maintenant, la table COMPANY devrait avoir les enregistrements suivants :
 
 ```bash
 id | name  | age | address     | salary
@@ -57,7 +57,7 @@ id | name  | age | address     | salary
 (7 rows)
 ```
 
-Ensuite, voyons l'utilisation de l'opérateur **IS NOT NULL** pour lister tous les enregistrements où SALARY n'est pas **NULL** -.
+Ensuite, voyons l'utilisation de l'opérateur **IS NOT NULL** pour lister tous les enregistrements où SALARY n'est pas **NULL** :
 
 ```sql
 testdb=#  SELECT  ID, NAME, AGE, ADDRESS, SALARY
@@ -65,7 +65,7 @@ testdb=#  SELECT  ID, NAME, AGE, ADDRESS, SALARY
     WHERE SALARY IS NOT NULL;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant - 
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 id | name  | age | address    | salary
@@ -78,7 +78,7 @@ id | name  | age | address    | salary
 (5 rows)
 ```
 
-Voici l'utilisation de l'opérateur **IS NULL** qui permet de répertorier tous les enregistrements pour lesquels SALARY est **NULL**.
+Voici l'utilisation de l'opérateur **IS NULL** qui permet de répertorier tous les enregistrements pour lesquels SALARY est **NULL** :
 
 ```sql
 testdb=#  SELECT  ID, NAME, AGE, ADDRESS, SALARY
@@ -86,7 +86,7 @@ testdb=#  SELECT  ID, NAME, AGE, ADDRESS, SALARY
         WHERE SALARY IS NULL;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant - 
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 id | name  | age | address | salary
