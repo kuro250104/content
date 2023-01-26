@@ -1,8 +1,8 @@
-L'instruction PostgreSQL CREATE TABLE est utilisée pour créer une nouvelle table dans l'une des bases de données données données.
+L'instruction PostgreSQL **CREATE TABLE** est utilisée pour créer une nouvelle table dans l'une des bases de données.
 
 ## Syntaxe
 
-La syntaxe de base de l'instruction CREATE TABLE est la suivante : -.
+La syntaxe de base de l'instruction **CREATE TABLE** est la suivante :
 
 ```sql
 CREATE TABLE table_name(
@@ -15,13 +15,13 @@ CREATE TABLE table_name(
 );
 ```
 
-CREATE TABLE est un mot-clé qui indique au système de base de données de créer une nouvelle table. Le nom ou l'identifiant unique de la table suit l'instruction CREATE TABLE. Initialement, la table vide dans la base de données actuelle appartient à l'utilisateur qui émet la commande.
+**CREATE TABLE** est un mot-clé qui indique au système de base de données de créer une nouvelle table. Le nom ou l'identifiant unique de la table suit l'instruction **CREATE TABLE**. Initialement, la table vide dans la base de données actuelle appartient à l'utilisateur qui émet la commande.
 
 Ensuite, entre parenthèses, vient la liste, qui définit chaque colonne de la table et le type de données qu'elle contient. La syntaxe deviendra plus claire avec l'exemple ci-dessous.
 
 ## Exemples
 
-L'exemple suivant crée une table COMPANY avec ID comme clé primaire et NOT NULL comme contraintes, indiquant que ces champs ne peuvent pas être NULL lors de la création d'enregistrements dans cette table.
+L'exemple suivant crée une table COMPANY avec ID comme clé primaire et NOT NULL comme contraintes, indiquant que ces champs ne peuvent pas être NULL lors de la création d'enregistrements dans cette table :
 
 ```sql
 CREATE TABLE COMPANY(
@@ -33,7 +33,7 @@ CREATE TABLE COMPANY(
 );
 ```
 
-Créons un tableau supplémentaire, que nous utiliserons dans nos exercices dans les chapitres suivants.
+Créons un tableau supplémentaire, que nous utiliserons dans nos exercices dans les chapitres suivants :
 
 ```sql
 CREATE TABLE DEPARTMENT(
@@ -43,13 +43,13 @@ CREATE TABLE DEPARTMENT(
 );
 ```
 
-Vous pouvez vérifier si votre table a été créée avec succès en utilisant la commande \d, qui sera utilisée pour répertorier toutes les tables dans une base de données attachée.
+Vous pouvez vérifier si votre table a été créée avec succès en utilisant la commande ```\d```, qui sera utilisée pour répertorier toutes les tables dans une base de données attachée.
 
 ```bash
 testdb-# \d
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
           List of relations
@@ -60,7 +60,7 @@ L'instruction PostgreSQL ci-dessus produira le résultat suivant -
 (2 rows)
 ```
 
-Utilisez \d tablename pour décrire chaque table comme indiqué ci-dessous -
+Utilisez ```\d tablename``` pour décrire chaque table comme indiqué ci-dessous :
 
 ```bash
 testdb-# \d company
