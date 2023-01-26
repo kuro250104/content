@@ -6,7 +6,7 @@ La clause **WITH** doit être définie avant d'être utilisée dans la requête.
 
 ### Syntaxe
 
-La syntaxe de base de la requête AVEC est la suivante -
+La syntaxe de base de la requête **WITH** est la suivante :
 
 ```sql
 WITH
@@ -29,7 +29,7 @@ Les requêtes **WITH récursives** ou **hiérarchiques** sont une forme d'**ETC*
 
 ### Exemple
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```bash
 testdb# select * from COMPANY;
@@ -45,7 +45,7 @@ testdb# select * from COMPANY;
 (7 rows)
 ```
 
-Maintenant, écrivons une requête en utilisant la clause WITH pour sélectionner les enregistrements du tableau ci-dessus, comme suit -
+Maintenant, écrivons une requête en utilisant la clause **WITH** pour sélectionner les enregistrements du tableau ci-dessus, comme suit :
 
 ```sql
 With CTE AS
@@ -59,7 +59,7 @@ FROM COMPANY )
 Select * From CTE;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 id | name  | age | address   | salary
@@ -74,7 +74,7 @@ id | name  | age | address   | salary
 (7 rows)
 ```
 
-Maintenant, écrivons une requête en utilisant le mot clé RECURSIVE avec la clause WITH, pour trouver la somme des salaires inférieurs à 20000, comme suit -
+Maintenant, écrivons une requête en utilisant le mot clé **RECURSIVE** avec la clause **WITH**, pour trouver la somme des salaires inférieurs à 20000, comme suit :
 
 ```sql
 WITH RECURSIVE t(n) AS (
@@ -85,7 +85,7 @@ WITH RECURSIVE t(n) AS (
 SELECT sum(n) FROM t;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
  sum
@@ -94,9 +94,9 @@ L'instruction PostgreSQL ci-dessus produira le résultat suivant -
 (1 row)
 ```
 
-Rédigeons une requête en utilisant des instructions de modification de données avec la clause WITH, comme indiqué ci-dessous.
+Rédigeons une requête en utilisant des instructions de modification de données avec la clause **WITH**, comme indiqué ci-dessous.
 
-Tout d'abord, créez une table COMPANY1 similaire à la table COMPANY. La requête de l'exemple déplace effectivement des lignes de la table COMPANY vers la table COMPANY1. L'instruction DELETE de la clause WITH supprime les lignes spécifiées de la table COMPANY, et renvoie leur contenu au moyen de la clause RETURNING. Ensuite, la requête primaire lit cette sortie et l'insère dans la table COMPANY1.
+Tout d'abord, créez une table COMPANY1 similaire à la table COMPANY. La requête de l'exemple déplace effectivement des lignes de la table COMPANY vers la table COMPANY1. L'instruction **DELETE** de la clause **WITH** supprime les lignes spécifiées de la table COMPANY, et renvoie leur contenu au moyen de la clause **RETURNING**. Ensuite, la requête primaire lit cette sortie et l'insère dans la table COMPANY1 :
 
 ```sql
 CREATE TABLE COMPANY1(
@@ -116,13 +116,13 @@ WITH moved_rows AS (
 INSERT INTO COMPANY1 (SELECT * FROM moved_rows);
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant  - 
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```sql
 INSERT 0 3
 ```
 
-Maintenant, les enregistrements dans les tables SOCIÉTÉ et SOCIÉTÉ1 sont les suivants -.
+Maintenant, les enregistrements dans les tables SOCIÉTÉ et SOCIÉTÉ1 sont les suivants :
 
 ```bash
 testdb=# SELECT * FROM COMPANY;

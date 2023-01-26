@@ -4,8 +4,9 @@ Une sous-requête est utilisée pour renvoyer des données qui seront utilisées
 
 Les sous-requêtes peuvent être utilisées avec les instructions SELECT, INSERT, UPDATE et DELETE, ainsi qu'avec des opérateurs tels que =, <, >, >=, <=, IN, etc.
 
-Il y a quelques règles que les sous-requêtes doivent respecter : - les instructions SELECT, INSERT, UPDATE et DELETE.
+Il y a quelques règles que les sous-requêtes doivent respecter : 
 
+- Les instructions SELECT, INSERT, UPDATE et DELETE.
 - Les sous-requêtes doivent être placées entre parenthèses.
 - Une sous-requête ne peut comporter qu'une seule colonne dans la clause SELECT, sauf si plusieurs colonnes sont présentes dans la requête principale pour que la sous-requête puisse comparer les colonnes sélectionnées.
 - Un ORDER BY ne peut pas être utilisé dans une sous-requête, bien que la requête principale puisse utiliser un ORDER BY. Le GROUP BY peut être utilisé pour exécuter la même fonction que le ORDER BY dans une sous-requête.
@@ -14,7 +15,7 @@ Il y a quelques règles que les sous-requêtes doivent respecter : - les instruc
 
 ## Sous-requêtes avec l'instruction SELECT
 
-Les sous-requêtes sont le plus souvent utilisées avec l'instruction SELECT. La syntaxe de base est la suivante -
+Les sous-requêtes sont le plus souvent utilisées avec l'instruction SELECT. La syntaxe de base est la suivante :
 
 ```sql
 SELECT column_name [, column_name ]
@@ -27,7 +28,7 @@ WHERE  column_name OPERATOR
 
 ## Example
 
-Considérons la table SOCIÉTÉ comportant les enregistrements suivants -
+Considérons la table SOCIÉTÉ comportant les enregistrements suivants :
 
 ```bash
 id | name  | age | address   | salary
@@ -42,7 +43,7 @@ id | name  | age | address   | salary
 (7 rows)
 ```
 
-Maintenant, vérifions la sous-requête suivante avec l'instruction SELECT -
+Maintenant, vérifions la sous-requête suivante avec l'instruction SELECT :
 
 ```sql
 testdb=# SELECT *
@@ -52,7 +53,7 @@ testdb=# SELECT *
     WHERE SALARY > 45000) ;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 id | name  | age |  address    | salary
@@ -66,7 +67,7 @@ id | name  | age |  address    | salary
 
 Les sous-requêtes peuvent également être utilisées avec les instructions INSERT. L'instruction INSERT utilise les données renvoyées par la sous-requête pour les insérer dans une autre table. Les données sélectionnées dans la sous-requête peuvent être modifiées à l'aide de n'importe quelle fonction de caractère, de date ou de nombre.
 
-La syntaxe de base est la suivante -
+La syntaxe de base est la suivante :
 
 ```sql
 INSERT INTO table_name [ (column1 [, column2 ]) ]
@@ -77,7 +78,7 @@ INSERT INTO table_name [ (column1 [, column2 ]) ]
 
 ### Example
 
-Considérons une table COMPANY_BKP, dont la structure est similaire à celle de la table COMPANY et qui peut être créée à l'aide de la même procédure CREATE TABLE en utilisant COMPANY_BKP comme nom de table. Maintenant, pour copier la table COMPANY complète dans COMPANY_BKP, la syntaxe est la suivante
+Considérons une table COMPANY_BKP, dont la structure est similaire à celle de la table COMPANY et qui peut être créée à l'aide de la même procédure CREATE TABLE en utilisant COMPANY_BKP comme nom de table. Maintenant, pour copier la table COMPANY complète dans COMPANY_BKP, la syntaxe est la suivante :
 
 ```sql
 testdb=# INSERT INTO COMPANY_BKP
@@ -90,7 +91,7 @@ testdb=# INSERT INTO COMPANY_BKP
 
 La sous-requête peut être utilisée conjointement avec l'instruction UPDATE. Une ou plusieurs colonnes d'une table peuvent être mises à jour lorsqu'une sous-requête est utilisée avec l'instruction UPDATE.
 
-La syntaxe de base est la suivante
+La syntaxe de base est la suivante :
 
 ```sql
 UPDATE table
@@ -105,7 +106,7 @@ SET column_name = new_value
 
 Supposons que nous disposions de la table COMPANY_BKP, qui est une sauvegarde de la table COMPANY.
 
-L'exemple suivant met à jour le SALAIRE de 0,50 fois dans la table SOCIÉTÉ pour tous les clients dont l' GE est supérieur ou égal à 27 ans.
+L'exemple suivant met à jour le SALAIRE de 0,50 fois dans la table SOCIÉTÉ pour tous les clients dont l'âge est supérieur ou égal à 27 ans :
 
 ```sql
 testdb=# UPDATE COMPANY
@@ -114,7 +115,7 @@ testdb=# UPDATE COMPANY
         WHERE AGE >= 27 );
 ```
 
-Cela affecterait deux lignes et finalement la table SOCIÉTÉ aurait les enregistrements suivants -
+Cela affecterait deux lignes et finalement la table SOCIÉTÉ aurait les enregistrements suivants :
 
 ```bash
 id | name  | age | address     | salary
@@ -133,7 +134,7 @@ id | name  | age | address     | salary
 
 La sous-requête peut être utilisée en conjonction avec l'instruction DELETE comme avec toutes les autres instructions mentionnées ci-dessus.
 
-La syntaxe de base est la suivante -
+La syntaxe de base est la suivante :
 
 ```sql
 DELETE FROM TABLE_NAME
@@ -147,7 +148,7 @@ DELETE FROM TABLE_NAME
 
 En supposant que nous disposions de la table COMPANY_BKP, qui est une sauvegarde de la table COMPANY.
 
-L'exemple suivant supprime les enregistrements de la table SOCIÉTÉ pour tous les clients dont l'âge est supérieur ou égal à 27 ans.
+L'exemple suivant supprime les enregistrements de la table SOCIÉTÉ pour tous les clients dont l'âge est supérieur ou égal à 27 ans :
 
 ```sql
 testdb=# DELETE FROM COMPANY
@@ -155,7 +156,7 @@ testdb=# DELETE FROM COMPANY
         WHERE AGE > 27 );
 ```
 
-Cela affecterait deux lignes et finalement la table SOCIÉTÉ aurait les enregistrements suivants -
+Cela affecterait deux lignes et finalement la table SOCIÉTÉ aurait les enregistrements suivants :
 
 ```bash
 id | name  | age | address     | salary

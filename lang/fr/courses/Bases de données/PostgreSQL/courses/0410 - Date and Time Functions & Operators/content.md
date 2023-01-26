@@ -22,20 +22,18 @@ Le tableau suivant liste les comportements des opérateurs arithmétiques de bas
 | ``` * ``` | 900 * intervalle '1 second' | intervalle '00:15:00' |
 | ``` * ``` | 21 * intervalle '1 day' | intervalle '21 days' |
 | ``` * ``` | double precision '3.5' * interval '1 hour' | intervalle '03:30:00' |
-| ``` * ``` | intervalle "1 heure" / double précision "1,5". | intervalle '00:40:00' |
-| ``` * ``` | --- | --- |
-| ``` - ``` | --- | --- |
+| ``` * ``` | intervalle "1 heure" / double précision "1,5" | intervalle '00:40:00' |
 
-Vous trouverez ci-dessous la liste de toutes les fonctions importantes liées à la date et à l'heure.
+Vous trouverez ci-dessous la liste de toutes les fonctions importantes liées à la date et à l'heure :
 
 **Function & Description**
 
-- **AGE()** - Soustraire les arguments
-- **CURRENT DATE/TIME()** - Date et heure actuelles
-- **DATE_PART()** - Obtenir une sous-zone (équivalent à extraire)
-- **EXTRACT()** - Obtenir le sous-champ
-- **ISFINITE()** - Test pour la date, l'heure et l'intervalle finis (pas +/-infini)
-- **JUSTIFY** - Ajuster l'intervalle
+- **AGE()** - Soustraire les arguments.
+- **CURRENT DATE/TIME()** - Date et heure actuelles.
+- **DATE_PART()** - Obtenir une sous-zone (équivalent à extraire).
+- **EXTRACT()** - Obtenir le sous-champ.
+- **ISFINITE()** - Test pour la date, l'heure et l'intervalle finis (pas +/-infini).
+- **JUSTIFY** - Ajuster l'intervalle.
 
 ## AGE(timestamp, timestamp), AGE(timestamp)
 
@@ -44,13 +42,13 @@ Vous trouverez ci-dessous la liste de toutes les fonctions importantes liées à
 - ```AGE(timestamp, timestamp)``` - Lorsqu'il est invoqué avec la forme TIMESTAMP du second argument, AGE() soustrait les arguments, produisant un résultat "symbolique" qui utilise les années et les mois et est de type INTERVAL.
 - ```AGE(timestamp)``` - Lorsqu'elle est invoquée avec le seul TIMESTAMP comme argument, AGE() soustrait de la date actuelle (à minuit).
 
-Example of the function ```AGE(timestamp, timestamp)``` is −
+Exemple de la fonction ```AGE(timestamp, timestamp)``` :
 
 ```sql
 testdb=# SELECT AGE(timestamp '2001-04-10', timestamp '1957-06-13');
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
           age
@@ -58,13 +56,13 @@ L'instruction PostgreSQL ci-dessus produira le résultat suivant -
  43 years 9 mons 27 days
 ```
 
-Example of the function AGE(timestamp) is −
+Exemple de la fonction AGE(timestamp) :
 
 ```sql
 testdb=# select age(timestamp '1957-06-13');
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```sql
           age
@@ -74,7 +72,7 @@ L'instruction PostgreSQL ci-dessus produira le résultat suivant -
 
 ## CURRENT DATE/TIME()
 
-PostgreSQL fournit un certain nombre de fonctions qui renvoient des valeurs liées à la date et à l'heure actuelles. Voici quelques fonctions -
+PostgreSQL fournit un certain nombre de fonctions qui renvoient des valeurs liées à la date et à l'heure actuelles. Voici quelques fonctions :
 
 **Fonction et description**
 
@@ -88,7 +86,7 @@ PostgreSQL fournit un certain nombre de fonctions qui renvoient des valeurs lié
 - **LOCALTIME(precision)** - Le paramètre de précision est facultatif et permet d'arrondir le résultat à ce nombre de chiffres fractionnaires dans le champ des secondes.
 - **LOCALTIMESTAMP(precision)** - Le paramètre de précision est facultatif et permet d'arrondir le résultat à ce nombre de chiffres fractionnaires dans le champ des secondes.
 
-Exemples utilisant les fonctions du tableau ci-dessus -
+Exemples utilisant les fonctions du tableau ci-dessus :
 
 ```sql
 testdb=# SELECT CURRENT_TIME;
@@ -126,7 +124,7 @@ testdb=# SELECT LOCALTIMESTAMP;
 (1 row)
 ```
 
-PostgreSQL fournit également des fonctions qui renvoient l'heure de début de l'instruction courante, ainsi que l'heure courante réelle à l'instant où la fonction est appelée. Ces fonctions sont -
+PostgreSQL fournit également des fonctions qui renvoient l'heure de début de l'instruction courante, ainsi que l'heure courante réelle à l'instant où la fonction est appelée. Ces fonctions sont :
 
 **Fonction et description**
 
@@ -144,7 +142,7 @@ PostgreSQL fournit également des fonctions qui renvoient l'heure de début de l
 Les noms de champs valides sont : century, day, decade, dow, doy, epoch, hour, isodow, isoyear, microseconds, millennium, milliseconds, minute, month, quarter, second, timezone, timezone_hour, timezone_minute, week, year.
 - ```DATE_TRUNC('field', source)``` - Cette fonction est conceptuellement similaire à la fonction tronc pour les nombres. source est une expression de valeur de type timestamp ou interval. field sélectionne la précision avec laquelle la valeur d'entrée doit être tronquée. La valeur de retour est de type timestamp ou interval. Les valeurs valides pour field sont : microsecondes, millisecondes, seconde, minute, heure, jour, semaine, mois, trimestre, année, décennie, siècle, millénaire...
 
-Voici des exemples de fonctions DATE_PART('field', source) -
+Voici des exemples de fonctions DATE_PART('field', source) :
 
 ```sql
 testdb=# SELECT date_part('day', TIMESTAMP '2001-02-16 20:38:40');
@@ -180,7 +178,7 @@ La fonction EXTRACT(field FROM source) récupère des sous-champs tels que l'ann
 
 Les noms de champ suivants sont valides (similaires aux noms de champ de la fonction DATE_PART) : century, day, decade, dow, doy, epoch, hour, isodow, isoyear, microseconds, millennium, milliseconds, minute, month, quarter, second, timezone, timezone_hour, timezone_minute, week, year.
 
-Voici des exemples de fonctions EXTRACT('field', source) -
+Voici des exemples de la fonction EXTRACT('field', source) :
 
 ```sql
 testdb=# SELECT EXTRACT(CENTURY FROM TIMESTAMP '2000-12-16 12:21:13');
@@ -201,7 +199,7 @@ testdb=# SELECT EXTRACT(DAY FROM TIMESTAMP '2001-02-16 20:38:40');
 
 **Function & Description**
 
-- ```ISFINITE(date)``` - Tests pour la date limite.
+- ```ISFINITE(date)``` - Teste pour la date limite.
 - ```ISFINITE(timestamp)``` - Teste l'horodateur fini.
 - ```ISFINITE(interval)``` - Tests pour un intervalle fini.
 
@@ -233,11 +231,11 @@ testdb=# SELECT isfinite(interval '4 hours');
 
 **Function & Description**
 
-- ```JUSTIFY_DAYS(interval)``` - Ajuste l'intervalle pour que les périodes de 30 jours soient représentées comme des mois. Retourne le type d'intervalle
-- ```JUSTIFY_HOURS(interval)``` - Ajuste l'intervalle pour que les périodes de 24 heures soient représentées par des jours. Retourne le type d'intervalle
-- ```JUSTIFY_INTERVAL(interval)``` - Ajuste l'intervalle en utilisant JUSTIFY_DAYS et JUSTIFY_HOURS, avec des ajustements de signes supplémentaires. Retourne le type d'intervalle
+- ```JUSTIFY_DAYS(interval)``` - Ajuste l'intervalle pour que les périodes de 30 jours soient représentées comme des mois. Retourne le type d'intervalle.
+- ```JUSTIFY_HOURS(interval)``` - Ajuste l'intervalle pour que les périodes de 24 heures soient représentées par des jours. Retourne le type d'intervalle.
+- ```JUSTIFY_INTERVAL(interval)``` - Ajuste l'intervalle en utilisant JUSTIFY_DAYS et JUSTIFY_HOURS, avec des ajustements de signes supplémentaires. Retourne le type d'intervalle.
 
-Les exemples suivants concernent les fonctions ISFINITE().
+Les exemples suivants concernent les fonctions ISFINITE() :
 
 ```sql
 testdb=# SELECT justify_days(interval '35 days');

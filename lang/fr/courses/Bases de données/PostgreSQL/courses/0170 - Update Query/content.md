@@ -2,7 +2,7 @@ La requête **UPDATE** de PostgreSQL est utilisée pour modifier les enregistrem
 
 ## Syntaxe
 
-La syntaxe de base d'une requête UPDATE avec la clause WHERE est la suivante : -.
+La syntaxe de base d'une requête **UPDATE** avec la clause **WHERE** est la suivante :
 
 ```sql
 UPDATE table_name
@@ -10,11 +10,11 @@ SET column1 = value1, column2 = value2...., columnN = valueN
 WHERE [condition];
 ```
 
-Vous pouvez combiner un nombre N de conditions en utilisant les opérateurs AND ou OR.
+Vous pouvez combiner un nombre N de conditions en utilisant les opérateurs **AND** ou **OR**.
 
 ## Exemple
 
-Considérons la table COMPANY, dont les enregistrements sont les suivants -
+Considérons la table COMPANY, dont les enregistrements sont les suivants :
 
 ```sql
 testdb# select * from COMPANY;
@@ -30,13 +30,13 @@ testdb# select * from COMPANY;
 (7 rows)
 ```
 
-Voici un exemple qui mettrait à jour l'ADRESSE d'un client dont l'ID est 6.
+Voici un exemple qui mettrait à jour l'ADRESSE d'un client dont l'ID est 6 :
 
 ```sql
 testdb=# UPDATE COMPANY SET SALARY = 15000 WHERE ID = 3;
 ```
 
-testdb=# UPDATE COMPANY SET SALARY = 15000 WHERE ID = 3;
+Maintenant, la table COMPANY aura les enregistrements suivants :
 
 ```bash
 id | name  | age | address    | salary
@@ -51,13 +51,13 @@ id | name  | age | address    | salary
 (7 rows)
 ```
 
-Si vous voulez modifier toutes les valeurs des colonnes ADRESSE et SALAIRE dans la table SOCIÉTÉ, vous n'avez pas besoin d'utiliser la clause WHERE et la requête UPDATE serait la suivante :
+Si vous voulez modifier toutes les valeurs des colonnes ADRESSE et SALAIRE dans la table SOCIÉTÉ, vous n'avez pas besoin d'utiliser la clause **WHERE** et la requête **UPDATE** serait la suivante :
 
 ```sql
 testdb=# UPDATE COMPANY SET ADDRESS = 'Texas', SALARY=20000;
 ```
 
-Maintenant, la table SOCIÉTÉ aura les enregistrements suivants -
+Maintenant, la table SOCIÉTÉ aura les enregistrements suivants :
 
 ```bash
 id | name  | age | address | salary

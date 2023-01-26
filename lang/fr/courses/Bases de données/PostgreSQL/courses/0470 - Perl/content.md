@@ -13,7 +13,7 @@ $ make
 $ make install
 ```
 
-Si vous avez besoin d'installer le pilote SQLite pour DBI, il peut être installé comme suit -
+Si vous avez besoin d'installer le pilote SQLite pour DBI, il peut être installé comme suit :
 
 ```bash
 $ wget http://search.cpan.org/CPAN/authors/id/T/TU/TURNSTEP/DBD-Pg-2.19.3.tar.gz
@@ -24,14 +24,14 @@ $ make
 $ make install
 ```
 
-Avant de commencer à utiliser l'interface Perl PostgreSQL, trouvez le fichier pg_hba.conf dans votre répertoire d'installation PostgreSQL et ajoutez la ligne suivante : -.
+Avant de commencer à utiliser l'interface Perl PostgreSQL, trouvez le fichier pg_hba.conf dans votre répertoire d'installation PostgreSQL et ajoutez la ligne suivante :
 
 ```bash
 # IPv4 local connections:
 host    all         all         127.0.0.1/32          md5
 ```
 
-Vous pouvez démarrer/redémarrer le serveur postgres, au cas où il ne serait pas en cours d'exécution, à l'aide de la commande suivante -
+Vous pouvez démarrer/redémarrer le serveur postgres, au cas où il ne serait pas en cours d'exécution, à l'aide de la commande suivante :
 
 ```bash
 [root@host]# service postgresql restart
@@ -45,20 +45,18 @@ Voici les principales routines DBI, qui peuvent répondre à vos besoins pour tr
 
 **API & Description**
 
-- ```DBI→connect($data_source, "userid", "password", \%attr)``` - 
-Établit une connexion à la base de données, ou session, à la source de données demandée $data_source. Retourne un objet handle de base de données si la connexion réussit. Datasource a la forme suivante :
-DBI:Pg:dbname=$database;host=127.0.0.1;port=5432 Pg est le nom du pilote PostgreSQL et testdb est le nom de la base de données.
-- ```$dbh→do($sql)``` - Cette routine prépare et exécute une seule instruction SQL. Elle retourne le nombre de lignes affectées ou undef en cas d'erreur. Une valeur de retour de -1 signifie que le nombre de lignes est inconnu, non applicable ou non disponible. Ici, $dbh est un handle renvoyé par l'appel DBI→connect().
+- ```DBI→connect($data_source, "userid", "password", \%attr)``` - Établis une connexion à la base de données, ou session, à la source de données demandée $data_source. Retourne un objet handle de base de données si la connexion réussit. Datasource à la forme suivante : ```DBI:Pg:dbname=$database;host=127.0.0.1;port=5432``` Pg est le nom du pilote PostgreSQL et testdb est le nom de la base de données.
+- ```$dbh→do($sql)``` - Cette routine prépare et exécute une seule instruction SQL. Elle retourne le nombre de lignes affectées ou undef en cas d'erreur. Une valeur de retour de -1 signifie que le nombre de lignes est inconnu, non applicable ou non disponible. Ici, ```$dbh``` est un handle renvoyé par l'appel ```DBI→connect()```.
 - ```$dbh→prepare($sql)``` - Cette routine prépare une déclaration pour une exécution ultérieure par le moteur de base de données et renvoie une référence à un objet de gestion de déclaration.
-- ```$sth→execute()``` - Cette routine effectue tout traitement nécessaire à l'exécution de l'instruction préparée. Undef est retourné si une erreur se produit. Une exécution réussie renvoie toujours true, quel que soit le nombre de lignes concernées. Ici, $sth est un handle d'instruction renvoyé par l'appel $dbh→prepare($sql).
+- ```$sth→execute()``` - Cette routine effectue tout traitement nécessaire à l'exécution de l'instruction préparée. Undef est retourné si une erreur se produit. Une exécution réussie renvoie toujours true, quel que soit le nombre de lignes concernées. Ici, ```$sth``` est un handle d'instruction renvoyé par l'appel ```$dbh→prepare($sql)```.
 - ```$sth→fetchrow_array()``` - Cette routine récupère la ligne de données suivante et la renvoie sous la forme d'une liste contenant les valeurs des champs. Les champs nuls sont retournés sous forme de valeurs undef dans la liste.
-- ```$DBI::err``` - Ceci est équivalent à $h→err, où $h est l'un des types de handle comme $dbh, $sth, ou $drh. Cela renvoie le code d'erreur natif du moteur de base de données de la dernière méthode de pilote appelée.
-- ```$DBI::errstr``` - Ceci est équivalent à $h→errstr, où $h est un des types de handle comme $dbh, $sth, ou $drh. Cela renvoie le message d'erreur du moteur de base de données natif de la dernière méthode DBI appelée.
+- ```$DBI::err``` - Ceci est équivalent à ```$h→err```, où ```$h``` est l'un des types de handle comme ```$dbh```, ```$sth```, ou ```$drh```. Cela renvoie le code d'erreur natif du moteur de base de données de la dernière méthode de pilote appelée.
+- ```$DBI::errstr``` - Ceci est équivalent à ```$h→errstr```, où ```$h``` est un des types de handle comme ```$dbh```, ```$sth```, ou ```$drh```. Cela renvoie le message d'erreur du moteur de base de données natif de la dernière méthode DBI appelée.
 - ```$dbh->disconnect()``` - Cette routine ferme une connexion à une base de données précédemment ouverte par un appel à ```DBI→connect()```.
 
 ## Connecting to Database
 
-Le code Perl suivant montre comment se connecter à une base de données existante. Si la base de données n'existe pas, elle sera créée et finalement un objet de base de données sera retourné.
+Le code Perl suivant montre comment se connecter à une base de données existante. Si la base de données n'existe pas, elle sera créée et finalement un objet de base de données sera retourné :
 
 ```perl
 #!/usr/bin/perl
@@ -77,7 +75,7 @@ my $dbh = DBI->connect($dsn, $userid, $password, { RaiseError => 1 })
 print "Opened database successfully\n";
 ```
 
-Maintenant, exécutons le programme ci-dessus pour ouvrir notre base de données testdb ; si la base de données est ouverte avec succès, le message suivant s'affichera -
+Maintenant, exécutons le programme ci-dessus pour ouvrir notre base de données testdb ; si la base de données est ouverte avec succès, le message suivant s'affichera :
 
 ```bash
 Open database successfully
@@ -85,7 +83,7 @@ Open database successfully
 
 ## Créer une table
 
-Le programme Perl suivant sera utilisé pour créer une table dans la base de données précédemment créée -.
+Le programme Perl suivant sera utilisé pour créer une table dans la base de données précédemment créée :
 
 ```perl
 #!/usr/bin/perl
@@ -93,7 +91,7 @@ Le programme Perl suivant sera utilisé pour créer une table dans la base de do
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname=$database;host=127.0.0.1;port=5432";
 my $userid = "postgres";
@@ -117,7 +115,7 @@ if($rv < 0) {
 $dbh->disconnect();
 ```
 
-Lorsque le programme donné ci-dessus est exécuté, il créera la table COMPANY dans votre testdb et il affichera les messages suivants -
+Lorsque le programme donné ci-dessus est exécuté, il créera la table COMPANY dans votre testdb et il affichera les messages suivants :
 
 ```bash
 Opened database successfully
@@ -126,7 +124,7 @@ Table created successfully
 
 ## Opération INSERT
 
-Le programme Perl suivant montre comment nous pouvons créer des enregistrements dans notre table SOCIÉTÉ créée dans l'exemple ci-dessus -.
+Le programme Perl suivant montre comment nous pouvons créer des enregistrements dans notre table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```perl
 #!/usr/bin/perl
@@ -134,7 +132,7 @@ Le programme Perl suivant montre comment nous pouvons créer des enregistrements
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
@@ -163,7 +161,7 @@ print "Records created successfully\n";
 $dbh->disconnect();
 ```
 
-Lorsque le programme ci-dessus est exécuté, il créera des enregistrements donnés dans la table COMPANY et affichera les deux lignes suivantes -
+Lorsque le programme ci-dessus est exécuté, il créera des enregistrements donnés dans la table COMPANY et affichera les deux lignes suivantes :
 
 ```bash
 Opened database successfully
@@ -172,7 +170,7 @@ Records created successfully
 
 ## Opération SELECT
 
-Le programme Perl suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus -.
+Le programme Perl suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```perl
 #!/usr/bin/perl
@@ -180,7 +178,7 @@ Le programme Perl suivant montre comment nous pouvons récupérer et afficher le
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
@@ -199,35 +197,35 @@ while(my @row = $sth->fetchrow_array()) {
         print "ID = ". $row[0] . "\n";
         print "NAME = ". $row[1] ."\n";
         print "ADDRESS = ". $row[2] ."\n";
-        print "SALARY =  ". $row[3] ."\n\n";
+        print "SALARY = ". $row[3] ."\n\n";
 }
 print "Operation done successfully\n";
 $dbh->disconnect();
 ```
 
-Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant -
+Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully
 ID = 1
 NAME = Paul
 ADDRESS = California
-SALARY =  20000
+SALARY = 20000
 
 ID = 2
 NAME = Allen
 ADDRESS = Texas
-SALARY =  15000
+SALARY = 15000
 
 ID = 3
 NAME = Teddy
 ADDRESS = Norway
-SALARY =  20000
+SALARY = 20000
 
 ID = 4
 NAME = Mark
 ADDRESS = Rich-Mond
-SALARY =  65000
+SALARY = 65000
 
 Operation done successfully
 ```
@@ -242,7 +240,7 @@ Le code Perl suivant montre comment utiliser l'instruction UPDATE pour mettre à
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
@@ -268,13 +266,13 @@ while(my @row = $sth->fetchrow_array()) {
         print "ID = ". $row[0] . "\n";
         print "NAME = ". $row[1] ."\n";
         print "ADDRESS = ". $row[2] ."\n";
-        print "SALARY =  ". $row[3] ."\n\n";
+        print "SALARY = ". $row[3] ."\n\n";
 }
 print "Operation done successfully\n";
 $dbh->disconnect();
 ```
 
-Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant -
+Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully
@@ -282,29 +280,29 @@ Total number of rows updated : 1
 ID = 1
 NAME = Paul
 ADDRESS = California
-SALARY =  25000
+SALARY = 25000
 
 ID = 2
 NAME = Allen
 ADDRESS = Texas
-SALARY =  15000
+SALARY = 15000
 
 ID = 3
 NAME = Teddy
 ADDRESS = Norway
-SALARY =  20000
+SALARY = 20000
 
 ID = 4
 NAME = Mark
 ADDRESS = Rich-Mond
-SALARY =  65000
+SALARY = 65000
 
 Operation done successfully
 ```
 
 ## Opération Delete
 
-Le code Perl suivant montre comment utiliser l'instruction DELETE pour supprimer n'importe quel enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY.
+Le code Perl suivant montre comment utiliser l'instruction DELETE pour supprimer n'importe quel enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY :
 
 ```perl
 #!/usr/bin/perl
@@ -312,7 +310,7 @@ Le code Perl suivant montre comment utiliser l'instruction DELETE pour supprimer
 use DBI;
 use strict;
 
-my $driver   = "Pg"; 
+my $driver = "Pg"; 
 my $database = "testdb";
 my $dsn = "DBI:$driver:dbname = $database;host = 127.0.0.1;port = 5432";
 my $userid = "postgres";
@@ -338,13 +336,13 @@ while(my @row = $sth->fetchrow_array()) {
         print "ID = ". $row[0] . "\n";
         print "NAME = ". $row[1] ."\n";
         print "ADDRESS = ". $row[2] ."\n";
-        print "SALARY =  ". $row[3] ."\n\n";
+        print "SALARY = ". $row[3] ."\n\n";
 }
 print "Operation done successfully\n";
 $dbh->disconnect();
 ```
 
-Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant -
+Lorsque le programme donné ci-dessus est exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully
@@ -352,17 +350,17 @@ Total number of rows deleted : 1
 ID = 1
 NAME = Paul
 ADDRESS = California
-SALARY =  25000
+SALARY = 25000
 
 ID = 3
 NAME = Teddy
 ADDRESS = Norway
-SALARY =  20000
+SALARY = 20000
 
 ID = 4
 NAME = Mark
 ADDRESS = Rich-Mond
-SALARY =  65000
+SALARY = 65000
 
 Operation done successfully
 ```

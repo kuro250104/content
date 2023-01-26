@@ -2,7 +2,7 @@ Ce tutoriel va utiliser la bibliothèque libpqxx, qui est l'API client C++ offic
 
 ## Installation
 
-La dernière version de libpqxx est disponible pour être téléchargée à partir du lien Télécharger Libpqxx. Alors, téléchargez la dernière version et suivez les étapes suivantes -
+La dernière version de libpqxx est disponible pour être téléchargée à partir du lien Télécharger Libpqxx. Alors, téléchargez la dernière version et suivez les étapes suivantes :
 
 ```bash
 wget http://pqxx.org/download/software/libpqxx/libpqxx-4.0.tar.gz
@@ -13,7 +13,7 @@ make
 make install
 ```
 
-Avant de commencer à utiliser l'interface PostgreSQL C/C++, trouvez le fichier pg_hba.conf dans votre répertoire d'installation de PostgreSQL et ajoutez la ligne suivante : -.
+Avant de commencer à utiliser l'interface PostgreSQL C/C++, trouvez le fichier pg_hba.conf dans votre répertoire d'installation de PostgreSQL et ajoutez la ligne suivante :
 
 ```bash
 # IPv4 local connections:
@@ -34,8 +34,8 @@ Les éléments suivants sont des routines d'interface importantes qui peuvent r�
 
 **API & Description**
 
-- ```pqxx::connection C( const std::string & dbstring )``` - Il s'agit d'un typedef qui sera utilisé pour se connecter à la base de données. Ici, dbstring fournit les paramètres nécessaires pour se connecter à la base de données, par exemple dbname = testdb user = postgres password=pass123 hostaddr=127.0.0.1 port=5432. Si la connexion est établie avec succès, le programme crée un objet de connexion C qui fournit diverses fonctions publiques utiles.
-- ```C.is_open()``` - La méthode is_open() est une méthode publique de l'objet connexion et renvoie une valeur booléenne. Si la connexion est active, alors cette méthode renvoie true, sinon elle renvoie false.
+- ```pqxx::connection C( const std::string & dbstring )``` - Il s'agit d'un typedef qui sera utilisé pour se connecter à la base de données. Ici, ```dbstring``` fournit les paramètres nécessaires pour se connecter à la base de données, par exemple ```dbname=testdb user=postgres password=pass123 hostaddr=127.0.0.1 port=5432```. Si la connexion est établie avec succès, le programme crée un objet de connexion C qui fournit diverses fonctions publiques utiles.
+- ```C.is_open()``` - La méthode ```is_open()``` est une méthode publique de l'objet connexion et renvoie une valeur booléenne. Si la connexion est active, alors cette méthode renvoie true, sinon elle renvoie false.
 - ```C.disconnect()``` - Cette méthode est utilisée pour déconnecter une connexion ouverte à une base de données.
 - ```pqxx::work W( C )``` - Il s'agit d'un typedef qui sera utilisé pour créer un objet transactionnel en utilisant la connexion C, qui sera finalement utilisé pour exécuter des instructions SQL en mode transactionnel. Si l'objet transactionnel est créé avec succès, alors il est assigné à la variable W qui sera utilisée pour accéder aux méthodes publiques liées à l'objet transactionnel.
 - ```W.exec(const std::string & sql)``` - Cette méthode publique de l'objet transactionnel sera utilisée pour exécuter la déclaration SQL.
@@ -46,7 +46,7 @@ Les éléments suivants sont des routines d'interface importantes qui peuvent r�
 
 ## Connexion à la base de données
 
-Le segment de code C suivant montre comment se connecter à une base de données existante fonctionnant sur la machine locale au port 5432. Ici, j'ai utilisé la barre oblique inversée \ pour la continuation de la ligne.
+Le segment de code C suivant montre comment se connecter à une base de données existante fonctionnant sur la machine locale au port 5432. Ici, j'ai utilisé la barre oblique inversée \ pour la continuation de la ligne :
 
 ```c
 #include <iostream>
@@ -73,9 +73,9 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-Maintenant, compilons et exécutons le programme ci-dessus pour nous connecter à notre base de données testdb, qui est déjà disponible dans votre schéma et à laquelle on peut accéder en utilisant l'utilisateur postgres et le mot de passe pass123.
+Maintenant, compilons et exécutons le programme ci-dessus pour nous connecter à notre base de données ```testdb```, qui est déjà disponible dans votre schéma et à laquelle on peut accéder en utilisant l'utilisateur postgres et le mot de passe pass123.
 
-Vous pouvez utiliser l'ID utilisateur et le mot de passe en fonction des paramètres de votre base de données. Rappelez-vous de garder les -lpqxx et -lpq dans l'ordre donné ! Sinon, l'éditeur de liens se plaindra amèrement des fonctions manquantes dont le nom commence par "PQ".
+Vous pouvez utiliser l'ID utilisateur et le mot de passe en fonction des paramètres de votre base de données. Rappelez-vous de garder les ```-lpqxx``` et ```-lpq``` dans l'ordre donné ! Sinon, l'éditeur de liens se plaindra amèrement des fonctions manquantes dont le nom commence par "PQ".
 
 ```bash
 $g++ test.cpp -lpqxx -lpq
@@ -85,7 +85,7 @@ Opened database successfully: testdb
 
 ## Créer une table
 
-Le segment de code C suivant sera utilisé pour créer une table dans la base de données créée précédemment -.
+Le segment de code C suivant sera utilisé pour créer une table dans la base de données créée précédemment :
 
 ```c
 #include <iostream>
@@ -132,7 +132,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-Lorsque le programme donné ci-dessus est compilé et exécuté, il créera la table COMPANY dans votre base de données testdb et affichera les déclarations suivantes -
+Lorsque le programme donné ci-dessus est compilé et exécuté, il créera la table COMPANY dans votre base de données ```testdb``` et affichera les déclarations suivantes :
 
 ```bash
 Opened database successfully: testdb
@@ -141,7 +141,7 @@ Table created successfully
 
 ## Opération INSERT
 
-Le segment de code C suivant montre comment créer des enregistrements dans la table SOCIÉTÉ créée dans l'exemple ci-dessus.
+Le segment de code C suivant montre comment créer des enregistrements dans la table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```c
 #include <iostream>
@@ -190,7 +190,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-Lorsque le programme ci-dessus est compilé et exécuté, il créera des enregistrements donnés dans la table COMPANY et affichera les deux lignes suivantes -
+Lorsque le programme ci-dessus est compilé et exécuté, il créera des enregistrements donnés dans la table COMPANY et affichera les deux lignes suivantes :
 
 ```bash
 Opened database successfully: testdb
@@ -199,7 +199,7 @@ Records created successfully
 
 ## Opération SELECT
 
-Le segment de code C suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus.
+Le segment de code C suivant montre comment nous pouvons récupérer et afficher les enregistrements de notre table SOCIÉTÉ créée dans l'exemple ci-dessus :
 
 ```c
 #include <iostream>
@@ -249,7 +249,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-Lorsque le programme donné ci-dessus est compilé et exécuté, il produira le résultat suivant -
+Lorsque le programme donné ci-dessus est compilé et exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully: testdb
@@ -278,7 +278,7 @@ Operation done successfully
 
 ## Opération UPDATE
 
-Le segment de code C suivant montre comment utiliser l'instruction UPDATE pour mettre à jour n'importe quel enregistrement, puis récupérer et afficher les enregistrements mis à jour dans la table SOCIÉTÉ.
+Le segment de code C suivant montre comment utiliser l'instruction UPDATE pour mettre à jour n'importe quel enregistrement, puis récupérer et afficher les enregistrements mis à jour dans la table SOCIÉTÉ :
 
 ```c
 #include <iostream>
@@ -337,7 +337,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-Lorsque le programme donné ci-dessus est compilé et exécuté, il produira le résultat suivant -
+Lorsque le programme donné ci-dessus est compilé et exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully: testdb
@@ -367,7 +367,7 @@ Operation done successfully
 
 ## DELETE Operation
 
-Le segment de code C suivant montre comment utiliser l'instruction DELETE pour supprimer n'importe quel enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY -.
+Le segment de code C suivant montre comment utiliser l'instruction DELETE pour supprimer n'importe quel enregistrement, puis récupérer et afficher les enregistrements restants dans la table COMPANY :
 
 ```c
 #include <iostream>
@@ -426,7 +426,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-Lorsque le programme donné ci-dessus est compilé et exécuté, il produira le résultat suivant -
+Lorsque le programme donné ci-dessus est compilé et exécuté, il produira le résultat suivant :
 
 ```bash
 Opened database successfully: testdb

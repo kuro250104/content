@@ -6,7 +6,7 @@ En pratique, vous regroupez plusieurs requêtes PostgreSQL et vous les exécutez
 
 ## Properties of Transactions
 
-Les transactions possèdent les quatre propriétés standard suivantes, généralement désignées par l'acronyme ACID -.
+Les transactions possèdent les quatre propriétés standards suivantes, généralement désignées par l'acronyme ACID :
 
 - **Atomicity** − S'assure que toutes les opérations de l'unité de travail se terminent avec succès ; sinon, la transaction est interrompue au point d'échec et les opérations précédentes sont ramenées à leur état antérieur.
 - **Consistency** − Assure que la base de données change correctement d'état lors d'une transaction validée avec succès.
@@ -25,9 +25,9 @@ Transactional control commands are only used with the DML commands INSERT, UPDAT
 
 ## The BEGIN TRANSACTION Command
 
-Les transactions peuvent être lancées à l'aide de la commande BEGIN TRANSACTION ou simplement BEGIN. Ces transactions persistent généralement jusqu'à ce que la prochaine commande COMMIT ou ROLLBACK soit rencontrée. Cependant, une transaction peut également faire l'objet d'un ROLLBACK si la base de données est fermée ou si une erreur se produit.
+Les transactions peuvent être lancées à l'aide de la commande **BEGIN TRANSACTION** ou simplement **BEGIN**. Ces transactions persistent généralement jusqu'à ce que la prochaine commande **COMMIT** ou **ROLLBACK** soit rencontrée. Cependant, une transaction peut également faire l'objet d'un **ROLLBACK** si la base de données est fermée ou si une erreur se produit.
 
-Voici une syntaxe simple pour lancer une transaction
+Voici une syntaxe simple pour lancer une transaction :
 
 ```sql
 BEGIN;
@@ -43,7 +43,7 @@ La commande **COMMIT** est la commande transactionnelle utilisée pour enregistr
 
 La commande **COMMIT** enregistre toutes les transactions dans la base de données depuis la dernière commande **COMMIT** ou **ROLLBACK**.
 
-La syntaxe de la commande **COMMIT** est la suivante : -
+La syntaxe de la commande **COMMIT** est la suivante :
 
 ```sql
 COMMIT;
@@ -59,7 +59,7 @@ La commande **ROLLBACK** est la commande transactionnelle utilisée pour annuler
 
 La commande **ROLLBACK** ne peut être utilisée que pour annuler les transactions effectuées depuis la dernière commande **COMMIT** ou **ROLLBACK**.
 
-La syntaxe de la commande **ROLLBACK** est la suivante : -
+La syntaxe de la commande **ROLLBACK** est la suivante :
 
 ```sql
 ROLLBACK;
@@ -67,7 +67,7 @@ ROLLBACK;
 
 ## Exemple
 
-Considérons que la table SOCIÉTÉ possède les enregistrements suivants -
+Considérons que la table SOCIÉTÉ possède les enregistrements suivants :
 
 ```bash
 id | name  | age | address   | salary
@@ -81,7 +81,7 @@ id | name  | age | address   | salary
   7 | James |  24 | Houston   |  10000
 ```
 
-Maintenant, commençons une transaction et supprimons les enregistrements de la table ayant age = 25 et finalement nous utilisons la commande ROLLBACK pour annuler tous les changements.
+Maintenant, commençons une transaction et supprimons les enregistrements de la table ayant ```age = 25``` et finalement nous utilisons la commande **ROLLBACK** pour annuler tous les changements.
 
 ```sql
 testdb=# BEGIN;
@@ -89,7 +89,7 @@ DELETE FROM COMPANY WHERE AGE = 25;
 ROLLBACK;
 ```
 
-Si vous vérifiez la table COMPANY, vous trouverez toujours les enregistrements suivants -
+Si vous vérifiez la table COMPANY, vous trouverez toujours les enregistrements suivants :
 
 ```bash
 id | name  | age | address   | salary
@@ -103,7 +103,7 @@ id | name  | age | address   | salary
   7 | James |  24 | Houston   |  10000
 ```
 
-Maintenant, commençons une autre transaction et supprimons les enregistrements de la table ayant age = 25 et finalement nous utilisons la commande COMMIT pour valider tous les changements.
+Maintenant, commençons une autre transaction et supprimons les enregistrements de la table ayant ```age = 25``` et finalement nous utilisons la commande **COMMIT** pour valider tous les changements.
 
 ```sql
 testdb=# BEGIN;
@@ -111,7 +111,7 @@ DELETE FROM COMPANY WHERE AGE = 25;
 COMMIT;
 ```
 
-Si vous vérifiez la table SOCIÉTÉ, elle contient toujours les enregistrements suivants -
+Si vous vérifiez la table SOCIÉTÉ, elle contient toujours les enregistrements suivants :
 
 ```bash
 id | name  | age | address    | salary

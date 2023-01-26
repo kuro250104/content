@@ -6,7 +6,7 @@ La base de données effectue le verrouillage automatiquement. Dans certains cas,
 
 ## Syntaxe pour LOCK command
 
-La syntaxe de base pour la commande LOCK est la suivante -
+La syntaxe de base pour la commande LOCK est la suivante :
 
 - **name** − Le nom (éventuellement qualifié de schéma) d'une table existante à verrouiller. Si ONLY est spécifié avant le nom de la table, seule cette table est verrouillée. Si ONLY n'est pas spécifié, la table et toutes ses tables descendantes (le cas échéant) sont verrouillées.
 - **lock_mode** − Le mode de verrouillage indique avec quels verrous ce verrouillage entre en conflit. Si aucun mode de verrouillage n'est spécifié, le mode le plus restrictif, ACCESS EXCLUSIVE, est utilisé. Les valeurs possibles sont : ACCESS SHARE, ROW SHARE, ROW EXCLUSIVE, SHARE UPDATE EXCLUSIVE, SHARE, SHARE ROW EXCLUSIVE, EXCLUSIVE, ACCESS EXCLUSIVE.
@@ -25,7 +25,7 @@ Par exemple, une utilisation courante des verrous consultatifs est d'émuler les
 
 ### Exemple
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```sql
 testdb# select * from COMPANY;
@@ -41,14 +41,14 @@ testdb# select * from COMPANY;
 (7 rows)
 ```
 
-L'exemple suivant verrouille la table COMPANY dans la base de données testdb en mode ACCESS EXCLUSIVE. L'instruction LOCK fonctionne uniquement en mode transactionnel.
+L'exemple suivant verrouille la table COMPANY dans la base de données ```testdb``` en mode ACCESS EXCLUSIVE. L'instruction LOCK fonctionne uniquement en mode transactionnel.
 
 ```sql
 testdb=#BEGIN;
 LOCK TABLE company1 IN ACCESS EXCLUSIVE MODE;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```sql
 LOCK TABLE

@@ -1,6 +1,6 @@
 La clause **GROUP BY** de PostgreSQL est utilisée en collaboration avec l'instruction **SELECT** pour regrouper les lignes d'une table dont les données sont identiques. Cela permet d'éliminer les redondances dans le résultat et/ou de calculer des agrégats qui s'appliquent à ces groupes.
 
-La clause **GROUP BY** suit la clause WHERE dans une instruction SELECT et précède la clause **ORDER BY**.
+La clause **GROUP BY** suit la clause **WHERE** dans une instruction **SELECT** et précède la clause **ORDER BY**.
 
 ## Syntaxe
 
@@ -14,11 +14,11 @@ GROUP BY column1, column2....columnN
 ORDER BY column1, column2....columnN
 ```
 
-Vous pouvez utiliser plus d'une colonne dans la clause GROUP BY. Assurez-vous que, quelle que soit la colonne que vous utilisez pour regrouper, cette colonne doit être disponible dans la liste des colonnes.
+Vous pouvez utiliser plus d'une colonne dans la clause **GROUP BY**. Assurez-vous que, quelle que soit la colonne que vous utilisez pour regrouper, cette colonne doit être disponible dans la liste des colonnes.
 
 ## Exemple
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```sql
 # select * from COMPANY;
@@ -34,13 +34,13 @@ Considérons la table COMPANY dont les enregistrements sont les suivants -
 (7 rows)
 ```
 
-Si vous voulez connaître le montant total du salaire de chaque client, alors la requête GROUP BY sera la suivante : -.
+Si vous voulez connaître le montant total du salaire de chaque client, alors la requête **GROUP BY** sera la suivante :
 
 ```sql
 testdb=# SELECT NAME, SUM(SALARY) FROM COMPANY GROUP BY NAME;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
  name  |  sum
@@ -55,7 +55,7 @@ Cela donnerait le résultat suivant -
 (7 rows)
 ```
 
-Maintenant, créons trois enregistrements supplémentaires dans la table SOCIÉTÉ en utilisant les instructions INSERT suivantes : -.
+Maintenant, créons trois enregistrements supplémentaires dans la table SOCIÉTÉ en utilisant les instructions **INSERT** suivantes :
 
 ```sql
 INSERT INTO COMPANY VALUES (8, 'Paul', 24, 'Houston', 20000.00);
@@ -63,7 +63,7 @@ INSERT INTO COMPANY VALUES (9, 'James', 44, 'Norway', 5000.00);
 INSERT INTO COMPANY VALUES (10, 'James', 45, 'Texas', 5000.00);
 ```
 
-Maintenant, notre table a les enregistrements suivants avec des noms en double -
+Maintenant, notre table a les enregistrements suivants avec des noms en double :
 
 ```bash
  id | name  | age | address      | salary
@@ -81,13 +81,13 @@ Maintenant, notre table a les enregistrements suivants avec des noms en double -
 (10 rows)
 ```
 
-Utilisons à nouveau la même instruction pour regrouper tous les enregistrements à l'aide de la colonne NOM, comme suit
+Utilisons à nouveau la même instruction pour regrouper tous les enregistrements à l'aide de la colonne NOM, comme suit :
 
 ```sql
 testdb=# SELECT NAME, SUM(SALARY) FROM COMPANY GROUP BY NAME ORDER BY NAME;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 name  |  sum
@@ -102,14 +102,14 @@ name  |  sum
 (7 rows)
 ```
 
-Utilisons la clause ORDER BY en même temps que la clause GROUP BY de la manière suivante -.
+Utilisons la clause **ORDER BY** en même temps que la clause **GROUP BY** de la manière suivante :
 
 ```sql
 testdb=#  SELECT NAME, SUM(SALARY)
         FROM COMPANY GROUP BY NAME ORDER BY NAME DESC;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 name  |  sum

@@ -1,10 +1,10 @@
 Le mot clé **DISTINCT** de PostgreSQL est utilisé en conjonction avec l'instruction **SELECT** pour éliminer tous les enregistrements en double et ne récupérer que les enregistrements uniques.
 
-Il peut y avoir une situation où vous avez plusieurs enregistrements en double dans une table. Lors de la récupération de ces enregistrements, il est plus logique de ne récupérer que les enregistrements uniques au lieu de récupérer les enregistrements en double..
+Il peut y avoir une situation où vous avez plusieurs enregistrements en double dans une table. Lors de la récupération de ces enregistrements, il est plus logique de ne récupérer que les enregistrements uniques au lieu de récupérer les enregistrements en double.
 
 ## Syntaxe
 
-La syntaxe de base du mot-clé **DISTINCT** pour éliminer les enregistrements en double est la suivante : -.
+La syntaxe de base du mot-clé **DISTINCT** pour éliminer les enregistrements en double est la suivante :
 
 ```sql
 SELECT DISTINCT column1, column2,.....columnN
@@ -14,7 +14,7 @@ WHERE [condition]
 
 ## Exemple
 
-Considérons la table COMPANY dont les enregistrements sont les suivants -
+Considérons la table COMPANY dont les enregistrements sont les suivants :
 
 ```bash
 # select * from COMPANY;
@@ -30,7 +30,7 @@ Considérons la table COMPANY dont les enregistrements sont les suivants -
 (7 rows)
 ```
 
-Ajoutons deux autres enregistrements à cette table comme suit -
+Ajoutons deux autres enregistrements à cette table comme suit :
 
 ```sql
 INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
@@ -40,7 +40,7 @@ INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
 VALUES (9, 'Allen', 25, 'Texas', 15000.00 );
 ```
 
-Maintenant, les enregistrements dans la table SOCIÉTÉ seraient -
+Maintenant, les enregistrements dans la table SOCIÉTÉ seraient :
 
 ```bash
 id | name  | age | address    | salary
@@ -57,13 +57,13 @@ id | name  | age | address    | salary
 (9 rows)
 ```
 
-Tout d'abord, voyons comment la requête SELECT suivante renvoie des enregistrements de salaire en double -
+Tout d'abord, voyons comment la requête **SELECT** suivante renvoie des enregistrements de salaire en double :
 
 ```sql
 testdb=# SELECT name FROM COMPANY;
 ```
 
-Cela donnerait le résultat suivant -
+Cela donnerait le résultat suivant :
 
 ```bash
 name
@@ -80,13 +80,13 @@ name
 (9 rows)
 ```
 
-Maintenant, utilisons le mot clé **DISTINCT** avec la requête **SELECT** ci-dessus et voyons le résultat -
+Maintenant, utilisons le mot clé **DISTINCT** avec la requête **SELECT** ci-dessus et voyons le résultat :
 
 ```sql
 testdb=# SELECT DISTINCT name FROM COMPANY;
 ```
 
-Cela donnerait le résultat suivant, où nous n'avons pas d'entrée en double -
+Cela donnerait le résultat suivant, où nous n'avons pas d'entrée en double :
 
 ```bash
 name

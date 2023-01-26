@@ -4,7 +4,7 @@ Les alias de colonne sont utilisés pour renommer les colonnes d'une table dans 
 
 ## Syntaxe
 
-La syntaxe de base de l'alias de table est la suivante : -.
+La syntaxe de base de l'alias de table est la suivante :
 
 ```sql
 SELECT column1, column2....
@@ -12,7 +12,7 @@ FROM table_name AS alias_name
 WHERE [condition];
 ```
 
-La syntaxe de base de l'alias de colonne est la suivante : -.
+La syntaxe de base de l'alias de colonne est la suivante :
 
 ```sql
 SELECT column_name AS alias_name
@@ -22,7 +22,7 @@ WHERE [condition];
 
 ## Exemple
 
-Considérons les deux tableaux suivants : (a) Le tableau de la SOCIÉTÉ est le suivant : -.
+Considérons les deux tableaux suivants : (a) Le tableau de la SOCIÉTÉ est le suivant :
 
 ```bash
 testdb=# select * from COMPANY;
@@ -38,7 +38,7 @@ testdb=# select * from COMPANY;
 (7 rows)
 ```
 
-(b) Une autre table est DEPARTMENT comme suit -
+(b) Une autre table est DEPARTMENT comme suit :
 
 ```bash
 id | dept         | emp_id
@@ -53,7 +53,7 @@ id | dept         | emp_id
 (7 rows)
 ```
 
-Maintenant, voici l'utilisation de **TABLE ALIAS** où nous utilisons C et D comme alias pour les tables COMPANY et DEPARTMENT, respectivement -.
+Maintenant, voici l'utilisation de **TABLE ALIAS** où nous utilisons C et D comme alias pour les tables COMPANY et DEPARTMENT, respectivement :
 
 ```sql
 testdb=# SELECT C.ID, C.NAME, C.AGE, D.DEPT
@@ -61,7 +61,7 @@ testdb=# SELECT C.ID, C.NAME, C.AGE, D.DEPT
     WHERE  C.ID = D.EMP_ID;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 id | name  | age |  dept
@@ -76,7 +76,7 @@ id | name  | age |  dept
 (7 rows)
 ```
 
-Voyons un exemple de l'utilisation de COLUMN ALIAS où COMPANY_ID est un alias de la colonne ID et COMPANY_NAME est un alias de la colonne name -.
+Voyons un exemple de l'utilisation de **COLUMN ALIAS** où COMPANY_ID est un alias de la colonne ID et COMPANY_NAME est un alias de la colonne name :
 
 ```bash
 testdb=# SELECT C.ID AS COMPANY_ID, C.NAME AS COMPANY_NAME, C.AGE, D.DEPT
@@ -84,7 +84,7 @@ testdb=# SELECT C.ID AS COMPANY_ID, C.NAME AS COMPANY_NAME, C.AGE, D.DEPT
     WHERE  C.ID = D.EMP_ID;
 ```
 
-L'instruction PostgreSQL ci-dessus produira le résultat suivant -
+L'instruction PostgreSQL ci-dessus produira le résultat suivant :
 
 ```bash
 company_id | company_name | age | dept
