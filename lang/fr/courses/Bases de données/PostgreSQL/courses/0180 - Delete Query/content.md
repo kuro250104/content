@@ -2,18 +2,18 @@ La requête **DELETE** de PostgreSQL est utilisée pour supprimer les enregistre
 
 ## Syntaxe
 
-La syntaxe de base d'une requête **DELETE** avec la clause **WHERE** est la suivante : -.
+La syntaxe de base d'une requête **DELETE** avec la clause **WHERE** est la suivante :
 
 ```sql
 DELETE FROM table_name
 WHERE [condition];
 ```
 
-Vous pouvez combiner un nombre N de conditions en utilisant les opérateurs AND ou OR.
+Vous pouvez combiner un nombre N de conditions en utilisant les opérateurs **AND** ou **OR**.
 
 ## Exemple
 
-Considérons la table COMPANY, dont les enregistrements sont les suivants -
+Considérons la table COMPANY, dont les enregistrements sont les suivants :
 
 ```bash
 # select * from COMPANY;
@@ -29,13 +29,13 @@ Considérons la table COMPANY, dont les enregistrements sont les suivants -
 (7 rows)
 ```
 
-L'exemple suivant permet de SUPPRIMER un client dont l'ID est 7.
+L'exemple suivant permet de SUPPRIMER un client dont l'ID est 7 :
 
 ```sql
 testdb=# DELETE FROM COMPANY WHERE ID = 2;
 ```
 
-Maintenant, la table SOCIÉTÉ aura les enregistrements suivants -
+Maintenant, la table SOCIÉTÉ aura les enregistrements suivants :
 
 ```bash
 id | name  | age | address     | salary
@@ -49,10 +49,10 @@ id | name  | age | address     | salary
 (6 rows)
 ```
 
-Si vous voulez SUPPRIMER tous les enregistrements de la table SOCIÉTÉ, vous n'avez pas besoin d'utiliser la clause WHERE avec les requêtes SUPPRIMER, qui seraient les suivantes -
+Si vous voulez SUPPRIMER tous les enregistrements de la table SOCIÉTÉ, vous n'avez pas besoin d'utiliser la clause **WHERE** avec les requêtes **DELETE**, qui seraient les suivantes :
 
 ```sql
 testdb=# DELETE FROM COMPANY;
 ```
 
-Maintenant, la table COMPANY ne contient plus d'enregistrement car tous les enregistrements ont été supprimés par l'instruction DELETE.
+Maintenant, la table COMPANY ne contient plus d'enregistrement car tous les enregistrements ont été supprimés par l'instruction **DELETE**.
