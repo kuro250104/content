@@ -56,7 +56,12 @@ Code de la page HTML :
 
 ### Contraintes
 
-- Ne pas modifier l’HTML fourni.
+- Ne pas modifier l’HTML fourni SAUF : 
+    - les noms de classes si besoin
+    - l'ajout de CSS si besoin
+    - La balise de script permettant d'ajouter du javascipt
+    - les data-attributes si vous les connaissez
+    - La div #resultat qui permet d'afficher le résultat
 - Le joueur ne doit pas pouvoir marquer une case déjà marquée.
 
 ### Critères de réussite
