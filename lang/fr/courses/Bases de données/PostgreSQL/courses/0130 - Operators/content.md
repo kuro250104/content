@@ -73,12 +73,12 @@ A|B = 0011 1101
 ~A  = 1100 0011
 ```
 
-Les opérateurs Bitwise supportés par PostgreSQL sont listés dans le tableau suivant :
+Les opérateurs **Bitwise** supportés par PostgreSQL sont listés dans le tableau suivant :
 
 | **Opérateur** | **Description** | **Exemple** |
 | --- | --- | --- |
 | ``` & ``` | L'opérateur **ET** binaire copie un bit dans le résultat s'il existe dans les deux opérandes. | (A & B) donnera 12 qui est 0000 1100 |
-| ``` | ``` | L'opérateur **OU** binaire copie un bit s'il existe dans l'un ou l'autre des opérandes. | (A | B) donnera 61 qui est 0011 1101 |
+| ``` |/ ``` | L'opérateur **OU** binaire copie un bit s'il existe dans l'un ou l'autre des opérandes. | (A | B) donnera 61 qui est 0011 1101 |
 | ``` ~ ``` | L'opérateur de complémentation binaire à un est unaire et a pour effet de "retourner" les bits. | (~A ) donnera -61 qui est 1100 0011 en complément à 2 en raison d'un nombre binaire signé. |
 | ``` << ``` | Opérateur de décalage binaire vers la gauche. La valeur de l'opérande de gauche est déplacée vers la gauche du nombre de bits spécifié par l'opérande de droite. | A << 2 donnera 240, soit 1111 0000. |
 | ``` >> ``` | Opérateur de décalage binaire à droite. La valeur de l'opérande de gauche est déplacée vers la droite du nombre de bits spécifié par l'opérande de droite. | A >> 2 donnera 15 qui est 0000 1111 |
