@@ -45,7 +45,7 @@ Si la variable ```a``` détient 10 et la variable ```b``` détient 20, alors :
 
 Voici une liste de tous les opérateurs logiques disponibles dans PostgresSQL.
 
-**Opérateur et description**
+**Opérateur et description :**
 
 - **AND** - L'opérateur **AND** permet l'existence de plusieurs conditions dans la clause **WHERE** d'une instruction PostgresSQL.
 - **NOT** - L'opérateur **NOT** inverse le sens de l'opérateur logique avec lequel il est utilisé. Par exemple : **NOT EXISTS**, **NOT BETWEEN**, **NOT IN**, etc. C'est l'opérateur de négation.
