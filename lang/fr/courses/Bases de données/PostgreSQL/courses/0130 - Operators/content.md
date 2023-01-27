@@ -55,14 +55,14 @@ Voici une liste de tous les opérateurs logiques disponibles dans PostgresSQL.
 
 L'opérateur ```bitwise``` travaille sur les bits et effectue une opération bit par bit. La table de vérité pour ```&``` et ```|``` est la suivante :
 
-| **p** | **q** | **p & q** | **p | q** |
+| **```p```** | **```q```** | **```p & q```** | **```p | q```** |
 | --- | --- | --- | --- |
 | 0 | 0 | 0 | 0 |
 | 0 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 1 |
 | 1 | 0 | 0 | 1 |
 
-Supposons que ```A = 60``` ; et ```B = 13``` ; maintenant, en format binaire, ils seront les suivants :
+Supposons que ```A = 60``` ; et ```B = 13``` ; Maintenant, en format binaire, ils seront les suivants :
 
 ```bash
 A = 0011 1100
