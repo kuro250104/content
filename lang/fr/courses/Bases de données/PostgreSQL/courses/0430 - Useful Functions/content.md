@@ -9,4 +9,4 @@ Voici la liste de toutes les fonctions intégrées PostgreSQL d'usage courant :
 - **Fonction SUM PostgreSQL** - La fonction d'agrégation SUM PostgreSQL permet de sélectionner le total d'une colonne numérique.
 - **Fonctions ARRAY PostgreSQL** - La fonction d'agrégation ARRAY PostgreSQL met les valeurs d'entrée, y compris les nuls, concaténées dans un tableau.
 - **Fonctions numériques PostgreSQL** - Liste complète des fonctions PostgreSQL nécessaires pour manipuler les nombres en SQL.
-- **PostgreSQL String Functions** - Liste complète des fonctions PostgreSQL nécessaires à la manipulation des chaînes de caractères dans PostgreSQL.
+- **Fonction String PostgreSQL** - Liste complète des fonctions PostgreSQL nécessaires à la manipulation des chaînes de caractères dans PostgreSQL.
