@@ -11,7 +11,7 @@ La syntaxe de base de l'instruction **SELECT** avec la clause **WHERE** est la s
 ```sql
 SELECT column1, column2, columnN
 FROM table_name
-WHERE [search_condition]
+WHERE [search_condition];
 ```
 
 Vous pouvez spécifier une condition de recherche en utilisant des opérateurs de comparaison ou des opérateurs logiques, comme **>**, **<**, **=**, **LIKE**, **NOT**, etc. Les exemples suivants permettent de comprendre ce concept.
@@ -155,7 +155,7 @@ id | name  | age | address    | salary
 (3 rows)
 ```
 
-L'instruction **SELECT** suivante utilise une sous-requête SQL où la sous-requête trouve tous les enregistrements avec le champ AGE ayant un SALAIRE > 65000 et ensuite la clause **WHER**E est utilisée avec l'opérateur **EXISTS** pour lister tous les enregistrements où AGE de la requête externe existe dans le résultat renvoyé par la sous-requête :
+L'instruction **SELECT** suivante utilise une sous-requête SQL où la sous-requête trouve tous les enregistrements avec le champ AGE ayant un SALAIRE > 65000 et ensuite la clause **WHERE** est utilisée avec l'opérateur **EXISTS** pour lister tous les enregistrements où AGE de la requête externe existe dans le résultat renvoyé par la sous-requête :
 
 ```sql
 testdb=# SELECT AGE FROM COMPANY
