@@ -1,19 +1,19 @@
 ## Installation
 
-L'extension PostgreSQL est activée par défaut dans les dernières versions de PHP 5.3.x. Il est possible de la désactiver en utilisant --without-pgsql à la compilation. Vous pouvez néanmoins utiliser la commande yum pour installer l'interface PHP -PostgreSQL.
+L'extension PostgreSQL est activée par défaut dans les dernières versions de PHP 5.3.x. Il est possible de la désactiver en utilisant ```--without-pgsql``` à la compilation. Vous pouvez néanmoins utiliser la commande ```yum``` pour installer l'interface PHP -PostgreSQL.
 
 ```bash
 yum install php-pgsql
 ```
 
-Avant de commencer à utiliser l'interface PHP PostgreSQL, trouvez le fichier pg_hba.conf dans votre répertoire d'installation de PostgreSQL et ajoutez la ligne suivante : -.
+Avant de commencer à utiliser l'interface PHP PostgreSQL, trouvez le fichier ```pg_hba.conf``` dans votre répertoire d'installation de PostgreSQL et ajoutez la ligne suivante :
 
 ```bash
 # IPv4 local connections:
 host    all         all         127.0.0.1/32          md5
 ```
 
-Vous pouvez démarrer/redémarrer le serveur postgres, au cas où il ne serait pas en cours d'exécution, à l'aide de la commande suivante -
+Vous pouvez démarrer/redémarrer le serveur postgres, au cas où il ne serait pas en cours d'exécution, à l'aide de la commande suivante :
 
 ```bash
 [root@host]# service postgresql restart
