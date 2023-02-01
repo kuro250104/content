@@ -114,7 +114,7 @@ JSX prend en charge les attributs de type HTML. Toutes les balises HTML et leurs
 
 ### Sortie
 
-Le résultat est le suivant -
+Le résultat est le suivant :
 
 ```bash
 The Current time is 22:36:55 GMT+0530(India Standard Time)
