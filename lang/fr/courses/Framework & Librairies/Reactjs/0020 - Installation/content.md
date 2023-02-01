@@ -2,7 +2,7 @@
 
 Ce chapitre explique l'installation de la bibliothèque React et de ses outils connexes dans votre machine. Avant de passer à l'installation, vérifions d'abord les prérequis.
 
-React fournit des outils CLI pour le développeur afin d'accélérer la création, le développement et le déploiement de l'application web basée sur React. Les outils React CLI dépendent de Node.js et doivent être installés sur votre système. Avec un peu de chance, vous avez installé Node.js sur votre machine. Nous pouvons le vérifier en utilisant la commande ci-dessous -
+React fournit des outils CLI pour le développeur afin d'accélérer la création, le développement et le déploiement de l'application web basée sur React. Les outils React CLI dépendent de Node.js et doivent être installés sur votre système. Avec un peu de chance, vous avez installé Node.js sur votre machine. Nous pouvons le vérifier en utilisant la commande ci-dessous :
 
 ```bash
 node --version
@@ -22,23 +22,23 @@ Pour développer des fonctionnalités légères telles que la validation de form
 
 React toolchain aide à créer, construire, exécuter et déployer l'application React. React toolchain fournit essentiellement un modèle de projet de démarrage avec tout le code nécessaire pour amorcer l'application.
 
-Parmi les chaînes d'outils les plus populaires pour développer des applications React figurent
+Parmi les chaînes d'outils les plus populaires pour développer des applications React figurent :
 
-- **Create React App** − Chaîne d'outils orientée SPA
-- **Next.js** − chaîne d'outils orientée vers le rendu côté serveur
-- **Gatsby** − Chaîne d'outils orientée contenu statique
+- **Create React App** − Chaîne d'outils orientée SPA.
+- **Next.js** − Chaîne d'outils orientée vers le rendu côté serveur.
+- **Gatsby** − Chaîne d'outils orientée contenu statique.
 
-Les outils nécessaires pour développer une application React sont -
+Les outils nécessaires pour développer une application React sont :
 
-- Le *serve*, un serveur statique pour servir notre application pendant le développement
-- Compilateur Babel
-- Créer une application React CLI
+- Le *serve*, un serveur statique pour servir notre application pendant le développement.
+- Compilateur Babel.
+- Créer une application React CLI.
 
 Dans ce cours, nous allons apprendre les bases des outils mentionnés ci-dessus et comment les installer.
 
 ## Le serveur statique de service
 
-Le serveur serve est un serveur web léger. Il sert les sites statiques et les applications à page unique. Il se charge rapidement et consomme un minimum de mémoire. Il peut être utilisé pour servir une application React. Installons l'outil en utilisant le gestionnaire de paquets npm dans notre système.
+Le serveur *serve* est un serveur web léger. Il sert les sites statiques et les applications à page unique. Il se charge rapidement et consomme un minimum de mémoire. Il peut être utilisé pour servir une application React. Installons l'outil en utilisant le gestionnaire de paquets npm dans notre système.
 
 ```bash
 npm install serve -g
