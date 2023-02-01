@@ -18,7 +18,7 @@ Les caractéristiques saillantes de la bibliothèque React sont les suivantes :
 
 ## Avantages
 
-Les avantages de l'utilisation de la bibliothèque React sont les suivants.
+Les avantages de l'utilisation de la bibliothèque React sont les suivants :
 
 - Facile à apprendre
 - Facile à adapter aux applications modernes et anciennes.
@@ -28,7 +28,7 @@ Les avantages de l'utilisation de la bibliothèque React sont les suivants.
 
 ## Applications
 
-Voici une liste de quelques sites Web populaires utilisant la bibliothèque React.
+Voici une liste de quelques sites Web populaires utilisant la bibliothèque React :
 
 - Facebook, application populaire de médias sociaux
 - Instagram, application populaire de partage de photos
