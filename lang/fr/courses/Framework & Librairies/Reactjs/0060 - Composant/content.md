@@ -25,7 +25,7 @@ La bibliothèque React possède deux types de composants. Les types sont classé
 
 Les principales différences entre les composants de fonction et de classe sont les suivantes : 
 
-- le composant de fonction et le composant de classe.
+- Le composant de fonction et le composant de classe.
 - Les composants fonctionnels sont très minimes par nature. Leur seule exigence est de retourner un élément React.
 
 ```js
@@ -51,7 +51,7 @@ class ExpenseEntryItem extends React.Component {
 
 ## Création d'un composant de classe
 
-Créons un nouveau composant React (dans notre application de gestion des dépenses), ExpenseEntryItem, pour présenter un élément de saisie des dépenses. L'élément de saisie des dépenses est composé du nom, du montant, de la date et de la catégorie. La représentation objet du poste de dépense est -
+Créons un nouveau composant React (dans notre application de gestion des dépenses), ExpenseEntryItem, pour présenter un élément de saisie des dépenses. L'élément de saisie des dépenses est composé du nom, du montant, de la date et de la catégorie. La représentation objet du poste de dépense est :
 
 ```js
 { 
