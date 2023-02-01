@@ -8,7 +8,7 @@ La version initiale, 0.3.0 de React, est sortie en mai 2013 et la dernière vers
 
 ## Caractéristiques
 
-Les caractéristiques saillantes de la bibliothèque React sont les suivantes -
+Les caractéristiques saillantes de la bibliothèque React sont les suivantes :
 
 - Une architecture de base solide
 - Architecture extensible
