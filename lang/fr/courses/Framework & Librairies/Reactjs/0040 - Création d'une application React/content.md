@@ -4,9 +4,9 @@ Comme nous l'avons appris précédemment, la bibliothèque React peut être util
 
 Voyons comment créer une application React simple ou complexe.
 
-- Application simple utilisant le CDN
-- Application complexe utilisant React Create App cli
-- Application complexe utilisant une méthode personnalisée
+- Application simple utilisant le CDN ;
+- Application complexe utilisant React Create App cli ; 
+- Application complexe utilisant une méthode personnalisée.
 
 ## Utilisation du bundler Rollup
 
@@ -147,7 +147,7 @@ Ensuite, créez un dossier src dans le répertoire racine de l'application, qui 
 
 Ensuite, créez un dossier, components sous src pour inclure nos composants React. L'idée est de créer deux fichiers, ```<component>.js``` pour écrire la logique du composant et ```<component.css>``` pour inclure les styles spécifiques au composant.
 
-La structure finale de la demande sera la suivante -
+La structure finale de la demande sera la suivante :
 
 ```bash
 |-- package-lock.json
@@ -235,7 +235,7 @@ waiting for changes...
 
 ## Utilisation du bundler Parcel
 
-Parcel est un bundler rapide avec zéro configuration. Il n'attend que le point d'entrée de l'application et il résoudra lui-même les dépendances et regroupera l'application. Nous allons apprendre à utiliser le bundler parcel dans ce chapitre.
+Parcel est un bundler rapide avec zéro configuration. Il n'attend que le point d'entrée de l'application et il résoudra lui-même les dépendances et regroupera l'application. Nous allons apprendre à utiliser le bundler Parcel dans ce chapitre.
 
 Tout d'abord, installez le collecteur de colis.
 
@@ -304,7 +304,7 @@ Ensuite, créez un dossier src dans le répertoire racine de l'application, qui 
 
 Ensuite, créez un dossier, components sous src pour inclure nos composants React. L'idée est de créer deux fichiers, ```<component>.js``` pour écrire la logique du composant et ```<component.css>``` pour inclure les styles spécifiques au composant.
 
-La structure finale de la demande sera la suivante -
+La structure finale de la demande sera la suivante :
 
 ```bash
 |-- package-lock.json
