@@ -71,18 +71,18 @@ Ici, nous utilisons deux API fournies par la bibliothèque React.
 
 #### React.createElement
 
-Utilisé pour créer des éléments React. Il attend trois paramètres -
+Utilisé pour créer des éléments React. Il attend trois paramètres :
 
-- Balise élémentaire
-- Attributs de l'élément en tant qu'objet
+- Balise élémentaire ;
+- Attributs de l'élément en tant qu'objet ;
 - Element content - Il peut également contenir des éléments React imbriqués.
 
 #### ReactDOM.render
 
-Utilisé pour rendre l'élément dans le conteneur. Il attend deux paramètres -
+Utilisé pour rendre l'élément dans le conteneur. Il attend deux paramètres :
 
-- Élément React OU JSX
-- Élément racine de la page web
+- Élément React OU JSX ;
+- Élément racine de la page web.
 
 ## Élément React imbriqué
 
@@ -99,7 +99,7 @@ Comme ```React.createElement``` permet l'imbrication d'éléments React, ajouton
 
 ### Sortie
 
-Il générera le contenu ci-dessous -
+Il générera le contenu ci-dessous :
 
 ```html
 <div><h1> Hello React!</h1></div> 
@@ -107,7 +107,7 @@ Il générera le contenu ci-dessous -
 
 ## Utilisation de JSX
 
-Ensuite, supprimons entièrement l'élément React et introduisons la syntaxe JSX comme indiqué ci-dessous -.
+Ensuite, supprimons entièrement l'élément React et introduisons la syntaxe JSX comme indiqué ci-dessous :
 
 ```html
 <!DOCTYPE html> 
