@@ -1,6 +1,6 @@
 Cette introduction au cours du langage HTML traite, de manière générale, des différentes fonctions de ce langage et de sa sémantique générale.
 
-Le HTML est le langage de base se trouvant derrière toutes les pages web. Il permet de la structurer, mais ne permet pas la mise en forme du site. 
+Le HTML est le langage de base se trouvant derrière toutes les pages web. Il permet de les structurer, mais ne permet pas la mise en forme du site. 
 
 Ce cours se base sur les dernières versions stables de ce langage, à savoir HTML5 au moment où ces lignes sont écrites.
 
