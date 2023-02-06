@@ -2,7 +2,7 @@ Bien que cette méthode ne soit que rarement utilisée de nos jours et fortement
 
 ## Attribut style
 
-L’attribut **style** permet d’inclure du code CSS directement au sein du HTML, dans n’importe quelle balise, sans passer par un fichier tiers. Quelques exemples vous sont présentés ci-dessous, mais référez vous aux cours sur le CSS afin de mieux cerner l’étendue des possibilités.
+L’attribut **style** permet d’inclure du code CSS directement au sein du HTML, dans n’importe quelle balise, sans passer par un fichier tiers. Quelques exemples vous sont présentés ci-dessous, mais référez-vous aux cours sur le CSS afin de mieux cerner l’étendue des possibilités.
 
 L’utilisation de cet attribut est assez simple : la **propriété CSS** est déclarée entre les guillemets, suivie de **deux points** (:) suivi de la **valeur** à attribuer à cette propriété, suivi d’un **point virgule** (;).
 
