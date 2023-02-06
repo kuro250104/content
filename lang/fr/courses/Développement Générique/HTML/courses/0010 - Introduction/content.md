@@ -9,7 +9,7 @@ Ce cours se base sur les dernières versions stables de ce langage, à savoir HT
 - Le HTML est l’acronyme de Hyper Text Markup Language
 - Le HTML est le langage de balisage standard pour la création de pages Web
 - Le HTML décrit la structure d'une page Web
-- Le HTML se compose d'une série d'éléments entourés de balises.
+- Le HTML se compose d'une série d'éléments entourés de balises
 - Les éléments HTML indiquent au navigateur comment organiser le contenu
 - Les balises autour des éléments HTML permettent d’indiquer le type de contenu (titre, paragraphe, liste, tableau, etc.).
 
