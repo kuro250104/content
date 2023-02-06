@@ -38,7 +38,7 @@ Enfin, les balises ```<body></body>``` définissent le corps de la page HTML. To
 
 ## Qu'est-ce qu'un élément HTML?
 
-En HTML, un élément est entouré de deux balise : **une balise de début**, dite “ouvrante”, contenant le nom de l’élément, puis **le contenu de l’élément**, pour finir avec une **balise de fin**, dite “fermante”, commençant par un slash (/) pour indiquer c’est une balise fermante. Le nom de l’élément indiqué dans la balise se trouve entre des chevrons : ```<>```.
+En HTML, un élément est entouré de deux balises : **une balise de début**, dite “ouvrante”, contenant le nom de l’élément, puis **le contenu de l’élément**, pour finir avec une **balise de fin**, dite “fermante”, commençant par un slash (/) pour indiquer que c’est une balise fermante. Le nom de l’élément indiqué dans la balise se trouve entre des chevrons : ```<>```.
 
 Exemple :
 
