@@ -1,4 +1,4 @@
-Il n’est pas de sites web qui n’affichent pas d’images. Que ce soit pour le logo ou à des fins d’illustration, chaque site affiche au moins une image.
+Il n'y a pas de sites web qui n’affichent pas d’images. Que ce soit pour le logo ou à des fins d’illustration, chaque site affiche au moins une image.
 
 ## Insérer des images
 
