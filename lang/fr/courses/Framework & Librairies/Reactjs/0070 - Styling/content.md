@@ -2,11 +2,11 @@
 
 En général, React permet au composant d'être stylé en utilisant une classe CSS à travers l'attribut className. Étant donné que React JSX prend en charge les expressions JavaScript, un grand nombre de méthodes CSS courantes peuvent être utilisées. Certaines des principales options sont les suivantes
 
-- **CSS stylesheet** − Styles CSS normaux avec className
-- **Inline styling** − Les styles CSS en tant qu'objets JavaScript avec les propriétés camelCase.
-- **CSS Modules** − Styles CSS à portée locale.
-- **Styled component** − Styles au niveau des composants.
-- **Sass stylesheet** − Supporte les styles CSS basés sur Sass en convertissant les styles en css normal au moment de la construction.
+- **CSS stylesheet** − Styles CSS normaux avec className ;
+- **Inline styling** − Les styles CSS en tant qu'objets JavaScript avec les propriétés camelCase ;
+- **CSS Modules** − Styles CSS à portée locale ;
+- **Styled component** − Styles au niveau des composants ;
+- **Sass stylesheet** − Supporte les styles CSS basés sur Sass en convertissant les styles en css normal au moment de la construction ; 
 - **Post processing stylesheet** − Supporte les styles de post-traitement en convertissant les styles en css normaux au moment de la construction.
 
 Dans ce cours, nous allons apprendre à appliquer ces trois méthodes importantes pour styliser notre composant.
@@ -80,7 +80,7 @@ itemStyle = {
 
 Ici, fontSize représente la propriété css, font-size. Toutes les propriétés css peuvent être utilisées en les représentant au format camelCase.
 
-Ensuite, définissez le style itemStyle dans le composant en utilisant les accolades {}. -
+Ensuite, définissez le style itemStyle dans le composant en utilisant les accolades {} :
 
 ```js
 render() {

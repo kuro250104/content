@@ -56,7 +56,7 @@ Dans le troisième point de ce cours, il est expliqué qu’au sein des balises 
 
 Cependant, lorsqu’un long paragraphe est composé de nombreux retours à la ligne, il est assez fastidieux de mettre des balises ```<br />``` à chaque retour à la ligne. 
 
-Le langage HTML règle ce problème grâce aux balises ```<pre></pre>```. Grâce à cela, il est précisé au navigateur qu’il s’agit d’un texte préformaté. La navigateur affichera donc le paragraphe dans une police de largeur fixe, tout en préservant les espaces et les retours à la ligne.
+Le langage HTML règle ce problème grâce aux balises ```<pre></pre>```. Grâce à cela, il est précisé au navigateur qu’il s’agit d’un texte préformaté. Le navigateur affichera donc le paragraphe dans une police de largeur fixe, tout en préservant les espaces et les retours à la ligne.
 
 Exemple :
 
@@ -70,6 +70,6 @@ Dans le code source
 
 Mais le navigateur
 
-Les ignores
+Les ignore
 </pre>
 ```
